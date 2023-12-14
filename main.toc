@@ -27,12 +27,12 @@
 \contentsline {subsection}{\numberline {1.1.6}Activity Recognition}{5}{subsection.1.1.6}%
 \contentsline {paragraph}{}{5}{subsection.1.1.6}%
 \contentsline {paragraph}{}{5}{subsection.1.1.6}%
-\contentsline {subsection}{\numberline {1.1.7}Neural Networks}{5}{subsection.1.1.7}%
-\contentsline {subsubsection}{Artificial Neural Networks}{5}{subsection.1.1.7}%
-\contentsline {paragraph}{}{5}{subsection.1.1.7}%
-\contentsline {subsubsection}{Convolutional Neural Networks}{6}{figure.caption.4}%
-\contentsline {paragraph}{}{6}{figure.caption.4}%
-\contentsline {paragraph}{}{6}{figure.caption.4}%
+\contentsline {subsection}{\numberline {1.1.7}Neural Networks}{6}{subsection.1.1.7}%
+\contentsline {subsubsection}{Artificial Neural Networks}{6}{subsection.1.1.7}%
+\contentsline {paragraph}{}{6}{subsection.1.1.7}%
+\contentsline {subsubsection}{Convolutional Neural Networks}{7}{figure.caption.4}%
+\contentsline {paragraph}{}{7}{figure.caption.4}%
+\contentsline {paragraph}{}{7}{figure.caption.4}%
 \contentsline {subsection}{\numberline {1.1.8}Recurrent Neural Networks}{7}{subsection.1.1.8}%
 \contentsline {section}{\numberline {1.2}Literature Review}{8}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Data Collection}{8}{subsection.1.2.1}%
@@ -41,5 +41,5 @@
 \contentsline {paragraph}{}{8}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Data Preprocessing}{8}{subsection.1.2.2}%
 \contentsline {paragraph}{}{8}{subsection.1.2.2}%
-\contentsline {chapter}{\numberline {A}Sample A}{9}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Sample B}{10}{appendix.B}%
+\contentsline {chapter}{\numberline {A}Sample A}{11}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sample B}{12}{appendix.B}%

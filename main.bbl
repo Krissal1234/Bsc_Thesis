@@ -1,0 +1,683 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{SkateboardingEncyclobeadia}{misc}{}
+      \list{publisher}{1}{%
+        {Encyclopædia Britannica, inc.}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Encyclopædia Britannica}
+      \field{month}{9}
+      \field{title}{Encyclopædia Britannica}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.britannica.com/sports/skateboarding
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/sports/skateboarding
+      \endverb
+    \endentry
+    \entry{SkatebaordingOlimpics}{misc}{}
+      \list{publisher}{1}{%
+        {Chloe Merrell}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{One year on: How skateboarding’s olympic debut changed the games}
+      \field{month}{7}
+      \field{title}{One year on: How skateboarding’s olympic debut changed the games_2022}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://olympics.com/en/news/one-year-on-skateboarding-olympic-debut-feature
+      \endverb
+      \verb{url}
+      \verb https://olympics.com/en/news/one-year-on-skateboarding-olympic-debut-feature
+      \endverb
+    \endentry
+    \entry{skateStyles}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=79ad981277b0595d7fd8d81e52e04d86}{%
+           family={Foley},
+           familyi={F\bibinitperiod},
+           given={Zane},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{fullhash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{bibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authorbibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authornamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authorfullhash}{79ad981277b0595d7fd8d81e52e04d86}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Goskate.com - Top Articles}
+      \field{month}{9}
+      \field{title}{Vert, Street, park – what are the different styles of skateboarding?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
+      \endverb
+      \verb{url}
+      \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
+      \endverb
+    \endentry
+    \entry{ML_Algorithms}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88192550e0159ac348930d7729ba63aa}{%
+           family={Mahesh},
+           familyi={M\bibinitperiod},
+           given={Batta},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{88192550e0159ac348930d7729ba63aa}
+      \strng{fullhash}{88192550e0159ac348930d7729ba63aa}
+      \strng{bibnamehash}{88192550e0159ac348930d7729ba63aa}
+      \strng{authorbibnamehash}{88192550e0159ac348930d7729ba63aa}
+      \strng{authornamehash}{88192550e0159ac348930d7729ba63aa}
+      \strng{authorfullhash}{88192550e0159ac348930d7729ba63aa}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Machine Learning Algorithms -A Review}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.21275/ART20203995
+      \endverb
+    \endentry
+    \entry{UnderstandingLSTM}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=ca20c4cfdf776c7f6192e5d69e4473e5}{%
+           family={Staudemeyer},
+           familyi={S\bibinitperiod},
+           given={Ralf\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4e0903aed63275090cbf31400ae4d6d3}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Eric\bibnamedelima Rothstein},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{fullhash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{bibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authorbibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authornamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authorfullhash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Understanding LSTM -- a tutorial into Long Short-Term Memory Recurrent Neural Networks}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1909.09586
+      \endverb
+    \endentry
+    \entry{TheEffectsofDataQualityonMachineLearningPerformance}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=f6a28f04ddd0f5902c3d38f004635583}{%
+           family={Budach},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e7b67f3ca874e3d28c1c09c73543a2c9}{%
+           family={Feuerpfeil},
+           familyi={F\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eea16f173280c5aa158e9698aa66fb30}{%
+           family={Ihde},
+           familyi={I\bibinitperiod},
+           given={Nina},
+           giveni={N\bibinitperiod}}}%
+        {{hash=b0c95be69e9264adc4cb94abcf645849}{%
+           family={Nathansen},
+           familyi={N\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0d9c951c77df03067085cb92d766f77a}{%
+           family={Noack},
+           familyi={N\bibinitperiod},
+           given={Nele},
+           giveni={N\bibinitperiod}}}%
+        {{hash=9b2d228fee7b2336efbef0cb1ccef3cd}{%
+           family={Patzlaff},
+           familyi={P\bibinitperiod},
+           given={Hendrik},
+           giveni={H\bibinitperiod}}}%
+        {{hash=0ce321f20daaa7081cc62fef0ada0247}{%
+           family={Naumann},
+           familyi={N\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9c8c459078895719b2beda02e58c864b}{%
+           family={Harmouch},
+           familyi={H\bibinitperiod},
+           given={Hazar},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0aa906fa5be3c583b31fae0151f9d65e}
+      \strng{fullhash}{aaaeba74ebf8eb62e0b4e8246d683abf}
+      \strng{bibnamehash}{0aa906fa5be3c583b31fae0151f9d65e}
+      \strng{authorbibnamehash}{0aa906fa5be3c583b31fae0151f9d65e}
+      \strng{authornamehash}{0aa906fa5be3c583b31fae0151f9d65e}
+      \strng{authorfullhash}{aaaeba74ebf8eb62e0b4e8246d683abf}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DB}
+      \field{eprinttype}{arXiv}
+      \field{title}{The Effects of Data Quality on Machine Learning Performance}
+      \field{year}{2022}
+      \verb{eprint}
+      \verb 2207.14529
+      \endverb
+    \endentry
+    \entry{NeuralScience}{article}{}
+      \name{author}{3}{}{%
+        {{hash=0c890a67358adc7c80f786efe037e13f}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={Rebecca},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2ac07b4e8077a041a19f793ffb6bcff8}{%
+           family={Huis\bibnamedelimb in\bibnamedelimb ’t\bibnamedelima Veld},
+           familyi={H\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim ’\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Elisabeth\bibnamedelimb M.\bibnamedelimi J.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=f22e1432c43fb47fda536df325774ac4}{%
+           family={Gelder},
+           familyi={G\bibinitperiod},
+           given={Beatrice},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{327a3ae4af7b48b5091420b8c41491a9}
+      \strng{fullhash}{20cdab3b8bafb96bcbec88481a85422c}
+      \strng{bibnamehash}{20cdab3b8bafb96bcbec88481a85422c}
+      \strng{authorbibnamehash}{20cdab3b8bafb96bcbec88481a85422c}
+      \strng{authornamehash}{327a3ae4af7b48b5091420b8c41491a9}
+      \strng{authorfullhash}{20cdab3b8bafb96bcbec88481a85422c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1662-5161}
+      \field{journaltitle}{Frontiers in Human Neuroscience}
+      \field{title}{The Neural Basis of Individual Face and Object Perception}
+      \field{volume}{10}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.3389/fnhum.2016.00066
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fnhum.2016.00066
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fnhum.2016.00066
+      \endverb
+    \endentry
+    \entry{RecentAdvancesObjectDetection}{article}{}
+      \name{author}{3}{}{%
+        {{hash=61052e45e982c5b0754f62ec3d2af6ab}{%
+           family={Agarwal},
+           familyi={A\bibinitperiod},
+           given={Shivang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=234c997d24dedc7b5be288d564572150}{%
+           family={Terrail},
+           familyi={T\bibinitperiod},
+           given={Jean\bibnamedelima Ogier},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           prefix={du},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=091fd87f9b93fc54fb6f230bff4dc178}{%
+           family={Jurie},
+           familyi={J\bibinitperiod},
+           given={Frédéric},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{adccddc9967db85c6efad4722f87099e}
+      \strng{fullhash}{3281b59ca197472db944f5df23effedf}
+      \strng{bibnamehash}{3281b59ca197472db944f5df23effedf}
+      \strng{authorbibnamehash}{3281b59ca197472db944f5df23effedf}
+      \strng{authornamehash}{adccddc9967db85c6efad4722f87099e}
+      \strng{authorfullhash}{3281b59ca197472db944f5df23effedf}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ArXiv}
+      \field{title}{Recent Advances in Object Detection in the Age of Deep Convolutional Neural Networks}
+      \field{volume}{abs/1809.03193}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:52183570
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:52183570
+      \endverb
+    \endentry
+    \entry{ActionRecognitionDeepBi-DirectionalLSTM}{article}{}
+      \name{author}{5}{}{%
+        {{hash=184f96ce16eeb5c68deb501d17727151}{%
+           family={Ullah},
+           familyi={U\bibinitperiod},
+           given={Amin},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d855bd64f8764149d99914d88b15cd5c}{%
+           family={Ahmad},
+           familyi={A\bibinitperiod},
+           given={Jamil},
+           giveni={J\bibinitperiod}}}%
+        {{hash=fc7891c81d834c5b7ced804c65d6560f}{%
+           family={Muhammad},
+           familyi={M\bibinitperiod},
+           given={Khan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4d11eaca8dffa227f0d7f339988ef9f6}{%
+           family={Sajjad},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9b02349af5c9b92ec771cf7c8e77a025}{%
+           family={Baik},
+           familyi={B\bibinitperiod},
+           given={Sung\bibnamedelima Wook},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{1927e6f6ab384740110233714402aed0}
+      \strng{fullhash}{b46989c5a2581c7e1f371cb639442404}
+      \strng{bibnamehash}{b46989c5a2581c7e1f371cb639442404}
+      \strng{authorbibnamehash}{b46989c5a2581c7e1f371cb639442404}
+      \strng{authornamehash}{1927e6f6ab384740110233714402aed0}
+      \strng{authorfullhash}{b46989c5a2581c7e1f371cb639442404}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Action Recognition in Video Sequences using Deep Bi-Directional LSTM With CNN Features}
+      \field{volume}{6}
+      \field{year}{2018}
+      \field{pages}{1155\bibrangedash 1166}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2017.2778011
+      \endverb
+    \endentry
+    \entry{AReviewOfHumanActivityRecognitionMethods}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a957cd47c567a548ff8edf58e3f85e78}{%
+           family={Vrigkas},
+           familyi={V\bibinitperiod},
+           given={Michalis},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2a3e162fc2e31f2f6ea28cf294a694c6}{%
+           family={Nikou},
+           familyi={N\bibinitperiod},
+           given={Christophoros},
+           giveni={C\bibinitperiod}}}%
+        {{hash=83f4344e3b735ab1e1748b1003ae3eba}{%
+           family={Kakadiaris},
+           familyi={K\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{be39e8ef00e12d07a387af4ae4b89fd6}
+      \strng{fullhash}{97185909e5e755d5713505417bdd5c83}
+      \strng{bibnamehash}{97185909e5e755d5713505417bdd5c83}
+      \strng{authorbibnamehash}{97185909e5e755d5713505417bdd5c83}
+      \strng{authornamehash}{be39e8ef00e12d07a387af4ae4b89fd6}
+      \strng{authorfullhash}{97185909e5e755d5713505417bdd5c83}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers in Robotics and Artificial Intelligence}
+      \field{month}{11}
+      \field{title}{A Review of Human Activity Recognition Methods}
+      \field{volume}{2}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3389/frobt.2015.00028
+      \endverb
+    \endentry
+    \entry{FundamentalsOfNeuralNetworks}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2284544bb2a89dacb537a331e74f41ba}{%
+           family={Thakur},
+           familyi={T\bibinitperiod},
+           given={Amey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f7f512d40b53341789364089039d91c8}{%
+           family={Konde},
+           familyi={K\bibinitperiod},
+           given={Archit},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f229ade80d11c18aecd03332141f882}
+      \strng{fullhash}{7f229ade80d11c18aecd03332141f882}
+      \strng{bibnamehash}{7f229ade80d11c18aecd03332141f882}
+      \strng{authorbibnamehash}{7f229ade80d11c18aecd03332141f882}
+      \strng{authornamehash}{7f229ade80d11c18aecd03332141f882}
+      \strng{authorfullhash}{7f229ade80d11c18aecd03332141f882}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal for Research in Applied Science and Engineering Technology}
+      \field{title}{Fundamentals of neural networks}
+      \field{volume}{9}
+      \field{year}{2021}
+      \field{pages}{407\bibrangedash 26}
+      \range{pages}{20}
+    \endentry
+    \entry{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}{inbook}{}
+      \name{author}{3}{}{%
+        {{hash=4a169f5d5db6c59630b715d38e4e9ad1}{%
+           family={Montesinos-López},
+           familyi={M\bibinithyphendelim L\bibinitperiod},
+           given={Osval},
+           giveni={O\bibinitperiod}}}%
+        {{hash=6a796f40ca364499aaddce7641866a45}{%
+           family={Montesinos},
+           familyi={M\bibinitperiod},
+           given={Abelardo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bb8a6b5c700c8cdf21537c6019fd3e5e}{%
+           family={Crossa},
+           familyi={C\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a61f654cc1ecd01a16b6c9427597e5c}
+      \strng{fullhash}{bec716b3fe4338fba6416ac292a0cfc4}
+      \strng{bibnamehash}{bec716b3fe4338fba6416ac292a0cfc4}
+      \strng{authorbibnamehash}{bec716b3fe4338fba6416ac292a0cfc4}
+      \strng{authornamehash}{0a61f654cc1ecd01a16b6c9427597e5c}
+      \strng{authorfullhash}{bec716b3fe4338fba6416ac292a0cfc4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-030-89009-4}
+      \field{month}{01}
+      \field{title}{Fundamentals of Artificial Neural Networks and Deep Learning}
+      \field{year}{2022}
+      \field{pages}{379\bibrangedash 425}
+      \range{pages}{47}
+      \verb{doi}
+      \verb 10.1007/978-3-030-89010-0_10
+      \endverb
+    \endentry
+    \entry{RecentAadvancesInConvolutionalNeuralNetworks}{article}{}
+      \name{author}{11}{}{%
+        {{hash=75773f34c6c6b4a5992acbd1a91d6287}{%
+           family={Gu},
+           familyi={G\bibinitperiod},
+           given={Jiuxiang},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5c092e58f3e1da1e6b0175fb4a5aa0f6}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhenhua},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=c3451a708164d99ff770297eecf21c42}{%
+           family={Kuen},
+           familyi={K\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+        {{hash=08272f0ac6b8c00bba415379bd484c6b}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Lianyang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=bd9806e2b6a75a8882c14bb84deef5aa}{%
+           family={Shahroudy},
+           familyi={S\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ee574291a2e6dd5157584042680e1ce3}{%
+           family={Shuai},
+           familyi={S\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=df4100f4c9320162410d3ddcc9257d55}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Ting},
+           giveni={T\bibinitperiod}}}%
+        {{hash=0f6b99511b4eb671fcf7f29d8684970d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xingxing},
+           giveni={X\bibinitperiod}}}%
+        {{hash=3d33b99ab2b9fa2c7987e1d7f5873222}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c75d31462b261e5c21d1421d64679934}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Jianfei},
+           giveni={J\bibinitperiod}}}%
+        {{hash=770b8c88e0b93629ab1d35372bf0e3e4}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Tsuhan},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{3defe56f57f91bdd037c38942d18c0ae}
+      \strng{fullhash}{ae0a92f4cc25d349286428e2df519e08}
+      \strng{bibnamehash}{3defe56f57f91bdd037c38942d18c0ae}
+      \strng{authorbibnamehash}{3defe56f57f91bdd037c38942d18c0ae}
+      \strng{authornamehash}{3defe56f57f91bdd037c38942d18c0ae}
+      \strng{authorfullhash}{ae0a92f4cc25d349286428e2df519e08}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0031-3203}
+      \field{journaltitle}{Pattern Recognition}
+      \field{title}{Recent advances in convolutional neural networks}
+      \field{volume}{77}
+      \field{year}{2018}
+      \field{pages}{354\bibrangedash 377}
+      \range{pages}{24}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.patcog.2017.10.013
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0031320317304120
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0031320317304120
+      \endverb
+      \keyw{Convolutional neural network,Deep learning}
+    \endentry
+    \entry{skatePaper1}{article}{}
+      \name{author}{7}{}{%
+        {{hash=a696b191c071bfc7102ad4439bf0d8bd}{%
+           family={Shapiee},
+           familyi={S\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a041ada5f42664313ddcbf8ae28cdcbf}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Muhammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
+           family={Abdullah},
+           familyi={A\bibinitperiod},
+           given={Muhammad\bibnamedelima Amirul},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2bae4a7b0915feff2ba50fc59001cab5}{%
+           family={Musa},
+           familyi={M\bibinitperiod},
+           given={Rabiu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=25bb52e672edd7fa06465484670f6cfe}{%
+           family={Abu\bibnamedelima Osman},
+           familyi={A\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={Noor\bibnamedelima Azuan},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c7f17aa5a0689c4db42d9fa39a7fe291}{%
+           family={P\bibnamedelima P\bibnamedelimb Abdul\bibnamedelima Majeed},
+           familyi={P\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Anwar},
+           giveni={A\bibinitperiod}}}%
+        {{hash=db7a1d086e83b1a691def4e44d5312f1}{%
+           family={Razman},
+           familyi={R\bibinitperiod},
+           given={Azraai},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d110f0c3eb92fc39d8cd6702557381e3}
+      \strng{fullhash}{65fe0b23f2ae534c52bc9b430932dc75}
+      \strng{bibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
+      \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
+      \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
+      \strng{authorfullhash}{65fe0b23f2ae534c52bc9b430932dc75}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MEKATRONIKA}
+      \field{month}{10}
+      \field{title}{The Classification of Skateboarding Tricks: A Transfer Learning and Machine Learning Approach}
+      \field{volume}{2}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.15282/mekatronika.v2i2.6683
+      \endverb
+    \endentry
+    \entry{DietterichOverfittingAI}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f9a517f99d8450b78124ea4348265e82}{%
+           family={Dietterich},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima G.},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f9a517f99d8450b78124ea4348265e82}
+      \strng{fullhash}{f9a517f99d8450b78124ea4348265e82}
+      \strng{bibnamehash}{f9a517f99d8450b78124ea4348265e82}
+      \strng{authorbibnamehash}{f9a517f99d8450b78124ea4348265e82}
+      \strng{authornamehash}{f9a517f99d8450b78124ea4348265e82}
+      \strng{authorfullhash}{f9a517f99d8450b78124ea4348265e82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Comput. Surv.}
+      \field{title}{Overfitting and undercomputing in machine learning}
+      \field{volume}{27}
+      \field{year}{1995}
+      \field{pages}{326\bibrangedash 327}
+      \range{pages}{2}
+      \verb{urlraw}
+      \verb https://api.semanticscholar.org/CorpusID:5933862
+      \endverb
+      \verb{url}
+      \verb https://api.semanticscholar.org/CorpusID:5933862
+      \endverb
+    \endentry
+    \entry{SkateboardAIPaper}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3fa1fec0b6898d4af1813a46b6e7b033}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hanxiao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \strng{fullhash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \strng{bibnamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \strng{authorbibnamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \strng{authornamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \strng{authorfullhash}{3fa1fec0b6898d4af1813a46b6e7b033}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
+      \field{month}{06}
+      \field{title}{SkateboardAI: The Coolest Video Action Recognition for Skateboarding (Student Abstract)}
+      \field{volume}{37}
+      \field{year}{2023}
+      \field{pages}{16184\bibrangedash 16185}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1609/aaai.v37i13.26952
+      \endverb
+    \endentry
+    \entry{DataPreprocessingForImageClassificationByCNN}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=2920bc1df9e1135ba5c3be218b0d29ee}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={Kuntal\bibnamedelima Kumar},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=679f292672f14ad4a1cbd41c1516d61b}{%
+           family={Sudeep},
+           familyi={S\bibinitperiod},
+           given={K.\bibnamedelimi S.},
+           giveni={K\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0b5726146b6cf2abfd0624de89b8663}
+      \strng{fullhash}{d0b5726146b6cf2abfd0624de89b8663}
+      \strng{bibnamehash}{d0b5726146b6cf2abfd0624de89b8663}
+      \strng{authorbibnamehash}{d0b5726146b6cf2abfd0624de89b8663}
+      \strng{authornamehash}{d0b5726146b6cf2abfd0624de89b8663}
+      \strng{authorfullhash}{d0b5726146b6cf2abfd0624de89b8663}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE International Conference on Recent Trends in Electronics, Information & Communication Technology (RTEICT)}
+      \field{title}{Preprocessing for image classification by convolutional neural networks}
+      \field{year}{2016}
+      \field{pages}{1778\bibrangedash 1781}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/RTEICT.2016.7808140
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
