@@ -1,0 +1,45 @@
+\contentsline {chapter}{Abstract}{i}{chapter*.1}%
+\contentsline {chapter}{Acknowledgements}{ii}{chapter*.2}%
+\contentsline {chapter}{Contents}{iii}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{iv}{chapter*.2}%
+\contentsline {chapter}{List of Tables}{v}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{vi}{chapter*.2}%
+\contentsline {chapter}{Glossary of Symbols}{vii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Skateboarding}{2}{subsection.1.1.1}%
+\contentsline {paragraph}{}{2}{subsection.1.1.1}%
+\contentsline {paragraph}{}{2}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Skateboard Tricks}{2}{subsection.1.1.2}%
+\contentsline {paragraph}{}{2}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Problem Definition}{3}{subsection.1.1.3}%
+\contentsline {paragraph}{}{3}{subsection.1.1.3}%
+\contentsline {paragraph}{}{3}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Machine Learning}{3}{subsection.1.1.4}%
+\contentsline {paragraph}{}{3}{subsection.1.1.4}%
+\contentsline {paragraph}{}{3}{subsection.1.1.4}%
+\contentsline {paragraph}{}{4}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Object Detection}{4}{subsection.1.1.5}%
+\contentsline {paragraph}{}{4}{subsection.1.1.5}%
+\contentsline {paragraph}{}{4}{subsection.1.1.5}%
+\contentsline {paragraph}{}{4}{subsection.1.1.5}%
+\contentsline {paragraph}{}{4}{subsection.1.1.5}%
+\contentsline {subsection}{\numberline {1.1.6}Activity Recognition}{5}{subsection.1.1.6}%
+\contentsline {paragraph}{}{5}{subsection.1.1.6}%
+\contentsline {paragraph}{}{5}{subsection.1.1.6}%
+\contentsline {subsection}{\numberline {1.1.7}Neural Networks}{5}{subsection.1.1.7}%
+\contentsline {subsubsection}{Artificial Neural Networks}{5}{subsection.1.1.7}%
+\contentsline {paragraph}{}{5}{subsection.1.1.7}%
+\contentsline {subsubsection}{Convolutional Neural Networks}{6}{figure.caption.4}%
+\contentsline {paragraph}{}{6}{figure.caption.4}%
+\contentsline {paragraph}{}{6}{figure.caption.4}%
+\contentsline {subsection}{\numberline {1.1.8}Recurrent Neural Networks}{7}{subsection.1.1.8}%
+\contentsline {section}{\numberline {1.2}Literature Review}{8}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Data Collection}{8}{subsection.1.2.1}%
+\contentsline {paragraph}{}{8}{subsection.1.2.1}%
+\contentsline {paragraph}{}{8}{subsection.1.2.1}%
+\contentsline {paragraph}{}{8}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Data Preprocessing}{8}{subsection.1.2.2}%
+\contentsline {paragraph}{}{8}{subsection.1.2.2}%
+\contentsline {chapter}{\numberline {A}Sample A}{9}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sample B}{10}{appendix.B}%
