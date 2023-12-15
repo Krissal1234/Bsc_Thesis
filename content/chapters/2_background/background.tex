@@ -190,9 +190,11 @@ Artificial Neural Networks (ANNs) are a class of machine learning models that
 are inspired by the interconnected systems of neurons found in the nervous
 system of living organisms. They consist of connected nodes organised in layers
 capable of learning from their environment and adapting to complex patterns in
-data \cite{FundamentalsOfNeuralNetworks}. Figure \ref{fig:ANN_Diagram} depicts a
-schematic representation of an ANN. The diagram is organised into three
-fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
+data \cite{FundamentalsOfNeuralNetworks}. One common type of ANN is the
+Feed-Forward Neural Network (FNN), which serves as a foundational architecture
+in neural network design. Figure \ref{fig:ANN_Diagram} depicts a schematic
+representation of an ANN. The diagram is organised into three fundamental
+layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.  
 
 \begin{itemize}
@@ -213,7 +215,7 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
   \centering
   \includegraphics[width=0.7\textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png} 
   \caption{Schematic Representation of an Artificial Neural Network with four input variables, three output variables and two hidden layers.}
-  \label{fig:ANN_Diagram} % 
+  \label{fig:ANN_Diagram} 
 \end{figure}
 
 
@@ -231,5 +233,9 @@ representations
 
 
 \subsection{Recurrent Neural Networks}
-Recurrent Neural Networks (RNNs) are a subset of Neural networks
+Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
+designed for sequential data processing. While feed-forward neural networks
+provide static mappings from input to output, RNNs are capable of modelling
+dynamic relationships in sequential data by feeding signals from past timesteps
+back into the network.
 
