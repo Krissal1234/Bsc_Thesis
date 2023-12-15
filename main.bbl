@@ -21,14 +21,13 @@
   \datalist[entry]{none/global//global/global}
     \entry{SkateboardingEncyclobeadia}{misc}{}
       \list{publisher}{1}{%
-        {Encyclopædia Britannica, inc.}%
+        {Encyclopaedia Britannica, inc.}%
       }
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Encyclopædia Britannica}
-      \field{month}{9}
-      \field{title}{Encyclopædia Britannica}
+      \field{journaltitle}{Encyclopaedia Britannica}
+      \field{title}{Encyclopaedia Britannica}
       \field{year}{2023}
       \verb{urlraw}
       \verb https://www.britannica.com/sports/skateboarding
@@ -44,9 +43,8 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{One year on: How skateboarding’s olympic debut changed the games}
-      \field{month}{7}
-      \field{title}{One year on: How skateboarding’s olympic debut changed the games_2022}
+      \field{journaltitle}{One year on: How skateboarding's olympic debut changed the games}
+      \field{title}{One year on: How skateboarding's olympic debut changed the games_2022}
       \field{year}{2022}
       \verb{urlraw}
       \verb https://olympics.com/en/news/one-year-on-skateboarding-olympic-debut-feature
@@ -74,8 +72,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Goskate.com - Top Articles}
-      \field{month}{9}
-      \field{title}{Vert, Street, park – what are the different styles of skateboarding?}
+      \field{title}{Vert, Street, park - what are the different styles of skateboarding?}
       \field{year}{2021}
       \verb{urlraw}
       \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
@@ -102,11 +99,12 @@
       \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{issn}{1662-5161}
       \field{month}{01}
       \field{title}{Machine Learning Algorithms -A Review}
       \field{year}{2019}
       \verb{doi}
-      \verb 10.21275/ART20203995
+      \verb 10.3389/fnhum.2016.00066
       \endverb
     \endentry
     \entry{UnderstandingLSTM}{misc}{}
@@ -202,31 +200,17 @@
       \endverb
     \endentry
     \entry{NeuralScience}{article}{}
-      \name{author}{3}{}{%
-        {{hash=0c890a67358adc7c80f786efe037e13f}{%
-           family={Watson},
-           familyi={W\bibinitperiod},
-           given={Rebecca},
-           giveni={R\bibinitperiod}}}%
-        {{hash=2ac07b4e8077a041a19f793ffb6bcff8}{%
-           family={Huis\bibnamedelimb in\bibnamedelimb ’t\bibnamedelima Veld},
-           familyi={H\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim ’\bibinitperiod\bibinitdelim V\bibinitperiod},
-           given={Elisabeth\bibnamedelimb M.\bibnamedelimi J.},
-           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=f22e1432c43fb47fda536df325774ac4}{%
-           family={Gelder},
-           familyi={G\bibinitperiod},
-           given={Beatrice},
-           giveni={B\bibinitperiod},
-           prefix={de},
-           prefixi={d\bibinitperiod}}}%
+      \name{author}{1}{}{%
+        {{hash=d723d3ecb7a1c98b8835d87848cc1c6a}{%
+           family={{Watson, Rebecca and Huis in 't Veld, Elisabeth M. J. and de Gelder, Beatrice}},
+           familyi={W\bibinitperiod}}}%
       }
-      \strng{namehash}{327a3ae4af7b48b5091420b8c41491a9}
-      \strng{fullhash}{20cdab3b8bafb96bcbec88481a85422c}
-      \strng{bibnamehash}{20cdab3b8bafb96bcbec88481a85422c}
-      \strng{authorbibnamehash}{20cdab3b8bafb96bcbec88481a85422c}
-      \strng{authornamehash}{327a3ae4af7b48b5091420b8c41491a9}
-      \strng{authorfullhash}{20cdab3b8bafb96bcbec88481a85422c}
+      \strng{namehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
+      \strng{fullhash}{d723d3ecb7a1c98b8835d87848cc1c6a}
+      \strng{bibnamehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
+      \strng{authorbibnamehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
+      \strng{authornamehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
+      \strng{authorfullhash}{d723d3ecb7a1c98b8835d87848cc1c6a}
       \field{sortinit}{8}
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
@@ -533,10 +517,10 @@
            familyi={S\bibinitperiod},
            given={Muhammad},
            giveni={M\bibinitperiod}}}%
-        {{hash=a041ada5f42664313ddcbf8ae28cdcbf}{%
+        {{hash=1fb1f40b463145688b365dd2b64b43af}{%
            family={Ibrahim},
            familyi={I\bibinitperiod},
-           given={Muhammad},
+           given={Muhsammad},
            giveni={M\bibinitperiod}}}%
         {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
            family={Abdullah},
@@ -565,11 +549,11 @@
            giveni={A\bibinitperiod}}}%
       }
       \strng{namehash}{d110f0c3eb92fc39d8cd6702557381e3}
-      \strng{fullhash}{65fe0b23f2ae534c52bc9b430932dc75}
+      \strng{fullhash}{57ed158db0d808e5a2227f7045b1ee6a}
       \strng{bibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
-      \strng{authorfullhash}{65fe0b23f2ae534c52bc9b430932dc75}
+      \strng{authorfullhash}{57ed158db0d808e5a2227f7045b1ee6a}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
@@ -668,7 +652,7 @@
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2016 IEEE International Conference on Recent Trends in Electronics, Information & Communication Technology (RTEICT)}
+      \field{booktitle}{2016 IEEE International Conference on Recent Trends in Electronics, Information and Communication Technology (RTEICT)}
       \field{title}{Preprocessing for image classification by convolutional neural networks}
       \field{year}{2016}
       \field{pages}{1778\bibrangedash 1781}

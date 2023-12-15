@@ -3,8 +3,15 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{subcaption}
 %\usepackage{tikz}
-
-\addbibresource{references.bib}
+% \usepackage[
+%     %backend=biber,
+%    % natbib=false,
+%    style=authoryear,
+%     url=false, 
+%     doi=true,
+%     eprint=false
+% ]{biblatex}
+\addbibresource{ref.bib}
 
 \input{content/glossary}
 \input{content/acronyms}
@@ -13,7 +20,7 @@
 \author{Kris Saliba}
 \supervisor{Prof.\ Joseph Bonello}
 % If you have no co-supervisor, remove the below line
-\cosupervisor{Dr John Abela}
+
 \degreename{Bachelor of Science in Information Technology (Honours) (Software Development)}
 \titledate{June 2024}
 
@@ -54,8 +61,9 @@
 \input{content/chapters/2_background/background.tex}
 \input{content/chapters/3_Literature Review/literature_review.tex}
 
-\printbibliography
-\appendix{}
+%\printbibliography
+
+% \appendix
 
 \input{content/appendices/appendix_a.tex}
 \input{content/appendices/appendix_b.tex}

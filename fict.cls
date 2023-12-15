@@ -29,7 +29,7 @@
 \RequirePackage{amsmath}
 
 % Reference style and engine.
-\RequirePackage[bibstyle=ieee,citestyle=numeric-comp]{biblatex}
+\RequirePackage[bibstyle=ieee,citestyle=numeric-comp,backend=biber]{biblatex}
 
 % Table configuration.
 \RequirePackage{tabularray}
