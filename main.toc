@@ -30,10 +30,12 @@
 \contentsline {subsection}{\numberline {1.1.7}Neural Networks}{6}{subsection.1.1.7}%
 \contentsline {subsubsection}{Artificial Neural Networks}{6}{subsection.1.1.7}%
 \contentsline {paragraph}{}{6}{subsection.1.1.7}%
+\contentsline {paragraph}{}{6}{figure.caption.4}%
 \contentsline {subsubsection}{Convolutional Neural Networks}{6}{figure.caption.4}%
 \contentsline {paragraph}{}{6}{figure.caption.4}%
 \contentsline {paragraph}{}{6}{figure.caption.4}%
-\contentsline {subsection}{\numberline {1.1.8}Recurrent Neural Networks}{6}{subsection.1.1.8}%
+\contentsline {subsection}{\numberline {1.1.8}Recurrent Neural Networks}{7}{subsection.1.1.8}%
+\contentsline {paragraph}{}{7}{subsection.1.1.8}%
 \contentsline {section}{\numberline {1.2}Literature Review}{8}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Data Collection}{8}{subsection.1.2.1}%
 \contentsline {paragraph}{}{8}{subsection.1.2.1}%

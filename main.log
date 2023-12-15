@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  15 DEC 2023 17:27
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  15 DEC 2023 18:13
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/thesis/thesis_writeup/main
@@ -1768,7 +1768,7 @@ Package luatex.def Info: content/chapters/2_background/figures/Machine Learning/
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) ("./content/chapters/3_Literature Review/literature_review.tex" [6] [7<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>]) [8
+[6]) ("./content/chapters/3_Literature Review/literature_review.tex" [7<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>]) [8
 
 ]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
@@ -1795,19 +1795,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35333 strings out of 477805
+ 35341 strings out of 477805
  100000,1648299 words of node,token memory allocated
  809 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 113 glue_spec, 8 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 2:766,3:379,4:56,5:805,6:84,7:6206,8:83,9:334,10:21,11:559,12:4
- 54722 multiletter control sequences out of 65536+600000
+   avail lists: 2:767,3:380,4:56,5:811,6:89,7:6213,8:83,9:336,10:21,11:559,12:4
+ 54728 multiletter control sequences out of 65536+600000
  73 fonts using 19784143 bytes
  106i,11n,128p,1239b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (20 pages, 1201222 bytes).
+Output written on main.pdf (20 pages, 1202832 bytes).
 
-PDF statistics: 342 PDF objects out of 1000 (max. 8388607)
- 291 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 131072)
+PDF statistics: 349 PDF objects out of 1000 (max. 8388607)
+ 298 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 131072)
  177 words of extra memory for PDF output out of 10000 (max. 100000000)
 

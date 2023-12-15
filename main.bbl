@@ -510,6 +510,96 @@
       \endverb
       \keyw{Convolutional neural network,Deep learning}
     \endentry
+    \entry{Long-termConvolutionalNeuralNetworksforVisualRecogntion}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=0cca62f586f98049e35080f01c42db36}{%
+           family={Donahue},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0ed9d7369339ea281673c02ece7393e7}{%
+           family={Anne\bibnamedelima Hendricks},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7cd28a25c761aa64034ab0997a2b6ec}{%
+           family={Guadarrama},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=952fe79c8cb105a95b1fa61c4c9d3443}{%
+           family={Rohrbach},
+           familyi={R\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9382331d707ba963cf9f239bb1387441}{%
+           family={Venugopalan},
+           familyi={V\bibinitperiod},
+           given={Subhashini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=df6dd5c482f41a42e672eecaa779020c}{%
+           family={Saenko},
+           familyi={S\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd390470a0554331449ea38c9028908d}
+      \strng{fullhash}{76613017710b0a0cb261ae43083e14e7}
+      \strng{bibnamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authorbibnamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authornamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authorfullhash}{76613017710b0a0cb261ae43083e14e7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Long-term recurrent convolutional networks for visual recognition and description}
+      \field{year}{2015}
+      \field{pages}{2625\bibrangedash 2634}
+      \range{pages}{10}
+    \endentry
+    \entry{learningPriceseTimingWithLSTM}{article}{}
+      \name{author}{3}{}{%
+        {{hash=805aa8bd8070a9c87d87ba3588da7bab}{%
+           family={Gers},
+           familyi={G\bibinitperiod},
+           given={Felix\bibnamedelima A},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=e2ef8b3c99c2f2e819e142044a95c2ef}{%
+           family={Schraudolph},
+           familyi={S\bibinitperiod},
+           given={Nicol\bibnamedelima N},
+           giveni={N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{395eb5a6975d991cae175817c6027ac4}
+      \strng{fullhash}{ccf1b0283ba20c3776bcb8bb9b448a80}
+      \strng{bibnamehash}{ccf1b0283ba20c3776bcb8bb9b448a80}
+      \strng{authorbibnamehash}{ccf1b0283ba20c3776bcb8bb9b448a80}
+      \strng{authornamehash}{395eb5a6975d991cae175817c6027ac4}
+      \strng{authorfullhash}{ccf1b0283ba20c3776bcb8bb9b448a80}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of machine learning research}
+      \field{number}{Aug}
+      \field{title}{Learning precise timing with LSTM recurrent networks}
+      \field{volume}{3}
+      \field{year}{2002}
+      \field{pages}{115\bibrangedash 143}
+      \range{pages}{29}
+    \endentry
     \entry{skatePaper1}{article}{}
       \name{author}{7}{}{%
         {{hash=a696b191c071bfc7102ad4439bf0d8bd}{%
@@ -554,8 +644,8 @@
       \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authorfullhash}{57ed158db0d808e5a2227f7045b1ee6a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEKATRONIKA}
@@ -583,8 +673,8 @@
       \strng{authorbibnamehash}{f9a517f99d8450b78124ea4348265e82}
       \strng{authornamehash}{f9a517f99d8450b78124ea4348265e82}
       \strng{authorfullhash}{f9a517f99d8450b78124ea4348265e82}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM Comput. Surv.}

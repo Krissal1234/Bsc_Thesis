@@ -218,7 +218,7 @@ layers: the Input Layer, the Hidden Layer(s) and the Output Layer
   \label{fig:ANN_Diagram} 
 \end{figure}
 
-
+\paragraph{}
 \subsubsection{Convolutional Neural Networks}
 \paragraph{}
 Convolutional Neural Networks (CNNs), as depicted by
@@ -237,5 +237,17 @@ Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
 designed for sequential data processing. While feed-forward neural networks
 provide static mappings from input to output, RNNs are capable of modelling
 dynamic relationships in sequential data by feeding signals from past timesteps
-back into the network.
+back into the network. However, as we delve deeper into the workings of RNNs, it
+becomes apparent that these networks are not without their constraints. One
+prominent limitation lies in their ability to effectively capture information
+from the past, often constrained to approximately ten sequential 
+time steps. This constraint arises from the challenge of dealing with vanishing or exploding
+gradients during the backpropogation procedure during the processing of extended sequences, as
+discussed in prior works \cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
+\paragraph{}
+To address the limitation that RNNs encounter in capturing long-term
+dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
+introduced \cite{learningPriceseTimingWithLSTM}. LSTM netowrks unlike RNNs are
+capable of capturing dependencies across more than 1,000 time steps depending on
+the network's complexity and are more biolocally credible \cite{UnderstandingLSTM}.
 
