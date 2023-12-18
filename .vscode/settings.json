@@ -1,0 +1,14 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file",
+            "pattern": "content/chapters/2_background/background.tex"
+        }
+    ],
+    "grammarly.config.documentDomain": "academic",
+    "grammarly.config.documentDialect": "british",
+    "grammarly.config.suggestionCategories.conjugationAtStartOfSentence": "on",
+    "grammarly.config.suggestionCategories.informalPronounsAcademic": "on",
+    "grammarly.config.suggestionCategories.passiveVoice": "on"
+}
