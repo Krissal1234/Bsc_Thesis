@@ -1,9 +1,15 @@
-[0] Config.pm:307> INFO - This is Biber 2.17
-[1] Config.pm:310> INFO - Logfile is 'main.blg'
-[152] biber:340> INFO - === Mon Dec 18, 2023, 21:46:19
-[177] Biber.pm:418> INFO - Reading 'main.bcf'
-[280] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[303] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[303] bbl.pm:757> INFO - Output to main.bbl
-[304] Biber.pm:130> WARN - The file 'main.bcf' does not contain any citations!
-[304] Biber.pm:132> INFO - WARNINGS: 1
+[2] Config.pm:307> INFO - This is Biber 2.17
+[2] Config.pm:310> INFO - Logfile is 'main.blg'
+[220] biber:340> INFO - === Tue Dec 19, 2023, 21:16:37
+[253] Biber.pm:418> INFO - Reading 'main.bcf'
+[404] Biber.pm:972> INFO - Found 3 citekeys in bib section 0
+[433] Biber.pm:4383> INFO - Processing section 0
+[456] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
+[461] bibtex.pm:1713> INFO - LaTeX decoding ...
+[498] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
+[586] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[587] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[587] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[587] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[602] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[605] bbl.pm:757> INFO - Output to main.bbl

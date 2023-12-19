@@ -16,5 +16,72 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{SkateboardingEncyclobeadia}{misc}{}
+      \list{publisher}{1}{%
+        {Encyclopaedia Britannica, inc.}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Encyclopaedia Britannica}
+      \field{title}{Encyclopaedia Britannica}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.britannica.com/sports/skateboarding
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/sports/skateboarding
+      \endverb
+    \endentry
+    \entry{SkatebaordingOlimpics}{misc}{}
+      \list{publisher}{1}{%
+        {Chloe Merrell}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{One year on: How skateboarding's olympic debut changed the games}
+      \field{title}{One year on: How skateboarding's olympic debut changed the games 2022}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://olympics.com/en/news/one-year-on-skateboarding-olympic-debut-feature
+      \endverb
+      \verb{url}
+      \verb https://olympics.com/en/news/one-year-on-skateboarding-olympic-debut-feature
+      \endverb
+    \endentry
+    \entry{skateStyles}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=79ad981277b0595d7fd8d81e52e04d86}{%
+           family={Foley},
+           familyi={F\bibinitperiod},
+           given={Zane},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{fullhash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{bibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authorbibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authornamehash}{79ad981277b0595d7fd8d81e52e04d86}
+      \strng{authorfullhash}{79ad981277b0595d7fd8d81e52e04d86}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Goskate.com - Top Articles}
+      \field{title}{Vert, Street, park - what are the different styles of skateboarding?}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
+      \endverb
+      \verb{url}
+      \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
