@@ -2351,9 +2351,17 @@
     <bcf:citekey order="1">SkateboardingEncyclobeadia</bcf:citekey>
     <bcf:citekey order="2">SkatebaordingOlimpics</bcf:citekey>
     <bcf:citekey order="3">skateStyles</bcf:citekey>
-    <bcf:citekey order="4">SkateboardingEncyclobeadia</bcf:citekey>
-    <bcf:citekey order="5">SkatebaordingOlimpics</bcf:citekey>
-    <bcf:citekey order="6">skateStyles</bcf:citekey>
+    <bcf:citekey order="4">skateboardClassificationTransferLearningPipelinesAccelermetry</bcf:citekey>
+    <bcf:citekey order="5">skateboardTrickClassifierUsingAccelerometryAndML</bcf:citekey>
+    <bcf:citekey order="6">skatePaper1</bcf:citekey>
+    <bcf:citekey order="7">SkateboardAIPaper</bcf:citekey>
+    <bcf:citekey order="8">SkateboardingEncyclobeadia</bcf:citekey>
+    <bcf:citekey order="9">SkatebaordingOlimpics</bcf:citekey>
+    <bcf:citekey order="10">skateStyles</bcf:citekey>
+    <bcf:citekey order="11">skateboardClassificationTransferLearningPipelinesAccelermetry</bcf:citekey>
+    <bcf:citekey order="12">skateboardTrickClassifierUsingAccelerometryAndML</bcf:citekey>
+    <bcf:citekey order="13">skatePaper1</bcf:citekey>
+    <bcf:citekey order="14">SkateboardAIPaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
