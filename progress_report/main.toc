@@ -5,6 +5,7 @@
 \contentsline {paragraph}{}{1}{chapter*.1}%
 \contentsline {section}{\numberline {0.1}Brief and represented literature review}{2}{section.0.1}%
 \contentsline {subsection}{\numberline {0.1.1}Accelerometry approach}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Computer Vision appraoch}{2}{subsection.0.1.2}%
 \contentsline {section}{\numberline {0.2}Planned methodologies}{2}{section.0.2}%
 \contentsline {section}{\numberline {0.3}Problem Specification}{2}{section.0.3}%
 \contentsline {section}{\numberline {0.4}Project timeline}{3}{section.0.4}%
