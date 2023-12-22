@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  21 DEC 2023 17:24
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  22 DEC 2023 17:37
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writeup/thesis_report/main
@@ -1804,7 +1804,7 @@ Here is how much of LuaTeX's memory you used:
  73 fonts using 19784143 bytes
  106i,11n,128p,1257b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (20 pages, 1202481 bytes).
+Output written on main.pdf (20 pages, 1202479 bytes).
 
 PDF statistics: 344 PDF objects out of 1000 (max. 8388607)
  293 compressed objects within 3 object streams

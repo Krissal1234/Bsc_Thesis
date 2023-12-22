@@ -81,6 +81,111 @@
       \verb https://www.goskate.com/top/skateboarding-styles-full-guide/
       \endverb
     \endentry
+    \entry{3DhumanActionDetectionForHealthCareSystems}{article}{}
+      \name{author}{8}{}{%
+        {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8efb16654df241d885e2e492a3eda10a}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4d404b38599068c85101065765ac0b22}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Ruiqi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5c6187f76c8b6a33cc83fafab103e9ea}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chenghao},
+           giveni={C\bibinitperiod}}}%
+        {{hash=59351225081d558db2681902989028de}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Xuyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=db724cd88fdebab3b4226fd610d90694}{%
+           family={Rong},
+           familyi={R\bibinitperiod},
+           given={Yitong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=19989206bcad86ab682a60b88347e80f}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Xiaoyang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=edf3a58fceeca49e576ca4fbd644327c}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{91baac1b4d40c585ca669bceba42a8c3}
+      \strng{fullhash}{b2a28e5b159ee6342015c0c428495ade}
+      \strng{bibnamehash}{91baac1b4d40c585ca669bceba42a8c3}
+      \strng{authorbibnamehash}{91baac1b4d40c585ca669bceba42a8c3}
+      \strng{authornamehash}{91baac1b4d40c585ca669bceba42a8c3}
+      \strng{authorfullhash}{b2a28e5b159ee6342015c0c428495ade}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
+      \field{number}{2}
+      \field{title}{MC-LSTM: Real-Time 3D Human Action Detection System for Intelligent Healthcare Applications}
+      \field{volume}{15}
+      \field{year}{2021}
+      \field{pages}{259\bibrangedash 269}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/TBCAS.2021.3064841
+      \endverb
+    \endentry
+    \entry{HumanActivityRecognitionSecurityAndMonitoring}{article}{}
+      \name{author}{3}{}{%
+        {{hash=dd43fc292763156fabf6847f7dc365b7}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=55242d2a60270145342841e4d4238da0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=4793bab1e6c3457575722595278924aa}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Jeffrey\bibnamedelima Junfeng},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2daafa8197407a833deaaf4ba4740915}
+      \strng{fullhash}{07a4bde70fe56ac6ef2e14dd3c41cec4}
+      \strng{bibnamehash}{07a4bde70fe56ac6ef2e14dd3c41cec4}
+      \strng{authorbibnamehash}{07a4bde70fe56ac6ef2e14dd3c41cec4}
+      \strng{authornamehash}{2daafa8197407a833deaaf4ba4740915}
+      \strng{authorfullhash}{07a4bde70fe56ac6ef2e14dd3c41cec4}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Knowledge and Data Engineering}
+      \field{number}{8}
+      \field{title}{Sensor-Based Abnormal Human-Activity Detection}
+      \field{volume}{20}
+      \field{year}{2008}
+      \field{pages}{1082\bibrangedash 1090}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TKDE.2007.1042
+      \endverb
+    \endentry
     \entry{skateboardClassificationTransferLearningPipelinesAccelermetry}{article}{}
       \name{author}{8}{}{%
         {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
@@ -133,8 +238,8 @@
       \strng{authorbibnamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authornamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authorfullhash}{5611b08270c4c6217ccac6cf0a32343b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{PeerJ Computer Science}
@@ -176,8 +281,8 @@
       \strng{authorbibnamehash}{aa72580da8bed443b51e6554465225a8}
       \strng{authornamehash}{6dfcb9d4ddf68742e59e4ee105c678a1}
       \strng{authorfullhash}{aa72580da8bed443b51e6554465225a8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Research on Biomedical Engineering}
@@ -231,8 +336,8 @@
       \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authorfullhash}{57ed158db0d808e5a2227f7045b1ee6a}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEKATRONIKA}
@@ -260,8 +365,8 @@
       \strng{authorbibnamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authornamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authorfullhash}{3fa1fec0b6898d4af1813a46b6e7b033}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
@@ -273,6 +378,95 @@
       \range{pages}{2}
       \verb{doi}
       \verb 10.1609/aaai.v37i13.26952
+      \endverb
+    \endentry
+    \entry{DataAugmentationCanImproveRobustness}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=db5eea2c6cb1aa05815994d41208a597}{%
+           family={Rebuffi},
+           familyi={R\bibinitperiod},
+           given={Sylvestre-Alvise},
+           giveni={S\bibinithyphendelim A\bibinitperiod}}}%
+        {{hash=1684b384584547bc4441639093dc0533}{%
+           family={Gowal},
+           familyi={G\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1ff7f3d37c8af34fc7b9f2b37553469a}{%
+           family={Calian},
+           familyi={C\bibinitperiod},
+           given={Dan\bibnamedelima Andrei},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=9bc38a0dbd0fbb761c21b6ef90df9af4}{%
+           family={Stimberg},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ae47e9ef8cec05d24a2c86d7821ff291}{%
+           family={Wiles},
+           familyi={W\bibinitperiod},
+           given={Olivia},
+           giveni={O\bibinitperiod}}}%
+        {{hash=56e2026d6344d0a7cf682fd4d3528f15}{%
+           family={Mann},
+           familyi={M\bibinitperiod},
+           given={Timothy\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=6cb5af0e649387de5bbfdb150cc7a786}{%
+           family={Ranzato},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02854da982edf66ffa27f4fc1c738779}{%
+           family={Beygelzimer},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5e4dc483044b6dbd4496a818b8b6c67a}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=12f9558e0c25864defe6eaed94a9011b}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={P.S.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3d379bd6370f69ebc79dc5337ed96d13}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={J.\bibnamedelimi Wortman},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{00f74cf1eff75485adc8eedab3a596fc}
+      \strng{fullhash}{8248a522b3fffb9857d16a40e5106e30}
+      \strng{bibnamehash}{8248a522b3fffb9857d16a40e5106e30}
+      \strng{authorbibnamehash}{8248a522b3fffb9857d16a40e5106e30}
+      \strng{authornamehash}{00f74cf1eff75485adc8eedab3a596fc}
+      \strng{authorfullhash}{8248a522b3fffb9857d16a40e5106e30}
+      \strng{editorbibnamehash}{ad1ea98aa644fe4cbc55fbe24d1f78a9}
+      \strng{editornamehash}{6013a44c5dec47e5e51fdd72b3f8b5eb}
+      \strng{editorfullhash}{ad1ea98aa644fe4cbc55fbe24d1f78a9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Data Augmentation Can Improve Robustness}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{pages}{29935\bibrangedash 29948}
+      \range{pages}{14}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/file/fb4c48608ce8825b558ccf07169a3421-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/file/fb4c48608ce8825b558ccf07169a3421-Paper.pdf
       \endverb
     \endentry
   \enddatalist

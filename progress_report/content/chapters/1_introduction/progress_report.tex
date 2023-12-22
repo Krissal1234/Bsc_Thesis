@@ -77,37 +77,6 @@ Skateboarders continually innovate and come up with new trick combinations,
 contributing to the dynamic nature of the sport.
 \paragraph{}
 
-
-\section*{General Aims and Goals}
-The primary goal of this project is to design and develop a dependable
-Artificial Intelligence (AI) model that can identify various skateboard tricks
-directly from video. An initial focus will be placed on the recognition three
-different tricks namely, kickflips, ollies and shuvits. To reach this goal the
-appropriate ML techniques must be utilised to overcome basic computer vision
-challenges, such as varying camera angles, lighting conditions and the
-fast-paced nature of skateboard tricks. By addressing these challenges, this
-project aims to establish a usable tool that skateboarders, coaches, and
-skateboard competitions can use.
-
-\section{Brief and represented literature review} 
-There has been very little research in recent years on the development of a
-skateboard trick classifier using Artificial Intelligence (AI). In this emergent
-field, two primary techniques have fostered prominence among researchers. The
-first technique involves utilising signals obtained from skateboard-mounted
-accelerometers or signals that have been artificially generated based on
-findings of prior studies to reproduce tricks. These signals are then fed into a
-study-dependent model for classification, as outlined in
-\cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
-\cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
-employs computer vision techniques,leveraging video footage of skateboard tricks
-to train and refine models for accurate trick identification, as depicted by the
-studies \cite{skatePaper1} and \cite{SkateboardAIPaper}.
-
-\subsection{Accelerometry approach}
-\subsection{Computer Vision appraoch}
-
-\section{Planned methodologies}
- 
 \section{Problem Specification}
 
 The current lack of a digital and objective mechanism for identifying skateboard
@@ -120,5 +89,79 @@ objective method, obstructs skaters' ability to receive real-time feedback, whic
 could be beneficial for skill development. The advent of an AI-based system that
 delivers a dependable and efficient method of trick recognition will both
 revolutionise this aspect and contribute to the lack of study in this area. 
+
+
+\section*{General Aims and Objectives}
+The aims and objectives are to design and develop a dependable
+Artificial Intelligence (AI) model that can identify various skateboard tricks
+directly from videos. An initial focus will be placed on the recognition three
+different tricks namely, kickflips, ollies and shuvits. To reach this goal the
+appropriate ML techniques must be utilised to overcome basic computer vision
+challenges, such as varying camera angles, lighting conditions and the
+fast-paced nature of skateboard tricks. By addressing these challenges, this
+project aims to establish a usable tool that skateboarders, coaches, and
+skateboard competitions can use.
+\subsection{List of deliverables}
+\begin{itemize}
+    \item The 
+    \item A trained model with favourable accuracy
+    \item The results of the experiments and their visualisations
+\end{itemize}
+
+\section{Brief overview of the literature} 
+
+Recent advancements in the ability to recognise human actions in videos have
+significantly impacted various fields, ranging from the medical sector
+\cite{3DhumanActionDetectionForHealthCareSystems}, to security monitoring
+\cite{HumanActivityRecognitionSecurityAndMonitoring}. Particularly noteworthy is
+its application in the development of an AI-based skateboard trick classifier,
+an area that has seen limited research.
+\paragraph{}
+
+In this emergent field,leveraging the techniques of activity recognition from
+video has led to two primary techniques among researchers. The first technique
+involves utilising signals obtained from skateboard-mounted accelerometers or
+signals that have been artificially generated based on findings of prior studies
+as sample data. These signals are then fed into a study-dependent model for
+classification, as outlined in
+\cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
+\cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
+employs computer vision techniques,leveraging video footage of skateboard tricks
+to train and refine models for accurate trick identification, as depicted by the
+studies \cite{skatePaper1} and \cite{SkateboardAIPaper}.
+
+\subsection{Accelerometry approach}
+\subsection{Computer Vision approach}
+
+The paper \cite{skatePaper1} leverages a custom data set, comprising videos
+capturing the execution of five distinct skateboard tricks, each attempted five
+times. Each video spans a duration of two to three seconds, yielding a total of
+750 images by extracting 30 frames per video. This study made use of data
+augmentation techniques to further expand their dataset. Consequently, they
+introduced an additional 2,250 images, achieving a total of 3,000 images in
+their data set. On the other hand, Chen \cite{SkateboardAIPaper} compiled a
+comprehensive data set by collecting videos from multiple platforms including
+YouTube, Twitter and Instagram. Furthermore, the researcher trained the model
+using 15 fundamental tricks commonly observed in competitive settings. They
+collected 50 videos per trick, summing up to a total number of 750 videos. Of
+these, 45 videos per trick were allocated for training, and the remaining 5 were
+reserved for validation.
+
+When dealing with a relatively limited dataset, data augmentation techniques,
+such as flipping, rotating, scaling and colour manipulation might be used. Such
+techniques not only enhance the size of the original dataset but also lower the
+likelihood of the model overfitting \cite{DataAugmentationCanImproveRobustness}.
+The study \cite{skatePaper1} utilises three rotation augmentation techniques:
+horizontal rotation, positive 90\textdegree rotation and negative 90\textdegree
+rotation.
+
+Chen,\cite{SkateboardAIPaper} 
+
+
+
+
+\section{Planned methodologies}
+
+ 
 
 \section{Project timeline}
