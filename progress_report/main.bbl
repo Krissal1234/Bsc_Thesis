@@ -469,6 +469,75 @@
       \verb https://proceedings.neurips.cc/paper_files/paper/2021/file/fb4c48608ce8825b558ccf07169a3421-Paper.pdf
       \endverb
     \endentry
+    \entry{UnderstandingLSTM}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=ca20c4cfdf776c7f6192e5d69e4473e5}{%
+           family={Staudemeyer},
+           familyi={S\bibinitperiod},
+           given={Ralf\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4e0903aed63275090cbf31400ae4d6d3}{%
+           family={Morris},
+           familyi={M\bibinitperiod},
+           given={Eric\bibnamedelima Rothstein},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{fullhash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{bibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authorbibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authornamehash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \strng{authorfullhash}{ca6e0dde7f02382c2f3b5db625678d57}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.NE}
+      \field{eprinttype}{arXiv}
+      \field{title}{Understanding LSTM -- a tutorial into Long Short-Term Memory Recurrent Neural Networks}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1909.09586
+      \endverb
+    \endentry
+    \entry{lightningdrop2020skateboardml}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=8058a0e57c9f7e975814fa232c49b5be}{%
+           family={LightningDrop},
+           familyi={L\bibinitperiod}}}%
+        {{hash=00ca2f3aec7fd0f59d04154070c51ab0}{%
+           family={Fitzgerald},
+           familyi={F\bibinitperiod},
+           given={Clark},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{6d30965641f5afcfc5c997423e2eea1b}
+      \strng{fullhash}{6d30965641f5afcfc5c997423e2eea1b}
+      \strng{bibnamehash}{6d30965641f5afcfc5c997423e2eea1b}
+      \strng{authorbibnamehash}{6d30965641f5afcfc5c997423e2eea1b}
+      \strng{authornamehash}{6d30965641f5afcfc5c997423e2eea1b}
+      \strng{authorfullhash}{6d30965641f5afcfc5c997423e2eea1b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{title}{SkateboardML 1.0}
+      \field{version}{1.0}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.5281/zenodo.3986905
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.5281/zenodo.3986905
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.5281/zenodo.3986905
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

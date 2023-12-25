@@ -79,22 +79,22 @@ contributing to the dynamic nature of the sport.
 
 \section{Problem Specification}
 
-The current lack of a digital and objective mechanism for identifying skateboard
-tricks during competitions and practice sessions is a significant issue. Judges
-in live-streamed skateboarding competitions currently announce tricks verbally, without the
-support of a digital overlay to display the performed trick for the viewers.
-This reliance on subjective judgement can lead to scoring disparities and
-conflicts, weakening competition fairness. Furthermore,this absence of an
-objective method, obstructs skaters' ability to receive real-time feedback, which
-could be beneficial for skill development. The advent of an AI-based system that
-delivers a dependable and efficient method of trick recognition will both
-revolutionise this aspect and contribute to the lack of study in this area. 
+In skateboarding competitions, the current method of identifying tricks relies
+heavily on judges verabally stating stating them during live broadcasts. This
+approach lacks a digital overlay that could display the performed trick for the
+viewers, leading to a reliance on subjective judgement. Such subjectivity can
+lead to scoring disparities and conflicts, undermining competition fairness.
+Furthermore,this absence of an objective method, obstructs skaters' ability to
+receive real-time feedback, which could be beneficial for skill development. The
+advent of an AI-based system that delivers a dependable and efficient method of
+trick recognition will both revolutionise this aspect and contribute to the lack
+of study in this area. 
 
 
 \section*{General Aims and Objectives}
 The aims and objectives are to design and develop a dependable
 Artificial Intelligence (AI) model that can identify various skateboard tricks
-directly from videos. An initial focus will be placed on the recognition three
+directly from videos. An initial focus will be placed on the recognition of three
 different tricks namely, kickflips, ollies and shuvits. To reach this goal the
 appropriate ML techniques must be utilised to overcome basic computer vision
 challenges, such as varying camera angles, lighting conditions and the
@@ -121,8 +121,8 @@ an area that has seen limited research.
 In this emergent field,leveraging the techniques of activity recognition from
 video has led to two primary techniques among researchers. The first technique
 involves utilising signals obtained from skateboard-mounted accelerometers or
-signals that have been artificially generated based on findings of prior studies
-as sample data. These signals are then fed into a study-dependent model for
+signals that have been artificially generated based on findings of prior
+studies. These signals are then fed into a study-dependent model for
 classification, as outlined in
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
@@ -147,20 +147,46 @@ collected 50 videos per trick, summing up to a total number of 750 videos. Of
 these, 45 videos per trick were allocated for training, and the remaining 5 were
 reserved for validation.
 
-When dealing with a relatively limited dataset, data augmentation techniques,
-such as flipping, rotating, scaling and colour manipulation might be used. Such
-techniques not only enhance the size of the original dataset but also lower the
-likelihood of the model overfitting \cite{DataAugmentationCanImproveRobustness}.
-The study \cite{skatePaper1} utilises three rotation augmentation techniques:
-horizontal rotation, positive 90\textdegree rotation and negative 90\textdegree
-rotation.
+Data augmentation techniques are popular amongst studies with relatively limited
+datasets. Techniques such as such as flipping, rotating, scaling and colour
+manipulation not only enhance the size of the original dataset but also lower
+the likelihood of the model overfitting
+\cite{DataAugmentationCanImproveRobustness}. The study \cite{skatePaper1}
+utilises three rotation augmentation techniques: horizontal rotation, positive
+90\textdegree rotation and negative 90\textdegree rotation.
+\paragraph{}
+Recurrent Neural Networks (RNNs) and Long Short-Term memory networks (LSTMs) are
+popular architecures due to their capabilities in modelling the dynamic
+relationships in sequential data \cite{UnderstandingLSTM}. In the student
+abstract by Hanciao Chen \cite{SkateboardAIPaper}, extensive experimentation is
+conducted using diverse models, exploring various combinations of CNN-LSTM and
+CNN-BiLSTM including the integration of attention and transfer learning
+approaches. This study further documents and analyzes important metrics such as
+training time, training accuracy and validation accuracy for each model
+experimented on. Among these, the top three models that stood out in terms of
+validation accuracy were the ResNet50 with Attention and BiLSTM (84\%), ResNet50
+with BiLSTM (81\%) and ResNet50 with LSTM (80\%).Chen's study provides valuable
+insight on the applicaiton of diverse models in the application of activity
+recognition in skateboarding.
 
-Chen,\cite{SkateboardAIPaper} 
+%Talk about the other paper
 
 
 
 
 \section{Planned methodologies}
+
+In terms of data collection, this project will utilise the open source datasets
+provided by \cite{lightningdrop2020skateboardml} and \cite{SkateboardAIPaper}.
+Moreover, to ensure an unbiased and rigorous evaluation of the model's
+performance, this study will incorporate a dataset, consisting of skateboard
+tricks performed and recorded specifically for this study.
+
+Initially w
+by 
+
+
+
 
  
 

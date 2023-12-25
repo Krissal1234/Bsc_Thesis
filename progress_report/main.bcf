@@ -2361,17 +2361,22 @@
     <bcf:citekey order="11">SkateboardAIPaper</bcf:citekey>
     <bcf:citekey order="12">DataAugmentationCanImproveRobustness</bcf:citekey>
     <bcf:citekey order="13">skatePaper1</bcf:citekey>
-    <bcf:citekey order="14">SkateboardAIPaper</bcf:citekey>
-    <bcf:citekey order="15">SkateboardingEncyclobeadia</bcf:citekey>
-    <bcf:citekey order="16">SkatebaordingOlimpics</bcf:citekey>
-    <bcf:citekey order="17">skateStyles</bcf:citekey>
-    <bcf:citekey order="18">3DhumanActionDetectionForHealthCareSystems</bcf:citekey>
-    <bcf:citekey order="19">HumanActivityRecognitionSecurityAndMonitoring</bcf:citekey>
-    <bcf:citekey order="20">skateboardClassificationTransferLearningPipelinesAccelermetry</bcf:citekey>
-    <bcf:citekey order="21">skateboardTrickClassifierUsingAccelerometryAndML</bcf:citekey>
-    <bcf:citekey order="22">skatePaper1</bcf:citekey>
-    <bcf:citekey order="23">SkateboardAIPaper</bcf:citekey>
-    <bcf:citekey order="24">DataAugmentationCanImproveRobustness</bcf:citekey>
+    <bcf:citekey order="14">UnderstandingLSTM</bcf:citekey>
+    <bcf:citekey order="15">SkateboardAIPaper</bcf:citekey>
+    <bcf:citekey order="16">lightningdrop2020skateboardml</bcf:citekey>
+    <bcf:citekey order="17">SkateboardAIPaper</bcf:citekey>
+    <bcf:citekey order="18">SkateboardingEncyclobeadia</bcf:citekey>
+    <bcf:citekey order="19">SkatebaordingOlimpics</bcf:citekey>
+    <bcf:citekey order="20">skateStyles</bcf:citekey>
+    <bcf:citekey order="21">3DhumanActionDetectionForHealthCareSystems</bcf:citekey>
+    <bcf:citekey order="22">HumanActivityRecognitionSecurityAndMonitoring</bcf:citekey>
+    <bcf:citekey order="23">skateboardClassificationTransferLearningPipelinesAccelermetry</bcf:citekey>
+    <bcf:citekey order="24">skateboardTrickClassifierUsingAccelerometryAndML</bcf:citekey>
+    <bcf:citekey order="25">skatePaper1</bcf:citekey>
+    <bcf:citekey order="26">SkateboardAIPaper</bcf:citekey>
+    <bcf:citekey order="27">DataAugmentationCanImproveRobustness</bcf:citekey>
+    <bcf:citekey order="28">UnderstandingLSTM</bcf:citekey>
+    <bcf:citekey order="29">lightningdrop2020skateboardml</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

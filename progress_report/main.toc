@@ -9,5 +9,6 @@
 \contentsline {paragraph}{}{3}{section.0.2}%
 \contentsline {subsection}{\numberline {0.2.1}Accelerometry approach}{3}{subsection.0.2.1}%
 \contentsline {subsection}{\numberline {0.2.2}Computer Vision approach}{3}{subsection.0.2.2}%
-\contentsline {section}{\numberline {0.3}Planned methodologies}{3}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Project timeline}{3}{section.0.4}%
+\contentsline {paragraph}{}{3}{subsection.0.2.2}%
+\contentsline {section}{\numberline {0.3}Planned methodologies}{4}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Project timeline}{4}{section.0.4}%
