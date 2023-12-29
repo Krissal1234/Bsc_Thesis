@@ -37,6 +37,8 @@
 %  - Thesis statement
  
 \section*{Introduction}
+\subsection*{Introduction to Skateboarding and its Evolution}
+\paragraph{}
 Skateboarding dates back to the 1940s when handmade skateboards first appeared
 \cite{SkateboardingEncyclobeadia}. It has since developed into a worldwide
 phenomenon, with its popularity skyrocketing, after gaining recognition as an
@@ -54,84 +56,70 @@ utilising a diverse array of obstacles that can be found outdoors, including
 stairs, rails, ledges, gaps or flat ground for skaters to showcase their
 creativity. \cite{skateStyles}.
 
+
+\subsection*{Introduction to the Area}
 \paragraph{}
-Skateboard tricks are the heart and soul of skateboarding. These tricks
-originate from the dynamic orchestration of rotations and revolutions of a
-skateboard along various axes emphasising the significance of precise placement
-of a skateboarder's feet to initiate these rotations. These tricks serve as
-excellent examples of how the skateboarder's body and skateboard work in perfect
-harmony. Some common skateboard tricks include:
+The current method of identifying tricks in skateboard competitions relies
+heavily on judges verabally stating them during live broadcasts. This approach
+lacks a digital overlay that could display the performed trick for the viewers,
+leading to a reliance on subjective judgement. Such subjectivity can lead to
+scoring disparities and conflicts, undermining competition fairness.
+Furthermore, this absence of an objective method of identification, obstructs
+skaters' ability to receive real-time feedback, which could be beneficial for
+skill development. The advent of an AI-based system that delivers a dependable
+and efficient method of trick recognition will both revolutionise this aspect
+and contribute to the lack of study in this area. 
 
-\begin{itemize}
-    \item \textbf{Ollie:} One of the first tricks beginners learn. Where the
-    skateboarder pops the tail of the board while sliding their foot across the
-    board, causing the board to level out in the air, used to jump over
-    obstacles.
-    \item \textbf{Kickflip:} A trick where the skateboarder flips the board
-    under their feet while jumping, making it spin 360\textdegree around the
-    x-axis.
-    \item \textbf{360 kickflip:} A combination of a kickflip and a
-    360\textdegree board rotation around the y-axis.
-\end{itemize}
-Skateboarders continually innovate and come up with new trick combinations,
-contributing to the dynamic nature of the sport.
-\paragraph{}
-
-\section{Problem Specification}
-
-In skateboarding competitions, the current method of identifying tricks relies
-heavily on judges verabally stating stating them during live broadcasts. This
-approach lacks a digital overlay that could display the performed trick for the
-viewers, leading to a reliance on subjective judgement. Such subjectivity can
-lead to scoring disparities and conflicts, undermining competition fairness.
-Furthermore,this absence of an objective method, obstructs skaters' ability to
-receive real-time feedback, which could be beneficial for skill development. The
-advent of an AI-based system that delivers a dependable and efficient method of
-trick recognition will both revolutionise this aspect and contribute to the lack
-of study in this area. 
+\section*{Scope and Motivation}
 
 
-\section*{General Aims and Objectives}
-The aims and objectives are to design and develop a dependable
-Artificial Intelligence (AI) model that can identify various skateboard tricks
-directly from videos. An initial focus will be placed on the recognition of three
-different tricks namely, kickflips, ollies and shuvits. To reach this goal the
-appropriate ML techniques must be utilised to overcome basic computer vision
-challenges, such as varying camera angles, lighting conditions and the
-fast-paced nature of skateboard tricks. By addressing these challenges, this
-project aims to establish a usable tool that skateboarders, coaches, and
-skateboard competitions can use.
-\subsection{List of deliverables}
-\begin{itemize}
-    \item The 
-    \item A trained model with favourable accuracy
-    \item The results of the experiments and their visualisations
-\end{itemize}
 
-\section{Brief overview of the literature} 
+\section*{Brief overview of the literature} 
 
 Recent advancements in the ability to recognise human actions in videos have
-significantly impacted various fields, ranging from the medical sector
-\cite{3DhumanActionDetectionForHealthCareSystems}, to security monitoring
+significantly impacted various fields, ranging from the medical sector to
+surveillance systems, \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}. Particularly noteworthy is
 its application in the development of an AI-based skateboard trick classifier,
 an area that has seen limited research.
 \paragraph{}
 
-In this emergent field,leveraging the techniques of activity recognition from
-video has led to two primary techniques among researchers. The first technique
+In this emergent field, leveraging the techniques of activity recognition from
+video has led to two primary methodologies among researchers. The first technique
 involves utilising signals obtained from skateboard-mounted accelerometers or
 signals that have been artificially generated based on findings of prior
 studies. These signals are then fed into a study-dependent model for
 classification, as outlined in
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
-employs computer vision techniques,leveraging video footage of skateboard tricks
+employs computer vision techniques, leveraging video footage of skateboard tricks
 to train and refine models for accurate trick identification, as depicted by the
 studies \cite{skatePaper1} and \cite{SkateboardAIPaper}.
 
-\subsection{Accelerometry approach}
-\subsection{Computer Vision approach}
+\subsection*{Accelerometry approach}
+The study \cite{skateboardClassificationTransferLearningPipelinesAccelermetry},
+makes use of a custom dataset comprising of six skateboard tricks most commonly
+executed in competitive events. Amateur skateboarders performed each trick five
+times on a modified skateboard equipped with an Intertial Measurement Unit (IMU)
+to record the signals produced. The researchers capture six
+signals for each trick, including linear accelerations along the x, y, and z
+axes (aX, aY, aZ) and angular accelerations along the same axes (gX, gY, gZ).
+They then opt for the unique appraoch of assembling all six signals into a
+single image corresponding to one trick, employing two input image transformations,
+raw transformations (RAW) and Continuous Wavelet Transform (CWT).
+% go on and talk about results ---CHECK becuase results are likely not accurate
+
+\paragraph{}
+On the other hand, in the study
+\cite{skateboardTrickClassifierUsingAccelerometryAndML} researchers utilised
+MATLAB 2015 and Signal Processing Toolbox to artificially generate 543 signals,
+based on prior research in this area. These signals were then categorised into five
+distinct classes representing different skateboard tricks, each with a varied
+number of samples ranging from 30 to 50 per class, across three axes (X,Y and
+Z). 
+
+
+\subsection*{Computer Vision approach}
 
 The paper \cite{skatePaper1} leverages a custom data set, comprising videos
 capturing the execution of five distinct skateboard tricks, each attempted five
@@ -147,6 +135,7 @@ collected 50 videos per trick, summing up to a total number of 750 videos. Of
 these, 45 videos per trick were allocated for training, and the remaining 5 were
 reserved for validation.
 
+\paragraph{}
 Data augmentation techniques are popular amongst studies with relatively limited
 datasets. Techniques such as such as flipping, rotating, scaling and colour
 manipulation not only enhance the size of the original dataset but also lower
@@ -154,6 +143,7 @@ the likelihood of the model overfitting
 \cite{DataAugmentationCanImproveRobustness}. The study \cite{skatePaper1}
 utilises three rotation augmentation techniques: horizontal rotation, positive
 90\textdegree rotation and negative 90\textdegree rotation.
+
 \paragraph{}
 Recurrent Neural Networks (RNNs) and Long Short-Term memory networks (LSTMs) are
 popular architecures due to their capabilities in modelling the dynamic
@@ -165,29 +155,83 @@ approaches. This study further documents and analyzes important metrics such as
 training time, training accuracy and validation accuracy for each model
 experimented on. Among these, the top three models that stood out in terms of
 validation accuracy were the ResNet50 with Attention and BiLSTM (84\%), ResNet50
-with BiLSTM (81\%) and ResNet50 with LSTM (80\%).Chen's study provides valuable
+with BiLSTM (81\%) and ResNet50 with LSTM (80\%). Chen's study provides valuable
 insight on the applicaiton of diverse models in the application of activity
 recognition in skateboarding.
 
-%Talk about the other paper
+
+\section*{Aims and Objectives}
+\paragraph{}
+The aims and objectives of this project are to design and develop a dependable
+Artificial Intelligence (AI) model that can identify various skateboard tricks
+directly from videos. An initial focus will be placed on the recognition of three
+distinct tricks namely, kickflips, ollies and shuvits. To reach this goal the
+appropriate ML techniques must be utilised to overcome basic computer vision
+challenges, such as varying camera angles, lighting conditions and the
+fast-paced nature of skateboard tricks. By addressing these challenges, this
+project aims to establish a usable tool that can be used by skateboarders, coaches, and
+skateboard competitions.
 
 
+\section*{List of deliverables}
+\begin{itemize}
+    \item The prototype of the AI model
+    \item A trained model with a accuracy metrics
+    \item Documentation of experiments and their visualisations
+\end{itemize}
 
 
-\section{Planned methodologies}
+\section*{Methodology and Evaluation Strategy}
+\paragraph{}
+In terms of data collection, this project will utilise a combination of the open
+source datasets provided by \cite{lightningdrop2020skateboardml} and
+\cite{SkateboardAIPaper}. Moreover, to ensure an unbiased and rigorous
+evaluation of the model's performance, this study will incorporate a dataset,
+consisting of skateboard tricks performed and recorded specifically for this
+study. 
+\paragraph{}
+In the course of my thesis research, I initially began by experimenting with
+various preprocessing techniques such as applying frame extraction to videos and
+employing object detection to selectively crop each frame, focusing on
+encapsulating only the skater. This approach was designed to remove any
+unneccessary overhead in each frame that might otherwise impede the learning
+process. 
+\paragraph{}
+I commenced the development phase using Python, opting for YOLO (You Only Look
+Once) for the object detection framework. The YOLO training process involved
+gathering a diverse dataset and meticulously labelling each image featuring a
+skateboarder by drawing an accurate bounding box around each subject. The trined
+object detection model takes an image as an input and returns the coordinates of
+the bounding box encasing the estimated position of the skater in frame, used to
+crop the image accordingly. 
 
-In terms of data collection, this project will utilise the open source datasets
-provided by \cite{lightningdrop2020skateboardml} and \cite{SkateboardAIPaper}.
-Moreover, to ensure an unbiased and rigorous evaluation of the model's
-performance, this study will incorporate a dataset, consisting of skateboard
-tricks performed and recorded specifically for this study.
+\paragraph{}
+After completing the experimentation phase with various preprocessing techniques
+and creating a temporary preprocessing mechanism, I shifted my focus towards the
+development of a baseline model. Establishing a baseline model creates a
+benchmark for all future modifications and enhancements to it. This foundational
+model, characterised by its ConvLSTM architecture, is specifically designed for
+sequential data processing. It begins with a ConvLSTM2D input layer, which
+features a 3x3 kernel size and employs a 'tanh' activation function.
+Subsequently this model incorporates a MaxPooling3D layer with a pool size of
+1x2x2, complemented by TimeDistributed Dropout layers to prevent overfitting.
+The architecture consistently follows this pattern, progressively increasing the
+number of filters, finally ending with a Dense layer. After training, the
+baseline model achieved a favourable but improvable validation accuracy of 72%. 
 
-Initially w
-by 
+\subsection*{Work Plan}
+I plan to further refine the primary model and aim to achieve a more efficient
+and accurate model. This will involve applying various preprocessing and
+training techniques, including but not limited to data augmentation and the
+'leave-one-out' approach. Additionally I intend to experiment with transfer
+learning methods, incorporating models like ResNet or VGG for feature extraction
+and explore adjustments in architecture and hyperparameter modifications.
 
 
-
-
- 
-
-\section{Project timeline}
+\section*{Project timeline}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{content/chapters/1_introduction/figures/newGantt.png}
+    \caption{Estimated project timeline.}
+    \label{fig:my_label}
+\end{figure}

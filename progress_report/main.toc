@@ -3,12 +3,12 @@
 \contentsline {paragraph}{}{1}{chapter*.1}%
 \contentsline {paragraph}{}{1}{chapter*.1}%
 \contentsline {paragraph}{}{1}{chapter*.1}%
-\contentsline {section}{\numberline {0.1}Problem Specification}{2}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}List of deliverables}{2}{subsection.0.1.1}%
-\contentsline {section}{\numberline {0.2}Brief overview of the literature}{2}{section.0.2}%
-\contentsline {paragraph}{}{3}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Accelerometry approach}{3}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {0.2.2}Computer Vision approach}{3}{subsection.0.2.2}%
-\contentsline {paragraph}{}{3}{subsection.0.2.2}%
-\contentsline {section}{\numberline {0.3}Planned methodologies}{4}{section.0.3}%
-\contentsline {section}{\numberline {0.4}Project timeline}{4}{section.0.4}%
+\contentsline {paragraph}{}{2}{chapter*.1}%
+\contentsline {paragraph}{}{2}{chapter*.1}%
+\contentsline {paragraph}{}{3}{chapter*.1}%
+\contentsline {paragraph}{}{3}{chapter*.1}%
+\contentsline {paragraph}{}{3}{chapter*.1}%
+\contentsline {paragraph}{}{4}{chapter*.1}%
+\contentsline {paragraph}{}{4}{chapter*.1}%
+\contentsline {paragraph}{}{4}{chapter*.1}%
+\contentsline {paragraph}{}{4}{chapter*.1}%
