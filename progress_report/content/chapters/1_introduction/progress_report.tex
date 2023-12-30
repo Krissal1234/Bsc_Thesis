@@ -73,6 +73,10 @@ and contribute to the lack of study in this area.
 \section*{Scope and Motivation}
 
 
+This project is greatly motivated by my passion for skateboarding and the
+potential of technology within the sport due to its growing popularity after its
+first display at the 2020 Olympic Games.
+
 
 \section*{Brief overview of the literature} 
 
@@ -113,14 +117,23 @@ raw transformations (RAW) and Continuous Wavelet Transform (CWT).
 On the other hand, in the study
 \cite{skateboardTrickClassifierUsingAccelerometryAndML} researchers utilised
 MATLAB 2015 and Signal Processing Toolbox to artificially generate 543 signals,
-based on prior research in this area. These signals were then categorised into five
-distinct classes representing different skateboard tricks, each with a varied
-number of samples ranging from 30 to 50 per class, across three axes (X,Y and
-Z). 
-
+based on prior research in this area. These signals were then categorised into
+five distinct classes representing different skateboard tricks, each with a
+varied number of samples ranging from 30 to 50 per class, across three axes (X,Y
+and Z). This study developed and validated individual Artificial Neural Networks
+(ANNs) for each axis, as well as the combination of the three: ANN XYZ, displaying the potential
+of Neural Networks to categorise multidimensional skateboard tricks. The ANNs
+used are all multilayer feed-forward neural network (MFFNNs), structured into
+three distinct layers. They feature an input layer with 82 neurons, a hidden
+layer, comprised of 23 neurons utilising a tan-sigmoid transfer function and an
+output layer consisting of 5 neurons with a softmax function. SCG (Scaled
+Conjugate Gradient Backpropagation) was the learning algorithm used to train
+these networks. Finally the study achieved a high accuracy with ANN X Y and Z all achieved an accuracy of
+94.8\%, 96.7\% and 98.7\% respectively, while the combined ANN XYZ achievd an an
+accuracy of 92.8\%.
 
 \subsection*{Computer Vision approach}
-
+\paragraph{}
 The paper \cite{skatePaper1} leverages a custom data set, comprising videos
 capturing the execution of five distinct skateboard tricks, each attempted five
 times. Each video spans a duration of two to three seconds, yielding a total of
