@@ -1,27 +1,27 @@
 
 
-\section*{Introduction}
-\subsection*{Introduction to Skateboarding and its Evolution}
+\chapter{Introduction}
+\section{Introduction to Skateboarding and its Evolution}
 \paragraph{}
 Skateboarding dates back to the 1940s when handmade skateboards first appeared
 \cite{SkateboardingEncyclobeadia}. It has since developed into a worldwide
 phenomenon, with its popularity skyrocketing, after gaining recognition as an
-official sport in the 2020 Tokyo Olympics \cite{SkatebaordingOlimpics}.
+official sport in the 2020 Tokyo Olympic Games \cite{SkatebaordingOlimpics}.
 Skateboarding comprises the dynamic activities of riding a skateboard and
 skillfully performing a repertoire of tricks, manifesting as a popular and
 exhilarating “extreme sport”. 
 \paragraph{}
 This dynamic sport encompasses various disciplines and styles of riding, each of
 them offering unique challenges for skateboarders to explore. Two of the most
-prominent styles are “vert” and “Street”, vert skateboarding revolves around
+prominent styles are “vert” and “street”, vert skateboarding revolves around
 riding on specialised obstacles, namely, half-pipes and ramps, emphasising areal
 manoeuvres. Whilst, street skateboarding transpires in urban environments,
 utilising a diverse array of obstacles that can be found outdoors, including
 stairs, rails, ledges, gaps or flat ground for skaters to showcase their
-creativity. \cite{skateStyles}.
+creativity \cite{skateStyles}.
 
 
-\subsection*{Introduction to the Area}
+\section{Introduction to the Area}
 \paragraph{}
 The current method of identifying tricks in skateboard competitions relies
 heavily on judges verbally stating them during live broadcasts. This approach
@@ -34,24 +34,24 @@ skill development. The advent of an AI-based system that delivers a dependable
 and efficient method of trick recognition will both revolutionise this aspect
 and contribute to the lack of study in this area. 
 
-\section*{Scope and Motivation}
+\chapter{Scope and Motivation}
 \paragraph{}
 The scope of this study is not only to develop a skateboard trick classifier but
 also to delve into the largely unexplored field of AI in action sports. Studying
 AI in this domain opens up possibilities for innovation in the skateboarding
 industry, such as introducing fairer scoring systems in competitions and
 enhancing the live-streaming viewing experience. Moreover, this study offers
-various research opportunities, like providing detailed coaching feedback where
-in the case of skateboarding, ML can detect inaccuracies in body weight
-placement and foot positioning of a skateboard trick. Additionally, this study opens
-avenues for research in injury prevention in skateboarding through the
-identification of common injury patterns and risky manoeuvres.
-This project is greatly motivated by my passion for skateboarding and the
-potential of technology within the sport due to its growing popularity after its
-first display at the 2020 Olympic Games.
+various research opportunities, like providing detailed coaching feedback, where
+in the case of skateboarding, ML could detect inaccuracies in body weight
+placement and foot positioning. Additionally, this study opens avenues for
+research in injury prevention through the identification of
+common injury patterns and risky manoeuvres. This project is greatly motivated
+by the researcher's passion for skateboarding and the potential of technology
+within the sport due to its growing popularity after its first display at the
+2020 Olympic Games.
 
 
-\section*{Brief overview of the literature} 
+\chapter{Brief overview of the literature} 
 \paragraph{}
 Recent advancements in the ability to recognise human actions in videos have
 significantly impacted various fields, ranging from the medical sector to
@@ -73,39 +73,42 @@ employs computer vision techniques, leveraging video footage of skateboard trick
 to train and refine models for accurate trick identification, as depicted by the
 studies \cite{skatePaper1} and \cite{SkateboardAIPaper}.
 
-\subsection*{Accelerometry approach}
+\section{Accelerometry approach}
 The study \cite{skateboardClassificationTransferLearningPipelinesAccelermetry},
 makes use of a custom dataset comprising of six skateboard tricks most commonly
 executed in competitive events. Amateur skateboarders performed each trick five
 times on a modified skateboard equipped with an Inertial Measurement Unit (IMU)
-to record the signals produced. The researchers capture six
-signals for each trick, including linear accelerations along the x, y, and z
-axes (aX, aY, aZ) and angular accelerations along the same axes (gX, gY, gZ).
-They then opt for the unique approach of assembling all six signals into a
-single image corresponding to one trick, employing two input image transformations,
-raw transformations (RAW) and Continuous Wavelet Transform (CWT).
-% go on and talk about results ---CHECK because results are likely not accurate
+to record the signals produced. The researchers capture six signals for each
+trick, including linear accelerations along the x, y, and z axes (aX, aY, aZ)
+and angular accelerations along the same axes (gX, gY, gZ). They then opt for
+the unique approach of concatenating all six signals onto a single image
+corresponding to one trick, employing two input image transformations: raw data
+(RAW) and Continuous Wavelet Transform (CWT). With the application of six
+transfer learning models on this data, the results show that RAW and CWT input
+images on MobileNet, MobileNetV2 and ResNet101 models achieved favourable
+accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best due to
+its reduction in computational time.
 
 \paragraph{}
 On the other hand, in the study
-\cite{skateboardTrickClassifierUsingAccelerometryAndML} researchers utilised
-MATLAB 2015 and Signal Processing Toolbox to artificially generate 543 signals,
-based on prior research in this area. These signals were then categorised into
-five distinct classes representing different skateboard tricks, each with a
-varied number of samples ranging from 30 to 50 per class, across three axes (X, Y
-and Z). This study developed and validated individual Artificial Neural Networks
-(ANNs) for each axis, as well as the combination of the three: ANN XYZ, displaying the potential
-of Neural Networks to categorise multidimensional skateboard tricks. The ANNs
-used are all multilayer feed-forward neural networks (MFFNNs), structured into
-three distinct layers. They feature an input layer with 82 neurons, a hidden
-layer, comprised of 23 neurons utilising a tan-sigmoid transfer function and an
-output layer consisting of 5 neurons with a softmax function. SCG (Scaled
-Conjugate Gradient Backpropagation) was the learning algorithm used to train
-these networks. Finally, the study achieved a high accuracy with ANN X Y and Z all achieving an accuracy of
-94.8\%, 96.7\% and 98.7\% respectively, while the combined ANN XYZ achieved an an
+\cite{skateboardTrickClassifierUsingAccelerometryAndML}, researchers chose to
+obtain their sample data by artificially generating 543 signals based on prior
+research, utilising tools such as MATLAB 2015 and Signal Processing Toolbox.
+These signals were then categorised into five distinct classes representing
+different skateboard tricks, each with a varied number of samples ranging from
+30 to 50 per class, across three axes (X, Y and Z). This study developed and
+validated individual Artificial Neural Networks (ANNs) for each axis, as well as
+the combination of the three: ANN XYZ, displaying the potential of Neural
+Networks to categorise multidimensional skateboard tricks. The ANNs used are all
+multilayer feed-forward neural networks (MFFNNs), structured into three distinct
+layers. They feature an input layer with 82 neurons, a hidden layer, comprised
+of 23 neurons utilising a tan-sigmoid transfer function and an output layer
+consisting of 5 neurons with a softmax function. Finally, the study achieved
+high accuracies with ANNs X, Y and Z achieving accuracies of 94.8\%,
+96.7\% and 98.7\% respectively, while the combined ANN XYZ achieved an
 accuracy of 92.8\%.
 
-\subsection*{Computer Vision approach}
+\section{Computer Vision approach}
 \paragraph{}
 The paper \cite{skatePaper1} leverages a custom data set, comprising videos
 capturing the execution of five distinct skateboard tricks, each attempted five
@@ -115,8 +118,8 @@ augmentation techniques to further expand their dataset. Consequently, they
 introduced an additional 2,250 images, achieving a total of 3,000 images in
 their data set. On the other hand, Chen \cite{SkateboardAIPaper} compiled a
 comprehensive data set by collecting videos from multiple platforms including
-YouTube, Twitter and Instagram. Furthermore, the researcher trained the model
-using 15 fundamental tricks commonly observed in competitive settings. They
+YouTube, Twitter and Instagram. Furthermore, Chen trained the model using 15
+fundamental tricks commonly observed in competitive settings. The researcher
 collected 50 videos per trick, summing up to a total number of 750 videos. Of
 these, 45 videos per trick were allocated for training, and the remaining 5 were
 reserved for validation.
@@ -150,7 +153,7 @@ insight into the application of diverse models in the application of activity
 recognition in skateboarding.
 
 
-\section*{Aims and Objectives}
+\chapter{Aims and Objectives}
 \paragraph{}
 The aims and objectives of this project are to design and develop a dependable
 Artificial Intelligence (AI) model that can identify various skateboard tricks
@@ -163,15 +166,16 @@ project aims to establish a usable tool that can be used by skateboarders, coach
 skateboard competitions.
 
 
-\section*{List of deliverables}
+\section{List of deliverables}
 \begin{itemize}
-    \item The prototype of the AI model
-    \item A trained model with accuracy metrics
+    
+    \item Extensive dataset compilation
+    \item Trained model with detailed accuracy metrics
     \item Documentation of experiments and their visualisations
 \end{itemize}
 
 
-\section*{Methodology and Evaluation Strategy}
+\chapter{Methodology and Evaluation Strategy}
 \paragraph{}
 In terms of data collection, this project will utilise a combination of the open-source datasets provided by \cite{lightningdrop2020skateboardml} and
 \cite{SkateboardAIPaper}. Moreover, to ensure an unbiased and rigorous
@@ -189,9 +193,9 @@ process.
 I commenced the development phase using Python, opting for YOLO (You Only Look
 Once) for the object detection framework. The YOLO training process involved
 gathering a diverse dataset and meticulously labelling each image featuring a
-skateboarder by drawing an accurate bounding box around each subject. The trained
-object detection model takes an image as an input and returns the coordinates of
-the bounding box encasing the estimated position of the skater in the frame, used to
+skateboarder by drawing an accurate bounding box around each subject. The
+trained object detection model takes an image as an input and returns the
+coordinates of the bounding box encasing the position of the skater, used to
 crop the image accordingly. 
 
 \paragraph{}
@@ -208,7 +212,7 @@ The architecture consistently follows this pattern, progressively increasing the
 number of filters, finally ending with a Dense layer. After training, the
 baseline model achieved a favourable but improvable validation accuracy of 72\%. 
 
-\subsection*{Work Plan}
+\section{Work Plan}
 \paragraph{}
 I plan to further refine the baseline model and aim to achieve a more efficient
 and accurate model. This will involve applying various preprocessing and
@@ -217,8 +221,8 @@ training techniques, including but not limited to data augmentation and the
 learning methods, incorporating models like ResNet or VGG for feature extraction
 and exploring adjustments in architectures and hyperparameters.
 
-\clearpage
-\section*{Project timeline}
+
+\section{Project timeline}
 \begin{figure}[h]
     \includegraphics[width=1\textwidth]{content/chapters/1_introduction/figures/newGantt.png}
     \caption{Estimated project timeline.}

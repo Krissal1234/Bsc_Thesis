@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  30 DEC 2023 16:51
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  31 DEC 2023 17:35
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writeup/progress_report/main
@@ -1905,7 +1905,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=14, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=62, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -1938,23 +1938,39 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
  [2
 
 ] (./content/chapters/1_introduction/progress_report.tex
+Chapter 1.
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 3.
- [1
+(Font)              scaled to size 17.28pt on input line 4.
+[1
 
 
-] [2] [3] [4] [5]
-<content/chapters/1_introduction/figures/newGantt.png, id=93, 2890.8pt x 1586.92876pt>
+
+]
+Chapter 2.
+[2
+
+]
+Chapter 3.
+[3
+
+] [4] [5]
+Chapter 4.
+[6
+
+]
+Chapter 5.
+[7
+
+]
+<content/chapters/1_introduction/figures/newGantt.png, id=162, 2890.8pt x 1586.92876pt>
 File: content/chapters/1_introduction/figures/newGantt.png Graphic file (type png)
 <use content/chapters/1_introduction/figures/newGantt.png>
-Package luatex.def Info: content/chapters/1_introduction/figures/newGantt.png  used on input line 223.
+Package luatex.def Info: content/chapters/1_introduction/figures/newGantt.png  used on input line 227.
 (luatex.def)             Requested size: 455.24411pt x 249.89417pt.
-) [6
-
-<./content/chapters/1_introduction/figures/newGantt.png>]
+) [8<./content/chapters/1_introduction/figures/newGantt.png>]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 57.
- [7
+ [9
 
 ]
 
@@ -1962,31 +1978,31 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[8
+[10
 makeindex -s main.ist -t main.glg -o main.gls main.glo
 makeindex -s main.ist -t main.alg -o main.acr main.acn
 ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C68F823C2892D2603DB328A84898E998;207.
+(rerunfilecheck)             Checksum: 4A9A845A05C11BF583041DFDEE665232;2283.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 47039 strings out of 477805
+ 47068 strings out of 477805
  100000,1977958 words of node,token memory allocated
  816 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 113 glue_spec, 9 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 1:2,2:853,3:430,4:57,5:918,6:44,7:7474,8:121,9:195,10:21,11:623,12:2
- 66076 multiletter control sequences out of 65536+600000
+   avail lists: 2:853,3:430,4:57,5:872,6:57,7:6957,8:121,9:232,10:21,11:601,12:2
+ 66091 multiletter control sequences out of 65536+600000
  72 fonts using 19298215 bytes
- 106i,11n,128p,1259b,1558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,11n,128p,1259b,1561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf>
-Output written on main.pdf (11 pages, 237323 bytes).
+Output written on main.pdf (13 pages, 241905 bytes).
 
-PDF statistics: 156 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 25 named destinations out of 1000 (max. 131072)
- 32 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 226 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 131072)
+ 128 words of extra memory for PDF output out of 10000 (max. 100000000)
 
