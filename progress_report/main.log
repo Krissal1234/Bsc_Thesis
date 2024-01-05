@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  31 DEC 2023 17:35
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  5 JAN 2024 12:19
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writeup/progress_report/main
@@ -1965,7 +1965,7 @@ Chapter 5.
 <content/chapters/1_introduction/figures/newGantt.png, id=162, 2890.8pt x 1586.92876pt>
 File: content/chapters/1_introduction/figures/newGantt.png Graphic file (type png)
 <use content/chapters/1_introduction/figures/newGantt.png>
-Package luatex.def Info: content/chapters/1_introduction/figures/newGantt.png  used on input line 227.
+Package luatex.def Info: content/chapters/1_introduction/figures/newGantt.png  used on input line 228.
 (luatex.def)             Requested size: 455.24411pt x 249.89417pt.
 ) [8<./content/chapters/1_introduction/figures/newGantt.png>]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
@@ -1983,7 +1983,7 @@ makeindex -s main.ist -t main.glg -o main.gls main.glo
 makeindex -s main.ist -t main.alg -o main.acr main.acn
 ] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4A9A845A05C11BF583041DFDEE665232;2283.
+(rerunfilecheck)             Checksum: 5BC632077C26F6F900B8E31553648EA9;2123.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
@@ -1994,12 +1994,12 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  816 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 113 glue_spec, 9 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 2:853,3:430,4:57,5:872,6:57,7:6957,8:121,9:232,10:21,11:601,12:2
+   avail lists: 2:853,3:430,4:57,5:869,6:57,7:6955,8:121,9:232,10:21,11:586,12:2
  66091 multiletter control sequences out of 65536+600000
  72 fonts using 19298215 bytes
  106i,11n,128p,1259b,1561s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf>
-Output written on main.pdf (13 pages, 241905 bytes).
+Output written on main.pdf (13 pages, 241738 bytes).
 
 PDF statistics: 226 PDF objects out of 1000 (max. 8388607)
  193 compressed objects within 2 object streams

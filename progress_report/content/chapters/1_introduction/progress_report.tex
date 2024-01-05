@@ -11,131 +11,131 @@ Skateboarding comprises the dynamic activities of riding a skateboard and
 skillfully performing a repertoire of tricks, manifesting as a popular and
 exhilarating “extreme sport”. 
 \paragraph{}
-This dynamic sport encompasses various disciplines and styles of riding, each of
-them offering unique challenges for skateboarders to explore. Two of the most
-prominent styles are “vert” and “street”, vert skateboarding revolves around
-riding on specialised obstacles, namely, half-pipes and ramps, emphasising areal
-manoeuvres. Whilst, street skateboarding transpires in urban environments,
-utilising a diverse array of obstacles that can be found outdoors, including
-stairs, rails, ledges, gaps or flat ground for skaters to showcase their
-creativity \cite{skateStyles}.
+This dynamic sport encompasses various disciplines and riding styles, each
+offering unique challenges for skateboarders to explore. Two of the most
+prominent styles are “vert” and “street.” Vert skateboarding revolves around
+riding on specialised obstacles, namely, half-pipes and ramps, emphasising
+aerial manoeuvres. Street skateboarding transpires in urban environments,
+utilising various obstacles that can be found outdoors, including stairs, rails,
+ledges, gaps or flat ground for skaters to showcase their creativity
+\cite{skateStyles}.
 
 
-\section{Introduction to the Area}
+\section{Motivation}
 \paragraph{}
 The current method of identifying tricks in skateboard competitions relies
 heavily on judges verbally stating them during live broadcasts. This approach
 lacks a digital overlay that could display the performed trick for the viewers,
 leading to a reliance on subjective judgment. Such subjectivity can lead to
 scoring disparities and conflicts, undermining competition fairness.
-Furthermore, this absence of an objective method of identification obstructs
+Furthermore, this absence of an objective identification method obstructs the
 skaters' ability to receive real-time feedback, which could be beneficial for
-skill development. The advent of an AI-based system that delivers a dependable
-and efficient method of trick recognition will both revolutionise this aspect
-and contribute to the lack of study in this area. 
+skill development. An AI-based system that delivers a dependable and efficient
+method of trick recognition could improve this aspect and contribute to the lack
+of study in this area. 
 
-\chapter{Scope and Motivation}
+\chapter{Scope}
 \paragraph{}
 The scope of this study is not only to develop a skateboard trick classifier but
-also to delve into the largely unexplored field of AI in action sports. Studying
-AI in this domain opens up possibilities for innovation in the skateboarding
-industry, such as introducing fairer scoring systems in competitions and
-enhancing the live-streaming viewing experience. Moreover, this study offers
-various research opportunities, like providing detailed coaching feedback, where
-in the case of skateboarding, ML could detect inaccuracies in body weight
-placement and foot positioning. Additionally, this study opens avenues for
-research in injury prevention through the identification of
-common injury patterns and risky manoeuvres. This project is greatly motivated
-by the researcher's passion for skateboarding and the potential of technology
-within the sport due to its growing popularity after its first display at the
-2020 Olympic Games.
+also to delve into the largely unexplored field of Artificial Intelligence (AI)
+in action sports. Studying AI in this domain opens up possibilities for
+innovation in the skateboarding industry, such as introducing fairer scoring
+systems in competitions and enhancing the live-streaming viewing experience.
+\paragraph{}
+Moreover, this study offers various research opportunities, like providing
+detailed coaching feedback, where, in the case of skateboarding, Machine
+Learning (ML) could detect inaccuracies in body weight placement and foot
+positioning. Additionally, this study opens avenues for injury prevention
+research by identifying common injury patterns and risky manoeuvres. 
+
 
 
 \chapter{Brief overview of the literature} 
 \paragraph{}
-Recent advancements in the ability to recognise human actions in videos have
-significantly impacted various fields, ranging from the medical sector to
-surveillance systems, \cite{3DhumanActionDetectionForHealthCareSystems},
+Recent advancements in recognising human actions in videos have significantly
+impacted various fields, ranging from the medical sector to surveillance
+systems, \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}. Particularly noteworthy is
-its application in the development of an AI-based skateboard trick classifier,
-an area that has seen limited research.
-\paragraph{}
+its application in developing an AI-based skateboard trick classifier, an area
+that has seen limited research.
 
-In this emergent field, leveraging the techniques of activity recognition from
-video has led to two primary methodologies among researchers. The first technique
+\paragraph{}
+In this emergent field, leveraging activity recognition techniques from a video
+has led to two primary methodologies among researchers. The first technique
 involves utilising signals obtained from skateboard-mounted accelerometers or
-signals that have been artificially generated based on findings of prior
-studies. These signals are then fed into a study-dependent model for
-classification, as outlined in
-\cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
-\cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
-employs computer vision techniques, leveraging video footage of skateboard tricks
-to train and refine models for accurate trick identification, as depicted by the
-studies \cite{skatePaper1} and \cite{SkateboardAIPaper}.
+signals artificially generated based on the findings of prior studies. These
+signals are then fed into a study-dependent model for classification, as
+outlined in \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}
+and \cite{skateboardTrickClassifierUsingAccelerometryAndML}. The second approach
+employs computer vision techniques, leveraging video footage of skateboard
+tricks to train and refine models for accurate trick identification, as depicted
+by the studies \cite{skatePaper1} and \cite{SkateboardAIPaper}. 
+
 
 \section{Accelerometry approach}
-The study \cite{skateboardClassificationTransferLearningPipelinesAccelermetry},
-makes use of a custom dataset comprising of six skateboard tricks most commonly
-executed in competitive events. Amateur skateboarders performed each trick five
-times on a modified skateboard equipped with an Inertial Measurement Unit (IMU)
-to record the signals produced. The researchers capture six signals for each
-trick, including linear accelerations along the x, y, and z axes (aX, aY, aZ)
-and angular accelerations along the same axes (gX, gY, gZ). They then opt for
-the unique approach of concatenating all six signals onto a single image
+\paragraph{}
+The study by Abdullah et al (2021)
+\cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
+of a custom dataset comprising of six skateboard tricks most commonly executed
+in competitive events. Amateur skateboarders performed each trick five times on
+a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
+the signals produced. The researchers capture six signals for each trick,
+including linear accelerations along the x, y, and z axes (aX, aY, aZ) and
+angular accelerations along the same axes (gX, gY, gZ). They then opt for the
+unique approach of concatenating all six signals onto a single image
 corresponding to one trick, employing two input image transformations: raw data
 (RAW) and Continuous Wavelet Transform (CWT). With the application of six
 transfer learning models on this data, the results show that RAW and CWT input
 images on MobileNet, MobileNetV2 and ResNet101 models achieved favourable
-accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best due to
-its reduction in computational time.
+accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best
+due to its reduction in computational time.
 
 \paragraph{}
-On the other hand, in the study
-\cite{skateboardTrickClassifierUsingAccelerometryAndML}, researchers chose to
-obtain their sample data by artificially generating 543 signals based on prior
-research, utilising tools such as MATLAB 2015 and Signal Processing Toolbox.
-These signals were then categorised into five distinct classes representing
-different skateboard tricks, each with a varied number of samples ranging from
-30 to 50 per class, across three axes (X, Y and Z). This study developed and
-validated individual Artificial Neural Networks (ANNs) for each axis, as well as
-the combination of the three: ANN XYZ, displaying the potential of Neural
-Networks to categorise multidimensional skateboard tricks. The ANNs used are all
-multilayer feed-forward neural networks (MFFNNs), structured into three distinct
-layers. They feature an input layer with 82 neurons, a hidden layer, comprised
-of 23 neurons utilising a tan-sigmoid transfer function and an output layer
-consisting of 5 neurons with a softmax function. Finally, the study achieved
-high accuracies with ANNs X, Y and Z achieving accuracies of 94.8\%,
-96.7\% and 98.7\% respectively, while the combined ANN XYZ achieved an
-accuracy of 92.8\%.
+On the other hand, the study by Corrêa et al (2017)
+\cite{skateboardTrickClassifierUsingAccelerometryAndML}, obtained their sample
+data by artificially generating 543 signals based on prior research, utilising
+tools such as MATLAB 2015 and Signal Processing Toolbox. These signals were then
+categorised into five distinct classes representing different skateboard tricks,
+each with various samples ranging from 30 to 50 per class, across three axes (X,
+Y and Z). This study developed and validated individual Artificial Neural
+Networks (ANNs) for each axis, as well as the combination of the three: ANN XYZ,
+displaying the potential of Neural Networks to categorise multidimensional
+skateboard tricks. The ANNs are all multilayer feed-forward neural networks
+(MFFNNs), structured into three distinct layers. They feature an input layer
+with 82 neurons, a hidden layer, comprised of 23 neurons utilising a tan-sigmoid
+transfer function and an output layer consisting of 5 neurons with a softmax
+function. Finally, the study achieved high accuracies, with ANNs X, Y and Z
+achieving accuracies of 94.8\%, 96.7\% and 98.7\%, respectively, while the
+combined ANN XYZ achieved an accuracy of 92.8\%. 
 
 \section{Computer Vision approach}
 \paragraph{}
-The paper \cite{skatePaper1} leverages a custom data set, comprising videos
-capturing the execution of five distinct skateboard tricks, each attempted five
-times. Each video spans a duration of two to three seconds, yielding a total of
-750 images by extracting 30 frames per video. This study made use of data
-augmentation techniques to further expand their dataset. Consequently, they
-introduced an additional 2,250 images, achieving a total of 3,000 images in
-their data set. On the other hand, Chen \cite{SkateboardAIPaper} compiled a
-comprehensive data set by collecting videos from multiple platforms including
-YouTube, Twitter and Instagram. Furthermore, Chen trained the model using 15
-fundamental tricks commonly observed in competitive settings. The researcher
-collected 50 videos per trick, summing up to a total number of 750 videos. Of
-these, 45 videos per trick were allocated for training, and the remaining 5 were
-reserved for validation.
+The paper by Shapiee et al (2020) \cite{skatePaper1} leverages a custom data set
+comprising videos capturing the execution of five distinct skateboard tricks,
+each attempted five times. Each video spans two to three seconds, yielding a
+total of 750 images by extracting 30 frames per video. This study made use of
+data augmentation techniques to expand their dataset further. Consequently, they
+introduced an additional 2,250 images, achieving 3,000 images in their data set.
+On the other hand, Chen (2023) \cite{SkateboardAIPaper} compiled a comprehensive
+data set by collecting videos from multiple platforms, including YouTube,
+Twitter and Instagram. Furthermore, Chen trained the model using 15 fundamental
+tricks commonly observed in competitive settings. The researcher collected 50
+videos per trick, summing up to a total number of 750 videos. Of these, 45
+videos per trick were allocated for training, and the remaining 5 were reserved
+for validation. 
 
 \paragraph{}
-Data augmentation techniques are popular amongst studies with relatively limited
-datasets. Techniques such as flipping, rotating, scaling and colour
-manipulation not only enhance the size of the original dataset but also lower
-the likelihood of the model overfitting
-\cite{DataAugmentationCanImproveRobustness}. The study \cite{skatePaper1}
-utilises three rotation augmentation techniques: horizontal rotation, positive
-90\textdegree rotation and negative 90\textdegree rotation. The researchers
-experimented on three Transfer learning models: MobileNet, NASNetMobile and
-NASNetLarge, each evaluated using a k-Nearest Neighbor (k-NN) classifier. As a
-result, the models demonstrated impressive classification accuracies with
-MobileNet achieving 95\%, NASNetMobile 92\% and NASNetLarge 90\%. 
+Data augmentation techniques are popular in studies with relatively limited
+datasets. Techniques such as flipping, rotating, scaling and colour manipulation
+not only enhance the size of the original dataset but also lower the likelihood
+of the model overfitting \cite{DataAugmentationCanImproveRobustness}. The paper
+by Shapiee et al \cite{skatePaper1} utilises three rotation augmentation
+techniques: horizontal rotation, positive 90°rotation and negative 90°rotation.
+The researchers experimented on three Transfer learning models: MobileNet,
+NASNetMobile and NASNetLarge, each evaluated using a k-Nearest Neighbor (k-NN)
+classifier. As a result, the models demonstrated impressive classification
+accuracies, with MobileNet achieving 95\%, NASNetMobile 92\% and NASNetLarge
+90\%. 
 
 \paragraph{}
 Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are
@@ -143,14 +143,14 @@ popular architectures due to their capabilities in modelling the dynamic
 relationships in sequential data \cite{UnderstandingLSTM}. In the student
 abstract by Hanciao Chen \cite{SkateboardAIPaper}, extensive experimentation is
 conducted using diverse models, exploring various combinations of CNN-LSTM and
-CNN-BiLSTM including the integration of attention and transfer learning
-approaches. This study further documents and analyzes important metrics such as
-training time, training accuracy and validation accuracy for each model
-experimented on. Among these, the top three models that stood out in terms of
-validation accuracy were the ResNet50 with Attention and BiLSTM (84\%), ResNet50
-with BiLSTM (81\%) and ResNet50 with LSTM (80\%). Chen's study provides valuable
-insight into the application of diverse models in the application of activity
-recognition in skateboarding.
+CNN-BiLSTM, including integrating attention and transfer learning approaches.
+This study further documents and analyses important metrics such as training
+time, training accuracy and validation accuracy for each model experimented on.
+Among these, the top three models that stood out in terms of validation accuracy
+were the ResNet50 with Attention and BiLSTM (84\%), ResNet50 with BiLSTM (81\%)
+and ResNet50 with LSTM (80\%). Chen's study provides valuable insight into the
+application of diverse models in activity recognition in skateboarding. 
+
 
 
 \chapter{Aims and Objectives}
@@ -177,49 +177,50 @@ skateboard competitions.
 
 \chapter{Methodology and Evaluation Strategy}
 \paragraph{}
-In terms of data collection, this project will utilise a combination of the open-source datasets provided by \cite{lightningdrop2020skateboardml} and
-\cite{SkateboardAIPaper}. Moreover, to ensure an unbiased and rigorous
-evaluation of the model's performance, this study will incorporate a dataset,
-consisting of skateboard tricks performed and recorded specifically for this
-study. 
+In terms of data collection, this project will utilise a combination of the
+open-source datasets provided by Fitzgerald et al (2020)
+\cite{lightningdrop2020skateboardml} and Chen \cite{SkateboardAIPaper}.
+Moreover, to ensure an unbiased and rigorous evaluation of the model’s
+performance, this study will incorporate a dataset, consisting of skateboard
+tricks performed and recorded specifically for this study (by myself). 
+
 \paragraph{}
-In the course of my thesis research, I initially began by experimenting with
-various preprocessing techniques such as applying frame extraction to videos and
+During my thesis research, I initially began by experimenting with various
+preprocessing techniques, such as applying frame extraction to videos and
 employing object detection to selectively crop each frame, focusing on
 encapsulating only the skater. This approach was designed to remove any
 unnecessary overhead in each frame that might otherwise impede the learning
 process. 
+
 \paragraph{}
 I commenced the development phase using Python, opting for YOLO (You Only Look
-Once) for the object detection framework. The YOLO training process involved
-gathering a diverse dataset and meticulously labelling each image featuring a
-skateboarder by drawing an accurate bounding box around each subject. The
-trained object detection model takes an image as an input and returns the
-coordinates of the bounding box encasing the position of the skater, used to
-crop the image accordingly. 
+Once) as the object detection framework. The YOLO training process involved
+gathering a diverse dataset and labelling each image featuring a skateboarder by
+drawing a bounding box around each subject. The trained object detection model
+takes an image as an input and returns the coordinates of the bounding box
+encasing the skater's position, used to crop the image accordingly. 
 
 \paragraph{}
 After completing the experimentation phase with various preprocessing techniques
-and creating a temporary preprocessing mechanism, I shifted my focus towards the
-development of a baseline model. A baseline model establishes a benchmark for
-all future modifications and enhancements to it. This foundational model,
-characterised by its ConvLSTM architecture, is specifically designed for
-sequential data processing. It begins with a ConvLSTM2D input layer, which
-features a 3x3 kernel size and employs a 'tanh' activation function.
-Subsequently, this model incorporates a MaxPooling3D layer with a pool size of
-1x2x2, complemented by TimeDistributed Dropout layers to prevent overfitting.
-The architecture consistently follows this pattern, progressively increasing the
-number of filters, finally ending with a Dense layer. After training, the
-baseline model achieved a favourable but improvable validation accuracy of 72\%. 
-
+and creating a temporary preprocessing mechanism, I developed a baseline model.
+A baseline model establishes a benchmark for all future modifications and
+enhancements to it. This foundational model, characterised by its ConvLSTM
+architecture, is designed explicitly for sequential data processing. It begins
+with a ConvLSTM2D input layer, which features a 3x3 kernel size and employs a
+'tanh' activation function. Subsequently, this model incorporates a MaxPooling3D
+layer with a pool size 1x2x2, complemented by TimeDistributed Dropout layers to
+prevent overfitting. The architecture consistently follows this pattern,
+progressively increasing the number of filters, finally ending with a Dense
+layer. After training, the baseline model achieved a favourable but improvable
+validation accuracy of 72\%. 
 \section{Work Plan}
 \paragraph{}
-I plan to further refine the baseline model and aim to achieve a more efficient
-and accurate model. This will involve applying various preprocessing and
+I plan to refine the baseline model further and aim to achieve a more efficient
+and accurate model. The approach will involve applying various preprocessing and
 training techniques, including but not limited to data augmentation and the
 'leave-one-out' approach. Additionally, I intend to experiment with transfer
 learning methods, incorporating models like ResNet or VGG for feature extraction
-and exploring adjustments in architectures and hyperparameters.
+and exploring adjustments in architectures and hyperparameters. 
 
 
 \section{Project timeline}
