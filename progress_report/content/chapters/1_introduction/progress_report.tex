@@ -1,7 +1,16 @@
 
 
-\chapter{Introduction}
-\section{Introduction to Skateboarding and its Evolution}
+% in methodology - Teh approach
+
+%in the intro:
+% motivation
+% hyp and resea
+% aims and objec
+% socument structure
+
+
+\section*{Introduction}
+\subsection*{Introduction to Skateboarding and its Evolution}
 \paragraph{}
 Skateboarding dates back to the 1940s when handmade skateboards first appeared
 \cite{SkateboardingEncyclobeadia}. It has since developed into a worldwide
@@ -21,7 +30,7 @@ ledges, gaps or flat ground for skaters to showcase their creativity
 \cite{skateStyles}.
 
 
-\section{Motivation}
+\subsection*{Motivation}
 \paragraph{}
 The current method of identifying tricks in skateboard competitions relies
 heavily on judges verbally stating them during live broadcasts. This approach
@@ -34,7 +43,7 @@ skill development. An AI-based system that delivers a dependable and efficient
 method of trick recognition could improve this aspect and contribute to the lack
 of study in this area. 
 
-\chapter{Scope}
+\section*{Scope}
 \paragraph{}
 The scope of this study is not only to develop a skateboard trick classifier but
 also to delve into the largely unexplored field of Artificial Intelligence (AI)
@@ -50,7 +59,7 @@ research by identifying common injury patterns and risky manoeuvres.
 
 
 
-\chapter{Brief overview of the literature} 
+\section*{Brief overview of the literature} 
 \paragraph{}
 Recent advancements in recognising human actions in videos have significantly
 impacted various fields, ranging from the medical sector to surveillance
@@ -72,7 +81,7 @@ tricks to train and refine models for accurate trick identification, as depicted
 by the studies \cite{skatePaper1} and \cite{SkateboardAIPaper}. 
 
 
-\section{Accelerometry approach}
+\subsection*{Accelerometry approach}
 \paragraph{}
 The study by Abdullah et al (2021)
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
@@ -91,7 +100,7 @@ accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best
 due to its reduction in computational time.
 
 \paragraph{}
-On the other hand, the study by Corrêa et al (2017)
+The study by Corrêa et al (2017)
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}, obtained their sample
 data by artificially generating 543 signals based on prior research, utilising
 tools such as MATLAB 2015 and Signal Processing Toolbox. These signals were then
@@ -108,7 +117,7 @@ function. Finally, the study achieved high accuracies, with ANNs X, Y and Z
 achieving accuracies of 94.8\%, 96.7\% and 98.7\%, respectively, while the
 combined ANN XYZ achieved an accuracy of 92.8\%. 
 
-\section{Computer Vision approach}
+\subsection*{Computer Vision approach}
 \paragraph{}
 The paper by Shapiee et al (2020) \cite{skatePaper1} leverages a custom data set
 comprising videos capturing the execution of five distinct skateboard tricks,
@@ -153,20 +162,50 @@ application of diverse models in activity recognition in skateboarding.
 
 
 
-\chapter{Aims and Objectives}
+\section*{Aims and Objectives}
 \paragraph{}
-The aims and objectives of this project are to design and develop a dependable
-Artificial Intelligence (AI) model that can identify various skateboard tricks
-directly from videos. An initial focus will be placed on the recognition of three
-distinct tricks namely, kickflips, ollies and shuvits. To reach this goal the
-appropriate ML techniques must be utilised to overcome basic computer vision
-challenges, such as varying camera angles, lighting conditions and the
-fast-paced nature of skateboard tricks. By addressing these challenges, this
-project aims to establish a usable tool that can be used by skateboarders, coaches, and
-skateboard competitions.
+The study primarily aims to investigate the effectiveness of various deep
+learning techniques to develop an Artificial Intelligence (AI) model that can
+identify skateboard tricks directly from videos. This aim can be
+satisfied by accomplishing the objectives below.
+\subsubsection*{Research Question}
+How effectively can a combination of deep learning techniques and algorithms
+accurately classify skateboard tricks from video data?
+\subsubsection*{Hypothesis}
+Employing a combination of deep learning strategies and preprocessing techniques
+can improve the accuracy and robustness in classifying skateboard tricks.
+\subsubsection*{Objectives}
+\normalsize \begin{itemize}
+    \item \textbf{Assemble a comprehensive dataset:} Collect a diverse range of
+    skateboard tricks performed in various styles and environments. This data will
+    serve as the basis for hypothesis testing.
+    \item \textbf{Investigate preprocessing techniques:} Investigate various
+    preprocessing techniques and their impact on model outcomes.
+    \item \textbf{Develop and test deep learning models:} Create and assess
+    several models, emphasizing the investigation of architectures previously
+    established in literature. These models will be used to assess the
+    hypothesis's validity.
+    \item \textbf{Analyse the model's performance:} Evaluate and compare the accuracy
+    and efficiency of these models in the classification of skateboard tricks to
+    validate or refute the hypothesis. 
+    \item \textbf{Evaluate the hypothesis:} Make a final determination on
+    whether the model's performance supports or contradicts the hypothesis.
+\end{itemize}
+
+% in classifying skateboard tricks. This study
+
+% The aims and objectives of this project are to design and develop a dependable
+% Artificial Intelligence (AI) model that can identify various skateboard tricks
+% directly from videos. An initial focus will be placed on the recognition of three
+% distinct tricks namely, kickflips, ollies and shuvits. To reach this goal the
+% appropriate ML techniques must be utilised to overcome basic computer vision
+% challenges, such as varying camera angles, lighting conditions and the
+% fast-paced nature of skateboard tricks. By addressing these challenges, this
+% project aims to establish a usable tool that can be used by skateboarders, coaches, and
+% skateboard competitions.
 
 
-\section{List of deliverables}
+\section*{List of deliverables}
 \begin{itemize}
     
     \item Extensive dataset compilation
@@ -175,12 +214,12 @@ skateboard competitions.
 \end{itemize}
 
 
-\chapter{Methodology and Evaluation Strategy}
+\section*{Methodology and Evaluation Strategy}
 \paragraph{}
 In terms of data collection, this project will utilise a combination of the
 open-source datasets provided by Fitzgerald et al (2020)
 \cite{lightningdrop2020skateboardml} and Chen \cite{SkateboardAIPaper}.
-Moreover, to ensure an unbiased and rigorous evaluation of the model’s
+Moreover, to ensure an unbiased and rigorous evaluation of the model's
 performance, this study will incorporate a dataset, consisting of skateboard
 tricks performed and recorded specifically for this study (by myself). 
 
@@ -213,7 +252,7 @@ prevent overfitting. The architecture consistently follows this pattern,
 progressively increasing the number of filters, finally ending with a Dense
 layer. After training, the baseline model achieved a favourable but improvable
 validation accuracy of 72\%. 
-\section{Work Plan}
+\subsection*{Work Plan}
 \paragraph{}
 I plan to refine the baseline model further and aim to achieve a more efficient
 and accurate model. The approach will involve applying various preprocessing and
@@ -223,7 +262,7 @@ learning methods, incorporating models like ResNet or VGG for feature extraction
 and exploring adjustments in architectures and hyperparameters. 
 
 
-\section{Project timeline}
+\subsection*{Project timeline}
 \begin{figure}[h]
     \includegraphics[width=1\textwidth]{content/chapters/1_introduction/figures/newGantt.png}
     \caption{Estimated project timeline.}

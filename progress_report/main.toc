@@ -1,32 +1,20 @@
 \contentsline {chapter}{Contents}{i}{Doc-Start}%
 \contentsline {chapter}{List of Figures}{ii}{Doc-Start}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introduction to Skateboarding and its Evolution}{1}{section.1.1}%
-\contentsline {paragraph}{}{1}{section.1.1}%
-\contentsline {paragraph}{}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Motivation}{1}{section.1.2}%
-\contentsline {paragraph}{}{1}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Scope}{2}{chapter.2}%
-\contentsline {paragraph}{}{2}{chapter.2}%
-\contentsline {paragraph}{}{2}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Brief overview of the literature}{3}{chapter.3}%
-\contentsline {paragraph}{}{3}{chapter.3}%
-\contentsline {paragraph}{}{3}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Accelerometry approach}{3}{section.3.1}%
-\contentsline {paragraph}{}{3}{section.3.1}%
-\contentsline {paragraph}{}{3}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Computer Vision approach}{4}{section.3.2}%
-\contentsline {paragraph}{}{4}{section.3.2}%
-\contentsline {paragraph}{}{4}{section.3.2}%
-\contentsline {paragraph}{}{4}{section.3.2}%
-\contentsline {chapter}{\numberline {4}Aims and Objectives}{6}{chapter.4}%
-\contentsline {paragraph}{}{6}{chapter.4}%
-\contentsline {section}{\numberline {4.1}List of deliverables}{6}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Methodology and Evaluation Strategy}{7}{chapter.5}%
-\contentsline {paragraph}{}{7}{chapter.5}%
-\contentsline {paragraph}{}{7}{chapter.5}%
-\contentsline {paragraph}{}{7}{chapter.5}%
-\contentsline {paragraph}{}{7}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Work Plan}{7}{section.5.1}%
-\contentsline {paragraph}{}{7}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Project timeline}{8}{section.5.2}%
+\contentsline {paragraph}{}{1}{Doc-Start}%
+\contentsline {paragraph}{}{1}{Doc-Start}%
+\contentsline {paragraph}{}{1}{Doc-Start}%
+\contentsline {paragraph}{}{1}{Doc-Start}%
+\contentsline {paragraph}{}{2}{Doc-Start}%
+\contentsline {paragraph}{}{2}{Doc-Start}%
+\contentsline {paragraph}{}{2}{Doc-Start}%
+\contentsline {paragraph}{}{2}{Doc-Start}%
+\contentsline {paragraph}{}{3}{Doc-Start}%
+\contentsline {paragraph}{}{3}{Doc-Start}%
+\contentsline {paragraph}{}{3}{Doc-Start}%
+\contentsline {paragraph}{}{4}{Doc-Start}%
+\contentsline {paragraph}{}{4}{Doc-Start}%
+\contentsline {paragraph}{}{5}{Doc-Start}%
+\contentsline {paragraph}{}{5}{Doc-Start}%
+\contentsline {paragraph}{}{5}{Doc-Start}%
+\contentsline {paragraph}{}{5}{Doc-Start}%
+\contentsline {paragraph}{}{6}{Doc-Start}%
