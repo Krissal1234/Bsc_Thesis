@@ -705,6 +705,59 @@
       \verb 10.1109/TKDE.2007.1042
       \endverb
     \endentry
+    \entry{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{hash=68ceba0fe66c341356e62f4066b4a4d8}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shugang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eeea6461d631d4e9cb07d2abc2de6885}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=99c2139712828885b388f7f7e83f4134}{%
+           family={Nie},
+           familyi={N\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ebcb470ee777cbc56984a83379d29819}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Lei},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b9c9203300a0f1ec2844a9f423ad6b93}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1e181d320377f5c489b768686bb952ee}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhen},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi}%
+      }
+      \strng{namehash}{5b65d27e7c94888766eafb78a56d19f2}
+      \strng{fullhash}{b312d2df74f12d948a0085b33884ae1b}
+      \strng{bibnamehash}{b312d2df74f12d948a0085b33884ae1b}
+      \strng{authorbibnamehash}{b312d2df74f12d948a0085b33884ae1b}
+      \strng{authornamehash}{5b65d27e7c94888766eafb78a56d19f2}
+      \strng{authorfullhash}{b312d2df74f12d948a0085b33884ae1b}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of healthcare engineering}
+      \field{title}{A review on human activity recognition using vision-based method}
+      \field{volume}{2017}
+      \field{year}{2017}
+    \endentry
     \entry{skateboardClassificationTransferLearningPipelinesAccelermetry}{article}{}
       \name{author}{8}{}{%
         {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
