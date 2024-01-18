@@ -758,6 +758,99 @@
       \field{volume}{2017}
       \field{year}{2017}
     \endentry
+    \entry{VisionBasedHARASurvey}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0b649170ff3e5acefb4a95b0351c60f5}{%
+           family={Beddiar},
+           familyi={B\bibinitperiod},
+           given={Djamila\bibnamedelima Romaissa},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=f0ccb637342dde0e9bc414cf413c12f4}{%
+           family={Nini},
+           familyi={N\bibinitperiod},
+           given={Brahim},
+           giveni={B\bibinitperiod}}}%
+        {{hash=21a30de05b280ed6584bc01174ac317c}{%
+           family={Sabokrou},
+           familyi={S\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=85d7bb91c73d9f5c8e07b38f8a359b26}{%
+           family={Hadid},
+           familyi={H\bibinitperiod},
+           given={Abdenour},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{973664852c25a275cbbea2bf663a0d03}
+      \strng{fullhash}{be78303d9e8887fcae7a36e38bcfd40c}
+      \strng{bibnamehash}{be78303d9e8887fcae7a36e38bcfd40c}
+      \strng{authorbibnamehash}{be78303d9e8887fcae7a36e38bcfd40c}
+      \strng{authornamehash}{973664852c25a275cbbea2bf663a0d03}
+      \strng{authorfullhash}{be78303d9e8887fcae7a36e38bcfd40c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{number}{41-42}
+      \field{title}{Vision-based human activity recognition: a survey}
+      \field{volume}{79}
+      \field{year}{2020}
+      \field{pages}{30509\bibrangedash 30555}
+      \range{pages}{47}
+    \endentry
+    \entry{SensorBasedActivityRecognition}{article}{}
+      \name{author}{5}{}{%
+        {{hash=7d23544114c262eacea8622ab3277e05}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liming},
+           giveni={L\bibinitperiod}}}%
+        {{hash=faae719891a104bbd5fdd7089e6114d2}{%
+           family={Hoey},
+           familyi={H\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=39fdee8ff26c7e3b6d79d11e8fad617d}{%
+           family={Nugent},
+           familyi={N\bibinitperiod},
+           given={Chris\bibnamedelima D.},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=f1eea55bf4ba0140c082150ec8917c76}{%
+           family={Cook},
+           familyi={C\bibinitperiod},
+           given={Diane\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=65ae00ff52a1f9d8174ffcad07d13bfd}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Zhiwen},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0db21e90254d78a8fba80fc38576ae3}
+      \strng{fullhash}{c167768e48ea390e1c4d8c2ba4317c0e}
+      \strng{bibnamehash}{c167768e48ea390e1c4d8c2ba4317c0e}
+      \strng{authorbibnamehash}{c167768e48ea390e1c4d8c2ba4317c0e}
+      \strng{authornamehash}{f0db21e90254d78a8fba80fc38576ae3}
+      \strng{authorfullhash}{c167768e48ea390e1c4d8c2ba4317c0e}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)}
+      \field{number}{6}
+      \field{title}{Sensor-Based Activity Recognition}
+      \field{volume}{42}
+      \field{year}{2012}
+      \field{pages}{790\bibrangedash 808}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1109/TSMCC.2012.2198883
+      \endverb
+    \endentry
     \entry{skateboardClassificationTransferLearningPipelinesAccelermetry}{article}{}
       \name{author}{8}{}{%
         {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
@@ -908,8 +1001,8 @@
       \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authorfullhash}{57ed158db0d808e5a2227f7045b1ee6a}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEKATRONIKA}
@@ -937,8 +1030,8 @@
       \strng{authorbibnamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authornamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authorfullhash}{3fa1fec0b6898d4af1813a46b6e7b033}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}

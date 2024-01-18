@@ -39,18 +39,20 @@
 \contentsline {subsection}{\numberline {3.1.1}Challenges in this field}{8}{subsection.3.1.1}%
 \contentsline {paragraph}{}{8}{subsection.3.1.1}%
 \contentsline {paragraph}{}{8}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Activity Recognition Techniques}{9}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Activity Recognition Techniques}{8}{subsection.3.1.2}%
+\contentsline {paragraph}{}{9}{subsection.3.1.2}%
+\contentsline {paragraph}{}{9}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Preprocessing techniques}{9}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Advancements in Skateboard Trick Classification}{9}{section.3.3}%
 \contentsline {paragraph}{}{9}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Accelerometry approach}{9}{subsection.3.3.1}%
 \contentsline {paragraph}{}{9}{subsection.3.3.1}%
-\contentsline {paragraph}{}{9}{subsection.3.3.1}%
-\contentsline {paragraph}{}{9}{subsection.3.3.1}%
+\contentsline {paragraph}{}{10}{subsection.3.3.1}%
+\contentsline {paragraph}{}{10}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Computer Vision Approach}{10}{subsection.3.3.2}%
 \contentsline {paragraph}{}{10}{subsection.3.3.2}%
-\contentsline {paragraph}{}{10}{subsection.3.3.2}%
-\contentsline {paragraph}{}{10}{subsection.3.3.2}%
+\contentsline {paragraph}{}{11}{subsection.3.3.2}%
+\contentsline {paragraph}{}{11}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Model Evaluation and Challenges}{11}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Conclusion of the Literature Review}{11}{section.3.5}%
 \contentsline {chapter}{\numberline {4}Sample A}{15}{chapter.4}%
