@@ -3,12 +3,37 @@
 
 
 \section{Activity Recognition}
-Recent advancements in recognising human actions in videos have significantly
-impacted various fields, ranging from the medical sector to surveillance
-systems, \cite{3DhumanActionDetectionForHealthCareSystems},
-\cite{HumanActivityRecognitionSecurityAndMonitoring}. 
-...
-% maybe talk about hoe there HAR systems are either contact based or remote methods/vision based
+Building on the foundational understanding of activity recognition defined in
+the background, it's important to acknowledge the impact it has on
+various sectors. The recent advancements in recognising human actions in videos
+have have not only revolutionalised sectors such as healthcare and security
+\cite{3DhumanActionDetectionForHealthCareSystems},
+\cite{HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
+potential in the realm of sports. K. Host and M. Ivašić-Kos in
+\cite{HARinSportsComputerVision} along with Wu et al. in
+\cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
+further elaborate on this potential, highlighting the numerous applications and
+importance of activiy recognition.
+\paragraph{} 
+In the study by Beddiar et al. \cite{VisionBasedHARASurvey}, two main streams of
+human computer interaction (HCI) technologies are emphasized: Contact-based and
+Vision-based systems. The authors categorise contact-based HCI as those
+technologies that require physical user interaction through mediums such as
+accelerometers, wearable sensors and multi-touch interfaces. 
+% Complimenting this perspective, the study by Cook et al. \cite{SensorBasedActivityRecognition}
+% delves into the the specifics of sensor technology, exploring how various sensor
+% types are significant in the field of activity recognition.
+Alternatively, the authors describe vision-based methods as the simplification
+of HCI due to more natural human communication, eliminating the need for
+physical contact or equipment. These methods use image and video data to
+recognise human activities offering an advantage in terms of societal acceptance
+and useability.
+\paragraph{}
+While both contact and vision-based systems have their merits, this study will
+specifically focus on vision-based techniques and their application in the
+development of a skateboard trick classifier. These methods, which utilise image
+and video data to recognise human activities are selected due to their
+societal acceptability and their applicability in sports broadcasts.
 \subsection{Challenges in this field}
 \paragraph{}
 The domain of Activity recognition comes with many challenges as depicted by
@@ -40,31 +65,33 @@ performs well in real-world conditions.
 
 \subsection{Activity Recognition Techniques}
 
-In the study by Beddiar et al. \cite{VisionBasedHARASurvey}, two main streams of
-human computer interaction (HCI) technologies are emphasized: Contact-based and
-Vision-based systems. The authors categorise contact-based HCI as those
-technologies that require physical user interaction through mediums such as
-accelerometers, wearable sensors and multi-touch interfaces. Complimenting this
-perspective, the study by Cook et al. \cite{SensorBasedActivityRecognition}
-delves into the the specifics of sensor technology, exploring how various sensor
-types are significant in the field of activity recognition. Alternatively, Beddiar et al.
-futher describe vision-based methods as simplifying HCI by enabling more natural human
-communication, eliminating the need of for physical contact or equipment. These
-methods use image and video data to recognise human activities offering an
-advantage in terms of societal acceptance 
-\paragraph{}
-While both contact and vision-based systems have their merits, this study will
-specifically focus on vision-based techniques and their application in the
-development of a skateboard trick classifier. These methods, which utilise image
-and video data to recognise human activities are selected due to their
-societal acceptability and their applicability in sports broadcasts.
-\paragraph{}
+
+%Maybe first mention that ML classification can be used, but more recently, deep
+%learning has been favourable HARinSports K. host, then move onto different
+%studies and how they tackled activity recognition by discussing the evolution
+%from machine learning to deep learning in activity recognition, and why deep
+%learning might be more effective for your study
 
 % align with the insights from the
 % paper by K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}. This paper
 %While Contact based is good, this study will be focusing on computer vsision
 
 \section{Preprocessing techniques}
+Preprocessing is a crucial step
+As a result of the limited research in the advent of a skateboard trick
+classifier, there is a significan lack of open-source datasets featuring
+skateboard tricks. This lack of data presents an opportunity to employ data
+augmentation techniques, especially valuable in studies with limited data.
+Teqniques such as flipping, rotating, scaling and colour manipulation not only
+artificially enhance the size of the original dataset but also lower the
+likelihood of the model overfitting \cite{DataAugmentationCanImproveRobustness},
+\cite{AnOverviewOfOverfittingAndItsSolutions}. In the realm of Skateboard trick
+classifiers, Shapiee et al (2020) \cite{skatePaper1} effectively employed data
+augmentation techniques to expand their dataset, demonstrating the application
+of these methods in improving model performance for trick classification.
+\paragraph{}
+After establishing the role of data augmentation in addressing the lack of data
+available
 %look into optical flow due to the dynamic notion of skateboard tricks - paper HARInSports
 %look into Histogram of Oriented Gradient (HOG) 3D features,
 \section{Advancements in Skateboard Trick Classification}
@@ -149,17 +176,19 @@ for validation.
 
 \paragraph{}
 %Maybe move to prerpcessing
-Data augmentation techniques are popular in studies with relatively limited
-datasets. Techniques such as flipping, rotating, scaling and colour manipulation
-not only enhance the size of the original dataset but also lower the likelihood
-of the model overfitting \cite{DataAugmentationCanImproveRobustness},
-\cite{AnOverviewOfOverfittingAndItsSolutions}. The paper by Shapiee et al.
-\cite{skatePaper1} utilises three rotation augmentation techniques: horizontal
-rotation, positive 90°rotation and negative 90°rotation. The researchers
-experimented on three Transfer learning models: MobileNet, NASNetMobile and
-NASNetLarge, each evaluated using a k-Nearest Neighbor (k-NN) classifier. As a
-result, the models demonstrated impressive classification accuracies, with
-MobileNet achieving 95\%, NASNetMobile 92\% and NASNetLarge 90\%. 
+% Data augmentation techniques are popular in studies with relatively limited
+% datasets. Techniques such as flipping, rotating, scaling and colour manipulation
+% not only enhance the size of the original dataset but also lower the likelihood
+% of the model overfitting \cite{DataAugmentationCanImproveRobustness},
+% \cite{AnOverviewOfOverfittingAndItsSolutions}. 
+%Mention more here !!!!
+The paper by Shapiee et al. \cite{skatePaper1} utilises data augmentation
+techniques and applies three rotation augmentation techniques: horizontal rotation,
+positive 90°rotation and negative 90°rotation. The researchers experimented on
+three Transfer learning models: MobileNet, NASNetMobile and NASNetLarge, each
+evaluated using a k-Nearest Neighbor (k-NN) classifier. As a result, the models
+demonstrated impressive classification accuracies, with MobileNet achieving
+95\%, NASNetMobile 92\% and NASNetLarge 90\%. 
 
 \paragraph{}
 Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are

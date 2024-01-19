@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  18 JAN 2024 18:12
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  19 JAN 2024 18:46
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writeup/thesis_report/main
@@ -1744,45 +1744,45 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 <content/chapters/2_background/figures/Tricks/single.png, id=255, 149.05687pt x 216.81pt>
 File: content/chapters/2_background/figures/Tricks/single.png Graphic file (type png)
 <use content/chapters/2_background/figures/Tricks/single.png>
-Package luatex.def Info: content/chapters/2_background/figures/Tricks/single.png  used on input line 150.
+Package luatex.def Info: content/chapters/2_background/figures/Tricks/single.png  used on input line 151.
 (luatex.def)             Requested size: 129.74623pt x 188.73235pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 151.
+(Font)              scaled to size 10.95pt on input line 152.
 <content/chapters/2_background/figures/Tricks/KickflipFrames.PNG, id=256, 289.83281pt x 238.64156pt>
 File: content/chapters/2_background/figures/Tricks/KickflipFrames.PNG Graphic file (type png)
 <use content/chapters/2_background/figures/Tricks/KickflipFrames.PNG>
-Package luatex.def Info: content/chapters/2_background/figures/Tricks/KickflipFrames.PNG  used on input line 156.
+Package luatex.def Info: content/chapters/2_background/figures/Tricks/KickflipFrames.PNG  used on input line 157.
 (luatex.def)             Requested size: 227.62206pt x 187.41777pt.
 
-Overfull \hbox (2.048pt too wide) in paragraph at lines 148--160
+Overfull \hbox (2.048pt too wide) in paragraph at lines 149--161
 []$[]$ $[]$ 
  []
 
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 167.
+(Font)              scaled to size 14.4pt on input line 168.
 [5<./content/chapters/2_background/figures/Tricks/single.png><./content/chapters/2_background/figures/Tricks/KickflipFrames.PNG>]
 <content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png, id=269, 1254.6875pt x 1060.96375pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png Graphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>
-Package luatex.def Info: content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png  used on input line 196.
+Package luatex.def Info: content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png  used on input line 197.
 (luatex.def)             Requested size: 318.66948pt x 269.4656pt.
  [6<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>]) ("./content/chapters/3_Literature Review/literature_review.tex" [7]
 Chapter 3.
 [8
 
 
-] [9] [10]) [11]
+] [9] [10]) [11] [12]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 64.
- [12
+ [13
 
-] [13] (./content/appendices/appendix_a.tex [14]
+] [14] (./content/appendices/appendix_a.tex [15]
 Chapter 4.
-) (./content/appendices/appendix_b.tex [15
+) (./content/appendices/appendix_b.tex [16
 
 ]
 Chapter 5.
-) [16
+) [17
 
 
 makeindex -s main.ist -t main.glg -o main.gls main.glo
@@ -1796,19 +1796,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35393 strings out of 477805
+ 35398 strings out of 477805
  100000,1648299 words of node,token memory allocated
  819 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 113 glue_spec, 9 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:2,2:970,3:418,4:58,5:775,6:107,7:6740,8:111,9:388,10:23,11:570,12:4
- 54760 multiletter control sequences out of 65536+600000
+   avail lists: 1:2,2:957,3:417,4:56,5:795,6:106,7:6737,8:121,9:387,10:23,11:571,12:4
+ 54763 multiletter control sequences out of 65536+600000
  73 fonts using 19784143 bytes
- 106i,11n,128p,1257b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,11n,128p,1257b,1646s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (25 pages, 1217189 bytes).
+Output written on main.pdf (26 pages, 1218525 bytes).
 
-PDF statistics: 444 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 79 named destinations out of 1000 (max. 131072)
+PDF statistics: 450 PDF objects out of 1000 (max. 8388607)
+ 392 compressed objects within 4 object streams
+ 81 named destinations out of 1000 (max. 131072)
  241 words of extra memory for PDF output out of 10000 (max. 100000000)
 
