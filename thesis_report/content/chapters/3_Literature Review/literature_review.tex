@@ -4,10 +4,10 @@
 
 \section{Activity Recognition}
 Building on the foundational understanding of activity recognition defined in
-the background, it's important to acknowledge the impact it has on
-various sectors. The recent advancements in recognising human actions in videos
-have have not only revolutionalised sectors such as healthcare and security
-\cite{3DhumanActionDetectionForHealthCareSystems},
+the background, it's important to acknowledge the impact it has on various
+sectors. The recent advancements in recognising human actions in videos have
+have not only revolutionalised sectors such as healthcare and security as
+demonstrated in the studies \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
 potential in the realm of sports. K. Host and M. Ivašić-Kos in
 \cite{HARinSportsComputerVision} along with Wu et al. in
@@ -39,17 +39,16 @@ societal acceptability and their applicability in sports broadcasts.
 The domain of Activity recognition comes with many challenges as depicted by
 Zhang et al. (2017)
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod}. The researchers
-argue that while in some certain scenarios such as surveillance systems utilise
-static cameras, most scenarios that would benefit from Activity recognition
-adopt dynamic recording devices such as sports event broadcasts or mobile
-phones. These dynamic devices introduce a significant level of complexity due to
-the complex dynamic backgrounds typically present in recorded video footage.
-Zhang et al. also points out specific difficulties posed by long-distance and
-low-quality videos, often encountered in environments like crowded public spaces
-and sports events. The camera distance, results in smaller subjecs, making
-detailed analysis of human movements more challenging while lower
-quality videos further complicate the task for Human Activity Recognition (HAR)
-systems. 
+suggest that while certain scenarios utilise static cameras such as surveillance
+systems , most scenarios that would benefit from Activity Recognition adopt
+dynamic recording devices such as mobile phones or sports event broadcasts.
+These dynamic devices introduce a significant level of complexity as a result of
+their tricky dynamic backgrounds present in video footage. Zhang et al. also
+points out specific difficulties posed by long-distance and low-quality videos,
+often encountered in environments like crowded public spaces and sports events.
+The camera distance, results in smaller subjecs, making detailed analysis of
+human movements more challenging while lower quality videos further complicate
+the task for Human Activity Recognition (HAR) systems. 
 \paragraph{}
 The challenges highlighted by Zhang et al.
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod} in the domain of
@@ -77,12 +76,16 @@ performs well in real-world conditions.
 %While Contact based is good, this study will be focusing on computer vsision
 
 \section{Preprocessing techniques}
-Preprocessing is a crucial step
-As a result of the limited research in the advent of a skateboard trick
-classifier, there is a significan lack of open-source datasets featuring
+Preprocessing is a crucial step in the development of ML models, especially in
+the field of activity recognition. It involves the application of various
+techniques to enhance raw data before
+
+
+As a result of the limited research in the emergence of a skateboard
+trick classifier, there is a significant lack of open-source datasets featuring
 skateboard tricks. This lack of data presents an opportunity to employ data
 augmentation techniques, especially valuable in studies with limited data.
-Teqniques such as flipping, rotating, scaling and colour manipulation not only
+Techniques such as flipping, rotating, scaling and colour manipulation not only
 artificially enhance the size of the original dataset but also lower the
 likelihood of the model overfitting \cite{DataAugmentationCanImproveRobustness},
 \cite{AnOverviewOfOverfittingAndItsSolutions}. In the realm of Skateboard trick
@@ -91,7 +94,28 @@ augmentation techniques to expand their dataset, demonstrating the application
 of these methods in improving model performance for trick classification.
 \paragraph{}
 After establishing the role of data augmentation in addressing the lack of data
-available
+available, another important step in computer vision, is data normalization.
+Normalization is an important technique used in preprocessing to standardise the
+range and distribution of pixel values in an image, improving model performance,
+\cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}.
+In computer vision tasks, where 8-bit image formats like JPEG are common,
+min-max normalisation is particular prevalent. The research by Pei et al.
+\cite{RobustnessInMLNormalisation}, underscores this, showing that normalizing
+pixel intesities by dividing them by 255 to adjust the scale from 0 to 1
+significantly enhances classification accuracy. Meanwhile, the study by de Raad
+et al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests
+that the impact of normalization on model performance can vary depending on the
+characteristics of the dataset. The contrasting conclusions presented in the studies
+\cite{RobustnessInMLNormalisation} and
+\cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that while
+normalization is an important preprocessing step, its application should be
+carefully adapted to the characteristics of the dataset.
+\paragraph{}
+Feature extraction is a vital step in computer vision where patterns and
+characteristics are are extracted in the data that makes classification 
+
+
+% Feature extraction techniques - using transfer learning, optical flow, object detection
 %look into optical flow due to the dynamic notion of skateboard tricks - paper HARInSports
 %look into Histogram of Oriented Gradient (HOG) 3D features,
 \section{Advancements in Skateboard Trick Classification}
@@ -197,7 +221,7 @@ relationships in sequential data \cite{UnderstandingLSTM}. In the student
 abstract by Hanciao Chen \cite{SkateboardAIPaper}, extensive experimentation is
 conducted using diverse models, exploring various combinations of CNN-LSTM and
 CNN-BiLSTM architectures. The study also incorporated attention mechanisms and
-explored transfer-based methods for action recognition. 
+explored transfer-based methods for activity recognition. 
 %Add more information on 
 This study further
 documents and analyses important metrics such as training time, training
@@ -213,3 +237,15 @@ application of diverse models in activity recognition in skateboarding.
 % Address challenges like overfitting, especially in the context of studies reporting unusually high accuracies.
 
 \section{Conclusion of the Literature Review}
+
+
+
+
+
+
+
+
+
+
+
+

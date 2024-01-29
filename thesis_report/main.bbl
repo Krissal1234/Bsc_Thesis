@@ -1068,6 +1068,191 @@
       \verb 10.15282/mekatronika.v2i2.6683
       \endverb
     \endentry
+    \entry{RobustnessInMLNormalisation}{article}{}
+      \name{author}{7}{}{%
+        {{hash=46bc2e9711e49ba2bcde30b6b1976f61}{%
+           family={Pei},
+           familyi={P\bibinitperiod},
+           given={Xiaolong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=34295786bef606798fe5c42d174c3148}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod},
+           prefix={hong},
+           prefixi={h\bibinitperiod}}}%
+        {{hash=1cf551d9144a2f62273c38d368c23e83}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Liwen},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1008ec6ca7d6c993d7c3bbf8abb5531b}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Qingwei},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=a58177ee662c5bb4aaef7e804222f74e}{%
+           family={Duan},
+           familyi={D\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=835c358c99d5abe29afc188190c9d6d5}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=788d6f7b7ac9b960939e0d4e84a658d1}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Hua},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{0bee697d732f4babbbf12322dc283312}
+      \strng{fullhash}{c49434fe63448fddf9861f1f538f8966}
+      \strng{bibnamehash}{0bee697d732f4babbbf12322dc283312}
+      \strng{authorbibnamehash}{0bee697d732f4babbbf12322dc283312}
+      \strng{authornamehash}{0bee697d732f4babbbf12322dc283312}
+      \strng{authorfullhash}{c49434fe63448fddf9861f1f538f8966}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Materials \& Design}
+      \field{title}{Robustness of machine learning to color, size change, normalization, and image enhancement on micrograph datasets with large sample differences}
+      \field{volume}{232}
+      \field{year}{2023}
+      \field{pages}{112086}
+      \range{pages}{1}
+    \endentry
+    \entry{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}{article}{}
+      \name{author}{6}{}{%
+        {{hash=299c69ee80fd7be901f0ce6de4f0d49e}{%
+           family={Zhong},
+           familyi={Z\bibinitperiod},
+           given={Xiaoting},
+           giveni={X\bibinitperiod}}}%
+        {{hash=516c148a93563b7b0a71c16865ca017a}{%
+           family={Gallagher},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=4352177120392fd071cc3528c6a92291}{%
+           family={Eves},
+           familyi={E\bibinitperiod},
+           given={Keenan},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8e5c9b6bcae218becb6b9c016cd42ac4}{%
+           family={Robertson},
+           familyi={R\bibinitperiod},
+           given={Emily},
+           giveni={E\bibinitperiod}}}%
+        {{hash=295e8656460e8beaa3c81bebb57fa970}{%
+           family={Mundhenk},
+           familyi={M\bibinitperiod},
+           given={T\bibnamedelima Nathan},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=4ec6a510ad4543215ada2248edfdd38c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={T\bibnamedelima Yong-Jin},
+           giveni={T\bibinitperiod\bibinitdelim Y\bibinithyphendelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group UK London}%
+      }
+      \strng{namehash}{8ebd70bfbdf99d5d0831c5db2ce6b00f}
+      \strng{fullhash}{ca5156e5396574fb4ccc8fc0d05c0577}
+      \strng{bibnamehash}{ca5156e5396574fb4ccc8fc0d05c0577}
+      \strng{authorbibnamehash}{ca5156e5396574fb4ccc8fc0d05c0577}
+      \strng{authornamehash}{8ebd70bfbdf99d5d0831c5db2ce6b00f}
+      \strng{authorfullhash}{ca5156e5396574fb4ccc8fc0d05c0577}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{npj Computational Materials}
+      \field{number}{1}
+      \field{title}{A study of real-world micrograph data quality and machine learning model robustness}
+      \field{volume}{7}
+      \field{year}{2021}
+      \field{pages}{161}
+      \range{pages}{1}
+    \endentry
+    \entry{EffectOnPreProcessingOnCNNForMedicalImageSegmentation}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{hash=e85cb68028fb7da82af9ba98be7125ee}{%
+           family={De\bibnamedelima Raad},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={KB},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9b7a364828444238078db83edacad413}{%
+           family={Garderen},
+           familyi={G\bibinitperiod},
+           given={Karin\bibnamedelima A},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=5ca24b0c3d3647ebee274e0d249f3f11}{%
+           family={Smits},
+           familyi={S\bibinitperiod},
+           given={Marion},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4d338bef5572881a30c64f9353a0eabe}{%
+           family={Voort},
+           familyi={V\bibinitperiod},
+           given={Sebastian\bibnamedelima R},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=a275ef40c1b66175b5c56d2ae077fa70}{%
+           family={Incekara},
+           familyi={I\bibinitperiod},
+           given={Fatih},
+           giveni={F\bibinitperiod}}}%
+        {{hash=9466c50fa9c4f30fcf182471720ca91d}{%
+           family={Oei},
+           familyi={O\bibinitperiod},
+           given={EHG},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7cbe4145729354286faea9ff3ce3a746}{%
+           family={Hirvasniemi},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b06759a6deae7b4d46478e504d7db42a}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f1649d8fb3edc7db227da9939edb62ff}{%
+           family={Starmans},
+           familyi={S\bibinitperiod},
+           given={Martijn\bibnamedelima PA},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{86cce72b71f9868189244c0b32f81f7a}
+      \strng{fullhash}{4b9e12d12c61582cc407a9903e6789bf}
+      \strng{bibnamehash}{86cce72b71f9868189244c0b32f81f7a}
+      \strng{authorbibnamehash}{86cce72b71f9868189244c0b32f81f7a}
+      \strng{authornamehash}{86cce72b71f9868189244c0b32f81f7a}
+      \strng{authorfullhash}{4b9e12d12c61582cc407a9903e6789bf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2021 IEEE 18th International Symposium on Biomedical Imaging (ISBI)}
+      \field{title}{The effect of preprocessing on convolutional neural networks for medical image segmentation}
+      \field{year}{2021}
+      \field{pages}{655\bibrangedash 658}
+      \range{pages}{4}
+    \endentry
     \entry{skateboardClassificationTransferLearningPipelinesAccelermetry}{article}{}
       \name{author}{8}{}{%
         {{hash=506a8026f9d05dcd09862bc9710a05ef}{%
@@ -1188,8 +1373,8 @@
       \strng{authorbibnamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authornamehash}{3fa1fec0b6898d4af1813a46b6e7b033}
       \strng{authorfullhash}{3fa1fec0b6898d4af1813a46b6e7b033}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the AAAI Conference on Artificial Intelligence}
