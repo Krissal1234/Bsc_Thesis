@@ -3,8 +3,8 @@
 \contentsline {chapter}{Contents}{iv}{chapter*.2}%
 \contentsline {chapter}{List of Figures}{v}{chapter*.2}%
 \contentsline {chapter}{List of Tables}{vi}{chapter*.2}%
-\contentsline {chapter}{List of Abbreviations}{vii}{chapter*.2}%
-\contentsline {chapter}{Glossary of Symbols}{viii}{chapter*.2}%
+\contentsline {chapter}{List of Abbreviations}{1}{chapter*.2}%
+\contentsline {chapter}{Glossary of Symbols}{1}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {paragraph}{}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}%
@@ -43,19 +43,19 @@
 \contentsline {paragraph}{}{9}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Activity Recognition Techniques}{9}{subsection.3.1.2}%
 \contentsline {section}{\numberline {3.2}Preprocessing techniques}{9}{section.3.2}%
-\contentsline {paragraph}{}{9}{section.3.2}%
+\contentsline {paragraph}{}{10}{section.3.2}%
 \contentsline {paragraph}{}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Advancements in Skateboard Trick Classification}{10}{section.3.3}%
 \contentsline {paragraph}{}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Accelerometry approach}{10}{subsection.3.3.1}%
-\contentsline {paragraph}{}{10}{subsection.3.3.1}%
-\contentsline {paragraph}{}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Accelerometry approach}{11}{subsection.3.3.1}%
 \contentsline {paragraph}{}{11}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Computer Vision Approach}{11}{subsection.3.3.2}%
-\contentsline {paragraph}{}{11}{subsection.3.3.2}%
-\contentsline {paragraph}{}{11}{subsection.3.3.2}%
+\contentsline {paragraph}{}{11}{subsection.3.3.1}%
+\contentsline {paragraph}{}{11}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Computer Vision Approach}{12}{subsection.3.3.2}%
 \contentsline {paragraph}{}{12}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Model Evaluation and Challenges}{12}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Conclusion of the Literature Review}{12}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Sample A}{16}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Sample B}{17}{chapter.5}%
+\contentsline {paragraph}{}{12}{subsection.3.3.2}%
+\contentsline {paragraph}{}{12}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Model Evaluation and Challenges}{13}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Conclusion of the Literature Review}{13}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Sample A}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Sample B}{15}{chapter.5}%

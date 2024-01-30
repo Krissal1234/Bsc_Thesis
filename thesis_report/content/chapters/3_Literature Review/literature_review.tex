@@ -13,7 +13,7 @@ potential in the realm of sports. K. Host and M. Ivašić-Kos in
 \cite{HARinSportsComputerVision} along with Wu et al. in
 \cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
 further elaborate on this potential, highlighting the numerous applications and
-importance of activiy recognition.
+importance of activity recognition.
 \paragraph{} 
 In the study by Beddiar et al. \cite{VisionBasedHARASurvey}, two main streams of
 human computer interaction (HCI) technologies are emphasized: Contact-based and
@@ -27,7 +27,7 @@ Alternatively, the authors describe vision-based methods as the simplification
 of HCI due to more natural human communication, eliminating the need for
 physical contact or equipment. These methods use image and video data to
 recognise human activities offering an advantage in terms of societal acceptance
-and useability.
+and usability.
 \paragraph{}
 While both contact and vision-based systems have their merits, this study will
 specifically focus on vision-based techniques and their application in the
@@ -40,19 +40,19 @@ The domain of Activity recognition comes with many challenges as depicted by
 Zhang et al. (2017)
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod}. The researchers
 suggest that while certain scenarios utilise static cameras such as surveillance
-systems , most scenarios that would benefit from Activity Recognition adopt
-dynamic recording devices such as mobile phones or sports event broadcasts.
+systems, most situations that benefit from Activity Recognition adopt
+dynamic recording devices such as mobile phones and sports event broadcasts.
 These dynamic devices introduce a significant level of complexity as a result of
 their tricky dynamic backgrounds present in video footage. Zhang et al. also
 points out specific difficulties posed by long-distance and low-quality videos,
 often encountered in environments like crowded public spaces and sports events.
-The camera distance, results in smaller subjecs, making detailed analysis of
+The camera distance, results in smaller subjects, making detailed analysis of
 human movements more challenging while lower quality videos further complicate
 the task for Human Activity Recognition (HAR) systems. 
 \paragraph{}
 The challenges highlighted by Zhang et al.
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod} in the domain of
-activity recognition are directly relavant to the development of a skateboard
+activity recognition are directly relevant to the development of a skateboard
 trick classifier. In scenarios like televised skateboarding events, skaters may
 appear relatively small to accommodate the entire skatepark, This factor along
 with the complexity of the background as a result of dynamic recording poses a
@@ -95,24 +95,28 @@ of these methods in improving model performance for trick classification.
 \paragraph{}
 After establishing the role of data augmentation in addressing the lack of data
 available, another important step in computer vision, is data normalization.
-Normalization is an important technique used in preprocessing to standardise the
+This a technique used in preprocessing to standardise the
 range and distribution of pixel values in an image, improving model performance,
 \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}.
 In computer vision tasks, where 8-bit image formats like JPEG are common,
-min-max normalisation is particular prevalent. The research by Pei et al.
+min-max normalisation is particularly prevalent. The research by Pei et al.
 \cite{RobustnessInMLNormalisation}, underscores this, showing that normalizing
-pixel intesities by dividing them by 255 to adjust the scale from 0 to 1
+pixel intensities by dividing them by 255 to adjust the scale from 0 to 1
 significantly enhances classification accuracy. Meanwhile, the study by de Raad
 et al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests
-that the impact of normalization on model performance can vary depending on the
-characteristics of the dataset. The contrasting conclusions presented in the studies
+that the impact of normalization on model performance can vary depending on certain
+characteristics of the dataset. These contrasting conclusions presented in the studies
 \cite{RobustnessInMLNormalisation} and
 \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that while
 normalization is an important preprocessing step, its application should be
 carefully adapted to the characteristics of the dataset.
 \paragraph{}
-Feature extraction is a vital step in computer vision where patterns and
-characteristics are are extracted in the data that makes classification 
+
+Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, outlines feature extraction as the process of capturing the core attributes of an object. This is achieved by eliminating redundant parts of the data, leaving a set of numerical features that best describe the object and simplify the classification task. 
+This procedure can be applied in a number of ways, however CNN's are a popular choice due their capabilities in detecting complex patterns and enhancing features. While CNN's are primarily used in image recognition, as a preliminary step before deploying classification algorithms as outlined in the study by Manjunath Jogin et al. \cite{FeatureExtractionUsingCNNandDeepLearning}, where they achieved 86\% accuracy utilising feature extraction, their functionality extends further. CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks. For instance, when dealing with activity recognition, CNN's can first operate on individual frames to extract spatial features, which can then be passed through a sequence analysis model such as an LSTM, known to be good at understanding temporal dynamics. This approach is very popular in the field of Activity Recognition. ..---Find paper that shows HAR methods --
+Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively. These results underscores the strength in  -------
+Following the discussion on CNN's for feature extraction, it is important to highlight the concept of transfer learning, a technique 
+
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
