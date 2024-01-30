@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  30 JAN 2024 17:43
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  30 JAN 2024 20:04
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2478,55 +2478,59 @@ LaTeX Warning: Citation 'FeatureExtractionUsingCNNandDeepLearning' on page 10 u
 ndefined on input line 116.
 
 
-LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 10 undefined on input line 131.
-
-
-LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 10 undefined on input line 132.
-
-
-LaTeX Warning: Citation 'skatePaper1' on page 10 undefined on input line 135.
-
-
-LaTeX Warning: Citation 'SkateboardAIPaper' on page 10 undefined on input line 
-135.
+LaTeX Warning: Citation 'CNN-LSTMApproachToHAR' on page 10 undefined on input l
+ine 117.
 
 [10]
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 11 undefined on input line 140.
-
-
-LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 11 undefined on input line 152.
-
-
-LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 11 und
-efined on input line 159.
+ermetry' on page 11 undefined on input line 135.
 
 
 LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 11 undefined on input line 169.
+age 11 undefined on input line 136.
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 11 undefined on input line 139.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 11 undefined on input line 
+139.
+
+
+LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
+ermetry' on page 11 undefined on input line 144.
+
+
+LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
+ermetry' on page 11 undefined on input line 156.
+
+
+LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 11 und
+efined on input line 163.
+
+
+LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
+age 11 undefined on input line 173.
 
 [11]
 
-LaTeX Warning: Citation 'skatePaper1' on page 12 undefined on input line 188.
+LaTeX Warning: Citation 'skatePaper1' on page 12 undefined on input line 192.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 12 undefined on input line 
-194.
+198.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 12 undefined on input line 210.
+LaTeX Warning: Citation 'skatePaper1' on page 12 undefined on input line 214.
 
 
 LaTeX Warning: Citation 'UnderstandingLSTM' on page 12 undefined on input line 
-221.
+225.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 12 undefined on input line 
-222.
+226.
 
 [12])
 
@@ -2567,7 +2571,7 @@ Here is how much of LuaTeX's memory you used:
  794 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 112 glue_spec
 , 7 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:2,2:760,3:280,4:57,5:1139,6:88,7:7350,8:45,9:440,10:30,11:774,
+   avail lists: 1:2,2:761,3:280,4:58,5:1135,6:88,7:7351,8:45,9:440,10:30,11:747,
 12:2
  56671 multiletter control sequences out of 65536+600000
  71 fonts using 19149663 bytes
@@ -2584,7 +2588,7 @@ cmr12.pfb><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Kris Saliba/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (22 pages, 1233568 bytes).
+Output written on main.pdf (22 pages, 1234623 bytes).
 
 PDF statistics: 316 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 131072)
