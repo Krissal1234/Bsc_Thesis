@@ -45,16 +45,18 @@
 \contentsline {section}{\numberline {3.2}Preprocessing techniques}{9}{section.3.2}%
 \contentsline {paragraph}{}{10}{section.3.2}%
 \contentsline {paragraph}{}{10}{section.3.2}%
+\contentsline {paragraph}{}{10}{section.3.2}%
+\contentsline {paragraph}{}{10}{section.3.2}%
 \contentsline {paragraph}{}{11}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Advancements in Skateboard Trick Classification}{11}{section.3.3}%
 \contentsline {paragraph}{}{11}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Accelerometry approach}{11}{subsection.3.3.1}%
 \contentsline {paragraph}{}{11}{subsection.3.3.1}%
-\contentsline {paragraph}{}{11}{subsection.3.3.1}%
+\contentsline {paragraph}{}{12}{subsection.3.3.1}%
 \contentsline {paragraph}{}{12}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Computer Vision Approach}{12}{subsection.3.3.2}%
 \contentsline {paragraph}{}{12}{subsection.3.3.2}%
-\contentsline {paragraph}{}{12}{subsection.3.3.2}%
+\contentsline {paragraph}{}{13}{subsection.3.3.2}%
 \contentsline {paragraph}{}{13}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Model Evaluation and Challenges}{13}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Conclusion of the Literature Review}{13}{section.3.5}%
