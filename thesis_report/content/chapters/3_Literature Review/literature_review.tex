@@ -9,14 +9,17 @@ sectors. The recent advancements in recognising human actions in videos have
 have not only revolutionalised sectors such as healthcare and security as
 demonstrated in the studies \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
-potential in the realm of sports. The research conducted by K. Host and M. Ivašić-Kos in
+potential in the realm of sports. 
+\paragraph{}
+The research conducted by K. Host and M. Ivašić-Kos in
 \cite{HARinSportsComputerVision} along with Wu et al. in
 \cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
-further elaborate on this potential, highlighting the numerous applications and
-importance of activity recognition.
+further elaborate on this potential, such as its numerous applications in categorising complex sport actions, injury prevention methods and refinement of game strategies through video analysis. These studies also propose various methodological advancements, including the utilisation of Deep Learning models to enhance accuracy, the exploration of multimodal data sources for sports activities and an emphasis on real-time analysis capabilities. These insights provide valuable techniques that can be leveraged for the development of activity recognition models in the field of sports.
+
+
 \paragraph{} 
-In the study by Beddiar et al. \cite{VisionBasedHARASurvey}, two main streams of
-human computer interaction (HCI) technologies are emphasized: Contact-based and
+The study by Beddiar et al. \cite{VisionBasedHARASurvey},identifies two main streams of
+human computer interaction (HCI) technologies: Contact-based and
 Vision-based systems. The authors categorise contact-based HCI as those
 technologies that require physical user interaction through mediums such as
 accelerometers, wearable sensors and multi-touch interfaces. 
@@ -87,28 +90,36 @@ As a result of the limited research in the emergence of a skateboard
 trick classifier, there is a significant lack of open-source datasets featuring
 skateboard tricks. This lack of data presents an opportunity to employ data
 augmentation techniques, especially valuable in studies with limited data.
-Techniques such as flipping, rotating, scaling and colour manipulation not only
+Methods such as flipping, rotating, scaling and colour manipulation not only
 artificially enhance the size of the original dataset but also lower the
-likelihood of the model overfitting \cite{DataAugmentationCanImproveRobustness},
+likelihood of overfitting \cite{DataAugmentationCanImproveRobustness},
 \cite{AnOverviewOfOverfittingAndItsSolutions}. In the realm of Skateboard trick
 classifiers, Shapiee et al (2020) \cite{skatePaper1} effectively employed data
 augmentation techniques to expand their dataset, demonstrating the application
 of these methods in improving model performance for trick classification.
 \paragraph{}
-After establishing the role of data augmentation in addressing the lack of data available, we move to another important step in computer vision preprocessing: data normalization. This technique, essential for standardising the range and distribution of pixel values in an image, plays a significant role in enhancing model performance, \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. In computer vision tasks, where 8-bit image formats like JPEG are common, min-max normalisation is particularly prevalent. This technique adjusts pixel intensity values to a scale between 0 and 1, calculated as follows:\\
+After establishing the role of data augmentation in addressing the lack of data available, another important step in computer vision is data normalisation. This technique is essential for standardising the range and distribution of pixel values in an image, and has shown an increase in model performance, \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Among methods like Z-score, min-max normalisation is particularly prevalent in normalising pixel intensities to a 0-1 scale as follows:
+
+\begin{itemize}
+	\item $\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}$
+\end{itemize}
+While less common in computer vision due to its normality assumption,
+Z-score normalisation is defined as:
+\begin{itemize}
+	\item $\text{Z-score} = \frac{x - \mu}{\sigma}$
+\end{itemize}
+Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel values, and $\sigma$ is their standard deviation.
+
 \paragraph{}
-$\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}$
-\paragraph{}
-The research by Pei et al. \cite{RobustnessInMLNormalisation}, highlights the importance of this normalisation process, by showing that normalising pixel intensities by dividing them by 255 significantly enhances classification accuracy. This division by 255 is essential because each colour channel in an 8-bit image can represent values from 0 to 255.
+The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored the impact of normalisation on classification accuracy. They demonstrated that, for 8-bit images, min-max normalisation outperformed Z-score, significantly enhancing classification accuracy.
 On the other hand, the study by de Raad et al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests
-that the impact of normalization on model performance can vary depending on certain characteristics of the dataset. These contrasting conclusions presented in the studies \cite{RobustnessInMLNormalisation} and \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that while normalization is an important preprocessing step, its application should be carefully adapted to the characteristics of the dataset.
+that the impact of normalisation on model performance varies depending on certain dataset characteristics. These contrasting conclusions presented by the studies \cite{RobustnessInMLNormalisation} and \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that while normalisation is an important preprocessing step, its application should be carefully adapted to the characteristics of the dataset.
 \paragraph{}
 
-Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes feature extraction as the process of capturing the core attributes of an object by eliminating redundant parts of the data, leaving a set of numerical features that best describe the object and simplify the classification task. This procedure can be applied in a number of ways, however CNN's are a popular choice due their capabilities in detecting complex patterns and enhancing features. CNN's are primarily used in image recognition, serving as an initial step before deploying classification algorithms. This approach is outlined in the study by Manjunath Jogin et al. \cite{FeatureExtractionUsingCNNandDeepLearning}, where they achieved 86\% accuracy rate through the use of CNN's for feature extraction along with several classifiers. Beyond this primary function, CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks. For instance, when dealing with activity recognition, CNN's can first operate on individual frames to extract spatial features, which can then be passed through a sequence analysis model such as an LSTM, known to be good at understanding temporal dynamics. 
-\paragraph{}
-Following the discussion on CNN's for feature extraction, it is important to highlight the role of transfer learning in enhancing ML models, especially in fields with limited data like skateboard trick classification. The concept of transfer learning as detailed by the studies \cite{ASurveyOfTransferLearning} and \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a pretrained ML model to leverage its past experience for a new, but related task.
-----continue -----
+Having optimised the distribution of pixel values through the normalisation process, the next crucial step is feature extraction. Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this technique as the process of capturing the core attributes of an object by eliminating redundancies, resulting in a set of numerical features ideal for classification. CNN's excel at this due their capabilities in detecting complex patterns and enhancing features. Used primarily in image recognition, as an initial for classification algorithms, their effectiveness is demonstrated by studies like Manjunath Jogin et al. (2018) \cite{FeatureExtractionUsingCNNandDeepLearning} where they achieved 86\% accuracy rate through the use of CNN's for feature extraction alongside several classifiers. Beyond this primary function, CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks such as activity recognition. In the context of skateboard trick classification, CNNs can efficiently extract detailed spatial features like board rotations, foot positioning and limb movements. This involves CNNs operating on individual frames to extract spatial features, which can then be passed through a sequence analysis model like an LSTM, proven to be efficient at understanding temporal information.
 
+\paragraph{}
+Following the discussion on CNN's for feature extraction, it is important to highlight the role of transfer learning in enhancing ML models, especially in fields with limited data like skateboard trick classification. The concept of transfer learning as detailed by the studies \cite{ASurveyOfTransferLearning} and \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a pre-trained ML model to leverage its past experience for a new, but related task. The study by Sargano et al. (2017) \cite{HARUsingTransferLearningWithDeepRepresentations}, employed transfer learning with pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and GoogleNet \cite{GoogleNetCite},  for human activity recognition. Notably, they utilised the pre-trained models for feature extraction, followed by an SVM classifier for final recognition. Their approach showcases the resource-efficient and time-saving nature of transfer learning, evident in their impressive accuracies of 98.15\% and 91.47\%. Moreover, research on transfer learning is not unique within the realm of skateboard trick classification. Two other studies \cite{skatePaper1}, \cite{SkateboardAIPaper} have utilised this approach and achieved good accuracies, a more in-depth analysis on these papers can be found in the 'Advancements in Skateboard Trick Classification' section. These studies strongly suggests the exploration of various pre-trained models for feature extraction in the development of a skateboard trick classifier.
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
@@ -227,12 +238,11 @@ ResNet50 with Attention and BiLSTM (84\%), ResNet50 with BiLSTM (81\%) and
 ResNet50 with LSTM (80\%). Chen's study provides valuable insight into the
 application of diverse models in activity recognition in skateboarding. 
 
-\section{Model Evaluation and Challenges}
+%\section{Model Evaluation and Challenges}
 
 % Discuss the evaluation metrics used in these studies, like accuracy, precision, recall, etc.
 % Address challenges like overfitting, especially in the context of studies reporting unusually high accuracies.
 
-\section{Conclusion of the Literature Review}
 
 
 
