@@ -65,25 +65,11 @@ quality further complicating the task of trick recognition. Addressing these
 challenges is crucial for the development of a skateboard trick classifier that
 performs well in real-world conditions.
 
-\subsection{Activity Recognition Techniques}
-Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively, showcasing the strength of CNN's for extracting spatial features from data, especially in the field of activity recognition.
 
-CNN-LSTM is a popular approach in HAR use cite \cite{HumanActivityRecognitionSystem:StateOfTheArt}
-
-%Maybe first mention that ML classification can be used, but more recently, deep
-%learning has been favourable HARinSports K. host, then move onto different
-%studies and how they tackled activity recognition by discussing the evolution
-%from machine learning to deep learning in activity recognition, and why deep
-%learning might be more effective for your study
-
-% align with the insights from the
-% paper by K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}. This paper
-%While Contact based is good, this study will be focusing on computer vsision
-
-\section{Preprocessing techniques}
+\subsection{Preprocessing techniques}
 Preprocessing is a crucial step in the development of ML models, especially in
 the field of activity recognition. It involves the application of various
-techniques to enhance raw data before
+techniques to enhance raw data before feeding it to Machine Learning algorithms. ---continue or leave out
 
 
 As a result of the limited research in the emergence of a skateboard
@@ -125,6 +111,24 @@ Following the discussion on CNN's for feature extraction, it is important to hig
 % Feature extraction techniques - using transfer learning, optical flow, object detection
 %look into optical flow due to the dynamic notion of skateboard tricks - paper HARInSports
 %look into Histogram of Oriented Gradient (HOG) 3D features,
+
+\subsection{Activity Recognition Techniques}
+
+This section explores various computer vision techniques and architectures employed in previous literature for effective classification in activity recognition applications. Within the realm of activity recognition, the accurate classification of skateboard tricks provides a unique approach due to the complexities and dynamic nature of skateboarding. Computer vision techniques provide promising solutions for addressing these challenges
+Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively, showcasing the strength of CNN's for extracting spatial features from data, especially in the field of activity recognition.
+
+CNN-LSTM is a popular approach in HAR use cite \cite{HumanActivityRecognitionSystem:StateOfTheArt}
+
+%Maybe first mention that ML classification can be used, but more recently, deep
+%learning has been favourable HARinSports K. host, then move onto different
+%studies and how they tackled activity recognition by discussing the evolution
+%from machine learning to deep learning in activity recognition, and why deep
+%learning might be more effective for your study
+
+% align with the insights from the
+% paper by K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}. This paper
+%While Contact based is good, this study will be focusing on computer vsision
+
 \section{Advancements in Skateboard Trick Classification}
 
 \paragraph{}
@@ -140,7 +144,7 @@ employs computer vision techniques, leveraging video footage of skateboard
 tricks to train and refine models for accurate trick identification, as depicted
 by the studies \cite{skatePaper1} and \cite{SkateboardAIPaper}. 
 
-\subsection{Accelerometry approach}
+\subsection{Accelerometer-based approaches}
 \paragraph{}
 The study by Abdullah et al (2021)
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
@@ -185,11 +189,11 @@ skateboard tricks. The ANNs are all multilayer feed-forward neural networks
 with 82 neurons, a hidden layer, comprised of 23 neurons utilising a tan-sigmoid
 transfer function and an output layer consisting of 5 neurons with a softmax
 function. Finally, the study achieved high accuracies, with ANNs X, Y and Z
-achieving accuracies of 94.8\%, 96.7\% and 98.7\%, respectively, while the
+achieving 94.8\%, 96.7\% and 98.7\%, respectively, while the
 combined ANN XYZ achieved an accuracy of 92.8\%. 
 
 
-\subsection{Computer Vision Approach}
+\subsection{Computer Vision-based Approaches}
 \paragraph{}
 The paper by Shapiee et al (2020) \cite{skatePaper1} leverages a custom data set
 comprising videos capturing the execution of five distinct skateboard tricks,
