@@ -37,6 +37,8 @@ specifically focus on vision-based techniques and their application in the
 development of a skateboard trick classifier. These methods, which utilise image
 and video data to recognise human activities are selected due to their
 societal acceptability and their applicability in sports broadcasts.
+
+
 \subsection{Challenges in this field}
 \paragraph{}
 The domain of Activity recognition comes with many challenges as depicted by
@@ -114,10 +116,24 @@ Following the discussion on CNN's for feature extraction, it is important to hig
 
 \subsection{Activity Recognition Techniques}
 
-This section explores various computer vision techniques and architectures employed in previous literature for effective classification in activity recognition applications. Within the realm of activity recognition, the accurate classification of skateboard tricks provides a unique approach due to the complexities and dynamic nature of skateboarding. Computer vision techniques provide promising solutions for addressing these challenges
-Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively, showcasing the strength of CNN's for extracting spatial features from data, especially in the field of activity recognition.
+The accurate classification of skateboard tricks poses a unique challenge for computer vision due to the sport's dynamic and complex nature, characterised by rapid movements, potential occlusions and camera angles. This section explores various computer vision techniques and architectures employed in previous literature, exploring their potential impact on this specific task. 
+\paragraph{}
+Deep learning (DL) techniques, have become increasingly popular over traditional ML methods, for their ability to learn feature representations automatically from raw data, significantly improving performance \cite{AReviewOnComputerVisionBasedMethodsForHARRecognition}. 
+One particularly effective architecture is the CNN-LSTM. This combines the strength of CNN's for extracting spatial features from individual frames, with LSTM networks, which capture the temporal information across frames. Building upon the foundational CNN-LSTM architecture, the recent study by Saoudi et al. (2023) \cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN} enhances this model by incorporating three key advancements:
 
-CNN-LSTM is a popular approach in HAR use cite \cite{HumanActivityRecognitionSystem:StateOfTheArt}
+\begin{description}
+	\item[1. 3D Convolutional Neural Networks (3D CNNs):] Unlike regular CNNs, these process video data as 3D volumes, enabling them to capture both spatial and temporal information by performing convolution operations on all three dimensions: width, height and time. The authors opted to use the I3D model, leveraging transfer learning to bypass the extensive resources required to build one from scratch. The I3D model was selected for its proven efficiency and its ability to be fine-tuned for activity recognition tasks.  
+	\item[2. Bi-directional LongShort-Term Memory (BiLSTM) network:] The authors chose to use a variant of LSTM called Bi-directional Long Short-Term Memory (BiLSTM). Whereas LSTMs only process data in one direction, BiLSTMs are able to analyse data in both directions, allowing them to understand relationships between preceding and subsequent actions.
+	\item[3. Attention Mechanisms:] This technique focuses the model processing on the most relevant parts of the data, improving performance by important information for the task. By integrating an attention layer after their BiLSTM, Saoudi et al. enabled the model to focus on temporal features within the input, providing a more detailed representation of the input, improving overall performance.
+\end{description}
+
+With the integration of these advancements, Saoudi et al. achieved model accuracies of 97.98\% and 96.83\% on the HMDB51 and UFC101 datasets respectively, demonstrating the potential of 3D CNNs and attention mechanisms for activity recognition tasks.
+
+%Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively, showcasing the strength of CNN's for extracting spatial features from data, especially in the field of activity recognition.
+
+%CNN-LSTM is a popular approach in HAR use cite \cite{HumanActivityRecognitionSystem:StateOfTheArt}
+
+%% to mention: CNN-LSTM, Attention, BILSTM
 
 %Maybe first mention that ML classification can be used, but more recently, deep
 %learning has been favourable HARinSports K. host, then move onto different
@@ -135,7 +151,7 @@ CNN-LSTM is a popular approach in HAR use cite \cite{HumanActivityRecognitionSys
 In the emergent field of skateboard trick classification, leveraging activity
 recognition techniques from a video has led to two primary methodologies among
 researchers. The first technique involves utilising signals obtained from
-skateboard-mounted accelerometers or signals artificially generated based on the
+skateboard-mounted accelerometers or signals artificially generated based on the % maybe change wording
 findings of prior studies. These signals are then fed into a study-dependent
 model for classification, as outlined in
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
