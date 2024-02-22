@@ -3,6 +3,7 @@
 
 
 \section{Activity Recognition}
+\paragraph{}
 Building on the foundational understanding of activity recognition defined in
 the background, it's important to acknowledge the impact it has on various
 sectors. The recent advancements in recognising human actions in videos have
@@ -118,7 +119,8 @@ Following the discussion on CNN's for feature extraction, it is important to hig
 The accurate classification of skateboard tricks poses a unique challenge for computer vision due to the sport's dynamic and complex nature, characterised by rapid movements, potential occlusions and camera angles. This section explores various computer vision techniques and architectures employed in previous literature, exploring their potential impact on this specific task. 
 \paragraph{}
 Deep learning (DL) techniques, have become increasingly popular over traditional ML methods, for their ability to learn feature representations automatically from raw data, significantly improving performance \cite{AReviewOnComputerVisionBasedMethodsForHARRecognition}. 
-One particularly effective architecture is the CNN-LSTM. This combines the strength of CNN's for extracting spatial features from individual frames, with LSTM networks, which capture the temporal information across frames. The study by Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach to test its effectiveness against three activity recognition datasets: KTH, UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted performance. The authors employed transfer learning, utilising the VGG16 model \cite{VGG} for feature extraction from videos, followed by an LSTM network for classification. Their findings, show that 360 LSTM units achieved an accuracy of 93.86\% accuracy on the KTH dataset, while 320 units led to an accuracy of 91.93\%. However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units resulting in a lower accuracy of 47.36\%. These findings show the potential of the CNN-LSTM approach, particularly for simpler datasets, highlighting the need for further investigation and optimisation for more complex datasets like HMDB-51.
+One particularly effective DL architecture is the CNN-LSTM. It combines the strength of CNN's for extracting spatial features from individual frames, with LSTM networks, which capture the temporal information across frames.
+\paragraph{} The study by Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach to test its effectiveness against three activity recognition datasets: KTH, UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted performance. The authors employed transfer learning, utilising the VGG16 model \cite{VGG} for feature extraction from videos, followed by an LSTM network for classification. Their findings, show that 360 LSTM units achieved an accuracy of 93.86\% on the KTH dataset, while 320 units led to an accuracy of 91.93\%. However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units resulting in a lower accuracy of 47.36\%. These findings show the potential of the CNN-LSTM approach, particularly for simpler datasets, highlighting the need for further investigation and optimisation for more complex datasets like HMDB-51.
 
 \paragraph{}
 Building upon the foundational CNN-LSTM architecture, a recent study by Saoudi et al. (2023) \cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN} enhances this model by incorporating three key advancements:
@@ -252,8 +254,7 @@ conducted using diverse models, exploring various combinations of CNN-LSTM and
 CNN-BiLSTM architectures. The study also incorporated attention mechanisms and
 explored transfer-based methods for activity recognition. 
 %Add more information on 
-This study further
-documents and analyses important metrics such as training time, training
+This study further documents and analyses important metrics such as training time, training
 accuracy and validation accuracy for each model experimented on. Among these,
 the top three models that stood out in terms of validation accuracy were the
 ResNet50 with Attention and BiLSTM (84\%), ResNet50 with BiLSTM (81\%) and

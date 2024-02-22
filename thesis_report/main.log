@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  22 FEB 2024 20:12
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  22 FEB 2024 22:53
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2526,74 +2526,74 @@ LaTeX Warning: Citation 'SkateboardAIPaper' on page 11 undefined on input line
 LaTeX Warning: Citation 'AReviewOnComputerVisionBasedMethodsForHARRecognition' 
 on page 11 undefined on input line 120.
 
-
-LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
-page 11 undefined on input line 121.
-
-
-LaTeX Warning: Citation 'VGG' on page 11 undefined on input line 121.
-
 [11]
 
+LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
+page 12 undefined on input line 122.
+
+
+LaTeX Warning: Citation 'VGG' on page 12 undefined on input line 122.
+
+
 LaTeX Warning: Citation 'Advancinghumanactionrecognition:ahybridapproachusingat
-tention-basedLSTMand3DCNN' on page 12 undefined on input line 124.
+tention-basedLSTMand3DCNN' on page 12 undefined on input line 125.
 
 
-Overfull \hbox (37.60791pt too wide) in paragraph at lines 124--125
+Overfull \hbox (37.60791pt too wide) in paragraph at lines 125--126
 \TU/Lato(0)/m/n/12 [[]] 
  []
 
 [12]
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 159.
+ermetry' on page 13 undefined on input line 160.
 
 
 LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 13 undefined on input line 160.
+age 13 undefined on input line 161.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 13 undefined on input line 163.
+LaTeX Warning: Citation 'skatePaper1' on page 13 undefined on input line 164.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 13 undefined on input line 
-163.
+164.
 
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 168.
+ermetry' on page 13 undefined on input line 169.
 
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 180.
+ermetry' on page 13 undefined on input line 181.
 
 
 LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 13 und
-efined on input line 187.
+efined on input line 188.
 
 [13]
 
 LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 14 undefined on input line 197.
+age 14 undefined on input line 198.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 216.
+LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 217.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 14 undefined on input line 
-222.
+223.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 238.
+LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 239.
 
 [14]
 
 LaTeX Warning: Citation 'UnderstandingLSTM' on page 15 undefined on input line 
-249.
+250.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 15 undefined on input line 
-250.
+251.
 
 )
 
@@ -2634,7 +2634,7 @@ Here is how much of LuaTeX's memory you used:
  794 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 112 glue_spec
 , 7 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:1,2:762,3:280,4:62,5:1380,6:89,7:8353,8:47,9:440,10:30,11:775,
+   avail lists: 1:1,2:761,3:281,4:62,5:1236,6:89,7:7339,8:46,9:440,10:31,11:725,
 12:2
  57146 multiletter control sequences out of 65536+600000
  81 fonts using 19767871 bytes
@@ -2651,7 +2651,7 @@ cmr12.pfb><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Kris Saliba/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (24 pages, 1241399 bytes).
+Output written on main.pdf (24 pages, 1241413 bytes).
 
 PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
  49 named destinations out of 1000 (max. 131072)
