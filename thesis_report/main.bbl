@@ -23,8 +23,8 @@
       \list{publisher}{1}{%
         {Encyclopaedia Britannica, inc.}%
       }
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopaedia Britannica}
       \field{title}{Encyclopaedia Britannica}
@@ -40,8 +40,8 @@
       \list{publisher}{1}{%
         {Chloe Merrell}%
       }
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labeltitlesource}{title}
       \field{journaltitle}{One year on: How skateboarding's olympic debut changed the games}
       \field{title}{One year on: How skateboarding's olympic debut changed the games 2022}
@@ -67,8 +67,8 @@
       \strng{authorbibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
       \strng{authornamehash}{79ad981277b0595d7fd8d81e52e04d86}
       \strng{authorfullhash}{79ad981277b0595d7fd8d81e52e04d86}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Goskate.com - Top Articles}
@@ -95,8 +95,8 @@
       \strng{authorbibnamehash}{88192550e0159ac348930d7729ba63aa}
       \strng{authornamehash}{88192550e0159ac348930d7729ba63aa}
       \strng{authorfullhash}{88192550e0159ac348930d7729ba63aa}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1662-5161}
@@ -126,8 +126,8 @@
       \strng{authorbibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
       \strng{authornamehash}{ca6e0dde7f02382c2f3b5db625678d57}
       \strng{authorfullhash}{ca6e0dde7f02382c2f3b5db625678d57}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}
@@ -187,8 +187,8 @@
       \strng{authorbibnamehash}{0aa906fa5be3c583b31fae0151f9d65e}
       \strng{authornamehash}{0aa906fa5be3c583b31fae0151f9d65e}
       \strng{authorfullhash}{aaaeba74ebf8eb62e0b4e8246d683abf}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.DB}
@@ -211,8 +211,8 @@
       \strng{authorbibnamehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
       \strng{authornamehash}{d723d3ecb7a1c98b8835d87848cc1c6a}
       \strng{authorfullhash}{d723d3ecb7a1c98b8835d87848cc1c6a}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{1662-5161}
@@ -488,8 +488,8 @@
       \strng{authorbibnamehash}{3defe56f57f91bdd037c38942d18c0ae}
       \strng{authornamehash}{3defe56f57f91bdd037c38942d18c0ae}
       \strng{authorfullhash}{ae0a92f4cc25d349286428e2df519e08}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0031-3203}
@@ -883,8 +883,8 @@
       \strng{authorbibnamehash}{b312d2df74f12d948a0085b33884ae1b}
       \strng{authornamehash}{5b65d27e7c94888766eafb78a56d19f2}
       \strng{authorfullhash}{b312d2df74f12d948a0085b33884ae1b}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of healthcare engineering}
@@ -1594,8 +1594,8 @@
       \strng{authorbibnamehash}{c8e4a4ecd0971600273ab9d131df9574}
       \strng{authornamehash}{97b9d3495c903997ee4ea3c8661db0b7}
       \strng{authorfullhash}{c8e4a4ecd0971600273ab9d131df9574}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of imaging}

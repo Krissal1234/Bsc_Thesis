@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  23 FEB 2024 15:38
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  23 FEB 2024 19:01
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writup/thesis_report/main
@@ -1475,7 +1475,11 @@ Package biblatex Warning: Load 'inputenc' before biblatex.
 \@quotelevel=\count510
 \@quotereset=\count511
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 29.
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `fig:ANN_Diagram' multiply defined.
+
+)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -1748,7 +1752,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 ] [3]
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 168.
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=224, 569.12625pt x 435.6275pt>
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=228, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png Graphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
 Package luatex.def Info: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png  used on input line 195.
@@ -1758,23 +1762,32 @@ Chapter 3.
 [6
 
 
-] [7] [8] [9] [10] [11]) [12]
+] [7] [8]
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=319, 438.63875pt x 385.44pt>
+File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (type png)
+<use content/chapters/3_Literature Review/figures/cnn-lstm.png>
+Package luatex.def Info: content/chapters/3_Literature Review/figures/cnn-lstm.png  used on input line 178.
+(luatex.def)             Requested size: 386.96027pt x 340.03516pt.
+ [9] [10<./content/chapters/3_Literature Review/figures/cnn-lstm.png>] [11] [12]) [13]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 66.
- [13
+ [14
 
-] [14] [15] (./content/appendices/appendix_a.tex [16]
+] [15] [16] (./content/appendices/appendix_a.tex [17]
 Chapter 4.
-) (./content/appendices/appendix_b.tex [17
+) (./content/appendices/appendix_b.tex [18
 
 ]
 Chapter 5.
-) [18
+) [19
 
 
 makeindex -s main.ist -t main.glg -o main.gls main.glo
 makeindex -s main.ist -t main.alg -o main.acr main.acn
 ] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C9A23A9E585B3100448177A7493F4B9D;4155.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1783,19 +1796,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35920 strings out of 477805
+ 35934 strings out of 477805
  100000,1648299 words of node,token memory allocated
- 835 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 13 attribute, 113 glue_spec, 13 attribute_list, 1 write, 3 pdf_action nodes
-   avail lists: 1:1,2:976,3:420,4:64,5:1015,6:129,7:7590,8:124,9:388,10:22,11:658,12:5
- 55253 multiletter control sequences out of 65536+600000
+ 845 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 113 glue_spec, 14 attribute_list, 1 write, 4 pdf_action nodes
+   avail lists: 1:3,2:974,3:420,4:66,5:1013,6:127,7:7594,8:123,9:388,10:23,11:658,12:5
+ 55259 multiletter control sequences out of 65536+600000
  82 fonts using 19916359 bytes
- 106i,12n,128p,1733b,1648s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,12n,128p,1733b,1646s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (25 pages, 309374 bytes).
+Output written on main.pdf (26 pages, 382289 bytes).
 
-PDF statistics: 464 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 131072)
+PDF statistics: 477 PDF objects out of 1000 (max. 8388607)
+ 417 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 131072)
  217 words of extra memory for PDF output out of 10000 (max. 100000000)
 

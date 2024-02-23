@@ -83,7 +83,14 @@ classifiers, Shapiee et al (2020) \cite{skatePaper1} effectively employed data
 augmentation techniques to expand their dataset, demonstrating the application
 of these methods in improving model performance for trick classification.
 
-After establishing the role of data augmentation in addressing the lack of data available, another important step in computer vision is data normalisation. This technique is essential for standardising the range and distribution of pixel values in an image and has shown an increase in model performance, \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Among methods like Z-score, min-max normalisation is particularly prevalent in normalising pixel intensities to a 0-1 scale as follows:
+After establishing the role of data augmentation in addressing the lack of data
+available, another important step in computer vision is data normalisation. This
+technique is essential for standardising the range and distribution of pixel
+values in an image and has shown an increase in model performance,
+\cite{RobustnessInMLNormalisation},
+\cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Among methods like
+Z-score, min-max normalisation is particularly prevalent in normalising pixel
+intensities to a 0-1 scale as follows:
 
 \begin{equation}
 	\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}
@@ -94,13 +101,40 @@ Z-score normalisation is defined as:
 	\centering
 	\text{Z-score} = \frac{x - \mu}{\sigma}
 \end{equation}
-Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel values, and $\sigma$ is their standard deviation.
+Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel
+values, and $\sigma$ is their standard deviation.
 
-The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored the impact of normalisation on classification accuracy. They demonstrated that, for 8-bit images, min-max normalisation outperformed  Z-score, significantly enhancing classification accuracy.
-On the other hand, the study by de Raad et al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests
-that the impact of normalisation on model performance varies depending on certain dataset characteristics. These contrasting conclusions presented by the studies \cite{RobustnessInMLNormalisation} and \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggest that while normalisation is an important preprocessing step, its application should be carefully adapted to the characteristics of the dataset.
+The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored
+the impact of normalisation on classification accuracy. They demonstrated that,
+for 8-bit images, min-max normalisation outperformed  Z-score, significantly
+enhancing classification accuracy. On the other hand, the study by de Raad et
+al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that
+the impact of normalisation on model performance varies depending on certain
+dataset characteristics. These contrasting conclusions presented by the studies
+\cite{RobustnessInMLNormalisation} and
+\cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggest tha t while
+normalisation is an important preprocessing step, its application should be
+carefully adapted to the characteristics of the dataset.
 
-Having optimised the distribution of pixel values through the normalisation process, the next crucial step is feature extraction. Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this technique as the process of capturing the core attributes of an object by eliminating redundancies, resulting in a set of numerical features ideal for classification. CNNs excel at this due to their capabilities in detecting complex patterns and enhancing features. Used primarily in image recognition, as an initial for classification algorithms, their effectiveness is demonstrated by studies like Manjunath Jogin et al. (2018) \cite{FeatureExtractionUsingCNNandDeepLearning} where they achieved 86\% accuracy rate through the use of CNNs for feature extraction alongside several classifiers. Beyond this primary function, CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks such as activity recognition. In the context of skateboard trick classification, CNNs can efficiently extract detailed spatial features like board rotations, foot positioning and limb movements. This involves CNNs operating on individual frames to extract spatial features, which can then be passed through a sequence analysis model like an LSTM, proven to be efficient at understanding temporal information.
+Having optimised the distribution of pixel values through the normalisation
+process, the next crucial step is feature extraction. Xudong Jiang
+\cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this
+technique as the process of capturing the core attributes of an object by
+eliminating redundancies, resulting in a set of numerical features ideal for
+classification. CNNs excel at this due to their capabilities in detecting
+complex patterns and enhancing features. Used primarily in image recognition, as
+an initial for classification algorithms, their effectiveness is demonstrated by
+studies like Manjunath Jogin et al. (2018)
+\cite{FeatureExtractionUsingCNNandDeepLearning} where they achieved 86\%
+accuracy rate through the use of CNNs for feature extraction alongside several
+classifiers. Beyond this primary function, CNN's ability to extract complex
+features from images makes them very effective when coupled with other models
+for more complex tasks such as activity recognition. In the context of
+skateboard trick classification, CNNs can efficiently extract detailed spatial
+features like board rotations, foot positioning and limb movements. This
+involves CNNs operating on individual frames to extract spatial features, which
+can then be passed through a sequence analysis model like an LSTM, proven to be
+efficient at understanding temporal information.
 
 
 Following the discussion on CNN for feature extraction, it is important to highlight the role of transfer learning in enhancing ML models, especially in fields with limited data like skateboard trick classification. The concept of transfer learning as detailed by the studies \cite{ASurveyOfTransferLearning} and \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a pre-trained ML model to leverage its experience for a new, but related task. The study by Sargano et al. (2017) \cite{HARUsingTransferLearningWithDeepRepresentations}, employed transfer learning with pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and GoogleNet \cite{GoogleNetCite},  for human activity recognition. Notably, they utilised the pre-trained models for feature extraction, followed by an SVM classifier for final recognition. Their approach showcases the resource-efficient and time-saving nature of transfer learning, evident in their impressive accuracies of 98.15\% and 91.47\%. Moreover, research on transfer learning is not unique within the realm of skateboard trick classification. Two other studies \cite{skatePaper1}, \cite{SkateboardAIPaper} have utilised this approach and achieved high accuracies, however, a more in-depth analysis of these papers can be found in the 'Advancements in Skateboard Trick Classification' section. These studies strongly suggest the exploration of various pre-trained models for feature extraction in the development of a skateboard trick classifier.
@@ -125,9 +159,32 @@ effective DL architecture is the CNN-LSTM. It combines the strength of CNN's for
 extracting spatial features from individual frames, with LSTM networks, which
 capture the temporal information across frames.
 
-The study by Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach to test its effectiveness against three activity recognition datasets: KTH, UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted performance. The authors employed transfer learning, utilising the VGG16 model \cite{VGG} for feature extraction from videos, followed by an LSTM network for classification. Their findings show that 360 LSTM units achieved an accuracy of 93.86\% on the KTH dataset, while 320 units led to an accuracy of 91.93\%. However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units resulting in a lower accuracy of 47.36\%. These findings show the potential of the CNN-LSTM approach, particularly for simpler datasets, highlighting the need for further investigation and optimisation for more complex datasets like HMDB-51.
+The study by Orozco et al. (2020)
+\cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach
+to test its effectiveness against three activity recognition datasets: KTH,
+UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted
+performance. The authors employed transfer learning, utilising the VGG16 model
+\cite{VGG} for feature extraction from videos, followed by an LSTM network for
+classification. Their findings show that 360 LSTM units achieved an accuracy of
+93.86\% on the KTH dataset, while 320 units led to an accuracy of 91.93\%.
+However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units
+resulting in a lower accuracy of 47.36\%. These findings show the potential of
+the CNN-LSTM approach, particularly for simpler datasets, highlighting the need
+for further investigation and optimisation for more complex datasets like
+HMDB-51.
 
-Building upon the foundational CNN-LSTM architecture, a recent study by Saoudi et al. (2023) \cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN} enhances this model by incorporating three key advancements:
+\begin{figure}
+	\centering
+	\includegraphics[width=0.85 \textwidth]{content/chapters/3_Literature Review/figures/cnn-lstm.png} 
+	\caption{Schematic Representation of an Artificial Neural Network reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
+	\label{fig:ANN_Diagram} 
+  \end{figure}
+  
+
+Building upon the foundational CNN-LSTM architecture, a recent study by Saoudi
+et al. (2023)
+\cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN}
+enhances this model by incorporating three key advancements:
 
 \begin{description}
 	\item[1. 3D Convolutional Neural Networks (3D CNNs):] Unlike regular CNNs, these process video data as 3D volumes, enabling them to capture both spatial and temporal information by performing convolution operations on all three dimensions: width, height and time. The authors opted to use the I3D model, leveraging transfer learning to bypass the extensive resources required to build one from scratch. The I3D model was selected for its proven efficiency and its ability to be fine-tuned for activity recognition tasks.  
