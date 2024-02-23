@@ -1,0 +1,1009 @@
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  23 FEB 2024 18:51
+ restricted system commands enabled.
+**background.tex
+(./background.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+Lua module: luaotfload 2023-08-31 3.26 Lua based OpenType font support
+Lua module: lualibs 2023-07-13 2.76 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2023-07-13 2.76 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "C:/Users/Kris Saliba/AppData/Local/
+MiKTeX/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2023-08-19.lua" from kpse-res
+olved path "C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/tex/luatex/luaotf
+load/fontloader-2023-08-19.lua".
+Lua-only attribute luaotfload@noligature = 1
+luaotfload | init : Context OpenType loader version 3.133
+Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 2
+luaotfload | conf : Root cache directory is "C:/Users/Kris Saliba/AppData/Local/
+MiKTeX/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
+Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
+Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
+Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 3
+Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
+Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
+Inserting `tracingstacklevels' in `input_level_string'.
+! Undefined control sequence.
+l.2 \chapter
+          {Background}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \chapter{B
+            ackground}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[]Background 
+ []
+
+! Undefined control sequence.
+l.4 \section
+          {Skateboard Tricks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \section{S
+            kateboard Tricks}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+[]Skateboard
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 S
+   kateboard tricks are the heart and soul of skateboarding. These tricks
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--12
+[]Skateboard
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{itemize}
+                  
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 13--13
+[] 
+ []
+
+luaotfload | db : Font names database loaded from C:/Users/Kris Saliba/AppData/L
+ocal/MiKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz
+Overfull \hbox (15.66pt too wide) in paragraph at lines 14--18
+\TU/lmr/bx/n/10 Ol-
+ []
+
+
+Overfull \hbox (14.84001pt too wide) in paragraph at lines 14--18
+\TU/lmr/bx/n/10 lie:
+ []
+
+
+Overfull \hbox (26.89pt too wide) in paragraph at lines 18--21
+\TU/lmr/bx/n/10 Kick-
+ []
+
+
+Overfull \hbox (19.16pt too wide) in paragraph at lines 18--21
+\TU/lmr/bx/n/10 flip:
+ []
+
+
+Overfull \hbox (3.75pt too wide) in paragraph at lines 18--21
+360\TS1/lmr/m/n/10 °\nullfont around
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 21--23
+\TU/lmr/bx/n/10 360
+ []
+
+
+Overfull \hbox (23.95001pt too wide) in paragraph at lines 21--23
+\TU/lmr/bx/n/10 kick-
+ []
+
+
+Overfull \hbox (19.16pt too wide) in paragraph at lines 21--23
+\TU/lmr/bx/n/10 flip:
+ []
+
+
+Overfull \hbox (3.75pt too wide) in paragraph at lines 21--23
+360\TS1/lmr/m/n/10 °\nullfont board
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--27
+[]Skateboarders
+ []
+
+! Undefined control sequence.
+l.47 \section
+           {Machine Learning}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--48
+[]Machine
+ []
+
+\citation{ML_Algorithms}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.54 ...nd for machine learning \cite{ML_Algorithms}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `ML_Algorithms' on page  undefined on input line 54.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 49--55
+[]Machine
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 49--55
+[[]]. 
+ []
+
+\citation{UnderstandingLSTM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.56 Morris \cite{UnderstandingLSTM}
+                                   characterises ML as the advancement of
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `UnderstandingLSTM' on page  undefined on input line 56
+.
+
+\citation{TheEffectsofDataQualityonMachineLearningPerformance}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.65 ...tsofDataQualityonMachineLearningPerformance}
+                                                  . \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `TheEffectsofDataQualityonMachineLearningPerformance' o
+n page  undefined on input line 65.
+
+\citation{ML_Algorithms}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.66 ...categories for ML models\cite{ML_Algorithms}
+                                                  :
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `ML_Algorithms' on page  undefined on input line 66.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--67
+[]Morris
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 56--67
+[[]]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 56--67
+[[]]. 
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 56--67
+models[[]]: 
+ []
+
+
+Overfull \hbox (16.61pt too wide) in paragraph at lines 68--72
+\TU/lmr/bx/n/10 Su-
+ []
+
+
+Overfull \hbox (20.55002pt too wide) in paragraph at lines 68--72
+\TU/lmr/bx/n/10 per-
+ []
+
+
+Overfull \hbox (28.65001pt too wide) in paragraph at lines 68--72
+\TU/lmr/bx/n/10 vised:
+ []
+
+
+Overfull \hbox (19.07pt too wide) in paragraph at lines 72--76
+\TU/lmr/bx/n/10 Un-
+ []
+
+
+Overfull \hbox (14.76pt too wide) in paragraph at lines 72--76
+\TU/lmr/bx/n/10 su-
+ []
+
+
+Overfull \hbox (20.55002pt too wide) in paragraph at lines 72--76
+\TU/lmr/bx/n/10 per-
+ []
+
+
+Overfull \hbox (28.65001pt too wide) in paragraph at lines 72--76
+\TU/lmr/bx/n/10 vised:
+ []
+
+
+Overfull \hbox (17.73001pt too wide) in paragraph at lines 76--79
+\TU/lmr/bx/n/10 Re-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 76--79
+\TU/lmr/bx/n/10 in-
+ []
+
+
+Overfull \hbox (28.21pt too wide) in paragraph at lines 76--79
+\TU/lmr/bx/n/10 force-
+ []
+
+
+Overfull \hbox (28.58pt too wide) in paragraph at lines 76--79
+\TU/lmr/bx/n/10 ment:
+ []
+
+! Undefined control sequence.
+l.81 \section
+           {Object Detection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 81--82
+[]Object
+ []
+
+\citation{NeuralScience}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.86 \cite{NeuralScience}
+                       , it is an essential feature that enables our perform...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `NeuralScience' on page  undefined on input line 86.
+
+\citation{RecentAdvancesObjectDetection}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.91 \cite{RecentAdvancesObjectDetection}
+                                       .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `RecentAdvancesObjectDetection' on page  undefined on i
+nput line 91.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 83--92
+[]Object
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 83--92
+[[]],
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 83--92
+[[]]. 
+ []
+
+\citation{RecentAdvancesObjectDetection}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.95 ...h paper \cite{RecentAdvancesObjectDetection}
+                                                   further implies
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `RecentAdvancesObjectDetection' on page  undefined on i
+nput line 95.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 100.
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 93--102
+[]The
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 93--102
+[[]]
+ []
+
+
+Overfull \hbox (6.18336pt too wide) in paragraph at lines 93--102
+\OMS/cmsy/m/n/10 I$\nullfont ,
+ []
+
+
+Overfull \hbox (20.86389pt too wide) in paragraph at lines 93--102
+\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 )$
+ []
+
+
+Overfull \hbox (51.4194pt too wide) in paragraph at lines 103--105
+[]$\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 I\OT1/cmr/m/n/10 ) =
+ []
+
+
+Overfull \hbox (182.4598pt too wide) in paragraph at lines 103--105
+\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y[]; Z[]\OT1/cmr/m/n/10 )\O
+ML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y[]; Z[]\OT1/cmr/m/n/10
+ )\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y[]; Z[]\OT1/cmr/m/
+n/10 )\OMS/cmsy/m/n/10 g$ 
+ []
+
+\citation{RecentAdvancesObjectDetection}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.113 \cite{RecentAdvancesObjectDetection}
+                                        , object detection can be defined as...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `RecentAdvancesObjectDetection' on page  undefined on i
+nput line 113.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 106--121
+[]In
+ []
+
+
+Overfull \hbox (22.06941pt too wide) in paragraph at lines 106--121
+\OML/cmm/m/it/10 Y[] \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (7.50558pt too wide) in paragraph at lines 106--121
+\OMS/cmsy/m/n/10 Y$
+ []
+
+
+Overfull \hbox (30.8654pt too wide) in paragraph at lines 106--121
+\OML/cmm/m/it/10 Z[] \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (8.04167pt too wide) in paragraph at lines 106--121
+\OMS/cmsy/m/n/10 Z$
+ []
+
+
+Overfull \hbox (8.04167pt too wide) in paragraph at lines 106--121
+\OMS/cmsy/m/n/10 Z$
+ []
+
+
+Overfull \hbox (40.43219pt too wide) in paragraph at lines 106--121
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (12.96117pt too wide) in paragraph at lines 106--121
+\OMS/cmsy/m/n/10 R[]$
+ []
+
+
+Overfull \hbox (115.46605pt too wide) in paragraph at lines 106--121
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy
+/m/n/10 2
+ []
+
+
+Overfull \hbox (12.96117pt too wide) in paragraph at lines 106--121
+\OMS/cmsy/m/n/10 R[]$\nullfont .
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 106--121
+[[]],
+ []
+
+! Undefined control sequence.
+l.123 \section
+            {Activity Recognition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 123--124
+[]Activity
+ []
+
+\citation{ActionRecognitionDeepBi-DirectionalLSTM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.132 ...te{ActionRecognitionDeepBi-DirectionalLSTM}
+                                                  ,\cite{AReviewOfHumanActiv...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `ActionRecognitionDeepBi-DirectionalLSTM' on page  unde
+fined on input line 132.
+
+\citation{AReviewOfHumanActivityRecognitionMethods}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.132 ...e{AReviewOfHumanActivityRecognitionMethods}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `AReviewOfHumanActivityRecognitionMethods' on page  und
+efined on input line 132.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 125--133
+[]Activity
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 125--133
+[[]],[[]]. 
+ []
+
+! Undefined control sequence.
+l.167 \section
+            {Neural Networks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.168 \subsection
+               {Artificial Neural Networks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 167--169
+[]Neural
+ []
+
+\citation{FundamentalsOfNeuralNetworks}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.174 \cite{FundamentalsOfNeuralNetworks}
+                                       . Figure \ref{fig:ANN_Diagram} depicts a
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `FundamentalsOfNeuralNetworks' on page  undefined on in
+put line 174.
+
+! Undefined control sequence.
+<write> ...: Reference `fig:ANN_Diagram' on page \thepage 
+                                                  \space undefined\on@line .
+l.174 ...uralNetworks}. Figure \ref{fig:ANN_Diagram}
+                                                   depicts a
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:ANN_Diagram' on page  undefined on input line 174
+.
+
+\citation{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.177 ...sOfArtificialNeuralNetworksAndDeepLearning}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
+ on page  undefined on input line 177.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 170--178
+[]Artificial
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 170--178
+[[]].
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 170--178
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 170--178
+[[]]. 
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 179--179
+[] 
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 180--184
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 180--184
+\TU/lmr/bx/n/10 put
+ []
+
+
+Overfull \hbox (31.14pt too wide) in paragraph at lines 180--184
+\TU/lmr/bx/n/10 Layer:
+ []
+
+
+Overfull \hbox (22.41pt too wide) in paragraph at lines 184--187
+\TU/lmr/bx/n/10 Hid-
+ []
+
+
+Overfull \hbox (18.05pt too wide) in paragraph at lines 184--187
+\TU/lmr/bx/n/10 den
+ []
+
+
+Overfull \hbox (44.62pt too wide) in paragraph at lines 184--187
+\TU/lmr/bx/n/10 Layer(s):
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 187--191
+\TU/lmr/bx/n/10 Out-
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 187--191
+\TU/lmr/bx/n/10 put
+ []
+
+
+Overfull \hbox (31.14pt too wide) in paragraph at lines 187--191
+\TU/lmr/bx/n/10 Layer:
+ []
+
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \begin{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.195   \includegraphics
+                      [width=0.85 \textwidth]{content/chapters/2_background/...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+]
+l.195   \includegraphics[width=0.85 \textwidth]
+                                             {content/chapters/2_background/...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+]
+l.195   \includegraphics[width=0.85 \textwidth]
+                                             {content/chapters/2_background/...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.195 ...[width=0.85 \textwidth]{content/chapters/2_
+                                                  background/figures/Machine...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.195 .../figures/Machine Learning/ANN_Diagram2.png}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196   \caption
+              {Schematic Representation of an Artificial Neural Network. Rep...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\citation{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.196 ...sOfArtificialNeuralNetworksAndDeepLearning}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
+ on page  undefined on input line 196.
+
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 \end{figure}
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.198 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no ó (U+00F3) in font cmmi10!
+Missing character: There is no ó (U+00F3) in font cmmi10!
+! Missing } inserted.
+<inserted text> 
+}
+l.198 \end{figure}
+                
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (683.27065pt too wide) in paragraph at lines 195--199
+]content/chapters/2$[][]\OML/cmm/m/it/10 ackground=figures=MachineLearning=ANN[
+]iagram\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 :png[][]$ 
+ []
+
+! Undefined control sequence.
+l.200 \subsection
+               {Convolutional Neural Networks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{RecentAadvancesInConvolutionalNeuralNetworks}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.202 ...centAadvancesInConvolutionalNeuralNetworks}
+                                                   are a category of Deep
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `RecentAadvancesInConvolutionalNeuralNetworks' on page 
+ undefined on input line 202.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 200--207
+[]Convolutional
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 200--207
+[[]]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 208--211
+[]CNNs,
+ []
+
+! Undefined control sequence.
+l.212 \subsection
+               {Recurrent Neural Networks}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\citation{UnderstandingLSTM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.221 \cite{UnderstandingLSTM}
+                            ,\cite{Long-termConvolutionalNeuralNetworksforVi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `UnderstandingLSTM' on page  undefined on input line 22
+1.
+
+\citation{Long-termConvolutionalNeuralNetworksforVisualRecogntion}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.221 ...olutionalNeuralNetworksforVisualRecogntion}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `Long-termConvolutionalNeuralNetworksforVisualRecogntio
+n' on page  undefined on input line 221.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 212--222
+[]Recurrent
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 212--222
+[[]],[[]]. 
+ []
+
+\citation{learningPriceseTimingWithLSTM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.225 ...oduced \cite{learningPriceseTimingWithLSTM}
+                                                  . LSTM networks unlike RNN...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `learningPriceseTimingWithLSTM' on page  undefined on i
+nput line 225.
+
+\citation{UnderstandingLSTM}
+! Undefined control sequence.
+<write> ... Warning: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.227 ...logically credible \cite{UnderstandingLSTM}
+                                                  .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `UnderstandingLSTM' on page  undefined on input line 22
+7.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 223--228
+[]To
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 223--228
+[[]].
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 223--228
+[[]]. 
+ []
+
+)
+! Emergency stop.
+<*> background.tex
+               
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 34 strings out of 476497
+ 100000,1977958 words of node,token memory allocated 62961 words of node memory still in use:
+   237 hlist, 8 vlist, 23 disc, 32 local_par, 1 dir, 11 math, 1520 glue, 78 kern
+, 122 penalty, 6822 glyph, 203 attribute, 39 glue_spec, 203 attribute_list, 2 wr
+ite nodes
+   avail lists: 1:1,2:4,3:124,4:90,5:5,7:51,8:135,10:89
+ 22198 multiletter control sequences out of 65536+600000
+ 27 fonts using 1539423 bytes
+ 19i,5n,30p,240b,124s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
