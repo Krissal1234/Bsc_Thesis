@@ -25,23 +25,24 @@ harmony. Some common skateboard tricks include:
 Skateboarders continually innovate and come up with new trick combinations,
 contributing to the dynamic nature of the sport.
 
-\section{Problem Definition}
+%This will go in the introduction
+% \section{Problem Definition}
 
-The problem at hand revolves around the lack of an efficient and objective
-method for recognising skateboard tricks in competitions and practice sessions.
-Currently, the skateboarding community relies on using subjective methods for
-evaluations of these tricks, thus, this can lead to inconsistencies and disputes
-in scoring. This lack of objectivity not only disrupts the fairness in
-competitions but also inhibits skaters’ ability to receive real-time feedback
-for skill improvement. 
+% The problem at hand revolves around the lack of an efficient and objective
+% method for recognising skateboard tricks in competitions and practice sessions.
+% Currently, the skateboarding community relies on using subjective methods for
+% evaluations of these tricks, thus, this can lead to inconsistencies and disputes
+% in scoring. This lack of objectivity not only disrupts the fairness in
+% competitions but also inhibits skaters' ability to receive real-time feedback
+% for skill improvement. 
 
-The integration of Artificial Intelligence (AI) into skateboarding provides
-great potential for the standardisation of tricks, real-time feedback and injury
-prevention. The development of an AI model that can accurately recognise
-skateboard tricks is a tool that the skateboarding community would greatly
-benefit from. Consequently, there is a need for the development of an AI model
-that can accurately recognise and standardise skateboard tricks, thereby
-enhancing the sport’s objectivity, fairness and quality.
+% The integration of Artificial Intelligence (AI) into skateboarding provides
+% great potential for the standardisation of tricks, real-time feedback and injury
+% prevention. The development of an AI model that can accurately recognise
+% skateboard tricks is a tool that the skateboarding community would greatly
+% benefit from. Consequently, there is a need for the development of an AI model
+% that can accurately recognise and standardise skateboard tricks, thereby
+% enhancing the sport's objectivity, fairness and quality.
 
 \section{Machine Learning}
 
@@ -58,7 +59,7 @@ suggesting that the more training the learning algorithm undergoes, the better
 the algorithm becomes at executing tasks. Training is a multifaceted process
 that directly influences the overall accuracy of the model. Within this phase,
 numerous critical factors come into play, shaping the model's performance. These
-factors encompass dataset quality and diversity, the meticulous preprocessing of
+factors encompass dataset quality and diversity, the preprocessing of
 data, the selection of an appropriate model architecture, the optimal duration
 of training, and the fine-tuning of essential hyper-parameters
 \cite{TheEffectsofDataQualityonMachineLearningPerformance}. \\
@@ -128,39 +129,38 @@ operation of combining an image with a set of detections.
  external objects. Similar to object detection, the human ability to perceive
  these behaviours is a trivial task; yet, it is a challenging problem for
  computers due to the sequential nature and the resemblance of visual content in
- such
- activities\cite{ActionRecognitionDeepBi-DirectionalLSTM}\cite{AReviewOfHumanActivityRecognitionMethods}.
+ such activities \cite{ActionRecognitionDeepBi-DirectionalLSTM},\cite{AReviewOfHumanActivityRecognitionMethods}.
 
- %This is probably obsolete due to the explenation of contact based and remote based in lit review
- Recognising complex human actions demands the examination of sequential data as
- opposed to relying on single frames or images
- \cite{ActionRecognitionDeepBi-DirectionalLSTM}. To illustrate this point,
- consider the example of a skateboarder executing a challenging trick like the
- "Kickflip", as depicted in Figure \ref{fig:SingleVsMultiFrameKickflip}. If we
- were to feed a single frame of this trick into an AI model, as shown in Figure
- \ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as another
- trick. Whereas, by providing the model with a sequence of frames, as shown in
- Figure \ref{fig:MultiFrameKickflip}, it captures the entire essence of the
- trick portraying the dynamic progression of actions such as foot placement,
- board rotation and landing which collectively define the skateboard trick.
+% This should probably go to the implementation section
+ %  Recognising complex human actions demands the examination of sequential data as
+%  opposed to relying on single frames or images
+%  \cite{ActionRecognitionDeepBi-DirectionalLSTM}. To illustrate this point,
+%  consider the example of a skateboarder executing a challenging trick like the
+%  "Kickflip", as depicted in Figure \ref{fig:SingleVsMultiFrameKickflip}. If we
+%  were to feed a single frame of this trick into an AI model, as shown in Figure
+%  \ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as another
+%  trick. Whereas, by providing the model with a sequence of frames, as shown in
+%  Figure \ref{fig:MultiFrameKickflip}, it captures the entire essence of the
+%  trick portraying the dynamic progression of actions such as foot placement,
+%  board rotation and landing which collectively define the skateboard trick.
 
- %Skater frame images
-\begin{figure}[h]
-  \begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=0.57\linewidth]{content/chapters/2_background/figures/Tricks/single.png}
-    \caption{A Single Frame of a "Kickflip".}
-    \label{fig:singleFrameKickflip}
-  \end{subfigure}
-  \begin{subfigure}{0.5\textwidth}
-    \centering
-    \includegraphics[width=1\linewidth]{content/chapters/2_background/figures/Tricks/KickflipFrames.PNG}
-    \caption{Multiple Frames of a "Kickflip".}
-    \label{fig:MultiFrameKickflip}
-  \end{subfigure}
-  \caption{Comparison of a Single Frame and Multiple Sequential Frames.}
-  \label{fig:SingleVsMultiFrameKickflip}
-\end{figure}
+%  %Skater frame images
+% \begin{figure}[h]
+%   \begin{subfigure}{0.5\textwidth}
+%     \centering
+%     \includegraphics[width=0.57\linewidth]{content/chapters/2_background/figures/Tricks/single.png}
+%     \caption{A Single Frame of a "Kickflip".}
+%     \label{fig:singleFrameKickflip}
+%   \end{subfigure}
+%   \begin{subfigure}{0.5\textwidth}
+%     \centering
+%     \includegraphics[width=1\linewidth]{content/chapters/2_background/figures/Tricks/KickflipFrames.PNG}
+%     \caption{Multiple Frames of a "Kickflip".}
+%     \label{fig:MultiFrameKickflip}
+%   \end{subfigure}
+%   \caption{Comparison of a Single Frame and Multiple Sequential Frames.}
+%   \label{fig:SingleVsMultiFrameKickflip}
+% \end{figure}
 
 
 
@@ -169,13 +169,11 @@ operation of combining an image with a set of detections.
 
 Artificial Neural Networks (ANNs) are a class of machine learning models that
 are inspired by the interconnected systems of neurons found in the nervous
-system of living organisms. They consist of connected nodes organised in layers
-capable of learning from their environment and adapting to complex patterns in
-data \cite{FundamentalsOfNeuralNetworks}. One common type of ANN is the
-Feed-Forward Neural Network (FNN), which serves as a foundational architecture
-in neural network design. Figure \ref{fig:ANN_Diagram} depicts a schematic
-representation of an ANN. The diagram is organised into three fundamental
-layers: the Input Layer, the Hidden Layer(s) and the Output Layer
+system of living organisms. They consist of connected nodes capable of learning
+from their environment and adapting to complex patterns in data
+\cite{FundamentalsOfNeuralNetworks}. Figure \ref{fig:ANN_Diagram} depicts a
+schematic representation of an ANN. The diagram is organised into three
+fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.  
 
 \begin{itemize}
@@ -192,15 +190,15 @@ layers: the Input Layer, the Hidden Layer(s) and the Output Layer
     count.
 \end{itemize}
 
-\begin{figure}[h]
+\begin{figure}
   \centering
-  \includegraphics[width=0.7\textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png} 
-  \caption{Schematic Representation of an Artificial Neural Network with four input variables, three output variables and two hidden layers.}
+  \includegraphics[width=0.85 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png} 
+  \caption{Schematic Representation of an Artificial Neural Network reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
   \label{fig:ANN_Diagram} 
 \end{figure}
 
 \subsection{Convolutional Neural Networks}
-Convolutional Neural Networks (CNNs), as depicted by
+Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)
 \cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
@@ -211,23 +209,20 @@ CNNs, incorporate multiple layers and are capable of extracting effective
 representations
 %%Explain how feature maps are created thorugh convolutions
 
-
 \subsection{Recurrent Neural Networks}
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
-designed for sequential data processing. While feed-forward neural networks
-provide static mappings from input to output, RNNs are capable of modelling
+designed for sequential data processing. RNNs are capable of modelling
 dynamic relationships in sequential data by feeding signals from past time steps
-back into the network. However, as we delve deeper into the workings of RNNs, it
-becomes apparent that these networks are not without their constraints. One
-prominent limitation lies in their ability to effectively capture information
-from the past, often constrained to approximately ten sequential 
-time steps. This constraint arises from the challenge of dealing with vanishing or exploding
-gradients during the backpropagation procedure during the processing of extended sequences, as
-discussed in prior works \cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
+back into the network. However, they are limited by their
+inability to access long-term data, limited to approximately ten sequential time
+steps. This constraint arises from the challenge of dealing with vanishing or
+exploding gradients during the backpropagation procedure during the processing
+of extended sequences, as discussed in prior works
+\cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
 
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
 introduced \cite{learningPriceseTimingWithLSTM}. LSTM networks unlike RNNs are
 capable of capturing dependencies across more than 1,000 time steps depending on
-the network's complexity and are more biologically   credible \cite{UnderstandingLSTM}.
+the network's complexity and are more biologically credible \cite{UnderstandingLSTM}.
 
