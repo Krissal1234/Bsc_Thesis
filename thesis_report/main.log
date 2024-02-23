@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  22 FEB 2024 22:53
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  23 FEB 2024 10:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2314,134 +2314,140 @@ n page 3 undefined on input line 64.
 LaTeX Warning: Citation 'ML_Algorithms' on page 3 undefined on input line 65.
 
 
-LaTeX Warning: Citation 'NeuralScience' on page 3 undefined on input line 86.
+LaTeX Warning: Citation 'NeuralScience' on page 3 undefined on input line 85.
 
 
 LaTeX Warning: Citation 'RecentAdvancesObjectDetection' on page 3 undefined on 
-input line 91.
+input line 90.
 
 [3]
 
 LaTeX Warning: Citation 'RecentAdvancesObjectDetection' on page 4 undefined on 
-input line 95.
+input line 94.
 
 
 LaTeX Warning: Citation 'RecentAdvancesObjectDetection' on page 4 undefined on 
-input line 113.
+input line 112.
 
 
 LaTeX Warning: Citation 'ActionRecognitionDeepBi-DirectionalLSTM' on page 4 und
-efined on input line 133.
+efined on input line 132.
 
 
 LaTeX Warning: Citation 'AReviewOfHumanActivityRecognitionMethods' on page 4 un
-defined on input line 133.
+defined on input line 132.
 
 
-Overfull \hbox (67.25394pt too wide) in paragraph at lines 125--134
+Overfull \hbox (67.25394pt too wide) in paragraph at lines 124--133
 \TU/Lato(0)/m/n/12 ties[[]][[]].  
  []
 
 
 LaTeX Warning: Citation 'ActionRecognitionDeepBi-DirectionalLSTM' on page 4 und
-efined on input line 138.
+efined on input line 137.
 
-[4]
-<content/chapters/2_background/figures/Tricks/single.png, id=208, 149.05687pt x
+<content/chapters/2_background/figures/Tricks/single.png, id=196, 149.05687pt x
  216.81pt>
 File: content/chapters/2_background/figures/Tricks/single.png Graphic file (typ
 e png)
 <use content/chapters/2_background/figures/Tricks/single.png>
 Package luatex.def Info: content/chapters/2_background/figures/Tricks/single.pn
-g  used on input line 152.
+g  used on input line 151.
 (luatex.def)             Requested size: 129.74623pt x 188.73235pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 153.
-<content/chapters/2_background/figures/Tricks/KickflipFrames.PNG, id=209, 289.8
+(Font)              scaled to size 10.95pt on input line 152.
+<content/chapters/2_background/figures/Tricks/KickflipFrames.PNG, id=197, 289.8
 3281pt x 238.64156pt>
 File: content/chapters/2_background/figures/Tricks/KickflipFrames.PNG Graphic f
 ile (type png)
 <use content/chapters/2_background/figures/Tricks/KickflipFrames.PNG>
 Package luatex.def Info: content/chapters/2_background/figures/Tricks/KickflipF
-rames.PNG  used on input line 158.
+rames.PNG  used on input line 157.
 (luatex.def)             Requested size: 227.62206pt x 187.41777pt.
 
-Overfull \hbox (2.048pt too wide) in paragraph at lines 150--162
+Overfull \hbox (2.048pt too wide) in paragraph at lines 149--161
 [][] [] 
  []
 
-LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 169.
 
-LaTeX Warning: Citation 'FundamentalsOfNeuralNetworks' on page 5 undefined on i
-nput line 175.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 168.
+
+LaTeX Warning: Citation 'FundamentalsOfNeuralNetworks' on page 4 undefined on i
+nput line 174.
 
 
 LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
- on page 5 undefined on input line 180.
+ on page 4 undefined on input line 179.
 
-[5<./content/chapters/2_background/figures/Tricks/single.png><./content/chapters
-/2_background/figures/Tricks/KickflipFrames.PNG>]
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png, id=218
+[4]
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png, id=212
 , 1254.6875pt x 1060.96375pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png Gr
 aphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>
 Package luatex.def Info: content/chapters/2_background/figures/Machine Learning
-/ANN_Diagram.png  used on input line 198.
+/ANN_Diagram.png  used on input line 197.
 (luatex.def)             Requested size: 318.66948pt x 269.4656pt.
 
 
-LaTeX Warning: Citation 'RecentAadvancesInConvolutionalNeuralNetworks' on page 
-6 undefined on input line 207.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: Citation 'RecentAadvancesInConvolutionalNeuralNetworks' on page 
+5 undefined on input line 204.
+
+[5<./content/chapters/2_background/figures/Tricks/single.png><./content/chapters
+/2_background/figures/Tricks/KickflipFrames.PNG>]
 
 LaTeX Warning: Citation 'UnderstandingLSTM' on page 6 undefined on input line 2
-29.
+26.
 
 
 LaTeX Warning: Citation 'Long-termConvolutionalNeuralNetworksforVisualRecogntio
-n' on page 6 undefined on input line 229.
+n' on page 6 undefined on input line 226.
 
 
-Overfull \hbox (1.45189pt too wide) in paragraph at lines 219--230
+Overfull \hbox (1.45189pt too wide) in paragraph at lines 216--227
 \TU/Lato(0)/m/n/12 [[]],[[]].  
  []
 
 [6<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram.png>]
 
 LaTeX Warning: Citation 'learningPriceseTimingWithLSTM' on page 7 undefined on 
-input line 233.
+input line 230.
 
 
 LaTeX Warning: Citation 'UnderstandingLSTM' on page 7 undefined on input line 2
-35.
+32.
 
 ) ("./content/chapters/3_Literature Review/literature_review.tex" [7]
 Chapter 3.
 
 LaTeX Warning: Citation '3DhumanActionDetectionForHealthCareSystems' on page 8 
-undefined on input line 10.
+undefined on input line 11.
 
 
 LaTeX Warning: Citation 'HumanActivityRecognitionSecurityAndMonitoring' on page
- 8 undefined on input line 11.
+ 8 undefined on input line 12.
 
 
 LaTeX Warning: Citation 'HARinSportsComputerVision' on page 8 undefined on inpu
-t line 15.
+t line 16.
 
 
 LaTeX Warning: Citation 'Asurveyonvideoactionrecognitioninsports:Datasetsmethod
-sandapplications' on page 8 undefined on input line 16.
+sandapplications' on page 8 undefined on input line 17.
 
 
 LaTeX Warning: Citation 'VisionBasedHARASurvey' on page 8 undefined on input li
-ne 21.
+ne 20.
 
 
 LaTeX Warning: Citation 'ReviewOfHumanActivityRecognitionUsingVisionBasedMethod
-' on page 8 undefined on input line 46.
+' on page 8 undefined on input line 45.
 
 [8
 
@@ -2449,153 +2455,152 @@ LaTeX Warning: Citation 'ReviewOfHumanActivityRecognitionUsingVisionBasedMethod
 ]
 
 LaTeX Warning: Citation 'ReviewOfHumanActivityRecognitionUsingVisionBasedMethod
-' on page 9 undefined on input line 59.
+' on page 9 undefined on input line 58.
 
 
 LaTeX Warning: Citation 'DataAugmentationCanImproveRobustness' on page 9 undefi
-ned on input line 83.
+ned on input line 80.
 
 
 LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 9 unde
-fined on input line 84.
+fined on input line 81.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 9 undefined on input line 85.
+LaTeX Warning: Citation 'skatePaper1' on page 9 undefined on input line 82.
 
 [9]
 
 LaTeX Warning: Citation 'RobustnessInMLNormalisation' on page 10 undefined on i
-nput line 89.
+nput line 86.
 
 
 LaTeX Warning: Citation 'RealWorldMicroGraphDataQualityNORMALIZATIONCITE' on pa
-ge 10 undefined on input line 89.
+ge 10 undefined on input line 86.
 
 
 LaTeX Warning: Citation 'RobustnessInMLNormalisation' on page 10 undefined on i
-nput line 102.
+nput line 99.
 
 
 LaTeX Warning: Citation 'EffectOnPreProcessingOnCNNForMedicalImageSegmentation'
- on page 10 undefined on input line 103.
+ on page 10 undefined on input line 100.
 
 
 LaTeX Warning: Citation 'RobustnessInMLNormalisation' on page 10 undefined on i
-nput line 104.
+nput line 101.
 
 
 LaTeX Warning: Citation 'EffectOnPreProcessingOnCNNForMedicalImageSegmentation'
- on page 10 undefined on input line 104.
+ on page 10 undefined on input line 101.
 
 
 LaTeX Warning: Citation 'FeatureExtractionForImageRecognitionAndComputerVision'
- on page 10 undefined on input line 107.
+ on page 10 undefined on input line 103.
 
 
 LaTeX Warning: Citation 'FeatureExtractionUsingCNNandDeepLearning' on page 10 u
-ndefined on input line 107.
+ndefined on input line 103.
 
 [10]
 
 LaTeX Warning: Citation 'ASurveyOfTransferLearning' on page 11 undefined on inp
-ut line 110.
+ut line 106.
 
 
 LaTeX Warning: Citation 'ApplicationAndAnalysisOfTransferLearningSurvey' on pag
-e 11 undefined on input line 110.
+e 11 undefined on input line 106.
 
 
 LaTeX Warning: Citation 'HARUsingTransferLearningWithDeepRepresentations' on pa
-ge 11 undefined on input line 110.
+ge 11 undefined on input line 106.
 
 
-LaTeX Warning: Citation 'AlexNetCite' on page 11 undefined on input line 110.
+LaTeX Warning: Citation 'AlexNetCite' on page 11 undefined on input line 106.
 
 
-LaTeX Warning: Citation 'GoogleNetCite' on page 11 undefined on input line 110.
+LaTeX Warning: Citation 'GoogleNetCite' on page 11 undefined on input line 106.
 
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 11 undefined on input line 110.
+LaTeX Warning: Citation 'skatePaper1' on page 11 undefined on input line 106.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 11 undefined on input line 
-110.
+106.
 
 
 LaTeX Warning: Citation 'AReviewOnComputerVisionBasedMethodsForHARRecognition' 
-on page 11 undefined on input line 120.
+on page 11 undefined on input line 116.
 
 [11]
 
 LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
-page 12 undefined on input line 122.
+page 12 undefined on input line 119.
 
 
-LaTeX Warning: Citation 'VGG' on page 12 undefined on input line 122.
+LaTeX Warning: Citation 'VGG' on page 12 undefined on input line 119.
 
 
 LaTeX Warning: Citation 'Advancinghumanactionrecognition:ahybridapproachusingat
-tention-basedLSTMand3DCNN' on page 12 undefined on input line 125.
+tention-basedLSTMand3DCNN' on page 12 undefined on input line 121.
 
 
-Overfull \hbox (37.60791pt too wide) in paragraph at lines 125--126
+Overfull \hbox (37.60791pt too wide) in paragraph at lines 121--122
 \TU/Lato(0)/m/n/12 [[]] 
  []
 
 [12]
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 160.
+ermetry' on page 13 undefined on input line 155.
 
 
 LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 13 undefined on input line 161.
+age 13 undefined on input line 156.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 13 undefined on input line 164.
+LaTeX Warning: Citation 'skatePaper1' on page 13 undefined on input line 159.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 13 undefined on input line 
-164.
+159.
 
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 169.
+ermetry' on page 13 undefined on input line 164.
 
 
 LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
-ermetry' on page 13 undefined on input line 181.
+ermetry' on page 13 undefined on input line 176.
 
 
 LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 13 und
-efined on input line 188.
+efined on input line 183.
+
+
+LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
+age 13 undefined on input line 191.
 
 [13]
 
-LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
-age 14 undefined on input line 198.
-
-
-LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 217.
+LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 210.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 14 undefined on input line 
-223.
+216.
 
 
-LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 239.
-
-[14]
-
-LaTeX Warning: Citation 'UnderstandingLSTM' on page 15 undefined on input line 
-250.
+LaTeX Warning: Citation 'skatePaper1' on page 14 undefined on input line 232.
 
 
-LaTeX Warning: Citation 'SkateboardAIPaper' on page 15 undefined on input line 
-251.
+LaTeX Warning: Citation 'UnderstandingLSTM' on page 14 undefined on input line 
+243.
 
-)
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 14 undefined on input line 
+244.
+
+[14])
 
 LaTeX Warning: Empty bibliography on input line 66.
 
@@ -2629,16 +2634,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35856 strings out of 476497
+ 35860 strings out of 476497
  100000,1977958 words of node,token memory allocated
- 794 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 112 glue_spec
-, 7 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:1,2:761,3:281,4:62,5:1236,6:89,7:7339,8:46,9:440,10:31,11:725,
+ 810 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 11 attribute, 112 glue_spe
+c, 11 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:3,2:752,3:281,4:58,5:1157,6:88,7:7696,8:45,9:441,10:29,11:757,
 12:2
- 57146 multiletter control sequences out of 65536+600000
+ 57148 multiletter control sequences out of 65536+600000
  81 fonts using 19767871 bytes
- 106i,11n,128p,2394b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 106i,12n,128p,2394b,1113s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/truetype/typoland/lato
 /Lato-Italic.ttf><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/truet
 ype/typoland/lato/Lato-Regular.ttf><C:/Users/Kris Saliba/AppData/Local/Programs/
@@ -2651,9 +2656,9 @@ cmr12.pfb><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Kris Saliba/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (24 pages, 1241413 bytes).
+Output written on main.pdf (24 pages, 1240650 bytes).
 
-PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 131072)
+PDF statistics: 317 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 131072)
  225 words of extra memory for PDF output out of 10000 (max. 100000000)
 

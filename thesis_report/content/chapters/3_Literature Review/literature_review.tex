@@ -11,28 +11,26 @@ have not only revolutionalised sectors such as healthcare and security as
 demonstrated in the studies \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
 potential in the realm of sports. 
-\paragraph{}
+
 The research conducted by K. Host and M. Ivašić-Kos in
 \cite{HARinSportsComputerVision} along with Wu et al. in
 \cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
-further elaborate on this potential, such as its numerous applications in categorising complex sport actions, injury prevention methods and refinement of game strategies through video analysis. These studies also propose various methodological advancements, including the utilisation of Deep Learning models to enhance accuracy, the exploration of multimodal data sources for sports activities and an emphasis on real-time analysis capabilities. These insights provide valuable techniques that can be leveraged for the development of activity recognition models in the field of sports.
+further elaborate on this potential, such as its numerous applications in categorising complex sports actions, injury prevention methods and refinement of game strategies through video analysis. These studies also propose various methodological advancements, including the utilisation of Deep Learning models to enhance accuracy, the exploration of multimodal data sources for sports activities and an emphasis on real-time analysis capabilities. These insights provide valuable techniques that can be leveraged for the development of activity recognition models in the field of sports.
 
-
-\paragraph{} 
-The study by Beddiar et al. \cite{VisionBasedHARASurvey},identifies two main streams of
-human computer interaction (HCI) technologies: Contact-based and
+The study by Beddiar et al. \cite{VisionBasedHARASurvey}, identifies two main streams of
+Human-computer interaction (HCI) technologies: Contact-based and
 Vision-based systems. The authors categorise contact-based HCI as those
 technologies that require physical user interaction through mediums such as
 accelerometers, wearable sensors and multi-touch interfaces. 
 % Complimenting this perspective, the study by Cook et al. \cite{SensorBasedActivityRecognition}
-% delves into the the specifics of sensor technology, exploring how various sensor
+% delves into the specifics of sensor technology, exploring how various sensor
 % types are significant in the field of activity recognition.
 Alternatively, the authors describe vision-based methods as the simplification
 of HCI due to more natural human communication, eliminating the need for
 physical contact or equipment. These methods use image and video data to
 recognise human activities offering an advantage in terms of societal acceptance
 and usability.
-\paragraph{}
+
 While both contact and vision-based systems have their merits, this study will
 specifically focus on vision-based techniques and their application in the
 development of a skateboard trick classifier. These methods, which utilise image
@@ -41,7 +39,7 @@ societal acceptability and their applicability in sports broadcasts.
 
 
 \subsection{Challenges in this field}
-\paragraph{}
+
 The domain of Activity recognition comes with many challenges as depicted by
 Zhang et al. (2017)
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod}. The researchers
@@ -50,12 +48,12 @@ systems, most situations that benefit from Activity Recognition adopt
 dynamic recording devices such as mobile phones and sports event broadcasts.
 These dynamic devices introduce a significant level of complexity as a result of
 their tricky dynamic backgrounds present in video footage. Zhang et al. also
-points out specific difficulties posed by long-distance and low-quality videos,
+point out specific difficulties posed by long-distance and low-quality videos,
 often encountered in environments like crowded public spaces and sports events.
 The camera distance, results in smaller subjects, making detailed analysis of
-human movements more challenging while lower quality videos further complicate
+human movements more challenging while lower-quality videos further complicate
 the task for Human Activity Recognition (HAR) systems. 
-\paragraph{}
+
 The challenges highlighted by Zhang et al.
 \cite{ReviewOfHumanActivityRecognitionUsingVisionBasedMethod} in the domain of
 activity recognition are directly relevant to the development of a skateboard
@@ -68,14 +66,12 @@ quality further complicating the task of trick recognition. Addressing these
 challenges is crucial for the development of a skateboard trick classifier that
 performs well in real-world conditions.
 
-
 \subsection{Preprocessing techniques}
 Preprocessing is a crucial step in the development of ML models, especially in
 the field of activity recognition. It involves the application of various
 techniques to enhance raw data before feeding it to Machine Learning algorithms. ---continue or leave out
 
-
-As a result of the limited research in the emergence of a skateboard
+As a result of the limited research on the emergence of a skateboard
 trick classifier, there is a significant lack of open-source datasets featuring
 skateboard tricks. This lack of data presents an opportunity to employ data
 augmentation techniques, especially valuable in studies with limited data.
@@ -86,29 +82,28 @@ likelihood of overfitting \cite{DataAugmentationCanImproveRobustness},
 classifiers, Shapiee et al (2020) \cite{skatePaper1} effectively employed data
 augmentation techniques to expand their dataset, demonstrating the application
 of these methods in improving model performance for trick classification.
-\paragraph{}
-After establishing the role of data augmentation in addressing the lack of data available, another important step in computer vision is data normalisation. This technique is essential for standardising the range and distribution of pixel values in an image, and has shown an increase in model performance, \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Among methods like Z-score, min-max normalisation is particularly prevalent in normalising pixel intensities to a 0-1 scale as follows:
 
-\begin{itemize}
-	\item $\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}$
-\end{itemize}
+After establishing the role of data augmentation in addressing the lack of data available, another important step in computer vision is data normalisation. This technique is essential for standardising the range and distribution of pixel values in an image and has shown an increase in model performance, \cite{RobustnessInMLNormalisation}, \cite{RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Among methods like Z-score, min-max normalisation is particularly prevalent in normalising pixel intensities to a 0-1 scale as follows:
+
+\begin{equation}
+	\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}
+\end{equation}
 While less common in computer vision due to its normality assumption,
 Z-score normalisation is defined as:
-\begin{itemize}
-	\item $\text{Z-score} = \frac{x - \mu}{\sigma}$
-\end{itemize}
+\begin{equation}
+	\centering
+	\text{Z-score} = \frac{x - \mu}{\sigma}
+\end{equation}
 Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel values, and $\sigma$ is their standard deviation.
 
-\paragraph{}
-The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored the impact of normalisation on classification accuracy. They demonstrated that, for 8-bit images, min-max normalisation outperformed Z-score, significantly enhancing classification accuracy.
+The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored the impact of normalisation on classification accuracy. They demonstrated that, for 8-bit images, min-max normalisation outperformed  Z-score, significantly enhancing classification accuracy.
 On the other hand, the study by de Raad et al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests
-that the impact of normalisation on model performance varies depending on certain dataset characteristics. These contrasting conclusions presented by the studies \cite{RobustnessInMLNormalisation} and \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that while normalisation is an important preprocessing step, its application should be carefully adapted to the characteristics of the dataset.
-\paragraph{}
+that the impact of normalisation on model performance varies depending on certain dataset characteristics. These contrasting conclusions presented by the studies \cite{RobustnessInMLNormalisation} and \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggest that while normalisation is an important preprocessing step, its application should be carefully adapted to the characteristics of the dataset.
 
-Having optimised the distribution of pixel values through the normalisation process, the next crucial step is feature extraction. Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this technique as the process of capturing the core attributes of an object by eliminating redundancies, resulting in a set of numerical features ideal for classification. CNN's excel at this due their capabilities in detecting complex patterns and enhancing features. Used primarily in image recognition, as an initial for classification algorithms, their effectiveness is demonstrated by studies like Manjunath Jogin et al. (2018) \cite{FeatureExtractionUsingCNNandDeepLearning} where they achieved 86\% accuracy rate through the use of CNN's for feature extraction alongside several classifiers. Beyond this primary function, CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks such as activity recognition. In the context of skateboard trick classification, CNNs can efficiently extract detailed spatial features like board rotations, foot positioning and limb movements. This involves CNNs operating on individual frames to extract spatial features, which can then be passed through a sequence analysis model like an LSTM, proven to be efficient at understanding temporal information.
+Having optimised the distribution of pixel values through the normalisation process, the next crucial step is feature extraction. Xudong Jiang \cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this technique as the process of capturing the core attributes of an object by eliminating redundancies, resulting in a set of numerical features ideal for classification. CNNs excel at this due to their capabilities in detecting complex patterns and enhancing features. Used primarily in image recognition, as an initial for classification algorithms, their effectiveness is demonstrated by studies like Manjunath Jogin et al. (2018) \cite{FeatureExtractionUsingCNNandDeepLearning} where they achieved 86\% accuracy rate through the use of CNNs for feature extraction alongside several classifiers. Beyond this primary function, CNN's ability to extract complex features from images makes them very effective when coupled with other models for more complex tasks such as activity recognition. In the context of skateboard trick classification, CNNs can efficiently extract detailed spatial features like board rotations, foot positioning and limb movements. This involves CNNs operating on individual frames to extract spatial features, which can then be passed through a sequence analysis model like an LSTM, proven to be efficient at understanding temporal information.
 
-\paragraph{}
-Following the discussion on CNN's for feature extraction, it is important to highlight the role of transfer learning in enhancing ML models, especially in fields with limited data like skateboard trick classification. The concept of transfer learning as detailed by the studies \cite{ASurveyOfTransferLearning} and \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a pre-trained ML model to leverage its past experience for a new, but related task. The study by Sargano et al. (2017) \cite{HARUsingTransferLearningWithDeepRepresentations}, employed transfer learning with pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and GoogleNet \cite{GoogleNetCite},  for human activity recognition. Notably, they utilised the pre-trained models for feature extraction, followed by an SVM classifier for final recognition. Their approach showcases the resource-efficient and time-saving nature of transfer learning, evident in their impressive accuracies of 98.15\% and 91.47\%. Moreover, research on transfer learning is not unique within the realm of skateboard trick classification. Two other studies \cite{skatePaper1}, \cite{SkateboardAIPaper} have utilised this approach and achieved high accuracies, however, a more in-depth analysis on these papers can be found in the 'Advancements in Skateboard Trick Classification' section. These studies strongly suggests the exploration of various pre-trained models for feature extraction in the development of a skateboard trick classifier.
+
+Following the discussion on CNN for feature extraction, it is important to highlight the role of transfer learning in enhancing ML models, especially in fields with limited data like skateboard trick classification. The concept of transfer learning as detailed by the studies \cite{ASurveyOfTransferLearning} and \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a pre-trained ML model to leverage its experience for a new, but related task. The study by Sargano et al. (2017) \cite{HARUsingTransferLearningWithDeepRepresentations}, employed transfer learning with pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and GoogleNet \cite{GoogleNetCite},  for human activity recognition. Notably, they utilised the pre-trained models for feature extraction, followed by an SVM classifier for final recognition. Their approach showcases the resource-efficient and time-saving nature of transfer learning, evident in their impressive accuracies of 98.15\% and 91.47\%. Moreover, research on transfer learning is not unique within the realm of skateboard trick classification. Two other studies \cite{skatePaper1}, \cite{SkateboardAIPaper} have utilised this approach and achieved high accuracies, however, a more in-depth analysis of these papers can be found in the 'Advancements in Skateboard Trick Classification' section. These studies strongly suggest the exploration of various pre-trained models for feature extraction in the development of a skateboard trick classifier.
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
@@ -117,18 +112,18 @@ Following the discussion on CNN's for feature extraction, it is important to hig
 
 \subsection{Activity Recognition Techniques}
 The accurate classification of skateboard tricks poses a unique challenge for computer vision due to the sport's dynamic and complex nature, characterised by rapid movements, potential occlusions and camera angles. This section explores various computer vision techniques and architectures employed in previous literature, exploring their potential impact on this specific task. 
-\paragraph{}
-Deep learning (DL) techniques, have become increasingly popular over traditional ML methods, for their ability to learn feature representations automatically from raw data, significantly improving performance \cite{AReviewOnComputerVisionBasedMethodsForHARRecognition}. 
-One particularly effective DL architecture is the CNN-LSTM. It combines the strength of CNN's for extracting spatial features from individual frames, with LSTM networks, which capture the temporal information across frames.
-\paragraph{} The study by Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach to test its effectiveness against three activity recognition datasets: KTH, UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted performance. The authors employed transfer learning, utilising the VGG16 model \cite{VGG} for feature extraction from videos, followed by an LSTM network for classification. Their findings, show that 360 LSTM units achieved an accuracy of 93.86\% on the KTH dataset, while 320 units led to an accuracy of 91.93\%. However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units resulting in a lower accuracy of 47.36\%. These findings show the potential of the CNN-LSTM approach, particularly for simpler datasets, highlighting the need for further investigation and optimisation for more complex datasets like HMDB-51.
 
-\paragraph{}
+Deep learning (DL) techniques have become increasingly popular over traditional ML methods, for their ability to learn feature representations automatically from raw data, significantly improving performance \cite{AReviewOnComputerVisionBasedMethodsForHARRecognition}. 
+One particularly effective DL architecture is the CNN-LSTM. It combines the strength of CNN's for extracting spatial features from individual frames, with LSTM networks, which capture the temporal information across frames.
+
+The study by Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach to test its effectiveness against three activity recognition datasets: KTH, UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted performance. The authors employed transfer learning, utilising the VGG16 model \cite{VGG} for feature extraction from videos, followed by an LSTM network for classification. Their findings show that 360 LSTM units achieved an accuracy of 93.86\% on the KTH dataset, while 320 units led to an accuracy of 91.93\%. However, the performance on the HMDB-51 dataset dropped, with 400 LSTM units resulting in a lower accuracy of 47.36\%. These findings show the potential of the CNN-LSTM approach, particularly for simpler datasets, highlighting the need for further investigation and optimisation for more complex datasets like HMDB-51.
+
 Building upon the foundational CNN-LSTM architecture, a recent study by Saoudi et al. (2023) \cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN} enhances this model by incorporating three key advancements:
 
 \begin{description}
 	\item[1. 3D Convolutional Neural Networks (3D CNNs):] Unlike regular CNNs, these process video data as 3D volumes, enabling them to capture both spatial and temporal information by performing convolution operations on all three dimensions: width, height and time. The authors opted to use the I3D model, leveraging transfer learning to bypass the extensive resources required to build one from scratch. The I3D model was selected for its proven efficiency and its ability to be fine-tuned for activity recognition tasks.  
-	\item[2. Bi-directional LongShort-Term Memory (BiLSTM) network:] The authors chose to use a variant of LSTM called Bi-directional Long Short-Term Memory (BiLSTM). Whereas LSTMs only process data in one direction, BiLSTMs are able to analyse data in both directions, allowing them to understand relationships between preceding and subsequent actions.
-	\item[3. Attention Mechanisms:] This technique focuses the model processing on the most relevant parts of the data, improving performance by important information for the task. By integrating an attention layer after their BiLSTM, Saoudi et al. enabled the model to focus on temporal features within the input, providing a more detailed representation of the input, improving overall performance.
+	\item[2. Bi-directional Long-Short-Term Memory (BiLSTM) network:] The authors chose to use a variant of LSTM called Bi-directional Long Short-Term Memory (BiLSTM). Whereas LSTMs only process data in one direction, BiLSTMs can analyse data in both directions, allowing them to understand relationships between preceding and subsequent actions.
+	\item[3. Attention Mechanisms:] This technique focuses the model processing on the most relevant parts of the data, improving performance by important information for the task. By integrating an attention layer after their BiLSTM, Saoudi et al. enabled the model to focus on temporal features within the input, providing a more detailed representation of the input, and improving overall performance.
 \end{description}
 
 With the integration of these advancements, Saoudi et al. achieved model accuracies of 97.98\% and 96.83\% on the HMDB51 and UFC101 datasets respectively, demonstrating the potential of 3D CNNs and attention mechanisms for activity recognition tasks.
@@ -140,22 +135,21 @@ With the integration of these advancements, Saoudi et al. achieved model accurac
 %% to mention: CNN-LSTM, Attention, BILSTM
 
 %Maybe first mention that ML classification can be used, but more recently, deep
-%learning has been favourable HARinSports K. host, then move onto different
+%learning has been favourable HARinSports K. host, then move on to different
 %studies and how they tackled activity recognition by discussing the evolution
 %from machine learning to deep learning in activity recognition, and why deep
 %learning might be more effective for your study
 
 % align with the insights from the
 % paper by K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}. This paper
-%While Contact based is good, this study will be focusing on computer vsision
+%While Contact based is good, this study will focusing on computer vision
 
 \section{Advancements in Skateboard Trick Classification}
 
-\paragraph{}
 In the emergent field of skateboard trick classification, leveraging activity
-recognition techniques from a video has led to two primary methodologies among
+recognition techniques from a video have led to two primary methodologies among
 researchers. The first technique involves utilising signals obtained from
-skateboard-mounted accelerometers or signals artificially generated based on the % maybe change wording
+skateboard-mounted accelerometers or signals artificially generated based on the % maybe change the wording
 findings of prior studies. These signals are then fed into a study-dependent
 model for classification, as outlined in
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and
@@ -165,10 +159,10 @@ tricks to train and refine models for accurate trick identification, as depicted
 by the studies \cite{skatePaper1} and \cite{SkateboardAIPaper}. 
 
 \subsection{Accelerometer-based approaches}
-\paragraph{}
+
 The study by Abdullah et al (2021)
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
-of a custom dataset comprising of six skateboard tricks most commonly executed
+of a custom dataset comprising six skateboard tricks most commonly executed
 in competitive events. Amateur skateboarders performed each trick five times on
 a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
 the signals produced. The researchers capture six signals for each trick,
@@ -177,24 +171,22 @@ angular accelerations along the same axes (gX, gY, gZ). They then opt for the
 unique approach of concatenating all six signals onto a single image
 corresponding to one trick, employing two input image transformations: raw data
 (RAW) and Continuous Wavelet Transform (CWT). 
-\paragraph{}
+
 With the application of six transfer learning models on this data, Abdullah et
 al. \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} reports
 exceptionally high accuracies, achieving a 100\% test accuracy over multiple
 models. While these results are remarkable, very high levels of accuracy are
 rare in ML applications and are typically associated with models that may be
 overfitting the data. Recognising the rarity of such high accuracies, this study
-will take these findings into consideration and efforts will be made to ensure a
+will consider these findings and efforts will be made to ensure a
 robust model by employing techniques to avoid overfitting such as early-stopping
 and the use of a diverse dataset \cite{AnOverviewOfOverfittingAndItsSolutions}.
-
-
 % the results show that RAW and CWT input
 % images on MobileNet, MobileNetV2 and ResNet101 models achieved favourable
 % accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best
 % due to its reduction in computational time.
 
-\paragraph{}
+
 The study by Corrêa et al (2017)
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}, obtained their sample
 data by artificially generating 543 signals based on prior research, utilising
@@ -214,7 +206,7 @@ combined ANN XYZ achieved an accuracy of 92.8\%.
 
 
 \subsection{Computer Vision-based Approaches}
-\paragraph{}
+
 The paper by Shapiee et al (2020) \cite{skatePaper1} leverages a custom data set
 comprising videos capturing the execution of five distinct skateboard tricks,
 each attempted five times. Each video spans two to three seconds, yielding a
@@ -229,8 +221,8 @@ videos per trick, summing up to a total number of 750 videos. Of these, 45
 videos per trick were allocated for training, and the remaining 5 were reserved
 for validation. 
 
-\paragraph{}
-%Maybe move to prerpcessing
+
+%Maybe move to preprocessing
 % Data augmentation techniques are popular in studies with relatively limited
 % datasets. Techniques such as flipping, rotating, scaling and colour manipulation
 % not only enhance the size of the original dataset but also lower the likelihood
@@ -245,7 +237,7 @@ evaluated using a k-Nearest Neighbor (k-NN) classifier. As a result, the models
 demonstrated impressive classification accuracies, with MobileNet achieving
 95\%, NASNetMobile 92\% and NASNetLarge 90\%. 
 
-\paragraph{}
+
 Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are
 popular architectures due to their capabilities in modelling the dynamic
 relationships in sequential data \cite{UnderstandingLSTM}. In the student

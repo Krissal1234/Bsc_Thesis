@@ -2,7 +2,7 @@
 \chapter{Background}
 
 \section{Skateboard Tricks}
-\paragraph{}
+
 Skateboard tricks are the heart and soul of skateboarding. These tricks
 originate from the dynamic orchestration of rotations and revolutions of a
 skateboard along various axes emphasising the significance of precise placement
@@ -26,7 +26,7 @@ Skateboarders continually innovate and come up with new trick combinations,
 contributing to the dynamic nature of the sport.
 
 \section{Problem Definition}
-\paragraph{}
+
 The problem at hand revolves around the lack of an efficient and objective
 method for recognising skateboard tricks in competitions and practice sessions.
 Currently, the skateboarding community relies on using subjective methods for
@@ -34,7 +34,7 @@ evaluations of these tricks, thus, this can lead to inconsistencies and disputes
 in scoring. This lack of objectivity not only disrupts the fairness in
 competitions but also inhibits skaters’ ability to receive real-time feedback
 for skill improvement. 
-\paragraph{}
+
 The integration of Artificial Intelligence (AI) into skateboarding provides
 great potential for the standardisation of tricks, real-time feedback and injury
 prevention. The development of an AI model that can accurately recognise
@@ -44,14 +44,14 @@ that can accurately recognise and standardise skateboard tricks, thereby
 enhancing the sport’s objectivity, fairness and quality.
 
 \section{Machine Learning}
-\paragraph{}
+
 Machine Learning (ML) can be defined as a field of study that explores
 algorithms and statistical models employed by computer systems to execute tasks
 without the need to be explicitly programmed. It is particularly applicable in
 situations where the information we seek from a dataset is not immediately
 evident or interpretable, and as the volume of available datasets continues to
 surge so does the demand for machine learning \cite{ML_Algorithms}.
-\paragraph{}
+
 Morris \cite{UnderstandingLSTM} characterises ML as the advancement of
 algorithms that progressively enhance their performance through practice,
 suggesting that the more training the learning algorithm undergoes, the better
@@ -76,10 +76,9 @@ There exist three main categories for ML models\cite{ML_Algorithms}:
     that interacts with the environment and learns from the continuous feedback
     it receives in the form of rewards or punishment.
 \end{itemize}
-\paragraph{}
 
 \section{Object Detection}
-\paragraph{}
+
 Object detection is a computer vision task that detects instances of objects in
 images and videos and maps them to a predefined class. For humans, the act of
 recognising and responding to objects is a trivial task as described in
@@ -89,7 +88,7 @@ interest in the technology, focusing on various applications where object
 detection plays a major role. These applications include but are not limited to
 autonomous driving, surveillance systems and face detection
 \cite{RecentAdvancesObjectDetection}. 
-\paragraph{}
+
 The output of an object detection model yields the instance's location, as the
 object's centre, a bounding box or even a list of pixels containing the
 object. The research paper \cite{RecentAdvancesObjectDetection} further implies
@@ -99,10 +98,10 @@ their locations and scales, that are specified within each image. This
 definition makes references to the equation below, where an image is denoted as
 \(\mathcal{I}\), and \(O(I)\) represents the collection of object descriptions
 for objects within the image.
-\paragraph{}
+
 \(O(I) = \{(Y^*_1, Z^*_1), \ldots, (Y^*_i, Z^*_i), \ldots, (Y^*_{N^*i},
 Z^*_{N^*i})\}\)
-\paragraph{}
+
 In the above equation, each description encompasses two parts, \(Y^*_i \in
 \mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}
 \in \mathcal{Z}\) represents information about its location, size or shape
@@ -121,7 +120,7 @@ operation of combining an image with a set of detections.
 
 
 \section{Activity Recognition}
-\paragraph{}
+
  Activity recognition is the process of identifying and categorizing human
  activities from video sequences. Human activity involves a wide range of
  motions and interactions with objects, varying from simple isolated actions
@@ -131,7 +130,7 @@ operation of combining an image with a set of detections.
  computers due to the sequential nature and the resemblance of visual content in
  such
  activities\cite{ActionRecognitionDeepBi-DirectionalLSTM}\cite{AReviewOfHumanActivityRecognitionMethods}.
- \paragraph{}
+
  %This is probably obsolete due to the explenation of contact based and remote based in lit review
  Recognising complex human actions demands the examination of sequential data as
  opposed to relying on single frames or images
@@ -167,7 +166,7 @@ operation of combining an image with a set of detections.
 
 \section{Neural Networks}
 \subsection{Artificial Neural Networks}
-\paragraph{}
+
 Artificial Neural Networks (ANNs) are a class of machine learning models that
 are inspired by the interconnected systems of neurons found in the nervous
 system of living organisms. They consist of connected nodes organised in layers
@@ -200,16 +199,14 @@ layers: the Input Layer, the Hidden Layer(s) and the Output Layer
   \label{fig:ANN_Diagram} 
 \end{figure}
 
-\paragraph{}
 \subsection{Convolutional Neural Networks}
-\paragraph{}
 Convolutional Neural Networks (CNNs), as depicted by
 \cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
 incredible performance in various fields such as visual recognition, speech
 recognition and natural language processing.
-\paragraph{}
+
 CNNs, incorporate multiple layers and are capable of extracting effective
 representations
 %%Explain how feature maps are created thorugh convolutions
@@ -227,7 +224,7 @@ from the past, often constrained to approximately ten sequential
 time steps. This constraint arises from the challenge of dealing with vanishing or exploding
 gradients during the backpropagation procedure during the processing of extended sequences, as
 discussed in prior works \cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
-\paragraph{}
+
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
 introduced \cite{learningPriceseTimingWithLSTM}. LSTM networks unlike RNNs are
