@@ -56,14 +56,10 @@ surge so does the demand for machine learning \cite{ML_Algorithms}.
 Morris \cite{UnderstandingLSTM} characterises ML as the advancement of
 algorithms that progressively enhance their performance through practice,
 suggesting that the more training the learning algorithm undergoes, the better
-the algorithm becomes at executing tasks. Training is a multifaceted process
-that directly influences the overall accuracy of the model. Within this phase,
-numerous critical factors come into play, shaping the model's performance. These
-factors encompass dataset quality and diversity, the preprocessing of
-data, the selection of an appropriate model architecture, the optimal duration
-of training, and the fine-tuning of essential hyper-parameters
-\cite{TheEffectsofDataQualityonMachineLearningPerformance}. \\
-There exist three main categories for ML models\cite{ML_Algorithms}:
+it becomes at executing tasks. Training is a multifaceted process
+that directly influences the overall accuracy of the model. Numerous critical factors shape a model's performance within this phase, as exmplified by Budach et al. (2022) \cite{TheEffectsofDataQualityonMachineLearningPerformance}. These factors include dataset quality and diversity, data preprocessing methods, the selection of a suitable model architecture, the optimal duration of training, and the fine-tuning of essential hyper-parameters.
+
+There exist three main categories for ML models \cite{ML_Algorithms}:
 \begin{itemize}
     \item \textbf{Supervised:} This is a machine learning concept that centres
     around the development of algorithms to make predictions or classifications
@@ -82,26 +78,26 @@ There exist three main categories for ML models\cite{ML_Algorithms}:
 
 Object detection is a computer vision task that detects instances of objects in
 images and videos and maps them to a predefined class. For humans, the act of
-recognising and responding to objects is a trivial task as described in
+recognising and responding to objects is a trivial task as described by Watson et al. (2016)
 \cite{NeuralScience}, it is an essential feature that enables our performance
-and communication. Numerous academic and industry researchers have shown a deep
-interest in the technology, focusing on various applications where object
-detection plays a major role. These applications include but are not limited to
-autonomous driving, surveillance systems and face detection
-\cite{RecentAdvancesObjectDetection}. 
+and communication. Numerous researchers have shown a deep
+interest in this technology, focusing on various applications where object
+detection may play a major role, such as  surveillance systems, face detection and autonomous driving \cite{RecentAdvancesObjectDetection}. 
 
-The output of an object detection model yields the instance's location, as the
-object's centre, a bounding box or even a list of pixels containing the
-object. The research paper \cite{RecentAdvancesObjectDetection} further implies
-that object detection is consistently defined within the context of a data set
-that consists of images mapped to a list of relevant object properties, such as
-their locations and scales, that are specified within each image. This
-definition makes references to the equation below, where an image is denoted as
+The output of an object detection model returns the location of the instance, as the object's centre or in the form 
+of a bounding box. The research paper by Agarwal et al. (2018) \cite{RecentAdvancesObjectDetection} defines object detection as the following equation where an image is denoted as
 \(\mathcal{I}\), and \(O(I)\) represents the collection of object descriptions
 for objects within the image.
+%that object detection is consistently defined within the context of a data set
+%that consists of images mapped to a list of relevant object properties, such as
 
-\(O(I) = \{(Y^*_1, Z^*_1), \ldots, (Y^*_i, Z^*_i), \ldots, (Y^*_{N^*i},
-Z^*_{N^*i})\}\)
+%their locations and scales, that are specified within each image. This
+%definition makes references to the equation below,
+\begin{equation}
+O(I) = \{(Y^*_1, Z^*_1), \ldots, (Y^*_i, Z^*_i), \ldots, (Y^*_{N^*i},
+Z^*_{N^*i})\}
+\end{equation}
+
 
 In the above equation, each description encompasses two parts, \(Y^*_i \in
 \mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}
@@ -109,9 +105,10 @@ In the above equation, each description encompasses two parts, \(Y^*_i \in
 within the image. \(\mathcal{Z}\) represents the different ways to describe an
 object, this is typically done by specifying the object's centre \((x_c, y_c)
 \in \mathcal{R}^2\) or as a bounding box \((x_{min}, y_{min},x_{max},y_{max})
-\in \mathcal{R}^4\). By utilising these notations, according to
-\cite{RecentAdvancesObjectDetection}, object detection can be defined as the
-operation of combining an image with a set of detections. 
+\in \mathcal{R}^4\). 
+%By utilising these notations, according to
+%\cite{RecentAdvancesObjectDetection}, object detection can be defined as the
+%operation of combining an image with a set of detections. 
 %In this research
 %paper, images are passed through an object detection model as one of the
 %pre-processing steps before passing through the main AI model. This strategy is
@@ -183,7 +180,7 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
     Network model.  
     \item \textbf{Hidden Layer(s):} This is the set of neurons that are situated
     between the Input and Output Layers where the network captures complete
-    nonlinear behaviours of data and feature transformations.
+    non-linear behaviours of data and feature transformations.
     \item \textbf{Output Layer:} This is the set of neurons that provide the
     final predictions produced by the neural network. Depending on how the ANN
     is configured, the final output can be continuous, binary, ordinal, or
@@ -191,8 +188,8 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 \end{itemize}
 
 \begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.85 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png} 
+	\centering
+  \includegraphics[width=0.75 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png} 
   \caption{Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
   \label{fig:ANN_Diagram} 
 \end{figure}
@@ -207,7 +204,8 @@ recognition and natural language processing.
 
 CNNs, incorporate multiple layers and are capable of extracting effective
 representations
--- continue explenation, explain how feature maps are created thorugh convolutions
+
+-- continue explanation, explain how feature maps are created through convolutions
 
 \subsection{Recurrent Neural Networks}
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are

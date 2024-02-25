@@ -111,7 +111,7 @@ al. \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that
 the impact of normalisation on model performance varies depending on certain
 dataset characteristics. These contrasting conclusions presented by the studies
 \cite{RobustnessInMLNormalisation} and
-\cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggest tha t while
+\cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggest that while
 normalisation is an important preprocessing step, its application should be
 carefully adapted to the characteristics of the dataset.
 
@@ -154,9 +154,7 @@ Deep learning (DL) techniques have become increasingly popular over traditional
 ML methods, for their ability to learn feature representations automatically
 from raw data, significantly improving performance
 \cite{AReviewOnComputerVisionBasedMethodsForHARRecognition}. One particularly
-effective DL architecture is the CNN-LSTM. It combines the strength of CNN's for
-extracting spatial features from individual frames, with LSTM networks, which
-capture the temporal information across frames.
+effective DL architecture is the CNN-LSTM. This approach leverages the CNNs strength in extracting spatial features from individual frames and LSTMs ability to capture temporal information across frames, leading to a deeper understanding of video content.
 
 The study by Orozco et al. (2020)
 \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach
@@ -172,11 +170,11 @@ the CNN-LSTM approach, particularly for simpler datasets, highlighting the need
 for further investigation and optimisation for more complex datasets like
 HMDB-51.
 
-\begin{figure}
+\begin{figure}[ht]
 	\centering
-	\includegraphics[width=0.85 \textwidth]{content/chapters/3_Literature Review/figures/cnn-lstm.png} 
-	\caption{Schematic Representation of an Artificial Neural Network reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
-	\label{fig:ANN_Diagram} 
+	\includegraphics[width=0.65 \textwidth]{content/chapters/3_Literature Review/figures/cnn-lstm.png} 
+	\caption{CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \cite{LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}}
+	\label{fig:CNN-LSTM-architecture} 
   \end{figure}
   
 
@@ -295,7 +293,7 @@ for validation.
 % \cite{AnOverviewOfOverfittingAndItsSolutions}. 
 %Mention more here !!!!
 The paper by Shapiee et al. \cite{skatePaper1} utilises data augmentation
-techniques and applies three rotation augmentation techniques: horizontal rotation,
+techniques with the application of three rotations to the images: horizontal rotation,
 positive 90°rotation and negative 90°rotation. The researchers experimented on
 three Transfer learning models: MobileNet, NASNetMobile and NASNetLarge, each
 evaluated using a k-Nearest Neighbor (k-NN) classifier. As a result, the models
@@ -303,10 +301,10 @@ demonstrated impressive classification accuracies, with MobileNet achieving
 95\%, NASNetMobile 92\% and NASNetLarge 90\%. 
 
 
-Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are
-popular architectures due to their capabilities in modelling the dynamic
-relationships in sequential data \cite{UnderstandingLSTM}. In the student
-abstract by Hanciao Chen \cite{SkateboardAIPaper}, extensive experimentation is
+%Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are
+%popular architectures due to their capabilities in modelling the dynamic
+%relationships in sequential data \cite{UnderstandingLSTM}. 
+In the student abstract by Hanciao Chen \cite{SkateboardAIPaper}, extensive experimentation is
 conducted using diverse models, exploring various combinations of CNN-LSTM and
 CNN-BiLSTM architectures. The study also incorporated attention mechanisms and
 explored transfer-based methods for activity recognition. 
