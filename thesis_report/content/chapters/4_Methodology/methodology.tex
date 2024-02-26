@@ -58,7 +58,9 @@ from the text-based method wasn't necessary for this project.
 
 \subsection{Frame Extraction}
 
-Given this research is involved in writing 
+Given that the nature of this research is an activity recognition task, it employed frame extraction to convert video into a suitable format that the ML models can interpret. This technique involved extracting relevant frames from a video in such a way that it encapsulates the entire skateboard trick including the wind up, the manoeuvrer and the landing. Two primary techniques were explored, the first being uniform sampling, where frames are extracted at regular intervals based on a pre-calculated step size, ensuring a consistent division of frames across the video, regardless of its length.
+The second technique involved using optical flow to % continue on optical flow
+
 % given that this is a video recognition task - we require the use of extracting frames
 
 % Talk about the differnet techniques of frame extractin due to the short vide
@@ -68,13 +70,40 @@ Given this research is involved in writing
 % end, -- also tried duplicating randomly in the middle, which did not produce
 % good results
 
+%Yes, you should definitely mention the two frame extraction methods you explored in the methodology section. Here's how to approach it and what you would include in both methodology and implementation:
+%
+%Methodology
+%
+%Introduce the need for frame extraction: Briefly reiterate the importance of frame extraction for video recognition tasks, especially when dealing with activity recognition.
+%Describe the two techniques:
+%Optical Flow: Explain the concept of using optical flow to calculate motion, and how you utilized it to assign weights to frames, prioritizing those with higher motion values for selection.
+%Uniform Sampling: Describe the process of extracting frames at regular intervals and how you applied it.
+%Evaluation Criteria: Mention the criteria used to compare the techniques (e.g., ability to capture key actions, reduce redundancy, maintain temporal consistency).
+%Justification of Choice: Briefly state the method that performed better based on your evaluation criteria and explain the reason for its selection.
+%
+%Implementation
+%
+%Chosen Method: State the chosen technique (e.g., optical flow-based extraction).
+%Software/Libraries: Mention the specific tools used to implement this (e.g., OpenCV).
+%Specific Parameters: Describe any key parameters or thresholds you configured for the optical flow calculation and frame selection.
+%Integration: Briefly explain how the extracted frames were used in your activity recognition model (e.g., input into a convolutional neural network).
+%
+%Discussion of Results
+%
+%Whether you should include a detailed discussion of results for both techniques depends on the scope of your thesis and how central frame extraction is to your core research findings. Here are some options:
+%
+%Core Focus: If frame extraction is a crucial element, include a comparative analysis of the results obtained from both methods and how they influenced your final choice.
+%Secondary Focus: If frame extraction is less central, briefly summarize the outcome in the methodology section, stating why the chosen method yielded better results for your task.
+%Results Section: You can dedicate a subsection in your separate results section to discuss the performance of both frame extraction techniques in more detail.
+
+
 \subsection{Data Augmentation}
 Due to the limited number of data used in this research, data augmentation
 techniques were implemented to increase the dataset's size prior to model
 training. These techniques including rotating, flipping and adding noise to
 images also help reduce overfitting, which was a risk evident due to the
-over-parameterised nature of the chosen models, meaning that their number of
-trainable paramaters surpass the size of the dataset, making it very vulnerable
+over-parametrised nature of the chosen models, meaning that their number of
+trainable parameters surpass the size of the dataset, making it very vulnerable
 to overfitting.
 
 
