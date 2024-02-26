@@ -28,8 +28,13 @@
 \contentsline {section}{\numberline {4.2}Class Establishment}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Data Preparation}{14}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Labelling techniques}{14}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Data Augmentation}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.3.2}Frame Extraction}{15}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Data Augmentation}{15}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Preprocessing}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}}{15}{subsection.4.4.1}%
 \contentsline {section}{\numberline {4.5}ML Architectures}{15}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Feature Extraction models}{15}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Main models}{15}{subsection.4.5.2}%
 \contentsline {section}{\numberline {4.6}Evaluation Methods}{15}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Sample A}{20}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Sample B}{21}{chapter.6}%

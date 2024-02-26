@@ -18,7 +18,6 @@ videos covering 15 distinct tricks. Given the wide range of tricks included in
 this dataset, many were beyond the scope of this study, therefore only a subset
 of these videos were carefully selected and incorporated into the final dataset.
 
-
 \section{Class Establishment}
 In the development of a skateboard trick classifier, this study pursued a
 multi-class classification strategy, targeting three fundamental skateboard
@@ -42,30 +41,55 @@ flexibility. Given the limited number of classes and manageable dataset size,
 this study chose to utilise the folder-based approach, as the extra complexity
 from the text-based method wasn't necessary for this project.
 
- \begin{figure}[h]
- 	\centering
- 	\begin{minipage}[t]{0.55\textwidth}
- 		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/folder-based-label.jpg}
- 		\caption{Folder-based labelling.}
- 		\label{fig:folder-based-label}
- 	\end{minipage}
- 	\hfill
- 	\begin{minipage}[t]{0.35\textwidth}
- 		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/text-based-labelling.jpg}
- 		\caption{Text-based labelling}
- 		\label{fig:text-based-label}
- 	\end{minipage}
- \end{figure}
+\begin{figure}[h]
+\centering
+\begin{minipage}[t]{0.55\textwidth}
+	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/folder-based-label.jpg}
+	\caption{Folder-based labelling.}
+	\label{fig:folder-based-label}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.35\textwidth}
+	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/text-based-labelling.jpg}
+	\caption{Text-based labelling}
+	\label{fig:text-based-label}
+\end{minipage}
+\end{figure}
 
-%Data Acquisition: Describe your dataset:
+\subsection{Frame Extraction}
 
-%How did you collect the data (videos, sensor data, etc.)?
-%What types of tricks are included?
-%How diverse is the data (skateboarders, environments, angles)?
-%How did you label the data (manual labeling, automated tools)? -- two techniques explored, using folders and also using a text file with path and label
-\section{Data Augmentation}
+% given that this is a video recognition task - we require the use of extracting frames
+
+% Talk about the differnet techniques of frame extractin due to the short vide
+% uniform sampling
+% think about using optical flow to extract frames that show motion
+% clips -- figuring out how many extra frames required, then duplicating at the
+% end, -- also tried duplicating randomly in the middle, which did not produce
+% good results
+
+\subsection{Data Augmentation}
+Due to the limited number of data used in this research, data augmentation
+techniques were implemented to increase the dataset's size prior to model
+training. These techniques including rotating, flipping and adding noise to
+images also help reduce overfitting, which was a risk evident due to the
+over-parameterised nature of the chosen models, meaning that their number of
+trainable paramaters surpass the size of the dataset, making it very vulnerable
+to overfitting.
+
+
+
+\section{Preprocessing}
+\subsection{}
+
+
 
 \section{ML Architectures}
+
+\subsection{Feature Extraction models}
+
+\subsection{Main models}
+
+
 
 % VGG-LSTM - because of paper from lit review
 % Resnet50-LSTM
