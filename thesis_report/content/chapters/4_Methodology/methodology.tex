@@ -12,11 +12,11 @@ repository on GitHub \cite{lightningdrop2020skateboardml}, comprising 200 video
 clips corresponding to two common tricks: the ollie and the kickflip. This
 dataset laid a solid foundation for this research. However, to expand the
 dataset's diversity, additional data was obtained through direct communication
-with  Hanxiao Chen, the author of the SkateboardAI paper
+with Hanxiao Chen, the author of the SkateboardAI paper
 \cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
 videos covering 15 distinct tricks. Given the wide range of tricks included in
 this dataset, many were beyond the scope of this study, therefore only a subset
-of these videos were carefully selected and incorporated into the final dataset.
+of these videos were selected and included into the final dataset.
 
 \section{Class Establishment}
 In the development of a skateboard trick classifier, this study pursued a
@@ -58,6 +58,7 @@ from the text-based method wasn't necessary for this project.
 
 \subsection{Frame Extraction}
 
+Given this research is involved in writing 
 % given that this is a video recognition task - we require the use of extracting frames
 
 % Talk about the differnet techniques of frame extractin due to the short vide
@@ -75,7 +76,6 @@ images also help reduce overfitting, which was a risk evident due to the
 over-parameterised nature of the chosen models, meaning that their number of
 trainable paramaters surpass the size of the dataset, making it very vulnerable
 to overfitting.
-
 
 
 \section{Preprocessing}

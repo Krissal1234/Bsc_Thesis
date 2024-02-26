@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  26 FEB 2024 11:58
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  26 FEB 2024 17:15
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writup/thesis_report/main
@@ -1782,18 +1782,18 @@ File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic fi
 <use content/chapters/4_Methodology/figures/text-based-labelling.jpg>
 Package luatex.def Info: content/chapters/4_Methodology/figures/text-based-labelling.jpg  used on input line 53.
 (luatex.def)             Requested size: 159.33821pt x 179.17847pt.
-) [15<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/chapters/4_Methodology/figures/text-based-labelling.jpg>]
+) [15<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/chapters/4_Methodology/figures/text-based-labelling.jpg>] [16]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 67.
- [16
+ [17
 
-] [17] [18] (./content/appendices/appendix_a.tex [19]
+] [18] [19] (./content/appendices/appendix_a.tex [20]
 Chapter 5.
-) (./content/appendices/appendix_b.tex [20
+) (./content/appendices/appendix_b.tex [21
 
 ]
 Chapter 6.
-) [21
+) [22
 
 
 makeindex -s main.ist -t main.glg -o main.gls main.glo
@@ -1807,19 +1807,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36008 strings out of 477805
+ 36009 strings out of 477805
  100000,1648299 words of node,token memory allocated
  843 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 113 glue_spec, 15 attribute_list, 1 write, 3 pdf_action nodes
    avail lists: 1:3,2:976,3:420,4:65,5:1020,6:129,7:7619,8:124,9:390,10:22,11:667,12:6
  55293 multiletter control sequences out of 65536+600000
  82 fonts using 19916359 bytes
- 106i,12n,128p,1256b,1646s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 106i,12n,128p,1256b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (28 pages, 437103 bytes).
+Output written on main.pdf (29 pages, 437353 bytes).
 
-PDF statistics: 558 PDF objects out of 1000 (max. 8388607)
- 494 compressed objects within 5 object streams
- 113 named destinations out of 1000 (max. 131072)
+PDF statistics: 562 PDF objects out of 1000 (max. 8388607)
+ 497 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 131072)
  321 words of extra memory for PDF output out of 10000 (max. 100000000)
 
