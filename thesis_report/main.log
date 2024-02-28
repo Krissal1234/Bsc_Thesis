@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  26 FEB 2024 23:21
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  28 FEB 2024 12:38
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2227,7 +2227,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=158, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=162, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -2290,8 +2290,8 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 ] [3]
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 (Font)              scaled to size 14.4pt on input line 168.
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=29
-4, 569.12625pt x 435.6275pt>
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=30
+3, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png G
 raphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
@@ -2305,7 +2305,7 @@ Chapter 3.
 
 
 ] [7] [8] [9]
-<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=391, 438.63875pt
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=400, 438.63875pt
  x 385.44pt>
 File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (t
 ype png)
@@ -2322,7 +2322,7 @@ Chapter 4.
 
 
 ]
-<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=439, 620.317
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=448, 620.317
 5pt x 242.9075pt>
 File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic fil
 e (type jpg)
@@ -2330,7 +2330,7 @@ e (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-la
 bel.jpg  used on input line 47.
 (luatex.def)             Requested size: 250.38564pt x 98.0471pt.
-<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=440, 241.9
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=449, 241.9
 0375pt x 272.01625pt>
 File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic f
 ile (type jpg)
@@ -2338,14 +2338,39 @@ ile (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/text-based-labe
 lling.jpg  used on input line 53.
 (luatex.def)             Requested size: 159.33821pt x 179.17847pt.
-) [15<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content
-/chapters/4_Methodology/figures/text-based-labelling.jpg>] [16]
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=450, 1349.04p
+t x 224.84pt>
+File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
+ (type jpg)
+<use content/chapters/4_Methodology/figures/kickflip_sequence.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequen
+ce.jpg  used on input line 70.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=4
+51, 1349.04pt x 224.84pt>
+File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg 
+Graphic file (type jpg)
+<use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequen
+ce_opticalFlow.jpg  used on input line 77.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/c
+hapters/4_Methodology/figures/text-based-labelling.jpg>]) [16<./content/chapters
+/4_Methodology/figures/kickflip_sequence.jpg><./content/chapters/4_Methodology/f
+igures/kickflip_sequence_opticalFlow.jpg>]
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 12.0pt on input line 67.
  [17
 
-]
-[18] [19] (./content/appendices/appendix_a.tex [20]
+] [18] [19]
+(./content/appendices/appendix_a.tex [20]
 Chapter 5.
 ) (./content/appendices/appendix_b.tex [21
 
@@ -2359,21 +2384,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B1A993F2F79282CF2516979192B72EB8;5876.
+(rerunfilecheck)             Checksum: 17AA4851237593E6526B7522FE8D5399;6124.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 36110 strings out of 476497
+ 36136 strings out of 476497
  125019,1977958 words of node,token memory allocated
  848 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 114 glue_spe
 c, 15 attribute_list, 1 write, 3 pdf_action nodes
    avail lists: 1:3,2:952,3:419,4:58,5:1116,6:125,7:7615,8:101,9:439,10:22,11:66
 3,12:3
- 57326 multiletter control sequences out of 65536+600000
+ 57343 multiletter control sequences out of 65536+600000
  82 fonts using 19893959 bytes
  106i,12n,128p,2394b,1682s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/kris saliba/appdata/local/programs/miktex/fonts/opentype/public/lm
@@ -2390,9 +2415,9 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 /Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on main.pdf (29 pages, 498469 bytes).
+Output written on main.pdf (29 pages, 681273 bytes).
 
-PDF statistics: 556 PDF objects out of 1000 (max. 8388607)
- 114 named destinations out of 1000 (max. 131072)
- 321 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 567 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 131072)
+ 329 words of extra memory for PDF output out of 10000 (max. 100000000)
 

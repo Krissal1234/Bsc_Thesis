@@ -56,10 +56,32 @@ from the text-based method wasn't necessary for this project.
 \end{minipage}
 \end{figure}
 
+\section{Preprocessing}
+
 \subsection{Frame Extraction}
 
-Given that the nature of this research is an activity recognition task, it employed frame extraction to convert video into a suitable format that the ML models can interpret. This technique involved extracting relevant frames from a video in such a way that it encapsulates the entire skateboard trick including the wind up, the manoeuvrer and the landing. Two primary techniques were explored, the first being uniform sampling, where frames are extracted at regular intervals based on a pre-calculated step size, ensuring a consistent division of frames across the video, regardless of its length.
-The second technique involved using optical flow to % continue on optical flow
+Given that the nature of this research is an activity recognition task, this study employed frame extraction to convert videos into sequences of frames suitable for processing by ML models. This technique aims to extract a subset of frames that encapsulate the essential dynamics of the activity. Thus, in the context of skateboard trick recognition, the frames should capture the entire sequence, including the wind up, the trick and the landing. 
+
+Two primary frame extraction techniques were explored, uniform sampling and optical flow method. The former technique, evenly splits a video into its corresponding frames by using a pre-calculated step size determined by the number of frames the video has. The second technique leveraged optical flow, a method that assigns weights to frames determined by the motion of pixels between them. With this approach, frames with the greatest weightings were chosen for extraction, resulting in capturing only action-specific frames.
+
+
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=\linewidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
+		\caption{Breakdown of kickflip into individual frames.}
+		\label{fig:seq1}
+	\end{figure}
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=\linewidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
+		\caption{Optical flow visualisation of a kickflip.}
+		\label{fig:seq2}
+	\end{figure}
+	
+
+
+
 
 % given that this is a video recognition task - we require the use of extracting frames
 
@@ -95,7 +117,9 @@ The second technique involved using optical flow to % continue on optical flow
 %Core Focus: If frame extraction is a crucial element, include a comparative analysis of the results obtained from both methods and how they influenced your final choice.
 %Secondary Focus: If frame extraction is less central, briefly summarize the outcome in the methodology section, stating why the chosen method yielded better results for your task.
 %Results Section: You can dedicate a subsection in your separate results section to discuss the performance of both frame extraction techniques in more detail.
+\subsection{Normalisation}
 
+\subsection{Feature Extraction}
 
 \subsection{Data Augmentation}
 Due to the limited number of data used in this research, data augmentation
@@ -107,16 +131,12 @@ trainable parameters surpass the size of the dataset, making it very vulnerable
 to overfitting.
 
 
-\section{Preprocessing}
-\subsection{}
-
-
 
 \section{ML Architectures}
 
 \subsection{Feature Extraction models}
 
-\subsection{Main models}
+\subsection{Sequence models}
 
 
 
@@ -125,5 +145,6 @@ to overfitting.
 % Resnet50-BiLSTM - becuase of skateboard paper and lit review paper
 
 \section{Evaluation Methods}
+To thoroughly evaluate the proposed Skateboard trick recognition models in this study, various evaluation metrics were employed. These metrics provide valuable insights on the ability for these models to correctly classify skateboard tricks. 
 
 
