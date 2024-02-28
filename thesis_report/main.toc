@@ -30,9 +30,9 @@
 \contentsline {subsection}{\numberline {4.3.1}Labelling techniques}{14}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Preprocessing}{15}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Frame Extraction}{15}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Normalisation}{16}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.2}Data Augmentation}{15}{subsection.4.4.2}%
 \contentsline {subsection}{\numberline {4.4.3}Feature Extraction}{16}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Data Augmentation}{16}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.4}Normalisation}{16}{subsection.4.4.4}%
 \contentsline {section}{\numberline {4.5}ML Architectures}{16}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Feature Extraction models}{16}{subsection.4.5.1}%
 \contentsline {subsection}{\numberline {4.5.2}Sequence models}{16}{subsection.4.5.2}%
