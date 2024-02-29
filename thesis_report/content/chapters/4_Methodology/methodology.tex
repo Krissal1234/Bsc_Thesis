@@ -70,64 +70,29 @@ sequence, including the wind up, the trick and the landing.
 Two primary frame extraction techniques were explored, uniform sampling and
 optical flow method. The former technique, evenly splits a video into its
 corresponding frames by using a pre-calculated step size determined by the
-number of frames the video has. The second technique leveraged optical flow, a
+number of frames of a video. The second technique leveraged optical flow, a
 method that assigns weights to frames determined by the motion of pixels between
 them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing only action-specific frames.
+extraction, resulting in capturing only action-specific frames. \ref{fig:}
 
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\linewidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
-	\caption{Breakdown of kickflip into individual frames.}
-	\label{fig:seq1}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
+		\caption{Optical flow visualisation of a kickflip sequence, highlighting regions with significant motion.}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
+		\caption{Extracted frames from the sequence based on the greatest weightings from the optical flow representation.}
+	\end{subfigure}
+
+	\caption{Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.}
+	\label{fig:kickflip-sequence-opticalflow}
 \end{figure}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=\linewidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
-	\caption{Optical flow visualisation of a kickflip.}
-	\label{fig:seq2}
-\end{figure}
-
-
-
-
-
-% given that this is a video recognition task - we require the use of extracting frames
-
-% Talk about the differnet techniques of frame extractin due to the short vide
-% uniform sampling
-% think about using optical flow to extract frames that show motion
-% clips -- figuring out how many extra frames required, then duplicating at the
-% end, -- also tried duplicating randomly in the middle, which did not produce
-% good results
-
-%Yes, you should definitely mention the two frame extraction methods you explored in the methodology section. Here's how to approach it and what you would include in both methodology and implementation:
-%
-%Methodology
-%
-%Introduce the need for frame extraction: Briefly reiterate the importance of frame extraction for video recognition tasks, especially when dealing with activity recognition.
-%Describe the two techniques:
-%Optical Flow: Explain the concept of using optical flow to calculate motion, and how you utilized it to assign weights to frames, prioritizing those with higher motion values for selection.
-%Uniform Sampling: Describe the process of extracting frames at regular intervals and how you applied it.
-%Evaluation Criteria: Mention the criteria used to compare the techniques (e.g., ability to capture key actions, reduce redundancy, maintain temporal consistency).
-%Justification of Choice: Briefly state the method that performed better based on your evaluation criteria and explain the reason for its selection.
-%
-%Implementation
-%
-%Chosen Method: State the chosen technique (e.g., optical flow-based extraction).
-%Software/Libraries: Mention the specific tools used to implement this (e.g., OpenCV).
-%Specific Parameters: Describe any key parameters or thresholds you configured for the optical flow calculation and frame selection.
-%Integration: Briefly explain how the extracted frames were used in your activity recognition model (e.g., input into a convolutional neural network).
-%
-%Discussion of Results
-%
-%Whether you should include a detailed discussion of results for both techniques depends on the scope of your thesis and how central frame extraction is to your core research findings. Here are some options:
-%
-%Core Focus: If frame extraction is a crucial element, include a comparative analysis of the results obtained from both methods and how they influenced your final choice.
-%Secondary Focus: If frame extraction is less central, briefly summarize the outcome in the methodology section, stating why the chosen method yielded better results for your task.
-%Results Section: You can dedicate a subsection in your separate results section to discuss the performance of both frame extraction techniques in more detail.
 
 
 
@@ -150,14 +115,17 @@ to overfitting.
 In order to 
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
-the vide frame data before further processing. In particular this study
-utilised min-max normalisation to scale the pixel intesities between 0 and 1.
+the video frame data before further processing. In particular this study
+utilised min-max normalisation to scale the pixel intensities between 0 and 1.
 Normalising data in this manner ensured that the model's input values data was
-within a stanardised range.
+within a standardised range.
 
 \section{ML Architectures}
 
+
 \subsection{Feature Extraction models}
+
+
 
 \subsection{Sequence models}
 
@@ -168,6 +136,38 @@ within a stanardised range.
 % Resnet50-BiLSTM - becuase of skateboard paper and lit review paper
 
 \section{Evaluation Methods}
-To thoroughly evaluate the proposed Skateboard trick recognition models in this study, various evaluation metrics were employed. These metrics provide valuable insights on the ability for these models to correctly classify skateboard tricks. 
+To thoroughly evaluate the performance of the proposed Skateboard trick recognition models, this study employed various evaluation metrics, including accuracy, precision, recall, F1-score and confusion matrix. These metrics provided valuable insights on the model's ability to correctly classify different tricks. These metrics depend on the following definitions, described in the context of the kickflip class as an example.
+
+\begin{itemize}
+	\item \textbf{True Positive (TP)}: The model correctly identified a video as containing a kickflip.
+	\item \textbf{True Negative (TN)}: The model incorrectly identified a video as containing a kickflip.
+	\item \textbf{False Positive (FP)}: The model correctly identified a video as not containing a kickflip.
+	\item \textbf{False Negative (FN)}: The model incorrectly identified a video as not containing a kickflip.
+\end{itemize}
+
+
+\noindent \textbf{Accuracy:} Measures the proportion of correctly classified instances, over the total number of predictions made by the model. This metric provides a generic indicator of the model's reliability, however this specific metric can be sensitive in scenarios with class imbalance \cite{classificationAssessmentMethodstharwat2020}.
+
+\begin{equation}
+	\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation}
+
+\noindent \textbf{Precision:} Measures the proportion of predicted positive instances that are truly real positives \cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}. In the context of kickflip detection, it represents the proportion of true kickflips against all predicted kickflips.
+\begin{equation}
+	\text{Precision} = \frac{TP}{TP + FP}
+\end{equation}
+
+\noindent \textbf{Recall:} Measures the proportion of positive instances that are truly predicted positive \cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}.In the context of kickflip detection, it represents the proportion of true kickflips that are identified correctly. 
+\begin{equation}
+	\text{Recall} = \frac{TP}{TP + FN}
+\end{equation}
+
+\noindent \textbf{F1-score:} This metric provides a balanced measure of performance by combining both precision and recall. It is calculated using the harmonic mean on both values and outputs a value ranged from zero to one, with higher values indicating better performance.
+\begin{equation}
+	\text{F1-score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{equation}
+
+\noindent \textbf{Confusion Matrix:} 
+
 
 
