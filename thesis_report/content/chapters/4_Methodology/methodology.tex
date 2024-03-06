@@ -73,7 +73,7 @@ corresponding frames by using a pre-calculated step size determined by the
 number of frames of a video. The second technique leveraged optical flow, a
 method that assigns weights to frames determined by the motion of pixels between
 them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing only action-specific frames. \ref{fig:}
+extraction, resulting in capturing only action-specific frames. 
 
 
 \begin{figure}[h!]
@@ -94,13 +94,6 @@ extraction, resulting in capturing only action-specific frames. \ref{fig:}
 \end{figure}
 
 
-
-
-
-
-
-
-
 \subsection{Data Augmentation}
 Due to the limited number of data used in this research, data augmentation
 techniques were implemented to increase the dataset's size prior to model
@@ -111,8 +104,12 @@ trainable parameters surpass the size of the dataset, making it very vulnerable
 to overfitting.
 
 
-\subsection{Feature Extraction}
+\subsection{Feature Extraction with Transfer Learning}
 In order to 
+
+\subsection{Sequence Modelling}
+% VGG
+% ResNet50
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
 the video frame data before further processing. In particular this study
@@ -120,7 +117,7 @@ utilised min-max normalisation to scale the pixel intensities between 0 and 1.
 Normalising data in this manner ensured that the model's input values data was
 within a standardised range.
 
-\section{ML Architectures}
+\section{Overall Architectures}
 
 
 \subsection{Feature Extraction models}
@@ -136,7 +133,12 @@ within a standardised range.
 % Resnet50-BiLSTM - becuase of skateboard paper and lit review paper
 
 \section{Evaluation Methods}
-To thoroughly evaluate the performance of the proposed Skateboard trick recognition models, this study employed various evaluation metrics, including accuracy, precision, recall, F1-score and confusion matrix. These metrics provided valuable insights on the model's ability to correctly classify different tricks. These metrics depend on the following definitions, described in the context of the kickflip class as an example.
+To thoroughly evaluate the performance of the proposed models, this study
+employed various evaluation metrics, including accuracy, precision, recall,
+F1-score and confusion matrix. These metrics provided valuable insights on the
+model's ability to correctly classify different tricks and depend on
+the following definitions, described in the context of the kickflip class as an
+example.
 
 \begin{itemize}
 	\item \textbf{True Positive (TP)}: The model correctly identified a video as containing a kickflip.
@@ -146,23 +148,38 @@ To thoroughly evaluate the performance of the proposed Skateboard trick recognit
 \end{itemize}
 
 
-\noindent \textbf{Accuracy:} Measures the proportion of correctly classified instances, over the total number of predictions made by the model. This metric provides a generic indicator of the model's reliability, however this specific metric can be sensitive in scenarios with class imbalance \cite{classificationAssessmentMethodstharwat2020}.
+\noindent \textbf{Accuracy:} Measures the proportion of correctly classified
+instances, over the total number of predictions made by the model. This metric
+provides a generic indicator of the model's reliability, however this specific
+metric can be sensitive in scenarios with class imbalance
+\cite{classificationAssessmentMethodstharwat2020}.
 
 \begin{equation}
 	\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}
 \end{equation}
 
-\noindent \textbf{Precision:} Measures the proportion of predicted positive instances that are truly real positives \cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}. In the context of kickflip detection, it represents the proportion of true kickflips against all predicted kickflips.
+\noindent \textbf{Precision:} Measures the proportion of predicted positive
+instances that are truly real positives
+\cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}.
+In the context of kickflip detection, it represents the proportion of true
+kickflips against all predicted kickflips.
 \begin{equation}
 	\text{Precision} = \frac{TP}{TP + FP}
 \end{equation}
 
-\noindent \textbf{Recall:} Measures the proportion of positive instances that are truly predicted positive \cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}.In the context of kickflip detection, it represents the proportion of true kickflips that are identified correctly. 
+\noindent \textbf{Recall:} Measures the proportion of positive instances that
+are truly predicted positive
+\cite{Evaluation:fromprecisionrecallandF-measuretoROCinformednessmarkednessandcorrelation}.In
+the context of kickflip detection, it represents the proportion of true
+kickflips that are identified correctly. 
 \begin{equation}
 	\text{Recall} = \frac{TP}{TP + FN}
 \end{equation}
 
-\noindent \textbf{F1-score:} This metric provides a balanced measure of performance by combining both precision and recall. It is calculated using the harmonic mean on both values and outputs a value ranged from zero to one, with higher values indicating better performance.
+\noindent \textbf{F1-score:} This metric provides a balanced measure of
+performance by combining both precision and recall. It is calculated using the
+harmonic mean on both values and outputs a value ranged from zero to one, with
+values closer to one, indicating better performance.
 \begin{equation}
 	\text{F1-score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
 \end{equation}
