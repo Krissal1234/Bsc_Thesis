@@ -19,8 +19,7 @@ this dataset, many were beyond the scope of this study, therefore only a subset
 of these videos were selected and included into the final dataset.
 
 \section{Class Establishment}
-In the development of a skateboard trick classifier, this study pursued a
-multi-class classification strategy, targeting three fundamental skateboard
+This study pursued a multi-class classification strategy, targeting three fundamental skateboard
 tricks: ollie, pop shuvit and kickflip. These tricks were selected on the basis
 of two primary criteria. Firstly, they are often associated with the first
 tricks learnt by beginners, highlighting their role in foundational
@@ -76,7 +75,7 @@ them. With this approach, frames with the greatest weightings were chosen for
 extraction, resulting in capturing only action-specific frames. 
 
 
-\begin{figure}[h!]
+\begin{figure}[htbp]
 	\centering
 	\begin{subfigure}{\textwidth}
 		\centering
@@ -100,16 +99,39 @@ techniques were implemented to increase the dataset's size prior to model
 training. These techniques including rotating, flipping and adding noise to
 images also help reduce overfitting, which was a risk evident due to the
 over-parametrised nature of the chosen models, meaning that their number of
-trainable parameters surpass the size of the dataset, making it very vulnerable
+trainable parameters surpass the size of the dataset, making them vulnerable
 to overfitting.
 
 
 \subsection{Feature Extraction with Transfer Learning}
-In order to 
+Feature extraction plays a crucial role in the classification of complex data, particularly in the domain of action recognition tasks \cite{SkateboardAIPaper,HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study leveraged the characteristics of two notable CNNs, VGG16 \cite{VGG} and ResNet50 \cite{Resnet50}, known for their capabilities in capturing sophisticated patterns in high-dimensional data.
+\begin{table}[htbp]
+	\centering
+	\label{tab:TL-models}
+	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+		\toprule
+		\textbf{Model} & \textbf{VGG16} & \textbf{ResNet50} \\
+		\midrule
+		\textbf{Published} & 2014 & 2016 \\
+		\textbf{Layers} & 16 (Convolutional and FC layers) & 50 (Convolutional layers) \\
+		\textbf{Parameters} & $\sim$138 million & $\sim$25 million \\
+		\textbf{Input Image Size} & 224x224  & 224x224  \\
+		\bottomrule
+	\end{tabularx}
+			\caption{Characteristics of Transfer Learning Models VGG16 and ResNet50}
+\end{table}
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
+	\caption{VGG16 architecture reproduced from \cite{visoVeryDeep}.}
+	
+\end{figure}
 \subsection{Sequence Modelling}
-% VGG
-% ResNet50
+
+\subsection{Overall Architectures}
+
+
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
 the video frame data before further processing. In particular this study
@@ -117,14 +139,6 @@ utilised min-max normalisation to scale the pixel intensities between 0 and 1.
 Normalising data in this manner ensured that the model's input values data was
 within a standardised range.
 
-\section{Overall Architectures}
-
-
-\subsection{Feature Extraction models}
-
-
-
-\subsection{Sequence models}
 
 
 
