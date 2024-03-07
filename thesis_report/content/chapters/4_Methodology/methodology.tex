@@ -72,7 +72,7 @@ corresponding frames by using a pre-calculated step size determined by the
 number of frames of a video. The second technique leveraged optical flow, a
 method that assigns weights to frames determined by the motion of pixels between
 them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing only action-specific frames. 
+extraction, resulting in capturing frames with the most movement. 
 
 
 \begin{figure}[htbp]
@@ -123,14 +123,28 @@ Feature extraction plays a crucial role in the classification of complex data, p
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
+	\includegraphics[width=0.85\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
 	\caption{VGG16 architecture reproduced from \cite{visoVeryDeep}.}
 	
 \end{figure}
+
+VGG16
+
+ResNet50
+
+
+In the context of video action recognition, the final four fully-connected (FC) layers of these models which are typically used for classification were removed. This was crucial in order to adapt these models for feature extraction, as the aim was not to classify each frame in the video, but to extract a rich collection of features. These features in the form of vectors would not only encapsulate the visual information present in each frame, but also more abstract ideas such as low-level information (like edges/shapes) to higher level features like objects and even actions themselves. By removing the final classification layers, both models resulted in a feature vector shape of 7x7x512.
+
+
+
 \subsection{Sequence Modelling}
-
+%Talk about LSTM and BiLSTM
 \subsection{Overall Architectures}
-
+%Talk about the general models:
+%VGG-LSTM
+%Resnet50-BiLSTM
+%VGG-BiLSTM
+%Resnet50-LSTM
 
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
