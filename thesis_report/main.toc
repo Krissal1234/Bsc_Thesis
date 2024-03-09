@@ -24,17 +24,17 @@
 \contentsline {subsection}{\numberline {3.2.1}Accelerometer-based approaches}{13}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Computer Vision-based Approaches}{14}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Methodology}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Dataset }{16}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Class Establishment}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data Preparation}{16}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Labelling techniques}{16}{subsection.4.3.1}%
-\contentsline {section}{\numberline {4.4}Preprocessing}{17}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Frame Extraction}{17}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Data Augmentation}{17}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Feature Extraction with Transfer Learning}{18}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Sequence Modelling}{19}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Overall Architectures}{19}{subsection.4.4.5}%
-\contentsline {subsection}{\numberline {4.4.6}Normalisation}{19}{subsection.4.4.6}%
-\contentsline {section}{\numberline {4.5}Evaluation Methods}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.1}Class Establishment}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Data Preparation}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Dataset }{16}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Labelling techniques}{16}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Preprocessing}{17}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Frame Extraction}{17}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{18}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Normalisation}{18}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{18}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Dimensionality Reduction}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Adapted Models}{19}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Evaluation Methods}{19}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Sample A}{21}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Sample B}{22}{chapter.6}%

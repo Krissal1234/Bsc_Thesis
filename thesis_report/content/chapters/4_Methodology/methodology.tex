@@ -1,27 +1,10 @@
 \clearpage
 \chapter{Methodology}
 
-\section{Dataset }
-This study utilised video recordings of skateboarders performing tricks as its
-primary data source. To ensure model robustness, the final dataset consisted of
-videos across diverse environmental conditions and varying skateboarder skill
-levels.
-
-The initial dataset was sourced from the publicly available "SkateboardML"
-repository on GitHub \cite{lightningdrop2020skateboardml}, comprising 200 video
-clips corresponding to two common tricks: the ollie and the kickflip. This
-dataset laid a solid foundation for this research. However, to expand the
-dataset's diversity, additional data was obtained through direct communication
-with Hanxiao Chen, the author of the SkateboardAI paper
-\cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
-videos covering 15 distinct tricks. Given the wide range of tricks included in
-this dataset, many were beyond the scope of this study, therefore only a subset
-of these videos were selected and included into the final dataset.
 
 \section{Class Establishment}
 This study pursued a multi-class classification strategy, targeting three fundamental skateboard
-tricks: ollie, pop shuvit and kickflip. These tricks were selected on the basis
-of two primary criteria. Firstly, they are often associated with the first
+tricks: ollie, pop shuvit and kickflip. These tricks were selected based on two primary criteria. Firstly, they are often associated with the first
 tricks learnt by beginners, highlighting their role in foundational
 skateboarding skills. Secondly, their popularity within the skateboarding
 community, often performed in competitions emphasises their relevance, making
@@ -30,9 +13,24 @@ them highly relevant for analysing and evaluating competitive performance.
 
 \section{Data Preparation}
 
+\subsection{Dataset }
+This study utilised video recordings of skateboarders performing tricks as its
+primary data source. To ensure model robustness, the final dataset consisted of
+videos across diverse environmental conditions and varying skateboarder skill
+levels.
+
+The initial dataset was sourced from the publicly available "SkateboardML"
+repository on GitHub \cite{lightningdrop2020skateboardml}, comprising 200 video
+clips corresponding to two common tricks: the ollie and the kickflip. To expand the
+dataset's diversity, additional data was obtained through direct communication
+with Hanxiao Chen, the author of the SkateboardAI paper
+\cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
+videos covering 15 distinct tricks. Given the wide range of tricks included in
+this dataset, many were beyond the scope of this study, therefore only a subset
+of these videos were selected and included in the final dataset.
+
 \subsection{Labelling techniques}
-This study investigated two primary labelling techniques: the folder-based
-approach and the text-based approach. In the folder-based method, videos were
+This study investigated two primary labelling techniques: the folder-based and the text-based approach as depicted by Figures \ref{fig:folder-based-label} and \ref{fig:text-based-label}. In the folder-based method, videos were
 categorised into folders named after their corresponding class label offering a
 simple organisation method. On the other hand, in the text-based approach, each
 video's path and corresponding label were listed on a text file, providing more
@@ -41,20 +39,21 @@ this study chose to utilise the folder-based approach, as the extra complexity
 from the text-based method wasn't necessary for this project.
 
 \begin{figure}[h]
-\centering
-\begin{minipage}[t]{0.55\textwidth}
-	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/folder-based-label.jpg}
-	\caption{Folder-based labelling.}
-	\label{fig:folder-based-label}
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.35\textwidth}
-	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/text-based-labelling.jpg}
-	\caption{Text-based labelling}
-	\label{fig:text-based-label}
-\end{minipage}
+	\centering
+	\begin{minipage}[t]{0.55\textwidth}
+		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/folder-based-label.jpg}
+		\caption{Folder-based labelling.}
+		\label{fig:folder-based-label}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{0.32\textwidth}
+		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/text-based-labelling.jpg}
+		\caption{Text-based labelling}
+		\label{fig:text-based-label}
+	\end{minipage}
 \end{figure}
 
+\vspace{-1cm} % hspace for horizontal
 \section{Preprocessing}
 
 \subsection{Frame Extraction}
@@ -64,18 +63,9 @@ study employed frame extraction to convert videos into sequences of frames
 suitable for processing by ML models. This technique aims to extract a subset of
 frames that encapsulate the essential dynamics of the activity. Thus, in the
 context of skateboard trick recognition, the frames should capture the entire
-sequence, including the wind up, the trick and the landing. 
+sequence, including the wind-up, the trick and the landing. 
 
-Two primary frame extraction techniques were explored, uniform sampling and
-optical flow method. The former technique, evenly splits a video into its
-corresponding frames by using a pre-calculated step size determined by the
-number of frames of a video. The second technique leveraged optical flow, a
-method that assigns weights to frames determined by the motion of pixels between
-them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing frames with the most movement. 
-
-
-\begin{figure}[htbp]
+\begin{figure}[h!]
 	\centering
 	\begin{subfigure}{\textwidth}
 		\centering
@@ -87,27 +77,50 @@ extraction, resulting in capturing frames with the most movement.
 		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
 		\caption{Extracted frames from the sequence based on the greatest weightings from the optical flow representation.}
 	\end{subfigure}
-
+	
 	\caption{Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.}
 	\label{fig:kickflip-sequence-opticalflow}
 \end{figure}
 
+Two primary frame extraction techniques were explored, uniform sampling and
+optical flow method. The former technique evenly splits a video into its
+corresponding frames by using a pre-calculated step size determined by the
+number of frames of a video. The second technique leveraged optical flow, a
+method that assigns weights to frames determined by the motion of pixels between
+them. With this approach, frames with the greatest weightings were chosen for
+extraction, resulting in capturing frames with the most movement.  An example of this technique can be observed in Figure \ref{fig:kickflip-sequence-opticalflow}.
+
 
 \subsection{Data Augmentation}
 Due to the limited number of data used in this research, data augmentation
-techniques were implemented to increase the dataset's size prior to model
+techniques were implemented to increase the dataset's size before model
 training. These techniques including rotating, flipping and adding noise to
 images also help reduce overfitting, which was a risk evident due to the
 over-parametrised nature of the chosen models, meaning that their number of
 trainable parameters surpass the size of the dataset, making them vulnerable
 to overfitting.
 
+\subsection{Normalisation}
+During the preprocessing stage, normalisation played a crucial role in preparing
+the video frame data before further processing. In particular this study
+utilised min-max normalisation to scale the pixel intensities between 0 and 1.
+Normalising data in this manner ensured that the model's input values data was
+within a standardised range.
+
 
 \subsection{Feature Extraction with Transfer Learning}
-Feature extraction plays a crucial role in the classification of complex data, particularly in the domain of action recognition tasks \cite{SkateboardAIPaper,HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study leveraged the characteristics of two notable CNNs, VGG16 \cite{VGG} and ResNet50 \cite{Resnet50}, known for their capabilities in capturing sophisticated patterns in high-dimensional data.
+%Feature extraction plays a crucial role in the classification of complex data, particularly in the domain of action recognition tasks \cite{SkateboardAIPaper, HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study incorporates transfer learning by utilising pre-trained CNNs to extract relevant features from video frames before passing them through the main sequence model.
+
+This research leveraged two well-established CNNs for this task: VGG16  and ResNet50. Both models were pre-trained on the large ImageNet dataset \cite{imageNetDataset}, leveraging extensive image recognition knowledge that were then fine-tuned to the domain of skateboard trick recognition.
+
+{\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman \cite{VGG}, is a CNN architecture known for its success in image classification and feature extraction for action recognition tasks. This model is relatively simple made up of 16 convolutional and fully connected (FC) with repeated use of 3x3 convolutional filters to preserve spatial information within frames.% Furthermore, VGG16 has proved to be effective for feature extraction in previous literature\cite{SkateboardAIPaper}, supporting its suitability in this study.
+
+{\bf Resnet50:} Resnet50, introduced in 2016 by He et al. \cite{Resnet50}, is another powerful CNN architecture that is well known for its advancements in image classification and frame extraction capabilities. Unlike VGG16, this model has a deeper architecture employing 50 convolutional layers allowing it to learn more intricate feature representations of the data. Furthermore, it incorporates residual connections to counteract the vanishing gradient problem that is often caused by many layers.% Additionally, this particular model has been utilised in skateboarding trick classifiers in previous studies by Chen \cite{SkateboardAIPaper} and Shapiee et al. \cite{skatePaper1}, further supporting its choice for this research.
+
+Table \ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet50.
 \begin{table}[htbp]
 	\centering
-	\label{tab:TL-models}
+	
 	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
 		\toprule
 		\textbf{Model} & \textbf{VGG16} & \textbf{ResNet50} \\
@@ -118,55 +131,46 @@ Feature extraction plays a crucial role in the classification of complex data, p
 		\textbf{Input Image Size} & 224x224  & 224x224  \\
 		\bottomrule
 	\end{tabularx}
-			\caption{Characteristics of Transfer Learning Models VGG16 and ResNet50}
+	\label{tab:TL-models}
+	\caption{Characteristics of Transfer Learning Models VGG16 and ResNet50}
 \end{table}
 
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.85\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
-	\caption{VGG16 architecture reproduced from \cite{visoVeryDeep}.}
-	
-\end{figure}
+%\begin{figure}[h!]
+%	\centering
+%	\includegraphics[width=0.85\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
+%	\caption{VGG16 architecture reproduced from \cite{visoVeryDeep}.}
 
-VGG16
+%\end{figure}
 
-ResNet50
+The final four fully-connected (FC) layers of these models which are typically used for classification were removed. This was crucial to adapt these models for feature extraction, as the aim was not to classify each frame of the video, but to extract a collection of features that could help sequence models gain a better understanding. These features in the form of vectors not only encapsulate the visual information present in each frame but also more abstract ideas such as low-level information (like edges/shapes) to higher-level features like objects and even actions themselves. By removing the final classification layers, both models resulted in a feature vector shape of ${7 \times 7 \times 512}$.
 
-
-In the context of video action recognition, the final four fully-connected (FC) layers of these models which are typically used for classification were removed. This was crucial in order to adapt these models for feature extraction, as the aim was not to classify each frame in the video, but to extract a rich collection of features. These features in the form of vectors would not only encapsulate the visual information present in each frame, but also more abstract ideas such as low-level information (like edges/shapes) to higher level features like objects and even actions themselves. By removing the final classification layers, both models resulted in a feature vector shape of 7x7x512.
+\section{Dimensionality Reduction}
 
 
+\section{Adapted Models}
+This research investigates the performance of four different deep learning architectures for skateboard trick classification. these models leverage pre-trained CNNs for feature extraction followed by sequence modelling techniques to capture the temporal dynamics of skateboard tricks. The architectures investigated are as follows.
 
-\subsection{Sequence Modelling}
-%Talk about LSTM and BiLSTM
-\subsection{Overall Architectures}
-%Talk about the general models:
-%VGG-LSTM
-%Resnet50-BiLSTM
-%VGG-BiLSTM
-%Resnet50-LSTM
-
-\subsection{Normalisation}
-During the preprocessing stage, normalisation played a crucial role in preparing
-the video frame data before further processing. In particular this study
-utilised min-max normalisation to scale the pixel intensities between 0 and 1.
-Normalising data in this manner ensured that the model's input values data was
-within a standardised range.
+\begin{enumerate}
+	\item \textbf{VGG16-LSTM:} This model combines the VGG16 model
+	\item \textbf{ResNet50-LSTM:}
+	\item \textbf{VGG16-BiLSTM:} 
+	\item \textbf{ResNet50-BiLSTM:} 
+\end{enumerate}
 
 
-
+%why these models were chosen
 
 % VGG-LSTM - because of paper from lit review
 % Resnet50-LSTM
-% Resnet50-BiLSTM - becuase of skateboard paper and lit review paper
+% Resnet50-BiLSTM - because of skateboard paper and lit review paper
 
 \section{Evaluation Methods}
 To thoroughly evaluate the performance of the proposed models, this study
 employed various evaluation metrics, including accuracy, precision, recall,
-F1-score and confusion matrix. These metrics provided valuable insights on the
-model's ability to correctly classify different tricks and depend on
-the following definitions, described in the context of the kickflip class as an
-example.
+F1-score and confusion matrix. These metrics provided valuable insights into the
+model's ability to correctly classify different tricks. 
+
+The above mentioned metrics depend on the following definitions, described in the context of the "kickflip" class.
 
 \begin{itemize}
 	\item \textbf{True Positive (TP)}: The model correctly identified a video as containing a kickflip.
@@ -206,7 +210,7 @@ kickflips that are identified correctly.
 
 \noindent \textbf{F1-score:} This metric provides a balanced measure of
 performance by combining both precision and recall. It is calculated using the
-harmonic mean on both values and outputs a value ranged from zero to one, with
+harmonic mean on both values and outputs a value ranging from zero to one, with
 values closer to one, indicating better performance.
 \begin{equation}
 	\text{F1-score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
