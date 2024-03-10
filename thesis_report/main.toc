@@ -36,5 +36,6 @@
 \contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{19}{subsection.4.3.5}%
 \contentsline {section}{\numberline {4.4}Adapted Models}{19}{section.4.4}%
 \contentsline {section}{\numberline {4.5}Evaluation Methods}{20}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Sample A}{22}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Sample B}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {5}Implementation}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Sample A}{23}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Sample B}{24}{chapter.7}%

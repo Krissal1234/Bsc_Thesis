@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  9 MAR 2024 17:35
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  10 MAR 2024 16:51
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2277,7 +2277,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=158, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=162, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -2410,7 +2410,7 @@ LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
  on page 4 undefined on input line 177.
 
 <content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=27
-2, 569.12625pt x 435.6275pt>
+7, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png G
 raphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
@@ -2560,7 +2560,7 @@ page 10 undefined on input line 192.
 LaTeX Warning: Citation 'VGG' on page 10 undefined on input line 196.
 
 [10] [11]
-<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=310, 438.63875pt
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=315, 438.63875pt
  x 385.44pt>
 File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (t
 ype png)
@@ -2646,7 +2646,7 @@ LaTeX Warning: Citation 'lightningdrop2020skateboardml' on page 16 undefined on
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 16 undefined on input line 
 27.
 
-<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=331, 620.317
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=336, 620.317
 5pt x 242.9075pt>
 File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic fil
 e (type jpg)
@@ -2654,7 +2654,7 @@ e (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-la
 bel.jpg  used on input line 44.
 (luatex.def)             Requested size: 250.38564pt x 98.0471pt.
-<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=332, 241.9
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=337, 241.9
 0375pt x 272.01625pt>
 File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic f
 ile (type jpg)
@@ -2670,7 +2670,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 <content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=3
-38, 1349.04pt x 224.84pt>
+43, 1349.04pt x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg 
 Graphic file (type jpg)
 <use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
@@ -2679,7 +2679,7 @@ ce_opticalFlow.jpg  used on input line 72.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 73.
-<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=339, 1349.04p
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=344, 1349.04p
 t x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
  (type jpg)
@@ -2746,17 +2746,22 @@ Overfull \hbox (52.46394pt too wide) in paragraph at lines 198--203
 \TU/Lato(0)/m/n/12 [[]].In 
  []
 
+) (./content/chapters/5_Implementation/implementation.tex [21]
+Chapter 5.
 )
 
-LaTeX Warning: Empty bibliography on input line 74.
+LaTeX Warning: Empty bibliography on input line 75.
 
-(./content/appendices/appendix_a.tex [21]
-Chapter 5.
-) (./content/appendices/appendix_b.tex [22
+(./content/appendices/appendix_a.tex [22
+
 
 ]
 Chapter 6.
-) [23
+) (./content/appendices/appendix_b.tex [23
+
+]
+Chapter 7.
+) [24
 
 ] (./main.aux)
  ***********
@@ -2768,7 +2773,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D69BDC2EB7605E2E68320AD8759201F2;6097.
+(rerunfilecheck)             Checksum: 4A6749A2A9D1C51D8937F1809F9087F7;6211.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -2780,14 +2785,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36147 strings out of 476497
+ 36159 strings out of 476497
  125015,1977958 words of node,token memory allocated
  940 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 23 attribute, 126 glue_spe
 c, 23 attribute_list, 1 write, 3 pdf_action nodes
    avail lists: 1:3,2:736,3:281,4:64,5:1239,6:87,7:7492,8:55,9:439,10:29,11:721,
 12:3
- 57375 multiletter control sequences out of 65536+600000
+ 57379 multiletter control sequences out of 65536+600000
  81 fonts using 19767871 bytes
  106i,11n,128p,2394b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/truetype/typoland/lato
@@ -2802,9 +2807,9 @@ cmr12.pfb><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Kris Saliba/AppData/L
 ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (30 pages, 650440 bytes).
+Output written on main.pdf (31 pages, 651700 bytes).
 
-PDF statistics: 427 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 131072)
- 321 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 437 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 131072)
+ 329 words of extra memory for PDF output out of 10000 (max. 100000000)
 
