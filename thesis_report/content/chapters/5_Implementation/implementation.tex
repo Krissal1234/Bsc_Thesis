@@ -2,6 +2,7 @@
 \chapter{Implementation}
 
 \section{Development Environment}
+\subsection{Keras}
 
 \section{Frame Extraction using Optical Flow}
 To ensure the selected frames are highly relevant to the task, this study
@@ -23,6 +24,10 @@ observation that the models were unlikely to improve after 10 epochs, with no
 validation loss advancements.
 
 \subsection{Model Checkpoint}
-The training process incroporated model checkpointing to save intermediate
-models after every epoch, allowing a seamless resumption of training in case of
-interruption
+This study incroporated model checkpointing in the training process
+to save intermediate models after every epoch. This implementation was
+configured to monitor the validation loss and only save the the model when it
+showed an improvement, allowing a seamless resumption of training in case of
+interruption.
+
+\section{}
