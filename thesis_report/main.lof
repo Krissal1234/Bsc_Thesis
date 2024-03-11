@@ -1,12 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \blx@tocontentsinit {0}\cite {FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}}{5}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \blx@tocontentsinit {0}\cite {FundamentalsOfArtificialNeuralNetworksAndDeepLearning}\relax }}{5}{figure.caption.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \blx@tocontentsinit {0}\cite {LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}}}{12}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \blx@tocontentsinit {0}\cite {LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}\relax }}{10}{figure.caption.4}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Folder-based labelling.}}{17}{figure.caption.5}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Text-based labelling}}{17}{figure.caption.5}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.}}{17}{figure.caption.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Folder-based labelling.\relax }}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Text-based labelling\relax }}{15}{figure.caption.5}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.\relax }}{15}{figure.caption.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -4,14 +4,25 @@
 \section{Development Environment}
 
 \section{Frame Extraction using Optical Flow}
-To ensure the selected frames are highly relevant to the task, this study utilised an optical flow approach. This method prioritises frames with significant motion, which aligns well with the nature of skateboard tricks. The core principle behind this study's frame extraction method is the utilisation of Farneback's algorithm \cite{farneback2003two}. This algorithm
+To ensure the selected frames are highly relevant to the task, this study
+utilised an optical flow approach. This method prioritises frames with
+significant motion, which aligns well with the nature of skateboard tricks. The
+core principle behind this study's frame extraction method is the utilisation of
+Farneback's algorithm \cite{farneback2003two}. This algorithm
 
 \section{Data Augmentation}
 % show parameters for augmentation plus photos of how they were augmented
 
 \section{Callbacks}
 \subsection{Early Stopping}
-This technique was used
+This research employed an early stopping callback to reduce overfitting and save
+computational resources. This method monitored the validation loss at every
+epoch and halted training if improvement stopped after a predetermined patience
+value. This study investigated a pateience of 10 epochs, based on the
+observation that the models were unlikely to improve after 10 epochs, with no
+validation loss advancements.
+
 \subsection{Model Checkpoint}
-
-
+The training process incroporated model checkpointing to save intermediate
+models after every epoch, allowing a seamless resumption of training in case of
+interruption
