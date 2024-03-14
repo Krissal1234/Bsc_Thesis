@@ -2,16 +2,53 @@
 \chapter{Implementation}
 
 \section{Development Environment}
-\subsection{Keras}
+{\bf Python:} Python's large database of libraries, along with its wide use in Machine Learning, made it the ideal choice for developing this artefact. Furthermore, its large and active community made tackling problems and troubleshooting issues simpler. Prior experience using Python also contributed to this decision.
+
+{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models
+%keras provides us with pretrained models and layers 
+
+\subsection{Pandas}
+
+
 
 \section{Frame Extraction using Optical Flow}
-To ensure the selected frames are highly relevant to the task, this study
-utilised an optical flow approach. This method prioritises frames with
-significant motion, which aligns well with the nature of skateboard tricks. The
-core principle behind this study's frame extraction method is the utilisation of
-Farneback's algorithm \cite{farneback2003two}. This algorithm
+The exploration of two frame extraction techniques aimed to find the most effective way to capture the crucial motions in a video through a series of frames. The optical flow method was hypothesised to be a superior technique for its ability to capture frames with the most significant motion, unlike uniform sampling which often missed crucial parts of the skateboard trick, capturing more frames before or after the trick execution. An example of this behaviour can be observed in Figure \ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore, experiments showed an increase in accuracy when using the optical flow method over uniform sampling, further supporting this hypothesis.
+% either prove that it led to higher accuracy or show with image comparisons that optical flow method has more frames encapsulating the trick
+
+This study employed Farneback's algorithm \cite{farneback2003two} using the OpenCV (cv2) library, to estimate the optical flow magnitudes on each frame. The selection process involved reading pairs of consecutive frames from a video, resized for faster processing and converted to greyscale to minimise noise caused by colour variations. The cv2 function \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation between these frames, using parameters such as pyramid scale, levels, winsize, iterations that can be found in Appendix %add reference to appendix and place values. 
+
+The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors returned by the optical flow function into polar coordinates, discarding the directional information, retaining only the magnitudes. Finally, the code computed the average magnitude and appended it to a list. This process iterated through all frames to select those with the highest average to be extracted from the video.
+
+
+
+\begin{figure}[h!]
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/optical_sequence.jpg}
+		\caption{Extracted frames using optical flow method.}
+	\end{subfigure}
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg}
+		\caption{Extracted frames using uniform sampling.}
+	\end{subfigure}
+	
+	\caption{Comparison of frame extraction between optical flow method and uniform sampling}
+	\label{fig:comparison-sequence-opticalflow-uniformSampling}
+\end{figure}
+
+
+\section{Feature Extraction and Preprocessing for Training}
+After successfully extracting the most significant frames from each video in the dataset using optical flow, the next steps involved refining these frames to be in their optimal format before training the models. 
+%
+%normalisation
+%flattening after feature extraction
+%dimensionalty reduction using PCA
+
 
 \section{Data Augmentation}
+%ImageDataGenerator tensorflow module
 % show parameters for augmentation plus photos of how they were augmented
 
 \section{Callbacks}
@@ -19,15 +56,15 @@ Farneback's algorithm \cite{farneback2003two}. This algorithm
 This research employed an early stopping callback to reduce overfitting and save
 computational resources. This method monitored the validation loss at every
 epoch and halted training if improvement stopped after a predetermined patience
-value. This study investigated a pateience of 10 epochs, based on the
+value. This study investigated a patience of 10 epochs, based on the
 observation that the models were unlikely to improve after 10 epochs, with no
 validation loss advancements.
 
 \subsection{Model Checkpoint}
-This study incroporated model checkpointing in the training process
+This study incorporated model check pointing in the training process
 to save intermediate models after every epoch. This implementation was
-configured to monitor the validation loss and only save the the model when it
+configured to monitor the validation loss and only save the model when it
 showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
-\section{}
+\section{Baseline Model Approach}

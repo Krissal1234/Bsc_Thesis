@@ -6,6 +6,7 @@
 \contentsline {chapter}{List of Abbreviations}{1}{chapter*.2}%
 \contentsline {chapter}{Glossary of Symbols}{1}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Research Question}{1}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Skateboard Tricks}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Machine Learning}{2}{section.2.2}%
@@ -38,12 +39,13 @@
 \contentsline {section}{\numberline {4.5}Evaluation Methods}{18}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Implementation}{20}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Development Environment}{20}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Keras}{20}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Pandas}{20}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}Frame Extraction using Optical Flow}{20}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data Augmentation}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Callbacks}{20}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Early Stopping}{20}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Model Checkpoint}{20}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}}{20}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Sample A}{26}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Sample B}{27}{chapter.7}%
+\contentsline {section}{\numberline {5.3}Feature Extraction and Preprocessing for Training}{21}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Data Augmentation}{21}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Callbacks}{21}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Early Stopping}{21}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Model Checkpoint}{21}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Baseline Model Approach}{22}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Sample A}{28}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Sample B}{29}{chapter.7}%
