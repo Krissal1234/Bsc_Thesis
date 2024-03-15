@@ -6,46 +6,52 @@
 \contentsline {chapter}{List of Abbreviations}{1}{chapter*.2}%
 \contentsline {chapter}{Glossary of Symbols}{1}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Research Question}{1}{section.1.1}%
-\contentsline {chapter}{\numberline {2}Background}{2}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Skateboard Tricks}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Machine Learning}{2}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Object Detection}{3}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Activity Recognition}{3}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Neural Networks}{4}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Artificial Neural Networks}{4}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Convolutional Neural Networks}{4}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Recurrent Neural Networks}{5}{subsection.2.5.3}%
-\contentsline {chapter}{\numberline {3}Literature Review}{6}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Activity Recognition}{6}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Challenges in this field}{6}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Preprocessing techniques}{7}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Activity Recognition Techniques}{9}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Advancements in Skateboard Trick Classification}{11}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Accelerometer-based approaches}{11}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Computer Vision-based Approaches}{12}{subsection.3.2.2}%
-\contentsline {chapter}{\numberline {4}Methodology}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Class Establishment}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Data Preparation}{14}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Dataset }{14}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Labelling techniques}{14}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Preprocessing}{15}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Frame Extraction}{15}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{16}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Normalisation}{16}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{16}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{17}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Adapted Models}{17}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Evaluation Methods}{18}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Implementation}{20}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Development Environment}{20}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Pandas}{20}{subsection.5.1.1}%
-\contentsline {section}{\numberline {5.2}Frame Extraction using Optical Flow}{20}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Feature Extraction and Preprocessing for Training}{21}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Data Augmentation}{21}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Callbacks}{21}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Early Stopping}{21}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Model Checkpoint}{21}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}Baseline Model Approach}{22}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Sample A}{28}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Sample B}{29}{chapter.7}%
+\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Hypothesis}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Research Questions}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Aims and Objectives}{2}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Aims}{2}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Objectives}{2}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}Structure}{3}{section.1.5}%
+\contentsline {chapter}{\numberline {2}Background}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Skateboard Tricks}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Machine Learning}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Object Detection}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Activity Recognition}{6}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Neural Networks}{6}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Artificial Neural Networks}{6}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Convolutional Neural Networks}{6}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Recurrent Neural Networks}{7}{subsection.2.5.3}%
+\contentsline {chapter}{\numberline {3}Literature Review}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Activity Recognition}{9}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Challenges in this field}{10}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Preprocessing techniques}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Activity Recognition Techniques}{12}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Advancements in Skateboard Trick Classification}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Accelerometer-based approaches}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Computer Vision-based Approaches}{16}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}Methodology}{18}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Class Establishment}{18}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Data Preparation}{18}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Dataset }{18}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Labelling techniques}{18}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Preprocessing}{19}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Frame Extraction}{19}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{20}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Normalisation}{20}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{20}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{21}{subsection.4.3.5}%
+\contentsline {section}{\numberline {4.4}Adapted Models}{21}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Evaluation Methods}{22}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Implementation}{24}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Development Environment}{24}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Pandas}{24}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Frame Extraction using Optical Flow}{24}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Feature Extraction and Preprocessing for Training}{25}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Data Augmentation}{25}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Callbacks}{25}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Early Stopping}{25}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Model Checkpoint}{26}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Baseline Model Approach}{26}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Sample A}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Sample B}{28}{chapter.7}%

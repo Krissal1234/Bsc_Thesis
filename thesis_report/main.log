@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  14 MAR 2024 23:07
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  15 MAR 2024 16:48
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2277,7 +2277,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=202, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=226, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -2309,7 +2309,17 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 \tf@toc=\write8
 
 \openout8 = main.toc
- [4] (./main.lof)
+ [4] (./main.lof
+Overfull \hbox (74.62473pt too wide) in paragraph at lines 4--4
+ \TU/Lato(0)/m/n/12 duced from López et al. (2022) [[]][] []  
+ []
+
+
+Overfull \hbox (26.55602pt too wide) in paragraph at lines 6--6
+ \TU/Lato(0)/m/n/12 [[]][] []  
+ []
+
+)
 \tf@lof=\write9
 
 \openout9 = main.lof
@@ -2321,41 +2331,267 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 \openout10 = main.lot
  [6
 
-] (./main.acr)
-(./main.gls) (./content/chapters/1_introduction/introduction.tex
+] (./main.acr) (./main.gls)
+(./content/chapters/1_introduction/introduction.tex
 Chapter 1.
+
+LaTeX Warning: Citation 'SkateboardingEncyclobeadia' on page 1 undefined on inp
+ut line 6.
+
+
+LaTeX Warning: Citation 'SkatebaordingOlimpics' on page 1 undefined on input li
+ne 6.
+
+
+LaTeX Warning: Citation 'skateStyles' on page 1 undefined on input line 16.
+
+<content/chapters/1_introduction/figures/graph.png, id=344, 1003.75pt x 745.786
+25pt>
+File: content/chapters/1_introduction/figures/graph.png Graphic file (type png)
+
+<use content/chapters/1_introduction/figures/graph.png>
+Package luatex.def Info: content/chapters/1_introduction/figures/graph.png  use
+d on input line 20.
+(luatex.def)             Requested size: 409.71692pt x 304.42015pt.
+
+LaTeX Warning: Citation 'skatestatistics' on page 1 undefined on input line 21.
+
+
+
+LaTeX Warning: Citation 'outdoorfounation' on page 1 undefined on input line 21
+.
+
+
+LaTeX Warning: Citation 'skatestatistics' on page 1 undefined on input line 21.
+
+
+
+LaTeX Warning: Citation 'outdoorfounation' on page 1 undefined on input line 21
+.
+
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 33.
-) (./content/chapters/2_background/background.tex [1
+(Font)              scaled to size 17.28pt on input line 27.
+[1
 
 
 
+
+
+<./content/chapters/1_introduction/figures/graph.png>]
+
+LaTeX Warning: Citation 'skatePaper1' on page 2 undefined on input line 32.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 2 undefined on input line 3
+2.
+
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 39.
+[2]) (./content/chapters/2_background/background.tex [3]
+Chapter 2.
+
+LaTeX Warning: Citation 'ML_Algorithms' on page 4 undefined on input line 51.
+
+
+LaTeX Warning: Citation 'UnderstandingLSTM' on page 4 undefined on input line 5
+3.
+
+
+LaTeX Warning: Citation 'TheEffectsofDataQualityonMachineLearningPerformance' o
+n page 4 undefined on input line 58.
+
+
+LaTeX Warning: Citation 'ML_Algorithms' on page 4 undefined on input line 63.
+
+[4
 
 
 ]
-Chapter 2.
-[2
+
+LaTeX Warning: Citation 'NeuralScience' on page 5 undefined on input line 83.
 
 
-] [3]
-LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 168.
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=36
-2, 569.12625pt x 435.6275pt>
+LaTeX Warning: Citation 'RecentAdvancesObjectDetection' on page 5 undefined on 
+input line 86.
+
+
+LaTeX Warning: Citation 'RecentAdvancesObjectDetection' on page 5 undefined on 
+input line 90.
+
+
+LaTeX Warning: Citation 'ActionRecognitionDeepBi-DirectionalLSTM' on page 5 und
+efined on input line 132.
+
+
+LaTeX Warning: Citation 'AReviewOfHumanActivityRecognitionMethods' on page 5 un
+defined on input line 132.
+
+
+Overfull \hbox (51.05394pt too wide) in paragraph at lines 125--133
+\TU/Lato(0)/m/n/12 [[]],[[]].  
+ []
+
+[5]
+
+LaTeX Warning: Citation 'FundamentalsOfNeuralNetworks' on page 6 undefined on i
+nput line 174.
+
+
+LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
+ on page 6 undefined on input line 177.
+
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=37
+7, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png G
 raphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
 Package luatex.def Info: content/chapters/2_background/figures/Machine Learning
 /ANN_Diagram2.png  used on input line 195.
 (luatex.def)             Requested size: 341.43307pt x 261.35193pt.
- [4]) ("./content/chapters/3_Literature Review/literature_review.tex"
-[5<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>]
+
+LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
+ on page 6 undefined on input line 196.
+
+
+LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
+ on page 6 undefined on input line 196.
+
+
+LaTeX Warning: Citation 'RecentAadvancesInConvolutionalNeuralNetworks' on page 
+6 undefined on input line 202.
+
+[6]
+
+LaTeX Warning: Citation 'UnderstandingLSTM' on page 7 undefined on input line 2
+22.
+
+
+LaTeX Warning: Citation 'Long-termConvolutionalNeuralNetworksforVisualRecogntio
+n' on page 7 undefined on input line 222.
+
+
+Overfull \hbox (1.45189pt too wide) in paragraph at lines 214--223
+\TU/Lato(0)/m/n/12 [[]],[[]].  
+ []
+
+
+LaTeX Warning: Citation 'learningPriceseTimingWithLSTM' on page 7 undefined on 
+input line 226.
+
+
+LaTeX Warning: Citation 'UnderstandingLSTM' on page 7 undefined on input line 2
+28.
+
+[7<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>]) ("./content/chapters/3_Literature Review/literature_review.tex" [8]
 Chapter 3.
-[6
+
+LaTeX Warning: Citation '3DhumanActionDetectionForHealthCareSystems' on page 9 
+undefined on input line 10.
 
 
-] [7] [8] [9]
-<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=457, 438.63875pt
+LaTeX Warning: Citation 'HumanActivityRecognitionSecurityAndMonitoring' on page
+ 9 undefined on input line 11.
+
+
+LaTeX Warning: Citation 'HARinSportsComputerVision' on page 9 undefined on inpu
+t line 15.
+
+
+LaTeX Warning: Citation 'Asurveyonvideoactionrecognitioninsports:Datasetsmethod
+sandapplications' on page 9 undefined on input line 16.
+
+
+LaTeX Warning: Citation 'VisionBasedHARASurvey' on page 9 undefined on input li
+ne 26.
+
+
+LaTeX Warning: Citation 'ReviewOfHumanActivityRecognitionUsingVisionBasedMethod
+' on page 9 undefined on input line 51.
+
+[9
+
+
+]
+
+LaTeX Warning: Citation 'ReviewOfHumanActivityRecognitionUsingVisionBasedMethod
+' on page 10 undefined on input line 64.
+
+
+LaTeX Warning: Citation 'DataAugmentationCanImproveRobustness' on page 10 undef
+ined on input line 86.
+
+
+LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 10 und
+efined on input line 87.
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 10 undefined on input line 88.
+
+[10]
+
+LaTeX Warning: Citation 'RobustnessInMLNormalisation' on page 11 undefined on i
+nput line 96.
+
+
+LaTeX Warning: Citation 'RealWorldMicroGraphDataQualityNORMALIZATIONCITE' on pa
+ge 11 undefined on input line 97.
+
+
+LaTeX Warning: Citation 'RobustnessInMLNormalisation' on page 11 undefined on i
+nput line 113.
+
+
+LaTeX Warning: Citation 'EffectOnPreProcessingOnCNNForMedicalImageSegmentation'
+ on page 11 undefined on input line 117.
+
+
+LaTeX Warning: Citation 'FeatureExtractionForImageRecognitionAndComputerVision'
+ on page 11 undefined on input line 125.
+
+
+LaTeX Warning: Citation 'FeatureExtractionUsingCNNandDeepLearning' on page 11 u
+ndefined on input line 132.
+
+[11]
+
+LaTeX Warning: Citation 'ASurveyOfTransferLearning' on page 12 undefined on inp
+ut line 151.
+
+
+LaTeX Warning: Citation 'ApplicationAndAnalysisOfTransferLearningSurvey' on pag
+e 12 undefined on input line 152.
+
+
+LaTeX Warning: Citation 'HARUsingTransferLearningWithDeepRepresentations' on pa
+ge 12 undefined on input line 155.
+
+
+LaTeX Warning: Citation 'AlexNetCite' on page 12 undefined on input line 156.
+
+
+LaTeX Warning: Citation 'GoogleNetCite' on page 12 undefined on input line 157.
+
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 12 undefined on input line 163.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 12 undefined on input line 
+163.
+
+
+LaTeX Warning: Citation 'AReviewOnComputerVisionBasedMethodsForHARRecognition' 
+on page 12 undefined on input line 185.
+
+
+LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
+page 12 undefined on input line 192.
+
+
+LaTeX Warning: Citation 'VGG' on page 12 undefined on input line 196.
+
+[12] [13]
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=414, 438.63875pt
  x 385.44pt>
 File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (t
 ype png)
@@ -2363,12 +2599,85 @@ ype png)
 Package luatex.def Info: content/chapters/3_Literature Review/figures/cnn-lstm.
 png  used on input line 207.
 (luatex.def)             Requested size: 295.90588pt x 260.01962pt.
- [10
 
-<./content/chapters/3_Literature Review/figures/cnn-lstm.png>] [11] [12]) (./co
-ntent/chapters/4_Methodology/methodology.tex [13]
+
+LaTeX Warning: Citation 'LongTermRecurrentConvolutionalNetworksForVisualRecogni
+tionAndDescription' on page 14 undefined on input line 208.
+
+
+LaTeX Warning: Citation 'LongTermRecurrentConvolutionalNetworksForVisualRecogni
+tionAndDescription' on page 14 undefined on input line 208.
+
+
+LaTeX Warning: Citation 'Advancinghumanactionrecognition:ahybridapproachusingat
+tention-basedLSTMand3DCNN' on page 14 undefined on input line 215.
+
+
+Overfull \hbox (37.60791pt too wide) in paragraph at lines 213--217
+\TU/Lato(0)/m/n/12 [[]] 
+ []
+
+[14
+
+<./content/chapters/3_Literature Review/figures/cnn-lstm.png>]
+
+LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
+ermetry' on page 15 undefined on input line 268.
+
+
+LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
+age 15 undefined on input line 269.
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 15 undefined on input line 272.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 15 undefined on input line 
+273.
+
+
+LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
+ermetry' on page 15 undefined on input line 278.
+
+
+LaTeX Warning: Citation 'skateboardClassificationTransferLearningPipelinesAccel
+ermetry' on page 15 undefined on input line 290.
+
+
+LaTeX Warning: Citation 'AnOverviewOfOverfittingAndItsSolutions' on page 15 und
+efined on input line 297.
+
+[15]
+
+LaTeX Warning: Citation 'skateboardTrickClassifierUsingAccelerometryAndML' on p
+age 16 undefined on input line 305.
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 16 undefined on input line 323.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 16 undefined on input line 
+329.
+
+
+LaTeX Warning: Citation 'skatePaper1' on page 16 undefined on input line 345.
+
+[16]
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 17 undefined on input line 
+357.
+
+) (./content/chapters/4_Methodology/methodology.tex [17]
 Chapter 4.
-<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=500, 620.317
+
+LaTeX Warning: Citation 'lightningdrop2020skateboardml' on page 18 undefined on
+ input line 23.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 18 undefined on input line 
+27.
+
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=435, 620.317
 5pt x 242.9075pt>
 File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic fil
 e (type jpg)
@@ -2376,7 +2685,7 @@ e (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-la
 bel.jpg  used on input line 46.
 (luatex.def)             Requested size: 250.38564pt x 98.0471pt.
-<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=501, 241.9
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=436, 241.9
 0375pt x 272.01625pt>
 File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic f
 ile (type jpg)
@@ -2387,12 +2696,12 @@ lling.jpg  used on input line 52.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14
+[18
 
 
 ]
-<content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=5
-09, 1349.04pt x 224.84pt>
+<content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=4
+42, 1349.04pt x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg 
 Graphic file (type jpg)
 <use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
@@ -2401,7 +2710,7 @@ ce_opticalFlow.jpg  used on input line 74.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 75.
-<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=510, 1349.04p
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=443, 1349.04p
 t x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
  (type jpg)
@@ -2409,22 +2718,72 @@ File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
 Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequen
 ce.jpg  used on input line 79.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
- [15<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/
+ [19<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/
 chapters/4_Methodology/figures/text-based-labelling.jpg><./content/chapters/4_Me
 thodology/figures/kickflip_sequence_opticalFlow.jpg><./content/chapters/4_Method
 ology/figures/kickflip_sequence.jpg>]
+
+LaTeX Warning: Citation 'imageNetDataset' on page 20 undefined on input line 11
+6.
+
+
+LaTeX Warning: Citation 'VGG' on page 20 undefined on input line 118.
+
+
+LaTeX Warning: Citation 'Resnet50' on page 20 undefined on input line 120.
+
 
 Package caption Warning: \label without proper reference on input line 136.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:TL-models' on page 16 undefined on input line 122
+LaTeX Warning: Reference `tab:TL-models' on page 20 undefined on input line 122
 .
 
-[16] [17] [18]) (./content/chapters/5_Implementation/implementation.tex
-[19]
+[20]
+
+LaTeX Warning: Citation 'curseofdimensionality' on page 21 undefined on input l
+ine 150.
+
+[21]
+
+LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
+page 22 undefined on input line 162.
+
+
+LaTeX Warning: Citation 'SkateboardAIPaper' on page 22 undefined on input line 
+162.
+
+[22]
+
+LaTeX Warning: Citation 'classificationAssessmentMethodstharwat2020' on page 23
+ undefined on input line 185.
+
+
+LaTeX Warning: Citation 'Evaluation:fromprecisionrecallandF-measuretoROCinforme
+dnessmarkednessandcorrelation' on page 23 undefined on input line 193.
+
+
+Overfull \hbox (42.49794pt too wide) in paragraph at lines 191--196
+\TU/Lato(0)/m/n/12 [[]]. 
+ []
+
+
+LaTeX Warning: Citation 'Evaluation:fromprecisionrecallandF-measuretoROCinforme
+dnessmarkednessandcorrelation' on page 23 undefined on input line 202.
+
+
+Overfull \hbox (52.46394pt too wide) in paragraph at lines 200--205
+\TU/Lato(0)/m/n/12 [[]].In 
+ []
+
+) (./content/chapters/5_Implementation/implementation.tex [23]
 Chapter 5.
-<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=561, 1349.0
+
+LaTeX Warning: Citation 'farneback2003two' on page 24 undefined on input line 1
+8.
+
+<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=477, 1349.0
 4pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/optical_sequence.jpg Graphic fi
 le (type jpg)
@@ -2432,8 +2791,8 @@ le (type jpg)
 Package luatex.def Info: content/chapters/5_Implementation/figures/optical_sequ
 ence.jpg  used on input line 28.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
-<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=56
-2, 1349.04pt x 224.84pt>
+<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=47
+8, 1349.04pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg G
 raphic file (type jpg)
 <use content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>
@@ -2443,23 +2802,21 @@ ling_sequence.jpg  used on input line 33.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[20
+[24
 
 
-]) [21<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./conte
-nt/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>]
-[22]
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 75.
- [23
+] [25<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./conten
+t/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>])
 
-] [24] [25] [26] (./content/appendices/appendix_a.tex [27]
+LaTeX Warning: Empty bibliography on input line 75.
+
+(./content/appendices/appendix_a.tex [26]
 Chapter 6.
-) (./content/appendices/appendix_b.tex [28
+) (./content/appendices/appendix_b.tex [27
 
 ]
 Chapter 7.
-) [29
+) [28
 
 ] (./main.aux)
  ***********
@@ -2471,7 +2828,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4FDC44BBABCB53A0C4363813E98524E1;7875.
+(rerunfilecheck)             Checksum: 1E674F03CC4420076D1416DE41869255;8540.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -2483,16 +2840,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36444 strings out of 476497
- 125013,1977958 words of node,token memory allocated
- 970 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 128 glue_spe
+ 36231 strings out of 476497
+ 125015,1977958 words of node,token memory allocated
+ 960 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 126 glue_spe
 c, 25 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:4,2:958,3:419,4:62,5:1120,6:144,7:7624,8:101,9:516,10:21,11:66
-3,12:4
- 57592 multiletter control sequences out of 65536+600000
- 83 fonts using 20379247 bytes
- 106i,12n,128p,2394b,1684s stack positions out of 10000i,1000n,20000p,200000b,200000s
+   avail lists: 1:3,2:916,3:347,4:67,5:1240,6:114,7:7492,8:55,9:612,10:29,11:721
+,12:3
+ 57420 multiletter control sequences out of 65536+600000
+ 82 fonts using 19893959 bytes
+ 106i,11n,128p,2394b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/kris saliba/appdata/local/programs/miktex/fonts/opentype/public/lm
 /lmmono12-regular.otf><C:/Users/Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/
 truetype/typoland/lato/Lato-Italic.ttf><C:/Users/Kris Saliba/AppData/Local/Progr
@@ -2507,9 +2864,9 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 /Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on main.pdf (36 pages, 953961 bytes).
+Output written on main.pdf (35 pages, 959535 bytes).
 
-PDF statistics: 690 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 131072)
- 409 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 556 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 131072)
+ 457 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -40,7 +40,17 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 
 
 \section{Feature Extraction and Preprocessing for Training}
-After successfully extracting the most significant frames from each video in the dataset using optical flow, the next steps involved refining these frames to be in their optimal format before training the models. 
+%After determining the most significant frames from each video through a series of magnitudes and matching them with their corresponding frames, the algorithm moved on to the next phase of processing. Firstly, all frames were resized to 224x224 in order to satisfy VGG and ResNet input image requirements
+
+
+After successfully extracting the most significant frames from each video using optical flow, the next step involved preparing the data for further processing. The main algorithm used an iterative process to resize and normalise all frames before being fed to the pre-trained CNNs for feature extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to satisfy the VGG and ResNet input image requirements, while min-max normalisation was performed by diving the pixel intensities values by 255. 
+
+Once resized and normalised, The pre-trained CNNs extracted features from each frame. With the final classification layers removed, the output of VGG yielded a shape of (1, 7, 7, 512), while ResNet50, resulted in a shape of (1, 7, 7, 2048). In both cases, the outputs were flattened using the Tensorflow \texttt{flatten()} function to transform the extracted features form a multi-dimensional representation into a single long vector suitable for RNNs.
+
+
+
+
+
 %
 %normalisation
 %flattening after feature extraction
@@ -48,6 +58,7 @@ After successfully extracting the most significant frames from each video in the
 
 
 \section{Data Augmentation}
+% within the feeback loop there was a check to see whether thecurrent video would be augmenmted
 %ImageDataGenerator tensorflow module
 % show parameters for augmentation plus photos of how they were augmented
 
@@ -68,3 +79,4 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Baseline Model Approach}
+This research, made use of a baseline model approach method when developing the artefact. A model 
