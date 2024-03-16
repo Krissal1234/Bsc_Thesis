@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  15 MAR 2024 16:48
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  16 MAR 2024 14:22
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2386,7 +2386,7 @@ LaTeX Warning: Citation 'SkateboardAIPaper' on page 2 undefined on input line 3
 2.
 
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 39.
+(Font)              scaled to size 14.4pt on input line 48.
 [2]) (./content/chapters/2_background/background.tex [3]
 Chapter 2.
 
@@ -2845,7 +2845,7 @@ Here is how much of LuaTeX's memory you used:
  960 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 126 glue_spe
 c, 25 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:3,2:916,3:347,4:67,5:1240,6:114,7:7492,8:55,9:612,10:29,11:721
+   avail lists: 1:3,2:916,3:347,4:64,5:1240,6:114,7:7492,8:55,9:612,10:29,11:721
 ,12:3
  57420 multiletter control sequences out of 65536+600000
  82 fonts using 19893959 bytes
@@ -2864,7 +2864,7 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 /Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on main.pdf (35 pages, 959535 bytes).
+Output written on main.pdf (35 pages, 960439 bytes).
 
 PDF statistics: 556 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 131072)
