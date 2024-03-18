@@ -7,7 +7,6 @@
 {\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models
 %keras provides us with pretrained models and layers 
 
-\subsection{Pandas}
 
 
 
@@ -43,24 +42,30 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 %After determining the most significant frames from each video through a series of magnitudes and matching them with their corresponding frames, the algorithm moved on to the next phase of processing. Firstly, all frames were resized to 224x224 in order to satisfy VGG and ResNet input image requirements
 
 
-After successfully extracting the most significant frames from each video using optical flow, the next step involved preparing the data for further processing. The main algorithm used an iterative process to resize and normalise all frames before being fed to the pre-trained CNNs for feature extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to satisfy the VGG and ResNet input image requirements, while min-max normalisation was performed by diving the pixel intensities values by 255. 
+After successfully extracting the most significant frames from each video using optical flow, the next step involved preparing the data for further processing. The main algorithm contained an iterative process responsible for resizing and normalising all frames before being fed to the pre-trained CNNs for feature extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to satisfy the VGG and ResNet input image requirements, before performing min-max normalisation on each frame by diving the pixel intensities values by 255. 
 
-Once resized and normalised, The pre-trained CNNs extracted features from each frame. With the final classification layers removed, the output of VGG yielded a shape of (1, 7, 7, 512), while ResNet50, resulted in a shape of (1, 7, 7, 2048). In both cases, the outputs were flattened using the Tensorflow \texttt{flatten()} function to transform the extracted features single dimensional vector suitable for RNNs.
-
-
+Once resized and normalised, The pre-trained CNNs extracted features from each frame. With the final classification layers removed, the extracted features of a singular image using VGG yielded a shape of  ${(1 \times 7 \times 7 \times 512)}$, while ResNet50, resulted in a shape of  ${(1 \times 7 \times 7 \times 2048)}$. In both cases, the outputs were flattened using the Tensorflow \texttt{flatten()} function to transform the extracted features into a one-dimensional vector suitable to be fed into the dense layers of the network. Thus, VGG generates a final feature shape of ${(20 \times 25088)}$ for an entire video, while ResNet50 generates ${(20 \times 100352)}$.
 
 
+\subsection{Data Augmentation}
+This research explored a number of augmentation techniques, 
 
-%
-%normalisation
-%flattening after feature extraction
-%dimensionalty reduction using PCA
-
-
-\section{Data Augmentation}
-% within the feeback loop there was a check to see whether thecurrent video would be augmenmted
+%adding rotations lead to worse performance due to the sequential nature of the trick
+% within the  loop there was a check to see whether thecurrent video would be augmenmted
 %ImageDataGenerator tensorflow module
 % show parameters for augmentation plus photos of how they were augmented
+%explain that data augmentation helped me train with more data, due to the lmited dataset size
+
+\subsection{PCA Dimensionality Reduction}
+%explain how we got to the constant 2514 for VGG maybe? the mathematical
+%explain better results from  using pca
+
+
+
+
+
+\section{Models}
+
 
 \section{Callbacks}
 \subsection{Early Stopping}
