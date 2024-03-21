@@ -7,10 +7,13 @@
 {\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models
 %keras provides us with pretrained models and layers 
 
+{\bf OpenCv (cv2):}
 
+{\bf Matplotlib:} This research made use of Matplotlib for its effective plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout. 
 
 
 \section{Frame Extraction using Optical Flow}
+%have to mention how the dataset was split
 The exploration of two frame extraction techniques aimed to find the most effective way to capture the crucial motions in a video through a series of frames. The optical flow method was hypothesised to be a superior technique for its ability to capture frames with the most significant motion, unlike uniform sampling which often missed crucial parts of the skateboard trick, capturing more frames before or after the trick execution. An example of this behaviour can be observed in Figure \ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore, experiments showed an increase in accuracy when using the optical flow method over uniform sampling, further supporting this hypothesis.
 % either prove that it led to higher accuracy or show with image comparisons that optical flow method has more frames encapsulating the trick
 
@@ -44,11 +47,17 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 
 After successfully extracting the most significant frames from each video using optical flow, the next step involved preparing the data for further processing. The main algorithm contained an iterative process responsible for resizing and normalising all frames before being fed to the pre-trained CNNs for feature extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to satisfy the VGG and ResNet input image requirements, before performing min-max normalisation on each frame by diving the pixel intensities values by 255. 
 
-Once resized and normalised, The pre-trained CNNs extracted features from each frame. With the final classification layers removed, the extracted features of a singular image using VGG yielded a shape of  ${(1 \times 7 \times 7 \times 512)}$, while ResNet50, resulted in a shape of  ${(1 \times 7 \times 7 \times 2048)}$. In both cases, the outputs were flattened using the Tensorflow \texttt{flatten()} function to transform the extracted features into a one-dimensional vector suitable to be fed into the dense layers of the network. Thus, VGG generates a final feature shape of ${(20 \times 25088)}$ for an entire video, while ResNet50 generates ${(20 \times 100352)}$.
+Once resized and normalised, The pre-trained CNNs extracted features from each frame. With the final classification layers removed, the extracted features of a singular image using VGG returned a shape of  ${(1 \times 7 \times 7 \times 512)}$, while ResNet50, resulted in a shape of  ${(1 \times 7 \times 7 \times 2048)}$. In both cases, the outputs were flattened using the Tensorflow \texttt{flatten()} function to transform the extracted features into a one-dimensional vector suitable to be fed into the dense layers of the network. Thus, VGG generates a final feature shape of ${(20 \times 25088)}$ for an entire video, while ResNet50 generates ${(20 \times 100352)}$.
+
+The NumPy function \texttt{np.save()} saved these extracted features along with their respective labels for training, validation, and test sets. This allowed for easy retrieval of the pre-processed data when working within the development environment eliminating the need to re-extract features with every new session.
+
+
+%metion features were saved as npy files to be used later on and make it quicker to not have to extract frames every time
 
 
 \subsection{Data Augmentation}
-This research explored a number of augmentation techniques, 
+This research explored a number of augmentation techniques using the \texttt{ImageDataGenerator} library provided by Tensorflow. This process involved defining a number of parameters that influenced the augmentation patterns applied to each frame. In order to expand the number of training samples, this study created multiple copies of the original dataset, each augmented with its own set of unique parameters controlling image shifts, brightness, scaling and other transformations. Experimentation revealed that certain augmentation techniques such as image flipping and large rotational shifts disrupted the visualisation of the trick in full and negatively impacted model performance.
+
 
 %adding rotations lead to worse performance due to the sequential nature of the trick
 % within the  loop there was a check to see whether thecurrent video would be augmenmted
@@ -62,7 +71,8 @@ This research explored a number of augmentation techniques,
 
 
 
-
+\section{Optuna}
+%maybe
 
 \section{Models}
 
@@ -84,4 +94,4 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Baseline Model Approach}
-This research, made use of a baseline model approach method when developing the artefact. A model 
+This research, made use of a baseline model approach method when developing the artefact. An established model with a decent accuracy
