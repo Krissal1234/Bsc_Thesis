@@ -56,7 +56,7 @@ The NumPy function \texttt{np.save()} saved these extracted features along with 
 
 
 \subsection{Data Augmentation}
-This research explored a number of augmentation techniques using the \texttt{ImageDataGenerator} library provided by Tensorflow. This process involved defining a number of parameters that influenced the augmentation patterns applied to each frame. In order to expand the number of training samples, this study created multiple copies of the original dataset, each augmented with its own set of unique parameters controlling image shifts, brightness, scaling and other transformations. Experimentation revealed that certain augmentation techniques such as image flipping and large rotational shifts disrupted the visualisation of the trick in full and negatively impacted model performance.
+This research explored a number of augmentation techniques using the \texttt{ImageDataGenerator} library provided by Tensorflow. This process involved defining a number of parameters that influenced the augmentation patterns applied to each frame. In order to expand the number of training samples, this study created multiple copies of the original dataset, each augmented with its own set of unique parameters controlling image shifts, brightness, scaling and other transformations. Conducted experiments revealed that certain augmentation techniques such as image flipping and large rotational shifts disrupted the visualisation of the trick, negatively impacting model performance.
 
 
 %adding rotations lead to worse performance due to the sequential nature of the trick
@@ -71,11 +71,16 @@ This research explored a number of augmentation techniques using the \texttt{Ima
 
 
 
-\section{Optuna}
-%maybe
+\section{Hyperparameter Optimisation}
+The architectures described in this study represent the best versions of themselves after a number of iterations and optimisations. To speed up the time consuming task of hyperparameter tuning, this research leveraged the power of Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna leverages a Bayesian optimisation algorithm that runs through a number of iterations, observing the performance of past configurations and strategically selecting promising hyperparameter configurations. This iterative approach enables Optuna to navigate the search space and converge on optimal hyperparameters for a specific model and dataset. This library was integrated within a custom-built development environment specifically designed to identify the optimal hyperparameter configurations for a given model and its corresponding input data
 
 \section{Models}
 
+\subsection{LSTM}
+
+\subsection{BiLSTM}
+%talk about the number of layers etc...
+%if layers/parameters differed for different architectures
 
 \section{Callbacks}
 \subsection{Early Stopping}
@@ -94,4 +99,5 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Baseline Model Approach}
-This research, made use of a baseline model approach method when developing the artefact. An established model with a decent accuracy
+This research, made use of a baseline model approach method when developing the artefact. The establishment of a baseline model allowed comparisons to be made with each iteration of the models, with .
+An established model with a decent accuracy

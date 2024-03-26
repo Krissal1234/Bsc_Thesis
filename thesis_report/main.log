@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  19 MAR 2024 22:08
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1) (format=lualatex 2024.1.30)  26 MAR 2024 22:47
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2277,7 +2277,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=230, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=238, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -2345,7 +2345,7 @@ ne 6.
 
 LaTeX Warning: Citation 'skateStyles' on page 1 undefined on input line 16.
 
-<content/chapters/1_introduction/figures/graph.png, id=351, 1003.75pt x 745.786
+<content/chapters/1_introduction/figures/graph.png, id=361, 1003.75pt x 745.786
 25pt>
 File: content/chapters/1_introduction/figures/graph.png Graphic file (type png)
 
@@ -2429,7 +2429,7 @@ LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
  on page 5 undefined on input line 167.
 
 [5]
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=38
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=39
 3, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png G
 raphic file (type png)
@@ -2581,7 +2581,7 @@ page 11 undefined on input line 192.
 LaTeX Warning: Citation 'VGG' on page 11 undefined on input line 196.
 
 [11] [12]
-<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=416, 438.63875pt
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=426, 438.63875pt
  x 385.44pt>
 File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (t
 ype png)
@@ -2667,7 +2667,7 @@ LaTeX Warning: Citation 'lightningdrop2020skateboardml' on page 17 undefined on
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 17 undefined on input line 
 27.
 
-<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=437, 620.317
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=447, 620.317
 5pt x 242.9075pt>
 File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic fil
 e (type jpg)
@@ -2675,7 +2675,7 @@ e (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-la
 bel.jpg  used on input line 46.
 (luatex.def)             Requested size: 250.38564pt x 98.0471pt.
-<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=438, 241.9
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=448, 241.9
 0375pt x 272.01625pt>
 File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic f
 ile (type jpg)
@@ -2691,7 +2691,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 <content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=4
-44, 1349.04pt x 224.84pt>
+54, 1349.04pt x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg 
 Graphic file (type jpg)
 <use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
@@ -2700,7 +2700,7 @@ ce_opticalFlow.jpg  used on input line 74.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 75.
-<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=445, 1349.04p
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=455, 1349.04p
 t x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
  (type jpg)
@@ -2744,7 +2744,7 @@ page 21 undefined on input line 162.
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 21 undefined on input line 
 162.
 
-<content/chapters/4_Methodology/figures/architecture.png, id=463, 703.62875pt x
+<content/chapters/4_Methodology/figures/architecture.png, id=473, 703.62875pt x
  844.15375pt>
 File: content/chapters/4_Methodology/figures/architecture.png Graphic file (typ
 e png)
@@ -2789,7 +2789,7 @@ LaTeX Warning: Citation 'farneback2003two' on page 24 undefined on input line 2
 
 
 ]
-<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=492, 1349.0
+<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=502, 1349.0
 4pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/optical_sequence.jpg Graphic fi
 le (type jpg)
@@ -2797,7 +2797,7 @@ le (type jpg)
 Package luatex.def Info: content/chapters/5_Implementation/figures/optical_sequ
 ence.jpg  used on input line 30.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
-<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=49
+<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=50
 3, 1349.04pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg G
 raphic file (type jpg)
@@ -2806,11 +2806,16 @@ Package luatex.def Info: content/chapters/5_Implementation/figures/uniform_samp
 ling_sequence.jpg  used on input line 35.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
  [25<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./content
-/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>])
+/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>]
+
+LaTeX Warning: Citation 'optunaFramework' on page 26 undefined on input line 75
+.
+
+[26])
 
 LaTeX Warning: Empty bibliography on input line 75.
 
-(./content/appendices/appendix_a.tex [26] [27]
+(./content/appendices/appendix_a.tex [27]
 Chapter 6.
 ) (./content/appendices/appendix_b.tex [28
 
@@ -2828,7 +2833,7 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 13961559A0B362F79FEFC269140D8F06;8695.
+(rerunfilecheck)             Checksum: A462A318C03728621F9A1C67D9950195;8977.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -2840,14 +2845,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36245 strings out of 476497
+ 36249 strings out of 476497
  125015,1977958 words of node,token memory allocated
  952 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 23 attribute, 126 glue_spe
 c, 23 attribute_list, 1 write, 5 pdf_action nodes
-   avail lists: 1:1,2:946,3:357,4:62,5:1240,6:119,7:7492,8:42,9:626,10:29,11:721
+   avail lists: 1:1,2:998,3:377,4:62,5:1241,6:125,7:7492,8:42,9:658,10:29,11:721
 ,12:3
- 57429 multiletter control sequences out of 65536+600000
+ 57431 multiletter control sequences out of 65536+600000
  82 fonts using 19893959 bytes
  106i,11n,128p,2394b,1515s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/kris saliba/appdata/local/programs/miktex/fonts/opentype/public/lm
@@ -2864,9 +2869,9 @@ Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Kris Saliba/
 AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 /Kris Saliba/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.
 pfb>
-Output written on main.pdf (36 pages, 991507 bytes).
+Output written on main.pdf (36 pages, 993673 bytes).
 
-PDF statistics: 568 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 131072)
- 465 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 131072)
+ 481 words of extra memory for PDF output out of 10000 (max. 100000000)
 
