@@ -147,7 +147,15 @@ Table \ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet
 The final four fully-connected (FC) layers of these models which are typically used for classification were removed. This was crucial to adapt these models for feature extraction, as the aim was not to classify each frame of the video, but to extract a collection of features that could help sequence models gain a better understanding. These features in the form of vectors not only encapsulate the visual information present in each frame but also more abstract ideas such as low-level information (like edges/shapes) to higher-level features like objects and even actions themselves. %By removing the final classification layers, both models resulted in a feature vector shape of ${(7 \times 7 \times 512)}$.
 
 \subsection{Dimensionality Reduction}
-The use of pre-trained models used in this study generate high-dimensional feature vectors, while these features capture valuable information, a large number of dimensions can lead to challenges. Firstly, it increases the computational costs of training models. Secondly, it could potentially lead to the "curse of dimensionality" as explained by Venkat (2018) \cite{curseofdimensionality}, where models may struggle to learn effectively with high dimensional data. To address these issues, dimensionality reduction is employed after feature extraction to reduce the number of features while still retaining valuable information for classification.
+The use of pre-trained models used in this study generate high-dimensional
+feature vectors, while these features capture valuable information, a large
+number of dimensions can lead to challenges. Firstly, it increases the
+computational costs of training models. Secondly, it could potentially lead to
+the "curse of dimensionality" as explained by Venkat (2018)
+\cite{curseofdimensionality}, where models may struggle to learn effectively
+with high dimensional data. To address these issues, dimensionality reduction is
+employed after feature extraction to reduce the number of features while still
+retaining valuable information for classification.
 
 \section{Adapted Models}
 This research investigates the performance of four different deep learning architectures for skateboard trick classification. these models leverage pre-trained CNNs for feature extraction followed by sequence modelling techniques to capture the temporal dynamics of skateboard tricks. The architectures investigated are as follows.
