@@ -2157,6 +2157,43 @@
       \field{pages}{2623\bibrangedash 2631}
       \range{pages}{9}
     \endentry
+    \entry{SGD_stability_paper}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e771760b6d0d33f8b4dfd907d8d57ac2}{%
+           family={Hardt},
+           familyi={H\bibinitperiod},
+           given={Moritz},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ffa081e7e59a2c82fd714ab7ea81fe97}{%
+           family={Recht},
+           familyi={R\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=300d4990e626d975e0c28630444f63c3}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Yoram},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{6715d12818335ad532b3aa871d63dcdf}
+      \strng{fullhash}{4fd1e5f48d77d6306a58d2ce82b236a5}
+      \strng{bibnamehash}{4fd1e5f48d77d6306a58d2ce82b236a5}
+      \strng{authorbibnamehash}{4fd1e5f48d77d6306a58d2ce82b236a5}
+      \strng{authornamehash}{6715d12818335ad532b3aa871d63dcdf}
+      \strng{authorfullhash}{4fd1e5f48d77d6306a58d2ce82b236a5}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International conference on machine learning}
+      \field{title}{Train faster, generalize better: Stability of stochastic gradient descent}
+      \field{year}{2016}
+      \field{pages}{1225\bibrangedash 1234}
+      \range{pages}{10}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

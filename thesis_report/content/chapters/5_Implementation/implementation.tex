@@ -107,7 +107,7 @@ features with every new session.
 
 \subsection{PCA Dimensionality Reduction}
 This research, utilised the Principle Component Analysis (PCA) dimensionality
-reduction technique, playing a crucial role in refining the feature sets
+reduction technique which was crucial in refining the feature sets
 produced by the pre-trained models. PCA a statistical technique that utilises
 orthogonal transformation to convert observations of variables that may be
 correlated into a set of unrelated variables called principle components. These
@@ -142,6 +142,18 @@ configurations for multiple model architectures and their corresponding input da
 \section{Training History}
 %show epoch against loss graphs for all 4 models
 
+This study compared the results of Stochastic Gradient Descent (SGD) and Adam as
+optimisation algorithms during training. The results suggest that SGD may be
+more effective at reducing overfitting compared to Adam on all architectures.
+This improvement is illustrated in Figure, using the VGG-BiLSTM architecture.
+While, Adam initially shows promise with good generalisaiton, it quickly
+encounters a pitfall, where the validation loss begins to climb, indicating
+overfitting. In contrast, the SGD-trained model exhibits a more stable
+validation loss, likely due to its algorithmic stability and its capability to
+achieve small generalisation errors as explained in the study by Hardt et al.
+(2016) \cite{SGD_stability_paper}. The results observied with the VGG-BiLSTM
+align with the theoretical insights explained by Hardt et al. suggesting that
+models trained with SGD are less vulnerable to overfitting.
 
 
 \section{Callbacks}
