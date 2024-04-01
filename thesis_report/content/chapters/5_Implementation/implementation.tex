@@ -114,7 +114,7 @@ correlated into a set of unrelated variables called principle components. These
 principle components are reorganised in a way that the first few components contain most
 of the important information \cite{dimensionality_reduction}.
 %explain how we got to the constant 2514 for VGG maybe? the mathematical
-%explain better results from  using pca
+%explain better results from  using pca either on both vgg and resnet or just resnet after testing
 
 
 
@@ -125,7 +125,7 @@ consuming task of hyperparameter tuning, this research leveraged the power of
 Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
 leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
-selecting promising hyperparameter combinations including but not limited to learning rate, dropout
+selecting promising parameter combinations such as learning rate, dropout
 rate and number of nodes per layer. This iterative approach enables Optuna to navigate the
 search space and converge on optimal hyperparameters for a specific model and
 dataset. This library was integrated within a custom-built development
