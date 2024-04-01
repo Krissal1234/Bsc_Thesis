@@ -157,6 +157,15 @@ configurations for multiple model architectures and their corresponding input da
 %if layers/parameters differed for different architectures
 \section{Training History}
 %show epoch against loss graphs for all 4 models
+Figure shows the training and validation loss curves for the models that
+achieved the best validation accuracy within each architecture. Additionally, the
+vertical dashed lines indicate the epoch at which the early stopping callback
+restored the models weights, preventing overfitting. The models all used a
+categorical-crossentropy loss function as well as one-hot encoded labels during
+training. The output layers made use of a softmax activation function to match
+the one-hot encoded lables. 
+%mention SGD did better but did take longer
+
 
 %This might need to go in evaluation, and only mention it in the implementation
 This study compared the results of Stochastic Gradient Descent (SGD) and Adam \cite{adam_paper} as
