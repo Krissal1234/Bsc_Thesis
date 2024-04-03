@@ -1,10 +1,48 @@
 \clearpage
-\chapter{Implementation}
+\chapter{Evaluation}
 
 
 
 
 \section{Experiments}
+
+
+\subsection{Choice of Optimiser}
+%This might need to go in evaluation, and only mention it in the implementation
+This study compared the results of Stochastic Gradient Descent (SGD) and Adam \cite{adam_paper} as
+optimisation algorithms during training. The results suggest that SGD may be
+more effective at reducing overfitting compared to Adam.
+This improvement is illustrated in Figure \ref{fig:loss_graphs}, using the VGG-BiLSTM architecture.
+While, Adam initially shows promise with good generalisation, it quickly
+encounters a pitfall, where the validation loss begins to climb, indicating
+overfitting. In contrast, the SGD-trained model exhibits a more stable
+validation loss, likely due to its algorithmic stability and its capability to
+achieve small generalisation errors as explained in the study by Hardt et al.
+(2016) \cite{SGD_stability_paper}. The results observed with the VGG-BiLSTM
+aligns with the insights discussed by Hardt et al. suggesting that
+models trained using SGD are less vulnerable to overfitting.
+
+\begin{figure}[ht!]
+	\centering
+	% First image (Adam)
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/Adam_optimiser.PNG} 
+		\caption{Training and Validation Loss using Adam}
+		\label{fig:adam_loss}
+	\end{subfigure}
+	\hfill
+	% Second image (SGD)
+	\begin{subfigure}{0.45\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/SGD_optimiser.PNG}
+		\caption{Training and Validation Loss using SGD}
+		\label{fig:sgd_loss}
+	\end{subfigure}
+	% Overall caption
+	\caption{Model loss graphs for (a) Adam and (b) SGD optimisers.}
+	\label{fig:loss_graphs}
+\end{figure}
 % talk about augmented and unaugmneted
 % feature extractiona and without feature extraction
 % talk about PCA improving accuracy on Resnet50

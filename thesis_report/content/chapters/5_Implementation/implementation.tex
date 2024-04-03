@@ -4,7 +4,7 @@
 \section{Development Environment}
 {\bf Python:} Python's large database of libraries, along with its wide use in Machine Learning, made it the ideal choice for developing this artefact. Furthermore, its large and active community made tackling problems and troubleshooting issues simpler. Prior experience using Python also contributed to this decision.
 
-{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models
+{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers 
 
 {\bf OpenCv (cv2):} This open source library aided  
@@ -49,7 +49,7 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 \section{Dataset Split}
 This study opted for splitting the original dataset into 70\% 20\% and 10\% for
 training, validation and testing sets respectively. The training set was used by
-the models to learn the patterns and releationships from the input data. The
+the models to learn the patterns and relationships from the input data. The
 validation set enabled is a portion of the dataset used to measure the performance after
 every epoch. Finally, the model was evaluated using the testing set.
 
@@ -61,11 +61,8 @@ involved defining a number of parameters that influenced the augmentation
 patterns applied to each frame. In order to expand the number of training
 samples, this study created multiple copies of the original dataset, each
 augmented with its own set of unique parameters controlling image shifts,
-brightness, scaling and other transformations. Figure \ref{fig:originalFrames-againstAugmented} shows an example of an augmented duplication of a trick sequence against its original, split into six frames for illustrative purposes
- Conducted experiments revealed
-that certain augmentation techniques such as image flipping and large rotational
-shifts disrupted the visualisation of the trick, negatively impacting model
-performance.
+brightness, scaling and other transformations. Figure \ref{fig:originalFrames-againstAugmented} shows an example of an augmented duplication of a trick sequence against its original, split into six frames for illustrative purposes. Experiments revealed that certain augmentation techniques such as image flipping and large rotational
+shifts disrupted the visualisation of the trick, negatively impacting model performance, thus these were removed from the augmentation parameters.
 
 \begin{figure}[h!]
 	\centering
@@ -160,48 +157,11 @@ configurations for multiple model architectures and their corresponding input da
 Figure shows the training and validation loss curves for the models that
 achieved the best validation accuracy within each architecture. Additionally, the
 vertical dashed lines indicate the epoch at which the early stopping callback
-restored the models weights, preventing overfitting. The models all used a
-categorical-crossentropy loss function as well as one-hot encoded labels during
-training. The output layers made use of a softmax activation function to match
-the one-hot encoded lables. 
+restored the models weights, preventing overfitting.
+
+It is important to note that the models employed categorical-crossentropy loss function during training. This function measures the discrepancies between the predicted probabilities and the actual one-hot encoded labels. Furthermore, the output layers utilised softmax activation functions to align them with the one-hot encoded labels.
+ 
 %mention SGD did better but did take longer
-
-
-%This might need to go in evaluation, and only mention it in the implementation
-This study compared the results of Stochastic Gradient Descent (SGD) and Adam \cite{adam_paper} as
-optimisation algorithms during training. The results suggest that SGD may be
-more effective at reducing overfitting compared to Adam on all architectures.
-This improvement is illustrated in Figure \ref{fig:loss_graphs}, using the VGG-BiLSTM architecture.
-While, Adam initially shows promise with good generalisation, it quickly
-encounters a pitfall, where the validation loss begins to climb, indicating
-overfitting. In contrast, the SGD-trained model exhibits a more stable
-validation loss, likely due to its algorithmic stability and its capability to
-achieve small generalisation errors as explained in the study by Hardt et al.
-(2016) \cite{SGD_stability_paper}. The results observed with the VGG-BiLSTM
-aligns with the insights discussed by Hardt et al. suggesting that
-models trained using SGD are less vulnerable to overfitting.
-
-\begin{figure}[ht!]
-	\centering
-	% First image (Adam)
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/Adam_optimiser.PNG} 
-		\caption{Training and Validation Loss using Adam}
-		\label{fig:adam_loss}
-	\end{subfigure}
-	\hfill
-	% Second image (SGD)
-	\begin{subfigure}{0.45\textwidth}
-		\centering
-		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/SGD_optimiser.PNG}
-		\caption{Training and Validation Loss using SGD}
-		\label{fig:sgd_loss}
-	\end{subfigure}
-	% Overall caption
-	\caption{Model loss graphs for (a) Adam and (b) SGD optimisers.}
-	\label{fig:loss_graphs}
-\end{figure}
 
 
 \section{Callbacks}
