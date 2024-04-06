@@ -13,7 +13,7 @@ them highly relevant for analysing and evaluating competitive performance.
 
 \section{Data Preparation}
 
-\subsection{Dataset }
+\subsection{Dataset}
 This study utilised video recordings of skateboarders performing tricks as its
 primary data source. To ensure model robustness, the final dataset consisted of
 videos across diverse environmental conditions and varying skateboarder skill
@@ -39,6 +39,7 @@ path and corresponding label were listed on a text file, providing more
 flexibility. Given the limited number of classes and manageable dataset size,
 this study chose to utilise the folder-based approach, as the extra complexity
 from the text-based method wasn't necessary for this project.
+%maybe mention one hot here or in implmenetaiton
 
 \begin{figure}[h]
 	\centering
@@ -90,7 +91,7 @@ corresponding frames by using a pre-calculated step size determined by the
 number of frames of a video. The second technique leveraged optical flow, a
 method that assigns weights to frames determined by the motion of pixels between
 them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing frames with the most movement.  An example of this technique can be observed in Figure \ref{fig:kickflip-sequence-opticalflow}.
+extraction, resulting in capturing frames with the most movement. An example of this technique can be observed in Figure \ref{fig:kickflip-sequence-opticalflow}.
 
 
 \subsection{Data Augmentation}

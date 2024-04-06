@@ -6,13 +6,7 @@
 % Performing a skateboard trick requres an intricate motion between the body and
 % the board, demanding precise coordination and athleticism. 
 
-Skateboard tricks can be described as dynamic manoeuvres that involve complex
-orchestration of the skateboard and the skateboarder's body. Skateboard tricks
-can be categorised into various types, including rotations (flips, rails),
-grinds (on ledges or rails) and manuals (balancing on two wheels). Successful
-execution of these tricks relies heavily on precise foot placement, which
-determines the boards velocity and direction, enabling a skateboarder to
-manipulate the board to replicate specific tricks.
+Skateboard tricks can be described as dynamic manoeuvres that involve complex coordination of the skateboard and the skateboarder's body. Skateboard tricks can be categorised into several types, including rotations, grinds, performed on ledges or rails and manuals, where the skater balances on two wheels. The key to successfully performing these tricks is appropriate foot placement, which is critical for controlling the skateboard’s speed and direction. This control allows skateboarders to manipulate the board in ways that replicate specific tricks, showcasing not only their technical abilities and creativity.
  
 %  thorugh complex motions of the body and , to initiate various
 %  rotations and revolutions along various axes. 
@@ -26,7 +20,7 @@ manipulate the board to replicate specific tricks.
 
 \begin{itemize}
     \item \textbf{Ollie:} One of the first tricks beginners learn. Where the
-    skateboarder pops the tail of the board while sliding their foot across the
+    skateboarder pops the tail of the board while simultaneously sliding their foot across the nose of the
     board, causing the board to level out in the air, used to jump over
     obstacles.
     \item \textbf{Kickflip:} A trick where the skateboarder flips the board
@@ -54,7 +48,7 @@ Morris (2019) \cite{UnderstandingLSTM} characterises ML as the advancement of
 algorithms that progressively enhance their performance through practice,
 suggesting that the more training the learning algorithm undergoes, the better
 it becomes at executing tasks. Numerous critical factors shape a
-model's performance within this phase, as exmplified by Budach et al. (2022)
+model's performance within this phase, as exemplified by Budach et al. (2022)
 \cite{TheEffectsofDataQualityonMachineLearningPerformance}. Such factors
 include dataset quality and diversity, data preprocessing, the selection
 of a suitable model architecture, training time and the
@@ -62,13 +56,10 @@ fine-tuning of hyper-parameters.
 
 There exist three main categories for ML models \cite{ML_Algorithms}:
 \begin{itemize}
-    \item \textbf{Supervised:} This is a machine learning concept that centres
-    around the development of algorithms to make predictions or classifications
-    using labelled data. The model is trained on a dataset comprising of example
-    input-output pairs.  
+    \item \textbf{Supervised:} This is a ML concept that involves training a model to make classifications based on input data that has been labelled with the correct label.
     \item \textbf{Unsupervised:} This ML concept concentrates on discovering
     relationships within data when there are no predefined "correct" answers or
-    labelled examples to guide the learning process. These algorithms are left
+    labelled examples to guide the learning process. These models are left
     to autonomously explore and divulge structures in the data.
     \item \textbf{Reinforcement:} This type of learning consists of an agent
     that interacts with the environment and learns from the continuous feedback
@@ -80,7 +71,7 @@ There exist three main categories for ML models \cite{ML_Algorithms}:
 %Object detection is a computer vision task that detects instances of objects in images and videos and maps them to a predefined class. For humans, the act of recognising and responding to objects is a trivial task as described by Watson et al. (2016) \cite{NeuralScience}, it is an essential feature that enables our performance and communication. Numerous researchers have shown a deep interest in this technology, focusing on various applications where object detection may play a major role, such as  surveillance systems, face detection and autonomous driving \cite{RecentAdvancesObjectDetection}. 
 
 %The output of an object detection model returns the location of the instance, as the object's centre or in the form of a bounding box. The research paper by Agarwal et al. (2018) \cite{RecentAdvancesObjectDetection} defines object
-detection as the following equation where an image is denoted as \(\mathcal{I}\), and \(O(I)\) represents the collection of object descriptions for objects within the image.
+%detection as the following equation where an image is denoted as \(\mathcal{I}\), and \(O(I)\) represents the collection of object descriptions for objects within the image.
 %that object detection is consistently defined within the context of a data set
 %that consists of images mapped to a list of relevant object properties, such as
 
@@ -92,13 +83,7 @@ detection as the following equation where an image is denoted as \(\mathcal{I}\)
 %\end{equation}
 
 
-In the above equation, each description encompasses two parts, \(Y^*_i \in
-\mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}
-\in \mathcal{Z}\) represents information about its location, size or shape
-within the image. \(\mathcal{Z}\) represents the different ways to describe an
-object, this is typically done by specifying the object's centre \((x_c, y_c)
-\in \mathcal{R}^2\) or as a bounding box \((x_{min}, y_{min},x_{max},y_{max})
-\in \mathcal{R}^4\). 
+%In the above equation, each description encompasses two parts, \(Y^*_i \in\mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}\in \mathcal{Z}\) represents information about its location, size or shapewithin the image. \(\mathcal{Z}\) represents the different ways to describe anobject, this is typically done by specifying the object's centre \((x_c, y_c)\in \mathcal{R}^2\) or as a bounding box \((x_{min}, y_{min},x_{max},y_{max})\in \mathcal{R}^4\). 
 %By utilising these notations, according to
 %\cite{RecentAdvancesObjectDetection}, object detection can be defined as the
 %operation of combining an image with a set of detections. 
@@ -113,10 +98,10 @@ object, this is typically done by specifying the object's centre \((x_c, y_c)
 \section{Activity Recognition}
 
  Activity recognition is the process of identifying and categorizing human
- activities from video sequences. Human activity involves a wide range of
+ activities from video sequences. Human activities involve a wide range of
  motions and interactions with objects, varying from simple isolated actions
  like dancing to more complex activities that engage multiple body parts and
- external objects. Similar to object detection, the human ability to perceive
+ external objects such as a football match. The human ability to perceive
  these behaviours is a trivial task; yet, it is a challenging problem for
  computers due to the sequential nature and the resemblance of visual content in
  such activities \cite{ActionRecognitionDeepBi-DirectionalLSTM},\cite{AReviewOfHumanActivityRecognitionMethods}.
@@ -168,10 +153,10 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 
 \begin{itemize}
     \item \textbf{Input Layer:} This is the set of neurons that serve as the
-    initial entry point for external data or features. Each input neuron in this
+    initial entry point for external data. Each input neuron in this
     layer corresponds to a specific feature or variable used in the Neural
     Network model.  
-    \item \textbf{Hidden Layer(s):} This is the set of neurons that are situated
+    \item \textbf{Hidden Layer(s):} This is the set of neurons that are located
     between the Input and Output Layers where the network captures complete
     non-linear behaviours of data and feature transformations.
     \item \textbf{Output Layer:} This is the set of neurons that provide the
