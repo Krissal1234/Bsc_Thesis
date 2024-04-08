@@ -47,7 +47,7 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 \end{figure}
 
 \section{Dataset Split}
-This study opted for splitting the original dataset into 70\% 20\% and 10\% for
+This study opted for splitting the original dataset into 80\% 10\% and 10\% for
 training, validation and testing sets respectively. The training set was used by
 the models to learn the patterns and relationships from the input data. The
 validation set enabled is a portion of the dataset used to measure the performance after
@@ -109,9 +109,6 @@ for easy retrieval of the pre-processed data, eliminating the need to re-extract
 features with every new session.
 
 
-
-
-
 %adding rotations lead to worse performance due to the sequential nature of the trick
 % within the  loop there was a check to see whether thecurrent video would be augmenmted
 %ImageDataGenerator tensorflow module
@@ -138,8 +135,8 @@ consuming task of hyperparameter tuning, this research leveraged the power of
 Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
 leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
-selecting promising parameter combinations such as learning rate, dropout
-rate and number of nodes per layer. This iterative approach enables Optuna to navigate the
+selecting parameter combinations such as learning rate, dropout
+rate and neuron count. This iterative approach enables Optuna to navigate the
 search space and converge on optimal hyperparameters for a specific model and
 dataset. This library was integrated within a custom-built development
 environment specifically designed to identify the optimal hyperparameter

@@ -4,13 +4,13 @@
 \usepackage{subcaption}
 \usepackage{amsmath}
 \usepackage{amssymb} 
-
+\usepackage{ragged2e}
 
 \usepackage{booktabs} % For prettier tables
 \usepackage{array} % For more control over table column specifications
 \usepackage{tabularx} % For tables with adjustable-width columns
 \usepackage{ragged2e} % For text alignment
-
+\usepackage{minted}
 %\usepackage{tikz}
 % \usepackage[
 %     %backend=biber,
@@ -33,7 +33,16 @@
 \degreename{Bachelor of Science in Information Technology (Honours) (Software Development)}
 \titledate{June 2024}
 
+% Attempt to reduce hyphenation
+\pretolerance=5000
+\tolerance=9000
+\emergencystretch=10pt
+\righthyphenmin=4
+\lefthyphenmin=4
+\hyphenpenalty=10000
+\exhyphenpenalty=100
 \begin{document}
+
 
 \frontmatter{}
 \pagestyle{pageNumbersOnly}
@@ -65,6 +74,7 @@
 
 \mainmatter{}
 \pagestyle{MainMatter}
+\justifying
 
 \input{content/chapters/1_introduction/introduction.tex}
 \input{content/chapters/2_background/background.tex}
