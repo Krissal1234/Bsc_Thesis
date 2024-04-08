@@ -23,8 +23,8 @@
       \list{publisher}{1}{%
         {Encyclopaedia Britannica, inc.}%
       }
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopaedia Britannica}
       \field{title}{Encyclopaedia Britannica}
@@ -40,8 +40,8 @@
       \list{publisher}{1}{%
         {Chloe Merrell}%
       }
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labeltitlesource}{title}
       \field{journaltitle}{One year on: How skateboarding's olympic debut changed the games}
       \field{title}{One year on: How skateboarding's olympic debut changed the games 2022}
@@ -67,8 +67,8 @@
       \strng{authorbibnamehash}{79ad981277b0595d7fd8d81e52e04d86}
       \strng{authornamehash}{79ad981277b0595d7fd8d81e52e04d86}
       \strng{authorfullhash}{79ad981277b0595d7fd8d81e52e04d86}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Goskate.com - Top Articles}
@@ -93,8 +93,8 @@
       \strng{authorbibnamehash}{62182ca58a739daa8ddd8a48b7b19abb}
       \strng{authornamehash}{62182ca58a739daa8ddd8a48b7b19abb}
       \strng{authorfullhash}{62182ca58a739daa8ddd8a48b7b19abb}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Skateboarding participation in the U.S. 2010-2021}
@@ -119,8 +119,8 @@
       \strng{authorbibnamehash}{49771fddda7b70e8b13623906b4010c2}
       \strng{authornamehash}{49771fddda7b70e8b13623906b4010c2}
       \strng{authorfullhash}{49771fddda7b70e8b13623906b4010c2}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{2022 Outdoor Participation Trends Report}
@@ -738,6 +738,60 @@
       \field{pages}{3285\bibrangedash 3292}
       \range{pages}{8}
     \endentry
+    \entry{du2020power}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=a332b257fccbe72c014aee83fe8b8361}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a88562f63b13a99bc37d04e9cf5bc83b}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Yingying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d3c3e9bdc367d0e76a52de2dc29e2d1a}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Quan},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=48fcaf822bb3b83ecd43f9cb1085db53}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiaming},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7e8680ebbee871e3eff389ffc842a131}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiaoyong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=56ba559f18e74cf681fe113aba3fa9af}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Gang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{f5b2797d485dfe3691664c48766c8052}
+      \strng{fullhash}{d6970090c40391b2a0d4f49dbe917c68}
+      \strng{bibnamehash}{d6970090c40391b2a0d4f49dbe917c68}
+      \strng{authorbibnamehash}{d6970090c40391b2a0d4f49dbe917c68}
+      \strng{authornamehash}{f5b2797d485dfe3691664c48766c8052}
+      \strng{authorfullhash}{d6970090c40391b2a0d4f49dbe917c68}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IOP Conference Series: Earth and Environmental Science}
+      \field{number}{3}
+      \field{title}{Power load forecasting using BiLSTM-attention}
+      \field{volume}{440}
+      \field{year}{2020}
+      \field{pages}{032115}
+      \range{pages}{1}
+    \endentry
     \entry{3DhumanActionDetectionForHealthCareSystems}{article}{}
       \name{author}{8}{}{%
         {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
@@ -1102,8 +1156,8 @@
       \strng{editorbibnamehash}{ad1ea98aa644fe4cbc55fbe24d1f78a9}
       \strng{editornamehash}{6013a44c5dec47e5e51fdd72b3f8b5eb}
       \strng{editorfullhash}{ad1ea98aa644fe4cbc55fbe24d1f78a9}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Advances in Neural Information Processing Systems}
@@ -1136,8 +1190,8 @@
       \strng{authorbibnamehash}{bf827576bc08bcbef835217a69df8fb2}
       \strng{authornamehash}{bf827576bc08bcbef835217a69df8fb2}
       \strng{authorfullhash}{bf827576bc08bcbef835217a69df8fb2}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Journal of physics: Conference series}
@@ -1461,8 +1515,8 @@
       \strng{authorbibnamehash}{55b327c2f506b1668524c2a222cd447c}
       \strng{authornamehash}{55b327c2f506b1668524c2a222cd447c}
       \strng{authorfullhash}{55b327c2f506b1668524c2a222cd447c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Scientific Research and Engineering Development}
@@ -1505,8 +1559,8 @@
       \strng{authorbibnamehash}{4874dd9cb3c54c8296ebdf2ee60e8b64}
       \strng{authornamehash}{4e4ac45a05fb200f2ec4e77fb4da3417}
       \strng{authorfullhash}{4874dd9cb3c54c8296ebdf2ee60e8b64}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 International joint conference on neural networks (IJCNN)}
@@ -1539,8 +1593,8 @@
       \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authornamehash}{dd291871bfa8ee64447232f1cca429aa}
       \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1804,8 +1858,8 @@
       \strng{authorbibnamehash}{5bf021cd9cce075659f52521eb82a691}
       \strng{authornamehash}{4f2cc659accef1a804b6b8d38bf5a9e7}
       \strng{authorfullhash}{5bf021cd9cce075659f52521eb82a691}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Scientific African}
@@ -1867,8 +1921,8 @@
       \strng{authorbibnamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authornamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authorfullhash}{5611b08270c4c6217ccac6cf0a32343b}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{PeerJ Computer Science}
@@ -2090,8 +2144,8 @@
       \strng{authorbibnamehash}{8db62a7cd281329eb4a66a0b4b986be8}
       \strng{authornamehash}{8db62a7cd281329eb4a66a0b4b986be8}
       \strng{authorfullhash}{8db62a7cd281329eb4a66a0b4b986be8}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Applied computing and informatics}

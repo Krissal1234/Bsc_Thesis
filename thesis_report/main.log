@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  8 APR 2024 11:47
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2023.12.14)  8 APR 2024 12:49
  system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/projects/uni/thesis/thesis_writup/thesis_report/main
@@ -1813,4 +1813,472 @@ Package caption Info: End \AtBeginDocument code.
  (./content/title.tex
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 24.88pt on input line 5.
-LaTeX Font Info:    Font shape `TU/Lato(
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 24.88pt on input line 6.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 20.74pt on input line 11.
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 20.74pt on input line 12.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 17.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 10.0pt on input line 18.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 18.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 14.4pt on input line 33.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
+(Font)              scaled to size 14.4pt on input line 34.
+<content/figures/ict_logo.pdf, id=248, 851.18pt x 185.69376pt>
+File: content/figures/ict_logo.pdf Graphic file (type pdf)
+<use content/figures/ict_logo.pdf>
+Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
+(luatex.def)             Requested size: 267.45572pt x 58.34933pt.
+ [1
+
+
+\openout4 = main.ist
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./content/figures/ict_logo.pdf>]) (./content/abstract.tex) (./content/acknowledgements.tex
+warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
+[1
+
+]) [2
+
+] (./main.toc
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 1.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 1.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 1.
+ [3
+
+])
+\tf@toc=\write10
+
+\openout10 = main.toc
+ [4] [5] (./main.lof
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][] \TU/Lato(0)/m/n/12 Figure [][]Schematic Repre-sen-ta-tion of an Arti-fi-cial Neural Network. 
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 12--12
+ [][] \TU/Lato(0)/m/n/12 Figure [][]Visu-al-i-sa-tion of optical flow: (a) Optical flow repre-sen-ta-tion (b) 
+ []
+
+)
+\tf@lof=\write11
+
+\openout11 = main.lof
+ [6
+
+] (./main.lot)
+\tf@lot=\write12
+
+\openout12 = main.lot
+ [7
+
+] (./main.acr) (./main.gls) (./content/chapters/1_introduction/introduction.tex
+Chapter 1.
+
+Underfull \hbox (badness 1424) in paragraph at lines 10--17
+\TU/Lato(0)/m/n/12 obsta-cles, namely, half-pipes and ramps, empha-sising aerial manoeu-vres. Street
+ []
+
+<content/chapters/1_introduction/figures/graph.png, id=401, 1003.75pt x 745.78625pt>
+File: content/chapters/1_introduction/figures/graph.png Graphic file (type png)
+<use content/chapters/1_introduction/figures/graph.png>
+Package luatex.def Info: content/chapters/1_introduction/figures/graph.png  used on input line 20.
+(luatex.def)             Requested size: 409.71692pt x 304.42015pt.
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 27.
+[1
+
+
+
+
+
+<./content/chapters/1_introduction/figures/graph.png>]
+Underfull \hbox (badness 4713) in paragraph at lines 32--33
+[]\TU/Lato(0)/m/n/12 Despite the popu-larity in computer vision, partic-u-larly in video activity
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 34--35
+\TU/Lato(0)/m/n/12 condi-tions and complex skate-board move-ments. However, this research aims to
+ []
+
+LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
+(Font)              scaled to size 14.4pt on input line 48.
+[2]
+Underfull \hbox (badness 1048) in paragraph at lines 65--66
+\TU/Lato(0)/m/n/12 them against other studies and finally, Chapter 7 presents the final find-ings and
+ []
+
+) (./content/chapters/2_background/background.tex [3]
+Chapter 2.
+
+Underfull \hbox (badness 1033) in paragraph at lines 47--56
+[]\TU/Lato(0)/m/n/12 Morris (2019) [[]9[]] char-ac-terises ML as the advance-ment of algo-rithms that
+ []
+
+[4
+
+
+]
+Underfull \hbox (badness 1540) in paragraph at lines 59--60
+[]\TU/Lato(0)/b/n/12 Super-vised: \TU/Lato(0)/m/n/12 This is a ML concept that involves training a model to make
+ []
+
+[5]
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=454, 569.12625pt x 435.6275pt>
+File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png Graphic file (type png)
+<use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
+Package luatex.def Info: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png  used on input line 171.
+(luatex.def)             Requested size: 341.43307pt x 261.35193pt.
+
+Underfull \hbox (badness 1910) in paragraph at lines 184--186
+[]\TU/Lato(0)/m/n/12 CNNs, incor-po-rate multiple layers and are capable of extracting effec-tive
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 187--188
+[]\TU/Lato(0)/m/n/12 -- continue expla-na-tion, explain how feature maps are created through
+ []
+
+[6<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>]
+<content/chapters/2_background/figures/lstm_architecture.jpg, id=473, 722.7pt x 366.36874pt>
+File: content/chapters/2_background/figures/lstm_architecture.jpg Graphic file (type jpg)
+<use content/chapters/2_background/figures/lstm_architecture.jpg>
+Package luatex.def Info: content/chapters/2_background/figures/lstm_architecture.jpg  used on input line 221.
+(luatex.def)             Requested size: 409.71692pt x 207.7031pt.
+ [7<./content/chapters/2_background/figures/lstm_architecture.jpg>]
+<content/chapters/2_background/figures/bilstm_structure.png, id=484, 428.60126pt x 222.8325pt>
+File: content/chapters/2_background/figures/bilstm_structure.png Graphic file (type png)
+<use content/chapters/2_background/figures/bilstm_structure.png>
+Package luatex.def Info: content/chapters/2_background/figures/bilstm_structure.png  used on input line 242.
+(luatex.def)             Requested size: 409.71692pt x 213.01573pt.
+) ("./content/chapters/3_Literature Review/literature_review.tex" [8<./content/chapters/2_background/figures/bilstm_structure.png>]
+Chapter 3.
+
+Underfull \hbox (badness 1082) in paragraph at lines 6--13
+\TU/Lato(0)/m/n/12 Building on the foun-da-tional under-standing of activity recog-ni-tion defined in the
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 49--62
+\TU/Lato(0)/m/n/12 et al. (2017) [[]26[]]. The researchers suggest that while certain scenarios utilise
+ []
+
+[9
+
+
+]
+Underfull \hbox (badness 1189) in paragraph at lines 92--100
+[]\TU/Lato(0)/m/n/12 After estab-lishing the role of data augmen-ta-tion in addressing the lack of
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 103--106
+\TU/Lato(0)/m/n/12 While less common in computer vision due to its normality assump-tion, Z-score
+ []
+
+[10]
+Underfull \hbox (badness 2197) in paragraph at lines 113--122
+\TU/Lato(0)/m/n/12 on clas-si-fi-ca-tion accu-racy. They demon-strated that, for 8-bit images, min-max
+ []
+
+[11]
+Underfull \hbox (badness 3039) in paragraph at lines 176--181
+\TU/Lato(0)/m/n/12 vision due to the sport’s dynamic and complex nature, char-ac-terised by rapid
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 182--190
+\TU/Lato(0)/m/n/12 ML methods, for their ability to learn feature repre-sen-ta-tions auto-mat-i-cally from
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 182--190
+\TU/Lato(0)/m/n/12 archi-tec-ture is the CNN-LSTM. This approach lever-ages the CNNs strength in
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 191--204
+\TU/Lato(0)/m/n/12 effec-tive-ness against three activity recog-ni-tion datasets: KTH, UCF-11, HMDB-
+ []
+
+[12]
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=566, 438.63875pt x 385.44pt>
+File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (type png)
+<use content/chapters/3_Literature Review/figures/cnn-lstm.png>
+Package luatex.def Info: content/chapters/3_Literature Review/figures/cnn-lstm.png  used on input line 207.
+(luatex.def)             Requested size: 295.90588pt x 260.01962pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--227
+[]\TU/Lato(0)/m/n/12 Unlike regular CNNs, data is
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 232--237
+\TU/Lato(0)/m/n/12 BiLSTM, enabling the model to priori-tise partic-ular parts of the input data.
+ []
+
+[13
+
+<./content/chapters/3_Literature Review/figures/cnn-lstm.png>]
+Underfull \hbox (badness 2894) in paragraph at lines 262--274
+\TU/Lato(0)/m/n/12 The first tech-nique involves util-ising signals obtained from skateboard-mounted
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 277--288
+\TU/Lato(0)/m/n/12 six skate-board tricks most commonly executed in compet-i-tive events. Amateur
+ []
+
+[14]
+Underfull \hbox (badness 1077) in paragraph at lines 345--352
+\TU/Lato(0)/m/n/12 clas-si-fi-ca-tion accu-ra-cies, with MobileNet achieving 95%, NASNet-Mo-bile 92% and
+ []
+
+) (./content/chapters/4_Methodology/methodology.tex [15]
+Chapter 4.
+
+Underfull \hbox (badness 1038) in paragraph at lines 22--31
+[]\TU/Lato(0)/m/n/12 The initial dataset was sourced from the publicly avail-able ”Skate-boardML”
+ []
+
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=607, 620.3175pt x 242.9075pt>
+File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic file (type jpg)
+<use content/chapters/4_Methodology/figures/folder-based-label.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-label.jpg  used on input line 47.
+(luatex.def)             Requested size: 250.38564pt x 98.0471pt.
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=608, 241.90375pt x 272.01625pt>
+File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic file (type jpg)
+<use content/chapters/4_Methodology/figures/text-based-labelling.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/text-based-labelling.jpg  used on input line 53.
+(luatex.def)             Requested size: 145.68144pt x 163.82114pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16
+
+
+]
+<content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=615, 1349.04pt x 224.84pt>
+File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg Graphic file (type jpg)
+<use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg  used on input line 75.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 76.
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=616, 1349.04pt x 224.84pt>
+File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file (type jpg)
+<use content/chapters/4_Methodology/figures/kickflip_sequence.jpg>
+Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequence.jpg  used on input line 80.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+ [17<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/chapters/4_Methodology/figures/text-based-labelling.jpg><./content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg><./content/chapters/4_Methodology/figures/kickflip_sequence.jpg>]
+Underfull \hbox (badness 1931) in paragraph at lines 121--122
+[]\TU/Lato(0)/b/n/12 Resnet50: \TU/Lato(0)/m/n/12 Resnet50, intro-duced in 2016 by He et al. [[]48[]], is another
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 121--122
+\TU/Lato(0)/m/n/12 powerful CNN archi-tec-ture that is well known for its advance-ments in image
+ []
+
+
+Package caption Warning: \label without proper reference on input line 137.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:TL-models' on page 18 undefined on input line 123.
+
+[18]
+Underfull \hbox (badness 1412) in paragraph at lines 169--170
+[]\TU/Lato(0)/b/n/12 VGG16-LSTM: \TU/Lato(0)/m/n/12 This archi-tec-ture lever-ages the pre-trained VGG16 model to
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 170--171
+\TU/Lato(0)/m/n/12 for feature extrac-tion, followed by an LSTM for sequence modelling. The
+ []
+
+[19]
+Underfull \hbox (badness 3965) in paragraph at lines 171--172
+[]\TU/Lato(0)/b/n/12 VGG16-BiLSTM: \TU/Lato(0)/m/n/12 This archi-tec-ture employs the VGG16 model for feature
+ []
+
+<content/chapters/4_Methodology/figures/architecture.png, id=643, 703.62875pt x 844.15375pt>
+File: content/chapters/4_Methodology/figures/architecture.png Graphic file (type png)
+<use content/chapters/4_Methodology/figures/architecture.png>
+Package luatex.def Info: content/chapters/4_Methodology/figures/architecture.png  used on input line 179.
+(luatex.def)             Requested size: 455.24411pt x 546.15593pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20]) (./content/chapters/5_Implementation/implementation.tex [21] [22<./content/chapters/4_Methodology/figures/architecture.png>]
+Chapter 5.
+
+Underfull \hbox (badness 2818) in paragraph at lines 7--9
+[]\TU/Lato(0)/b/n/12 Tensor-flow: \TU/Lato(0)/m/n/12 Tensor-flow is an open-source library, powerful in numer-ical
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 31--32
+\TU/Lato(0)/m/n/12 by the optical flow func-tion into polar coor-di-nates, discarding the direc-tional
+ []
+
+[23
+
+
+]
+<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=681, 1349.04pt x 224.84pt>
+File: content/chapters/5_Implementation/figures/optical_sequence.jpg Graphic file (type jpg)
+<use content/chapters/5_Implementation/figures/optical_sequence.jpg>
+Package luatex.def Info: content/chapters/5_Implementation/figures/optical_sequence.jpg  used on input line 37.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=682, 1349.04pt x 224.84pt>
+File: content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg Graphic file (type jpg)
+<use content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>
+Package luatex.def Info: content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg  used on input line 42.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--71
+\TU/Lato(0)/m/n/12 This research explored a number of augmen-ta-tion tech-niques using the
+ []
+
+<content/chapters/5_Implementation/figures/augmented_frames.jpg, id=685, 1349.04pt x 224.84pt>
+File: content/chapters/5_Implementation/figures/augmented_frames.jpg Graphic file (type jpg)
+<use content/chapters/5_Implementation/figures/augmented_frames.jpg>
+Package luatex.def Info: content/chapters/5_Implementation/figures/augmented_frames.jpg  used on input line 76.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+<content/chapters/5_Implementation/figures/unaugmented_frames.jpg, id=686, 1349.04pt x 224.84pt>
+File: content/chapters/5_Implementation/figures/unaugmented_frames.jpg Graphic file (type jpg)
+<use content/chapters/5_Implementation/figures/unaugmented_frames.jpg>
+Package luatex.def Info: content/chapters/5_Implementation/figures/unaugmented_frames.jpg  used on input line 81.
+(luatex.def)             Requested size: 455.24411pt x 75.87164pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+\openout7 = main.pyg
+(./_minted-main/default.pygstyle) (./_minted-main/C101125E6B2A237BCBC841B1C104B429EBB8F0E703F74D24504D823C7A1841BD.pygtex) [24<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>] [25<./content/chapters/5_Implementation/figures/augmented_frames.jpg><./content/chapters/5_Implementation/figures/unaugmented_frames.jpg>] [26]
+Underfull \hbox (badness 3568) in paragraph at lines 209--214
+\TU/Lato(0)/m/n/12 This study incor-po-rated model check pointing in the training process to save
+ []
+
+) (./content/chapters/6_evaluation/evaluation.tex [27]
+Chapter 6.
+<content/chapters/5_Implementation/figures/Adam_optimiser.PNG, id=713, 362.10281pt x 187.45032pt>
+File: content/chapters/5_Implementation/figures/Adam_optimiser.PNG Graphic file (type png)
+<use content/chapters/5_Implementation/figures/Adam_optimiser.PNG>
+Package luatex.def Info: content/chapters/5_Implementation/figures/Adam_optimiser.PNG  used on input line 30.
+(luatex.def)             Requested size: 204.85846pt x 106.04976pt.
+<content/chapters/5_Implementation/figures/SGD_optimiser.PNG, id=714, 362.85562pt x 188.95593pt>
+File: content/chapters/5_Implementation/figures/SGD_optimiser.PNG Graphic file (type png)
+<use content/chapters/5_Implementation/figures/SGD_optimiser.PNG>
+Package luatex.def Info: content/chapters/5_Implementation/figures/SGD_optimiser.PNG  used on input line 38.
+(luatex.def)             Requested size: 204.85846pt x 106.68243pt.
+) [28
+
+
+<./content/chapters/5_Implementation/figures/Adam_optimiser.PNG><./content/chapters/5_Implementation/figures/SGD_optimiser.PNG>]
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 85.
+ [29
+
+]
+Underfull \hbox (badness 3601) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 J. Gu \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Recent advances in convo-lu-tional neural networks,'' \TU/Lato(0)/m/it/12 Pattern
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
+ []
+
+
+Underfull \hbox (badness 7379) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 J. Yin, Q. Yang, and J. J. Pan, ``Sensor-based abnormal human-activity
+ []
+
+[30]
+Underfull \hbox (badness 5939) in paragraph at lines 86--86
+\TU/Lato(0)/m/it/12 Journal of Scien-tific Research and Engi-neering Devel-op-ment\TU/Lato(0)/m/n/12 , vol. 1, no. 2,
+ []
+
+[31]
+Underfull \hbox (badness 2865) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 A. Tharwat, ``Clas-si-fi-ca-tion assess-ment methods,'' \TU/Lato(0)/m/it/12 Applied computing and
+ []
+
+[32]
+Underfull \hbox (badness 4279) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 D. M. Powers, ``Eval-u-a-tion: From preci-sion, recall and f-measure to roc,
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 86--86
+\TU/Lato(0)/m/n/12 informed-ness, marked-ness and corre-la-tion,'' \TU/Lato(0)/m/it/12 arXiv preprint arXiv:2010.16061\TU/Lato(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 86--86
+[]\TU/Lato(0)/m/n/12 T. Akiba, S. Sano, T. Yanase, T. Ohta, and M. Koyama, ``Optuna: A next-
+ []
+
+(./content/appendices/appendix_a.tex [33]
+Chapter 7.
+) (./content/appendices/appendix_b.tex [34
+
+]
+Chapter 8.
+)
+runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed
+runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed
+ [35
+
+] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 722BA4F095E4440A42DC15260B8E32EF;9338.
+runsystem(rm main.pyg)...executed
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 39497 strings out of 477805
+ 100000,1977958 words of node,token memory allocated
+ 1057 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 31 attribute, 131 glue_spec, 31 attribute_list, 1 write, 13 pdf_action nodes
+   avail lists: 1:10,2:1116,3:444,4:245,5:934,6:174,7:7280,8:115,9:610,10:20,11:317,12:9
+ 58435 multiletter control sequences out of 65536+600000
+ 83 fonts using 20402287 bytes
+ 106i,12n,128p,1256b,1685s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/fonts/truetype/lato/Lato-Italic.ttf></usr/share/fonts/truetype/lato/Lato-Regular.ttf></usr/share/fonts/truetype/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (43 pages, 1384383 bytes).
+
+PDF statistics: 834 PDF objects out of 1000 (max. 8388607)
+ 736 compressed objects within 8 object streams
+ 180 named destinations out of 1000 (max. 131072)
+ 497 words of extra memory for PDF output out of 10000 (max. 100000000)
+

@@ -1,0 +1,21 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Number of skateboarding participants in the United States from 2010 to 2021 in millions. Reproduced from \blx@tocontentsinit {0}\cite {skatestatistics}, data sourced from Outdoor Foundation \blx@tocontentsinit {0}\cite {outdoorfounation}.\relax }}{1}{figure.caption.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \blx@tocontentsinit {0}\cite {FundamentalsOfArtificialNeuralNetworksAndDeepLearning}\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces LSTM architecture. Reproduced from ...........\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces BiLSTM Structure. Reproduced from Du et al. (2020) \blx@tocontentsinit {0}\cite {du2020power}\relax }}{8}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \blx@tocontentsinit {0}\cite {LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}\relax }}{13}{figure.caption.7}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Folder-based labelling.\relax }}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Text-based labelling\relax }}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.\relax }}{17}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Artefact Architecture.\relax }}{22}{figure.caption.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of frame extraction between optical flow method and uniform sampling\relax }}{24}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of Augmented sequence against original\relax }}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Augmentation Parameters\relax }}{25}{figure.caption.14}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Model loss graphs for (a) Adam and (b) SGD optimisers.\relax }}{28}{figure.caption.15}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }

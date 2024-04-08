@@ -101,10 +101,11 @@ There exist three main categories for ML models \cite{ML_Algorithms}:
  activities from video sequences. Human activities involve a wide range of
  motions and interactions with objects, varying from simple isolated actions
  like dancing to more complex activities that engage multiple body parts and
- external objects such as a football match. The human ability to perceive
- these behaviours is a trivial task; yet, it is a challenging problem for
- computers due to the sequential nature and the resemblance of visual content in
- such activities \cite{ActionRecognitionDeepBi-DirectionalLSTM},\cite{AReviewOfHumanActivityRecognitionMethods}.
+ external objects such as a football match. The human ability to perceive these
+ behaviours is a trivial task; yet, it is a challenging problem for computers
+ due to the sequential nature and the resemblance of visual content in such
+ activities \cite{ActionRecognitionDeepBi-DirectionalLSTM,
+ AReviewOfHumanActivityRecognitionMethods}.
 
 % This should probably go to the implementation section
  %  Recognising complex human actions demands the examination of sequential data as
@@ -195,7 +196,7 @@ steps. This constraint arises from the challenge of dealing with vanishing or
 exploding gradients in the backpropagation procedure while processing
 extended sequences, as discussed in prior works
 \cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
-
+\subsubsection{Long Short-Term Memory Networks}
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
 introduced as an extention to RNNs in 1997
@@ -209,18 +210,67 @@ These types of networks consist of three gates: input, output and forget gates.
 The input gate, determines whether new information will be uploaded to the
 network, the output gate manages whether current cell values contribute to the
 output, and the forget gate determines whether existing information will be
-preserved or removed \cite{theperformanceoflstmandbilstminforcastingtimeseries}. Figure
+preserved or removed \cite{theperformanceoflstmandbilstminforcastingtimeseries}.
+Figure \ref{fig:lstm_architecture} illustrates the architecture of an LSTM
+network, displaying the interaction between the cell state and the various other
+gates that regulate the flow of information through the network.
 
 
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg} 
   \caption{LSTM architecture. Reproduced from ...........}
+  \label{fig:lstm_architecture}
 \end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
 
 
-this neural
-network utilises the input data twice, once from left to right and 
-
+\subsubsection{Bidirectional LSTMs}
+Bidirectional LSTMs (BiLSTMs) are sophisticated variants of LSTMs designed to
+ehnance the ability to capture patterns in time series data and improve learning
+long-term dependencies. Unlike LSTMs that only process data in a single
+direction (from past to future), BiLSTMs utilise a more intuitive approach by
+applying two LSTM models to the input data.  In the first round, the LSTM is
+applied to the input data, and in the second round, it is applied to the
+reversed input sequence. Furthermore, Tavakoli et al. (2019)
+\cite{theperformanceoflstmandbilstminforcastingtimeseries}, concluded that
+BiLSTMs reported better accuracies compared to regular LSTMs.
 %%Describe BiLSTM TODO
+
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png} 
+  \caption{BiLSTM Structure. Reproduced from Du et al. (2020) \cite{du2020power}} 
+  \label{fig:bilstm_structure}
+\end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
+
+Figure \ref{fig:bilstm_structure} 
+
+%This diagram represents the structure of a bidirectional LSTM (BiLSTM) network,
+%which is designed to process sequences of data by considering both past
+%(forward) and future (backward) context at each time step. In the depicted
+%structure, you can see two layers that run in parallel: the top layer processes
+%the sequence from the beginning to the end (forward direction), while the
+%bottom layer processes the sequence in the reverse order (backward direction).
+
+%Each circle in the diagram denotes a hidden state at a particular time step. The
+% hidden states in the forward layer are connected through weights Wf1Wf1​ and
+% Wf2Wf2​, while the hidden states in the backward layer are connected through
+% weights Wb1Wb1​ and Wb2Wb2​. The dashed arrows represent these connections,
+% indicating how information is passed from one state to the next within each
+% respective layer.
+
+% The inputs to the network are represented by x1,x2,...,x6x1,x2,...,x6, and these
+% are fed into both the forward and the backward layers of the network. For each
+% time step, the network generates an output, represented by
+% y1,y2,...,y6y1,y2,...,y6, which is influenced by the information from both the
+% past and the future context as learned by the network.
+
+% The unique aspect of this architecture is its ability to preserve information
+% from both ends of the sequence, allowing for more complex patterns to be
+% recognized that a unidirectional LSTM might not capture. This is particularly
+% useful in tasks like time series forecasting, natural language processing, and
+% other sequence-based problems where the context from both directions can be
+% highly informative for making predictions or understanding the sequence as a
+% whole.
 
