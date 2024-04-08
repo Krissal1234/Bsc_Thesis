@@ -180,27 +180,31 @@ learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
 incredible performance in the field of image recognition and pattern recognition tasks. 
 
-Unlike ANNs, CNNs have neurons arranged in three dimensions: width, height and
-depth.
+% Unlike ANNs, CNNs have neurons arranged in three dimensions: width, height and
+% depth.
 
 CNNs are comprised of three types of layers: convolutional layers, pooling
-layers and fully-connected layers. Figure \ref{fig:cnn_architecture} showcases a
-simplified CNN architecture comprising of 5 layers, Nonethelss, the complexity
-of CNNs can be scaled by layering multiple layers, thereby increasing the
-network's depth to cater for more complex tasks.
+layers and fully-connected layers. The convolutional layer applies a set of
+filters (or kernels) that slide across the input data performing a localised dot
+product between their weights and the corresponding values of the input data.
+The results are summed up to generate a single value in the feature map. The
+pooling layer applies an aggregation funciton such as max pooling or average
+pooling to create a downsamplaed representation of the input data are. Finally,
+the fully-connected attempt to transform the outputs from the previous layer
+into an output vector that represents a score corresponding to a class label. 
 
-These layers can be stacked and the number
-of layers doesnt matter
-
-\begin{figure}[ht]
+\begin{figure}[h]
 	\centering
   \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/cnn_arch.png} 
   \caption{CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015) \cite{introductiontoCNNs}}
   \label{fig:cnn_architecture}
-\end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
+\end{figure}
 
+Figure \ref{fig:cnn_architecture} showcases a simplified CNN
+architecture comprising of 5 layers, Nonethelss, the complexity of CNNs can be
+scaled by stacking multiple layers, thereby increasing the network's depth to
+cater for more complex tasks.
 
--- continue explanation, explain how feature maps are created through convolutions
 
 \subsection{Recurrent Neural Networks}
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
