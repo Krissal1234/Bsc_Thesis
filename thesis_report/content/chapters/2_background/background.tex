@@ -178,11 +178,27 @@ Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)
 \cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
-incredible performance in various fields such as visual recognition, speech
-recognition and natural language processing.
+incredible performance in the field of image recognition and pattern recognition tasks. 
 
-CNNs, incorporate multiple layers and are capable of extracting effective
-representations
+Unlike ANNs, CNNs have neurons arranged in three dimensions: width, height and
+depth.
+
+CNNs are comprised of three types of layers: convolutional layers, pooling
+layers and fully-connected layers. Figure \ref{fig:cnn_architecture} showcases a
+simplified CNN architecture comprising of 5 layers, Nonethelss, the complexity
+of CNNs can be scaled by layering multiple layers, thereby increasing the
+network's depth to cater for more complex tasks.
+
+These layers can be stacked and the number
+of layers doesnt matter
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/cnn_arch.png} 
+  \caption{CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015) \cite{introductiontoCNNs}}
+  \label{fig:cnn_architecture}
+\end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
+
 
 -- continue explanation, explain how feature maps are created through convolutions
 
@@ -239,12 +255,20 @@ BiLSTMs reported better accuracies compared to regular LSTMs.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png} 
+  \includegraphics[width=0.8 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png} 
   \caption{BiLSTM Structure. Reproduced from Du et al. (2020) \cite{du2020power}} 
   \label{fig:bilstm_structure}
 \end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
 
-Figure \ref{fig:bilstm_structure} 
+Figure \ref{fig:bilstm_structure} demonstrates the structure of a BiLSTM
+network, showcasing the flow of data between the two parallel LSTM layers. The
+first LSTM process input in the forward direction, from $x_1$ to $x_6$, and the
+other in the backwards direction from $x_6$ to $x_1$, allowing the network to
+have past and future context. The forward LSTM units are connected through
+weights $Wf_1$ and $Wf_2$, while the backward LSTM units are connected through
+weights $Wb_1$ and $Wb_2$. By learning from sequences in both directions,
+BiLSTMs are particularly effective in scenarios where past and future contexts
+are crucial.
 
 %This diagram represents the structure of a bidirectional LSTM (BiLSTM) network,
 %which is designed to process sequences of data by considering both past
