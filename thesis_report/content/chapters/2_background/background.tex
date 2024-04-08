@@ -198,10 +198,29 @@ extended sequences, as discussed in prior works
 
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
-introduced \cite{learningPriceseTimingWithLSTM}. LSTM networks unlike RNNs are
-capable of capturing dependencies across more than 1,000 time steps depending on
-the network's complexity and are more biologically credible \cite{UnderstandingLSTM}.
+introduced as an extention to RNNs in 1997
+\cite{learningPriceseTimingWithLSTM,originalLSTMPaper}. LSTM networks inherently
+extend the RNNs memory enabling them to campture dependencies across more than
+1,000 time steps depending on the network's complexity. These models are also
+able to tackle the vanishing problem associated with RNNS and offer more
+biologically credible solution \cite{UnderstandingLSTM}. 
 
+These types of networks consist of three gates: input, output and forget gates.
+The input gate, determines whether new information will be uploaded to the
+network, the output gate manages whether current cell values contribute to the
+output, and the forget gate determines whether existing information will be
+preserved or removed \cite{theperformanceoflstmandbilstminforcastingtimeseries}. Figure
+
+
+\begin{figure}[ht]
+	\centering
+  \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg} 
+  \caption{LSTM architecture. Reproduced from ...........}
+\end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
+
+
+this neural
+network utilises the input data twice, once from left to right and 
 
 %%Describe BiLSTM TODO
 

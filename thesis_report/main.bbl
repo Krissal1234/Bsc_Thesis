@@ -667,6 +667,77 @@
       \field{pages}{115\bibrangedash 143}
       \range{pages}{29}
     \endentry
+    \entry{originalLSTMPaper}{article}{}
+      \name{author}{2}{}{%
+        {{hash=41b31e29fb2bdbf9f5c9c1b0d5b3e815}{%
+           family={Hochreiter},
+           familyi={H\bibinitperiod},
+           given={Sepp},
+           giveni={S\bibinitperiod}}}%
+        {{hash=288bdbcfe1b91ad7484d7a24f74f99ed}{%
+           family={Schmidhuber},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT press}%
+      }
+      \strng{namehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{fullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{bibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorbibnamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authornamehash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \strng{authorfullhash}{4c2e1e2e1ac91e1df9d4f7b85ebe39b4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Neural computation}
+      \field{number}{8}
+      \field{title}{Long short-term memory}
+      \field{volume}{9}
+      \field{year}{1997}
+      \field{pages}{1735\bibrangedash 1780}
+      \range{pages}{46}
+    \endentry
+    \entry{theperformanceoflstmandbilstminforcastingtimeseries}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=379b300ed9cd8f9d0f239adb607eb674}{%
+           family={Siami-Namini},
+           familyi={S\bibinithyphendelim N\bibinitperiod},
+           given={Sima},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e3e53622236d9f272d40b6c71a23b3c5}{%
+           family={Tavakoli},
+           familyi={T\bibinitperiod},
+           given={Neda},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1c227cf94db6389a4c92e6af9d888c29}{%
+           family={Namin},
+           familyi={N\bibinitperiod},
+           given={Akbar\bibnamedelima Siami},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{bc6b48a0b5b2fdba8b9e6fa999375f24}
+      \strng{fullhash}{ed490c5c48a7abeaa43317a87bbf185a}
+      \strng{bibnamehash}{ed490c5c48a7abeaa43317a87bbf185a}
+      \strng{authorbibnamehash}{ed490c5c48a7abeaa43317a87bbf185a}
+      \strng{authornamehash}{bc6b48a0b5b2fdba8b9e6fa999375f24}
+      \strng{authorfullhash}{ed490c5c48a7abeaa43317a87bbf185a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE International conference on big data (Big Data)}
+      \field{title}{The performance of LSTM and BiLSTM in forecasting time series}
+      \field{year}{2019}
+      \field{pages}{3285\bibrangedash 3292}
+      \range{pages}{8}
+    \endentry
     \entry{3DhumanActionDetectionForHealthCareSystems}{article}{}
       \name{author}{8}{}{%
         {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
@@ -717,8 +788,8 @@
       \strng{authornamehash}{91baac1b4d40c585ca669bceba42a8c3}
       \strng{authorfullhash}{b2a28e5b159ee6342015c0c428495ade}
       \field{extraname}{1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Biomedical Circuits and Systems}
@@ -1125,8 +1196,8 @@
       \strng{authorbibnamehash}{0bee697d732f4babbbf12322dc283312}
       \strng{authornamehash}{0bee697d732f4babbbf12322dc283312}
       \strng{authorfullhash}{c49434fe63448fddf9861f1f538f8966}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Materials \& Design}
@@ -1531,8 +1602,8 @@
       \strng{authorbibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authorfullhash}{64fbaf3c8a6b53523f74f0087b58e7e6}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -1839,8 +1910,8 @@
       \strng{authorbibnamehash}{aa72580da8bed443b51e6554465225a8}
       \strng{authornamehash}{6dfcb9d4ddf68742e59e4ee105c678a1}
       \strng{authorfullhash}{aa72580da8bed443b51e6554465225a8}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Research on Biomedical Engineering}
@@ -2045,8 +2116,8 @@
       \strng{authorbibnamehash}{590aed25666f7ee9c7f2009bd208cea8}
       \strng{authornamehash}{590aed25666f7ee9c7f2009bd208cea8}
       \strng{authorfullhash}{590aed25666f7ee9c7f2009bd208cea8}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2010.16061}
