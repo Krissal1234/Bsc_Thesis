@@ -21,24 +21,25 @@ levels.
 
 The initial dataset was sourced from the publicly available "SkateboardML"
 repository on GitHub \cite{lightningdrop2020skateboardml}, comprising 200 video
-clips corresponding to two common tricks: the ollie and the kickflip. To expand the
-dataset's diversity, additional data was obtained through direct communication
-with Hanxiao Chen, the author of the SkateboardAI paper
+clips corresponding to two common tricks: the ollie and the kickflip. To expand
+the dataset's diversity, additional data was obtained through direct
+communication with Hanxiao Chen, the author of the SkateboardAI paper
 \cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
 videos covering 15 distinct tricks. Given the wide range of tricks included in
 this dataset, many were beyond the scope of this study, therefore only a subset
-of these videos were selected and included in the final dataset.
+of these videos were selected and included in the final dataset. The final
+dataset consisted of 128 videos per class adding up to a total of 384 videos.
 
 \subsection{Labelling techniques}
-This study investigated two primary labelling techniques: the folder-based and
-the text-based approach as visualised by Figures \ref{fig:folder-based-label} and
-\ref{fig:text-based-label}. In the folder-based method, videos were categorised
-into folders named after their corresponding class label offering a simple
-organisation method. On the other hand, in the text-based approach, each video's
-path and corresponding label were listed on a text file, providing more
+This study explores two primary labelling techniques: the folder-based and the
+text-based approach as illustrated in Figures \ref{fig:folder-based-label} and
+\ref{fig:text-based-label}. The folder-based method categorises videos into
+folders named after their corresponding class label offering a simple
+organisation method. On the other hand, the text-based approach, lists each
+video's path and corresponding label in a text file, providing more
 flexibility. Given the limited number of classes and manageable dataset size,
-this study chose to utilise the folder-based approach, as the extra complexity
-from the text-based method wasn't necessary for this project.
+this study selected the folder-based approach, considering the extra complexity
+of the text-based method unnecessary for this project.
 %maybe mention one hot here or in implmenetaiton
 
 \begin{figure}[h]
@@ -90,18 +91,20 @@ optical flow method. The former technique evenly splits a video into its
 corresponding frames by using a pre-calculated step size determined by the
 number of frames of a video. The second technique leveraged optical flow, a
 method that assigns weights to frames determined by the motion of pixels between
-them. With this approach, frames with the greatest weightings were chosen for
-extraction, resulting in capturing frames with the most movement. An example of this technique can be observed in Figure \ref{fig:kickflip-sequence-opticalflow}.
+them. With this approach, frames with the greatest weightings are chosen for
+extraction, resulting in capturing frames with the most movement. An example of
+this technique being applied to a skate trick can be observed in Figure
+\ref{fig:kickflip-sequence-opticalflow}.
 
 
 \subsection{Data Augmentation}
-Due to the limited number of data used in this research, data augmentation
-techniques were implemented to increase the dataset's size before model
-training. These techniques including rotating, flipping and adding noise to
-images also help reduce overfitting, which was a risk evident due to the
-over-parametrised nature of the chosen models, meaning that their number of
-trainable parameters surpass the size of the dataset, making them vulnerable
-to overfitting.
+The limited number of data available for this research necessitated the
+implementaiton of data augmentation techniques to enlarge the dataset's size
+before model training. Techniques such as rotating, flipping and adding noise to
+images also served to add more diversity to the dataset mitigating the risk of
+overfitting. This risk arises from the over-parametrised nature of the
+chosen models, whose trainable parameter count surpasses the
+size of the dataset, causing them to be vulnerable to overfitting.
 
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
@@ -114,13 +117,28 @@ within a standardised range.
 \subsection{Feature Extraction with Transfer Learning}
 %Feature extraction plays a crucial role in the classification of complex data, particularly in the domain of action recognition tasks \cite{SkateboardAIPaper, HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study incorporates transfer learning by utilising pre-trained CNNs to extract relevant features from video frames before passing them through the main sequence model.
 
-This research leveraged two well-established CNNs for this task: VGG16  and ResNet50. Both models were pre-trained on the large ImageNet dataset \cite{imageNetDataset}, leveraging extensive image recognition knowledge that were then fine-tuned to the domain of skateboard trick recognition.
+This research leveraged two well-established CNNs for this task: VGG16  and
+ResNet50. Both models were pre-trained on the large ImageNet dataset
+\cite{imageNetDataset}, leveraging extensive image recognition knowledge that
+were then fine-tuned to the domain of skateboard trick recognition. Table
+\ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet50.
 
-{\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman \cite{VGG}, is a CNN architecture known for its success in image classification and feature extraction for action recognition tasks. This model is relatively simple made up of 16 convolutional and fully connected (FC) with repeated use of 3x3 convolutional filters to preserve spatial information within frames.% Furthermore, VGG16 has proved to be effective for feature extraction in previous literature\cite{SkateboardAIPaper}, supporting its suitability in this study.
+{\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman \cite{VGG}, is
+a CNN architecture known for its success in image classification and feature
+extraction for action recognition tasks. This model is relatively simple made up
+of 16 convolutional and fully connected (FC) with repeated use of 3x3
+convolutional filters to preserve spatial information within frames.%
+Furthermore, VGG16 has proved to be effective for feature extraction in previous
+literature\cite{SkateboardAIPaper}, supporting its suitability in this study.
 
-{\bf Resnet50:} Resnet50, introduced in 2016 by He et al. \cite{Resnet50}, is another powerful CNN architecture that is well known for its advancements in image classification and frame extraction capabilities. Unlike VGG16, this model has a deeper architecture employing 50 convolutional layers allowing it to learn more intricate feature representations of the data. Furthermore, it incorporates residual connections to counteract the vanishing gradient problem that is often caused by many layers.% Additionally, this particular model has been utilised in skateboarding trick classifiers in previous studies by Chen \cite{SkateboardAIPaper} and Shapiee et al. \cite{skatePaper1}, further supporting its choice for this research.
+{\bf Resnet50:} Resnet50, introduced in 2016 by He et al. \cite{Resnet50}, is
+another powerful CNN architecture that is well known for its advancements in
+image classification and frame extraction capabilities. Unlike VGG16, this model
+has a deeper architecture employing 50 convolutional layers allowing it to learn
+more intricate feature representations of the data. Furthermore, it incorporates
+residual connections to counteract the vanishing gradient problem that is often
+caused by many layers. 
 
-Table \ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet50.
 \begin{table}[htbp]
 	\centering
 	
@@ -145,7 +163,14 @@ Table \ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet
 
 %\end{figure}
 
-The final four fully-connected (FC) layers of these models which are typically used for classification were removed. This was crucial to adapt these models for feature extraction, as the aim was not to classify each frame of the video, but to extract a collection of features that could help sequence models gain a better understanding. These features in the form of vectors not only encapsulate the visual information present in each frame but also more abstract ideas such as low-level information (like edges/shapes) to higher-level features like objects and even actions themselves. %By removing the final classification layers, both models resulted in a feature vector shape of ${(7 \times 7 \times 512)}$.
+The final four fully-connected (FC) layers of these models which are typically
+used for classification were removed. This was crucial to adapt these models for
+feature extraction, as the aim was not to classify each frame of the video, but
+to extract a collection of features that could help sequence models gain a
+better understanding. These features in the form of vectors not only encapsulate
+the visual information present in each frame but also more abstract ideas such
+as low-level information (like edges/shapes) to higher-level features like
+objects and even actions themselves. 
 
 \subsection{Dimensionality Reduction}
 The use of pre-trained models used in this study generate high-dimensional
@@ -160,15 +185,24 @@ retaining valuable information for classification.
 
 \section{Adapted Models}
 This research investigates the performance of four different deep learning
-architectures for skateboard trick classification. these models leverage
+architectures for skateboard trick classification. These models leverage
 pre-trained CNNs for feature extraction followed by sequence modelling
 techniques to capture the temporal dynamics of skateboard tricks. The
 architectures investigated are as follows.
 
 \begin{enumerate}
-	\item \textbf{VGG16-LSTM:} This architecture leverages the pre-trained VGG16 model to extract features, which are then fed to an LSTM for sequence modelling. LSTMs are powerful for capturing long-term dependencies within sequential data such as skateboarding tricks.
-	\item \textbf{ResNet50-LSTM:} This architecture utilises the deeper ResNet50 pre-trained CNN for feature extraction, followed by an LSTM for sequence modelling. The increased depth of ResNet50 potentially allows it to learn more complex feature representations than VGG16.
-	\item \textbf{VGG16-BiLSTM:} This architecture employs the VGG16 model for feature extraction and a BiLSTM network for sequence modelling. BiLSTMs are known to be able to learn dependencies in both directions of a sequence, which could be useful for capturing subtle details in skateboard tricks.
+	\item \textbf{VGG16-LSTM:} This architecture leverages the pre-trained VGG16
+	model to extract features, which are then fed to an LSTM for sequence
+	modelling. LSTMs are powerful for capturing long-term dependencies within
+	sequential data such as skateboarding tricks.
+	\item \textbf{ResNet50-LSTM:} This architecture utilises the deeper ResNet50
+	pre-trained CNN for feature extraction, followed by an LSTM for sequence
+	modelling. The increased depth of ResNet50 potentially allows it to learn
+	more complex feature representations than VGG16.
+	\item \textbf{VGG16-BiLSTM:} This architecture employs the VGG16 model for
+	feature extraction and a BiLSTM network for sequence modelling. BiLSTMs are
+	known to be able to learn dependencies in both directions of a sequence,
+	which could be useful for capturing subtle details in skateboard tricks.
 	\item \textbf{ResNet50-BiLSTM:} This architecture combines ResNet50 for feature extraction with a BiLSTM network. This combination leverages the potential advantages of deeper feature learning and the bi-directional capabilities of BiLSTMs.
 \end{enumerate}
 

@@ -11,9 +11,27 @@
 
 {\bf Matplotlib:} This research made use of Matplotlib for its effective plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout. 
 
+\section{Dataset Split and Configuration}
+This study opted for splitting the original dataset into 80\% 10\% and 10\% for
+training, validation and testing sets respectively, in order to prioritise
+training data due to limited dataset size. Additionally, this study adopted a
+sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
+methodology employed by Chen (2023) \cite{SkateboardAIPaper}. Chen's research
+demonstrated that this combination yielded superior accuracy compared to other
+configurations, involving shorter sequence length and varying frame sizes. To
+validate these findings, this research conducted experiments using a sequence
+length of 20 with 224x224 pixel sized frames. The results confirmed that a
+sequence length of 45 coupled with a larger frame size, is indeed more effective
+at achieving higher accuracies. 
+
+
+%  The training set was used by the models to
+% learn the patterns and relationships from the input data. The validation set
+% enabled is a portion of the dataset used to measure the performance after every
+% epoch. Finally, the model was evaluated using the testing set.
+
 
 \section{Frame Extraction using Optical Flow}
-%have to mention how the dataset was split
 The exploration of two frame extraction techniques aimed to find the most
 effective way to capture the crucial motions in a video through a series of
 frames. The optical flow method was hypothesised to be a superior technique for
@@ -21,14 +39,11 @@ its ability to capture frames with the most significant motion, unlike uniform
 sampling which often missed crucial parts of the skateboard trick, capturing
 more frames before or after the trick execution. An example of this behaviour
 can be observed in Figure
-\ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore,
-experiments showed an increase in accuracy when using the optical flow method
-over uniform sampling, further supporting this hypothesis.
-% either prove that it led to higher accuracy or show with image comparisons that optical flow method has more frames encapsulating the trick
-
-This study employed Farneback's algorithm \cite{farneback2003two} using the OpenCV (cv2) library, to estimate the optical flow magnitudes on each frame. The selection process involved reading pairs of consecutive frames from a video, resized for faster processing and converted to greyscale to minimise noise caused by colour variations. The cv2 function \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation between these frames, using parameters such as pyramid scale, levels, winsize, iterations that can be found in Appendix %add reference to appendix and place values. 
-
-The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors returned by the optical flow function into polar coordinates, discarding the directional information, retaining only the magnitudes. Finally, the code computed the average magnitude and appended it to a list. This process iterated through all frames to select those with the highest average to be extracted from the video.
+\ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore, experiments showed an increase in
+accuracy when using the optical flow method over uniform sampling, further
+supporting this hypothesis.
+% either prove that it led to higher accuracy or show with image comparisons
+% that optical flow method has more frames encapsulating the trick
 
 \begin{figure}[h!]
 	\centering
@@ -46,12 +61,25 @@ The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors ret
 	\label{fig:comparison-sequence-opticalflow-uniformSampling}
 \end{figure}
 
-\section{Dataset Split}
-This study opted for splitting the original dataset into 80\% 10\% and 10\% for
-training, validation and testing sets respectively. The training set was used by
-the models to learn the patterns and relationships from the input data. The
-validation set enabled is a portion of the dataset used to measure the performance after
-every epoch. Finally, the model was evaluated using the testing set.
+%have to mention the sequence length
+
+This study employed Farneback's algorithm \cite{farneback2003two} using the
+OpenCV (cv2) library, to estimate the optical flow magnitudes on each frame. The
+selection process involved reading pairs of consecutive frames from a video,
+resized for faster processing and converted to greyscale to minimise noise
+caused by colour variations. The cv2 function
+\texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation
+between these frames, using parameters such as pyramid scale, levels, winsize,
+iterations that can be found in Appendix %add reference to appendix and place
+values. 
+
+The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors
+returned by the optical flow function into polar coordinates, discarding the
+directional information, retaining only the magnitudes. Finally, the code
+computed the average magnitude and appended it to a list. This process iterated
+through all frames to select those with the highest average to be extracted from
+the video.
+
 
 
 \subsection{Data Augmentation}
@@ -62,12 +90,12 @@ patterns applied to each frame, as illustrated in \ref{aug-params}. In order to
 expand the number of training samples, this study created multiple copies of the
 original dataset, each augmented with its own set of unique parameters
 controlling image shifts, brightness, scaling and other transformations. Figure
-\ref{fig:originalFrames-againstAugmented} shows an example of an augmented
-duplication of a trick sequence against its original, split into six frames for
-illustrative purposes. Experiments revealed that certain augmentation techniques
-such as image flipping and large rotational shifts disrupted the visualisation
-of the trick, negatively impacting model performance, thus these were removed
-from the augmentation parameters.
+\ref{fig:originalFrames-againstAugmented} showcases an augmented trick sequence
+against its original, split into six frames for illustrative purposes.
+Experiments revealed that certain augmentation techniques such as image flipping
+and large rotational shifts disrupted the visualisation of the trick, negatively
+impacting model performance, thus these were removed or adjusted from the augmentation
+parameters.
 
 \begin{figure}[h!]
 	\centering
@@ -138,12 +166,6 @@ their respective labels for training, validation, and test sets. This allowed
 for easy retrieval of the pre-processed data, eliminating the need to re-extract
 features with every new session.
 
-
-%adding rotations lead to worse performance due to the sequential nature of the trick
-% within the  loop there was a check to see whether thecurrent video would be augmenmted
-%ImageDataGenerator tensorflow module
-% show parameters for augmentation plus photos of how they were augmented
-%explain that data augmentation helped me train with more data, due to the lmited dataset size
 
 \subsection{PCA Dimensionality Reduction}
 This research, utilised the Principle Component Analysis (PCA) dimensionality

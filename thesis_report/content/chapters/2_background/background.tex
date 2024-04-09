@@ -254,8 +254,6 @@ applied to the input data, and in the second round, it is applied to the
 reversed input sequence. Furthermore, Tavakoli et al. (2019)
 \cite{theperformanceoflstmandbilstminforcastingtimeseries}, concluded that
 BiLSTMs reported better accuracies compared to regular LSTMs.
-%%Describe BiLSTM TODO
-
 
 \begin{figure}[ht]
 	\centering
@@ -266,13 +264,13 @@ BiLSTMs reported better accuracies compared to regular LSTMs.
 
 Figure \ref{fig:bilstm_structure} demonstrates the structure of a BiLSTM
 network, showcasing the flow of data between the two parallel LSTM layers. The
-first LSTM process input in the forward direction, from $x_1$ to $x_6$, and the
-other in the backwards direction from $x_6$ to $x_1$, allowing the network to
-have past and future context. The forward LSTM units are connected through
-weights $Wf_1$ and $Wf_2$, while the backward LSTM units are connected through
-weights $Wb_1$ and $Wb_2$. By learning from sequences in both directions,
-BiLSTMs are particularly effective in scenarios where past and future contexts
-are crucial.
+first LSTM processes the input data in the forward direction, from $x_1$ to
+$x_6$, while the other LSTM in the backwards direction from $x_6$ to
+$x_1$, allowing the network to learn from past and future contexts. The forward LSTM
+units are connected through weights $Wf_1$ and $Wf_2$, while the backward LSTM
+units are connected through weights $Wb_1$ and $Wb_2$. By learning from
+sequences in both directions, BiLSTMs are particularly effective in scenarios
+where past and future contexts are crucial.
 
 %This diagram represents the structure of a bidirectional LSTM (BiLSTM) network,
 %which is designed to process sequences of data by considering both past
