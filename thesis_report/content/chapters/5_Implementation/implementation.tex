@@ -146,12 +146,12 @@ augmentation parameters.
 After successfully extracting the most significant frames from each video using
 optical flow, the next step involved preparing the data for further processing.
 The main algorithm consisted of an iterative process responsible for resizing and
-normalising all frames before being fed to the pre-trained CNNs for feature
+normalising all frames before input to the pre-trained CNNs for feature
 extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to
 satisfy the VGG and ResNet input image requirements, before performing min-max
 normalisation on each frame by diving the pixel intensities values by 255. 
 
-Once resized and normalised, The pre-trained CNNs extracted features from each
+Once resized and normalised, the pre-trained CNNs extracted features from each
 frame. With the final classification layers removed, the extracted features of a
 singular image using VGG returned a shape of  ${(1 \times 7 \times 7 \times
 512)}$, while ResNet50, resulted in a shape of  ${(1 \times 7 \times 7 \times
@@ -169,7 +169,7 @@ features with every new session.
 
 \subsection{PCA Dimensionality Reduction}
 This research, utilised the Principle Component Analysis (PCA) dimensionality
-reduction technique which was crucial in refining the feature sets produced by
+reduction technique, which was crucial in refining the feature sets produced by
 the pre-trained models. PCA a statistical technique that utilises orthogonal
 transformation to convert observations of variables that may be correlated into
 a set of unrelated variables called principle components. These principle
@@ -178,7 +178,7 @@ portray maximum variance from the original data \cite{dimensionality_reduction}.
 %most of the important information
 %explain how we got to the constant 2514 for VGG maybe? the mathematical
 %explain better results from  using pca either on both vgg and resnet or just resnet after testing
-
+%explain if we needed to use dimensionality reduction only on resnet or on both
 
 
 \section{Hyperparameter Optimisation}
@@ -189,11 +189,13 @@ Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
 leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
 selecting parameter combinations such as learning rate, dropout
-rate and neuron count. This iterative approach enables Optuna to navigate the
-search space and converge on optimal hyperparameters for a specific model and
-dataset. This library was integrated within a custom-built development
-environment specifically designed to identify the optimal hyperparameter
-configurations for multiple model architectures and their corresponding input data.
+rate and neuron count. 
+
+This iterative approach enables Optuna to navigate the search space and converge
+on optimal hyperparameters for a specific model and dataset. This library was
+integrated within a custom-built development environment specifically designed
+to identify the optimal hyperparameter configurations for multiple model
+architectures and their corresponding input data.
 
 % \section{Models}
 
@@ -209,7 +211,7 @@ achieved the best validation accuracy within each architecture. Additionally, th
 vertical dashed lines indicate the epoch at which the early stopping callback
 restored the models weights, preventing overfitting.
 
-All models employed a categorical-crossentropy loss
+All models employed the categorical-crossentropy loss
 function during training. This function measures the discrepancies between the
 predicted probabilities and the actual one-hot encoded labels. Furthermore, the
 output layers utilised softmax activation functions to align them with the
@@ -224,7 +226,7 @@ one-hot encoded labels.
 
 \section{Callbacks}
 \subsection{Early Stopping}
-This research employed an early stopping callback to reduce overfitting and save
+An early stopping callback reduced overfitting and saved
 computational resources. This method monitored the validation loss at every
 epoch and halted training if improvement stopped after a predetermined patience
 value. All experiments investigated a patience of 10 epochs, based on the
@@ -239,6 +241,6 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Baseline Model Approach}
-This research, made use of a baseline model approach during development of the
-artefact. The establishment of a baseline model allowed comparisons to be made
-with each iteration of the models. The first baseline model
+A baseline model approach defined during development of the artefact allowed
+omparisons to be made with each iteration of the models. The first baseline
+model
