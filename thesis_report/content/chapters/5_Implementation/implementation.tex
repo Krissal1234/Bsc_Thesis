@@ -4,12 +4,12 @@
 \section{Development Environment}
 {\bf Python:} Python's large database of libraries, along with its wide use in Machine Learning, made it the ideal choice for developing this artefact. Furthermore, its large and active community made tackling problems and troubleshooting issues simpler. Prior experience using Python also contributed to this decision.
 
-{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models, pre-defined layers and training and evaluation abstractions.
+{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine Learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers 
 
 {\bf OpenCv (cv2):} This open source library aided  
 
-{\bf Matplotlib:} This research made use of Matplotlib for its effective plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout. 
+{\bf Matplotlib:} This research made use of Matplotlib for its plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout. 
 
 \section{Dataset Split and Configuration}
 This study opted for splitting the original dataset into 80\% 10\% and 10\% for
@@ -34,14 +34,13 @@ at achieving higher accuracies.
 \section{Frame Extraction using Optical Flow}
 The exploration of two frame extraction techniques aimed to find the most
 effective way to capture the crucial motions in a video through a series of
-frames. The optical flow method was hypothesised to be a superior technique for
-its ability to capture frames with the most significant motion, unlike uniform
-sampling which often missed crucial parts of the skateboard trick, capturing
-more frames before or after the trick execution. An example of this behaviour
-can be observed in Figure
-\ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore, experiments showed an increase in
-accuracy when using the optical flow method over uniform sampling, further
-supporting this hypothesis.
+frames. The optical flow method was hypothesised to capture frames with the most
+significant motion, unlike uniform sampling which often missed crucial parts of
+the skateboard trick, capturing more frames before or after the trick execution.
+An example of this behaviour at a smaller scale can be observed in Figure
+\ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore,
+experiments showed an increase in accuracy when using the optical flow method
+over uniform sampling, further supporting this hypothesis.
 % either prove that it led to higher accuracy or show with image comparisons
 % that optical flow method has more frames encapsulating the trick
 
@@ -75,7 +74,7 @@ values.
 
 The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors
 returned by the optical flow function into polar coordinates, discarding the
-directional information, retaining only the magnitudes. Finally, the code
+directional information, while retaining only the magnitudes. Finally, the code
 computed the average magnitude and appended it to a list. This process iterated
 through all frames to select those with the highest average to be extracted from
 the video.
@@ -89,13 +88,14 @@ involved defining a number of parameters that influenced the augmentation
 patterns applied to each frame, as illustrated in \ref{aug-params}. In order to
 expand the number of training samples, this study created multiple copies of the
 original dataset, each augmented with its own set of unique parameters
-controlling image shifts, brightness, scaling and other transformations. Figure
-\ref{fig:originalFrames-againstAugmented} showcases an augmented trick sequence
-against its original, split into six frames for illustrative purposes.
+controlling image shifts, brightness, scaling and other transformations.
+
+Figure \ref{fig:originalFrames-againstAugmented} showcases an augmented trick
+sequence against its original, split into six frames for illustrative purposes.
 Experiments revealed that certain augmentation techniques such as image flipping
 and large rotational shifts disrupted the visualisation of the trick, negatively
-impacting model performance, thus these were removed or adjusted from the augmentation
-parameters.
+impacting model performance, thus these were removed or adjusted from the
+augmentation parameters.
 
 \begin{figure}[h!]
 	\centering
@@ -169,12 +169,13 @@ features with every new session.
 
 \subsection{PCA Dimensionality Reduction}
 This research, utilised the Principle Component Analysis (PCA) dimensionality
-reduction technique which was crucial in refining the feature sets
-produced by the pre-trained models. PCA a statistical technique that utilises
-orthogonal transformation to convert observations of variables that may be
-correlated into a set of unrelated variables called principle components. These
-principle components are reorganised in a way that the first few components contain most
-of the important information \cite{dimensionality_reduction}.
+reduction technique which was crucial in refining the feature sets produced by
+the pre-trained models. PCA a statistical technique that utilises orthogonal
+transformation to convert observations of variables that may be correlated into
+a set of unrelated variables called principle components. These principle
+components are reorganised in a way that the first few components attempt to
+portray maximum variance from the original data \cite{dimensionality_reduction}.
+%most of the important information
 %explain how we got to the constant 2514 for VGG maybe? the mathematical
 %explain better results from  using pca either on both vgg and resnet or just resnet after testing
 
@@ -213,6 +214,9 @@ function during training. This function measures the discrepancies between the
 predicted probabilities and the actual one-hot encoded labels. Furthermore, the
 output layers utilised softmax activation functions to align them with the
 one-hot encoded labels.
+
+\subsection{Training Process and Hyperameter Tuning}
+
 
 
 %mention SGD did better but did take longer

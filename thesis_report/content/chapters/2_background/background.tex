@@ -143,7 +143,7 @@ There exist three main categories for ML models \cite{ML_Algorithms}:
 \section{Neural Networks}
 \subsection{Artificial Neural Networks}
 
-Artificial Neural Networks (ANNs) are a class of machine learning models that
+Artificial Neural Networks (ANNs) are a class of Machine Learning models that
 are inspired by the interconnected systems of neurons found in the nervous
 system of living organisms. They consist of connected nodes capable of learning
 from their environment and adapting to complex patterns in data
@@ -161,7 +161,7 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
     between the Input and Output Layers where the network captures complete
     non-linear behaviours of data and feature transformations.
     \item \textbf{Output Layer:} This is the set of neurons that provide the
-    final predictions produced by the neural network. Depending on how the ANN
+    final predictions produced by the Neural Network. Depending on how the ANN
     is configured, the final output can be continuous, binary, ordinal, or
     count.
 \end{itemize}
@@ -210,12 +210,13 @@ cater for more complex tasks.
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
 designed for sequential data processing. RNNs are capable of modelling
 dynamic relationships in sequential data by feeding signals from past time steps
-back into the network. However, they are limited by their
+back into the network. However, they are limited due to their
 inability to access long-term data, limited to approximately ten sequential time
-steps. This constraint arises from the challenge of dealing with vanishing or
+steps.%add reference
+This constraint arises from the challenge of dealing with vanishing or
 exploding gradients in the backpropagation procedure while processing
 extended sequences, as discussed in prior works
-\cite{UnderstandingLSTM},\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
+\cite{UnderstandingLSTM,Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
 \subsubsection{Long Short-Term Memory Networks}
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
@@ -235,7 +236,7 @@ Figure \ref{fig:lstm_architecture} illustrates the architecture of an LSTM
 network, displaying the interaction between the cell state and the various other
 gates that regulate the flow of information through the network.
 
-
+% explain how they solve the vanishing gradient problem
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg} 
@@ -271,32 +272,3 @@ units are connected through weights $Wf_1$ and $Wf_2$, while the backward LSTM
 units are connected through weights $Wb_1$ and $Wb_2$. By learning from
 sequences in both directions, BiLSTMs are particularly effective in scenarios
 where past and future contexts are crucial.
-
-%This diagram represents the structure of a bidirectional LSTM (BiLSTM) network,
-%which is designed to process sequences of data by considering both past
-%(forward) and future (backward) context at each time step. In the depicted
-%structure, you can see two layers that run in parallel: the top layer processes
-%the sequence from the beginning to the end (forward direction), while the
-%bottom layer processes the sequence in the reverse order (backward direction).
-
-%Each circle in the diagram denotes a hidden state at a particular time step. The
-% hidden states in the forward layer are connected through weights Wf1Wf1​ and
-% Wf2Wf2​, while the hidden states in the backward layer are connected through
-% weights Wb1Wb1​ and Wb2Wb2​. The dashed arrows represent these connections,
-% indicating how information is passed from one state to the next within each
-% respective layer.
-
-% The inputs to the network are represented by x1,x2,...,x6x1,x2,...,x6, and these
-% are fed into both the forward and the backward layers of the network. For each
-% time step, the network generates an output, represented by
-% y1,y2,...,y6y1,y2,...,y6, which is influenced by the information from both the
-% past and the future context as learned by the network.
-
-% The unique aspect of this architecture is its ability to preserve information
-% from both ends of the sequence, allowing for more complex patterns to be
-% recognized that a unidirectional LSTM might not capture. This is particularly
-% useful in tasks like time series forecasting, natural language processing, and
-% other sequence-based problems where the context from both directions can be
-% highly informative for making predictions or understanding the sequence as a
-% whole.
-

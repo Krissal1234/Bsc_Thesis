@@ -4,7 +4,7 @@
 
 \section{Class Establishment}
 This study pursued a multi-class classification strategy, targeting three fundamental skateboard
-tricks: ollie, pop shuvit and kickflip. These tricks were selected based on two primary criteria. Firstly, they are often associated with the first
+tricks: ollie, pop-shuvit and kickflip. These tricks were selected based on two primary criteria. Firstly, they are often associated with the first
 tricks learnt by beginners, highlighting their role in foundational
 skateboarding skills. Secondly, their popularity within the skateboarding
 community, often performed in competitions emphasises their relevance, making
@@ -26,9 +26,9 @@ the dataset's diversity, additional data was obtained through direct
 communication with Hanxiao Chen, the author of the SkateboardAI paper
 \cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
 videos covering 15 distinct tricks. Given the wide range of tricks included in
-this dataset, many were beyond the scope of this study, therefore only a subset
-of these videos were selected and included in the final dataset. The final
-dataset consisted of 128 videos per class adding up to a total of 384 videos.
+this dataset, many were beyond the scope of this study, therefore this study
+only encorporated a subset of the this data in its final dataset. The final
+dataset included 128 videos per class, totalling 384 videos.
 
 \subsection{Labelling techniques}
 This study explores two primary labelling techniques: the folder-based and the
@@ -39,7 +39,7 @@ organisation method. On the other hand, the text-based approach, lists each
 video's path and corresponding label in a text file, providing more
 flexibility. Given the limited number of classes and manageable dataset size,
 this study selected the folder-based approach, considering the extra complexity
-of the text-based method unnecessary for this project.
+of the text-based method unnecessary for this project. 
 %maybe mention one hot here or in implmenetaiton
 
 \begin{figure}[h]
@@ -61,30 +61,43 @@ of the text-based method unnecessary for this project.
 \section{Preprocessing}
 
 \subsection{Frame Extraction}
+% Debating this section with the other section below it 
+Recognising complex human actions demands the examination of sequential data as
+opposed to relying on single frames or images
+\cite{ActionRecognitionDeepBi-DirectionalLSTM}. To illustrate this point,
+consider the example of a skateboarder executing a challenging trick like the
+"Kickflip", as depicted in Figure \ref{fig:SingleVsMultiFrameKickflip}. By
+feeding an AI model a single image of this trick as shown in Figure
+\ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as another
+trick due to its subjective nature. Whereas, by providing the model with a sequence of frames, as
+illustrated in Figure \ref{fig:MultiFrameKickflip}, the entire trick
+sequence is captured including the wind-up, the trick and the landing, capturing
+actions such as foot placement and board rotation, collectively define the
+skateboard trick.
 
-Given that the nature of this research is an activity recognition task, this
-study employed frame extraction to convert videos into sequences of frames
-suitable for processing by ML models. This technique aims to extract a subset of
-frames that encapsulate the essential dynamics of the activity. Thus, in the
-context of skateboard trick recognition, the frames should capture the entire
-sequence, including the wind-up, the trick and the landing. 
-
-\begin{figure}[h!]
-	\centering
-	\begin{subfigure}{\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
-		\caption{Optical flow visualisation of a kickflip sequence, highlighting regions with significant motion.}
-	\end{subfigure}
-	\begin{subfigure}{\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
-		\caption{Extracted frames from the sequence based on the greatest weightings from the optical flow representation.}
-	\end{subfigure}
-	
-	\caption{Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.}
-	\label{fig:kickflip-sequence-opticalflow}
+\begin{figure}[h]
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.57\linewidth]{content/chapters/2_background/figures/Tricks/single.png}
+    \caption{A Single Frame of a "Kickflip".}
+    \label{fig:singleFrameKickflip}
+  \end{subfigure}
+  \begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=1\linewidth]{content/chapters/2_background/figures/Tricks/KickflipFrames.PNG}
+    \caption{Multiple Frames of a "Kickflip".}
+    \label{fig:MultiFrameKickflip}
+  \end{subfigure}
+  \caption{Comparison of a Single Frame and Multiple Sequential Frames.}
+  \label{fig:SingleVsMultiFrameKickflip}
 \end{figure}
+
+% Given that the nature of this research is an activity recognition task, this
+% study employed frame extraction to convert videos into sequences of frames
+% suitable for processing by ML models. This technique aims to extract a subset of
+% frames that encapsulate the essential dynamics of the activity. Thus, in the
+% context of skateboard trick recognition, the frames should capture the entire
+% sequence, including the wind-up, the trick and the landing. 
 
 Two primary frame extraction techniques were explored, uniform sampling and
 optical flow method. The former technique evenly splits a video into its
@@ -95,6 +108,24 @@ them. With this approach, frames with the greatest weightings are chosen for
 extraction, resulting in capturing frames with the most movement. An example of
 this technique being applied to a skate trick can be observed in Figure
 \ref{fig:kickflip-sequence-opticalflow}.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
+        \caption{Optical flow visualisation of a kickflip sequence, highlighting regions with significant motion.}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
+        \caption{Extracted frames from the sequence based on the greatest weightings from the optical flow representation.}
+    \end{subfigure}
+    
+    \caption{Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.}
+    \label{fig:kickflip-sequence-opticalflow}
+\end{figure}
+
 
 
 \subsection{Data Augmentation}
@@ -115,7 +146,12 @@ within a standardised range.
 
 
 \subsection{Feature Extraction with Transfer Learning}
-%Feature extraction plays a crucial role in the classification of complex data, particularly in the domain of action recognition tasks \cite{SkateboardAIPaper, HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study incorporates transfer learning by utilising pre-trained CNNs to extract relevant features from video frames before passing them through the main sequence model.
+%Feature extraction plays a crucial role in the classification of complex data,
+%particularly in the domain of action recognition tasks \cite{SkateboardAIPaper,
+%HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study
+%incorporates transfer learning by utilising pre-trained CNNs to extract
+%relevant features from video frames before passing them through the main
+%sequence model.
 
 This research leveraged two well-established CNNs for this task: VGG16  and
 ResNet50. Both models were pre-trained on the large ImageNet dataset
@@ -125,9 +161,9 @@ were then fine-tuned to the domain of skateboard trick recognition. Table
 
 {\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman \cite{VGG}, is
 a CNN architecture known for its success in image classification and feature
-extraction for action recognition tasks. This model is relatively simple made up
-of 16 convolutional and fully connected (FC) with repeated use of 3x3
-convolutional filters to preserve spatial information within frames.%
+extraction for Action Recognition tasks. This model is relatively simple made up
+of 16 convolutional and fully connected (FC) layers with repeated use of 3x3
+convolutional filters to preserve spatial information.
 Furthermore, VGG16 has proved to be effective for feature extraction in previous
 literature\cite{SkateboardAIPaper}, supporting its suitability in this study.
 
@@ -156,14 +192,8 @@ caused by many layers.
 	\caption{Characteristics of Transfer Learning Models VGG16 and ResNet50}
 \end{table}
 
-%\begin{figure}[h!]
-%	\centering
-%	\includegraphics[width=0.85\textwidth]{content/chapters/4_Methodology/figures/vgg-architecture.png}
-%	\caption{VGG16 architecture reproduced from \cite{visoVeryDeep}.}
 
-%\end{figure}
-
-The final four fully-connected (FC) layers of these models which are typically
+The final four fully-connected (FC) layers of these models, which are typically
 used for classification were removed. This was crucial to adapt these models for
 feature extraction, as the aim was not to classify each frame of the video, but
 to extract a collection of features that could help sequence models gain a
@@ -174,7 +204,7 @@ objects and even actions themselves.
 
 \subsection{Dimensionality Reduction}
 The use of pre-trained models used in this study generate high-dimensional
-feature vectors, while these features capture valuable information, a large
+feature vectors. While these features capture valuable information, a large
 number of dimensions can lead to challenges. Firstly, it increases the
 computational costs of training models. Secondly, it could potentially lead to
 the "curse of dimensionality" as explained by Venkat (2018)
@@ -192,9 +222,8 @@ architectures investigated are as follows.
 
 \begin{enumerate}
 	\item \textbf{VGG16-LSTM:} This architecture leverages the pre-trained VGG16
-	model to extract features, which are then fed to an LSTM for sequence
-	modelling. LSTMs are powerful for capturing long-term dependencies within
-	sequential data such as skateboarding tricks.
+	model to extract features, which are then connected to an LSTM for sequence
+	modelling.
 	\item \textbf{ResNet50-LSTM:} This architecture utilises the deeper ResNet50
 	pre-trained CNN for feature extraction, followed by an LSTM for sequence
 	modelling. The increased depth of ResNet50 potentially allows it to learn
@@ -203,10 +232,21 @@ architectures investigated are as follows.
 	feature extraction and a BiLSTM network for sequence modelling. BiLSTMs are
 	known to be able to learn dependencies in both directions of a sequence,
 	which could be useful for capturing subtle details in skateboard tricks.
-	\item \textbf{ResNet50-BiLSTM:} This architecture combines ResNet50 for feature extraction with a BiLSTM network. This combination leverages the potential advantages of deeper feature learning and the bi-directional capabilities of BiLSTMs.
+	\item \textbf{ResNet50-BiLSTM:} This architecture combines ResNet50 for
+	feature extraction with a BiLSTM network. This combination leverages the
+	potential advantages of deeper feature learning and the bi-directional
+	capabilities of BiLSTMs.
 \end{enumerate}
 
-The effectiveness of these models in prior research for video-based action recognition tasks motivated their selection for this study. For instance, Orozco et al. (2020) achieved an outstanding 91.93\% accuracy using a VGG-LSTM architecture \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach}. Additionally Chen's work \cite{SkateboardAIPaper} explored all four of these models in the context of skateboard trick classification and demonstrated potential for competitive results. While this study also explored attention mechanisms within these models, the main aim is to build upon existing knowledge and potentially achieve better performance.
+The effectiveness of these models in prior research for video-based Action
+Recognition tasks motivated their selection for this study. For instance, Orozco
+et al. (2020) achieved 91.93\% accuracy using a VGG-LSTM
+architecture \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach}.
+Additionally, Chen's work \cite{SkateboardAIPaper} explored all four of these
+models in the context of skateboard trick classification and demonstrated the
+potential for competitive results. While this study also explored attention
+mechanisms within these models, the main aim is to build upon existing knowledge
+and potentially achieve better performance.
 
 \begin{figure}[h] 
 	\centering
@@ -217,17 +257,18 @@ The effectiveness of these models in prior research for video-based action recog
 
 \section{Evaluation Methods}
 To thoroughly evaluate the performance of the proposed models, this study
-employed various evaluation metrics, including accuracy, precision, recall,
-F1-score and confusion matrix. These metrics provided valuable insights into the
+employed various evaluation metrics, including accuracy, precision, recall and
+F1-score. These metrics provided valuable insights into the
 model's ability to correctly classify different tricks. 
 
-The above mentioned metrics depend on the following definitions, described in the context of the "kickflip" class.
+The above mentioned metrics depend on the following definitions, described in
+the context of the "kickflip" class and tabulated in a confusion matrix.
 
 \begin{itemize}
-	\item \textbf{True Positive (TP)}: The model correctly identified a video as containing a kickflip.
-	\item \textbf{True Negative (TN)}: The model incorrectly identified a video as containing a kickflip.
-	\item \textbf{False Positive (FP)}: The model correctly identified a video as not containing a kickflip.
-	\item \textbf{False Negative (FN)}: The model incorrectly identified a video as not containing a kickflip.
+	\item \textbf{True Positive (TP)}: The number of instances that the model correctly identified a video as containing a kickflip.
+	\item \textbf{True Negative (TN)}: The number of instances that the model incorrectly identified a video as containing a kickflip.
+	\item \textbf{False Positive (FP)}: The number of instances that the model correctly identified a video as not containing a kickflip.
+	\item \textbf{False Negative (FN)}: The number of instances that the model incorrectly identified a video as not containing a kickflip.
 \end{itemize}
 
 
