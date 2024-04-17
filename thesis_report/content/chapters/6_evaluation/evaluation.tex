@@ -54,3 +54,20 @@ into the sequence models. Table .. showcases the results
 
 %section in this chapter indicating how long it takes to proproscess and applyu the model to a singular video 
 %to determine if its applicatble to be real-time
+
+
+\section{Applicability In Real-Time applications}
+For real-time applications like analysing skatebaord events, the speed at which
+data is processed is crucial. To evaluate the models applicability in such
+applications, this study measured the time taken to classify a single video for
+each architecture.
+
+%include results
+
+The slow processing speeds outlined in Table is caused by the computational
+expensive video analysis pipeline. This pipeline involves various steps: frame
+extraction using optical flow, feature extraction with models like ResNet50 or
+VGG16, dimensionality reduction using PCA and finally classifying the video from
+the sequence model.
+While they are relatively slow, they are still applicable in real-time events
+% kthen look into times between tricks 
