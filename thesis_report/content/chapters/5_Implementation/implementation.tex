@@ -2,27 +2,49 @@
 \chapter{Implementation}
 
 \section{Development Environment}
-{\bf Python:} Python's large database of libraries, along with its wide use in Machine Learning, made it the ideal choice for developing this artefact. Furthermore, its large and active community made tackling problems and troubleshooting issues simpler. Prior experience using Python also contributed to this decision.
+{\bf Python:} Python's large database of libraries, along with its wide use in
+Machine Learning, made it the ideal choice for developing this artefact.
+Furthermore, its large and active community made tackling problems and
+troubleshooting issues simpler. Prior experience using Python also contributed
+to this decision.
 
-{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine Learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models, pre-defined layers and training and evaluation abstractions.
+{\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical
+computation and Machine Learning applications. It provides a rich toolset that
+allows for efficient development, training and deployment of Machine Learning
+models. Notably, Tensorflow comes with the Keras API, further simplifying the
+creation development by offering wide ranger of tools such as access pre-trained
+models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers
 
-{\bf OpenCv (cv2):} This open source library aided
+{\bf OpenCv (cv2):} This open source library played a crucial role in the
+computer vision components of development, offering essential tools related to
+video processing, particularly during the frame extraction phase.
 
-{\bf Matplotlib:} This research made use of Matplotlib for its plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout.
+{\bf Matplotlib:} This research made use of Matplotlib for its plotting and data
+visualisation functions, heavily used during the evaluation stage to properly
+visualise results or any other insights gained throughout.
 
 \section{Dataset Split and Configuration}
-This study opted for splitting the original dataset into 80\% 10\% and 10\% for
-training, validation and testing sets respectively, in order to prioritise
-training data due to limited dataset size. Additionally, this study adopted a
-sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
-methodology employed by Chen (2023) \cite{SkateboardAIPaper}. Chen's research
-demonstrated that this combination yielded superior accuracy compared to other
-configurations, involving shorter sequence length and varying frame sizes. To
-validate these findings, this research conducted experiments using a sequence
-length of 20 with 224x224 pixel sized frames. The results confirmed that a
-sequence length of 45 coupled with a larger frame size, is indeed more effective
-at achieving higher accuracies.
+This study opted for splitting the original dataset into training, validation
+and testing sets, comprising 80\% 10\% and 10\% respectively, in order to
+prioritise training data due to limited dataset size. In consideration of Chen's
+(2023) \cite{SkateboardAIPaper} research, which advocated for a sequence length
+of 45 frames per video, with each frame sized at 299x299 pixels, these
+parameters were initially evaluated. However, experimentation with such
+parameters revealed significant computational costs and marginal improvement in
+results. Consequently, this research struck a balance between costs and
+performance, by opting for a sequence length of 20 and a frame size of 224x224
+pixels.
+
+
+%qthis study adopted a sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
+% methodology employed by Chen (2023) \cite{SkateboardAIPaper}. Chen's research
+% demonstrated that this combination yielded superior accuracy compared to other
+% configurations, involving shorter sequence length and varying frame sizes. To
+% validate these findings, this research conducted experiments using a sequence
+% length of 20 with 224x224 pixel sized frames. The results confirmed that a
+% sequence length of 45 coupled with a larger frame size, is indeed more effective
+% at achieving higher accuracies.
 
 
 %  The training set was used by the models to
@@ -241,11 +263,11 @@ achieved the best validation accuracy within each architecture. Additionally, th
 vertical dashed lines indicate the epoch at which the early stopping callback
 restored the models weights, preventing overfitting.
 
-All models employed the categorical-crossentropy loss
-function during training. This function measures the discrepancies between the
-predicted probabilities and the actual one-hot encoded labels. Furthermore, the
-output layers utilised softmax activation functions to align them with the
-one-hot encoded labels. Furthermore,
+All models employed the categorical-crossentropy loss function during training.
+This function measures the discrepancies between the predicted probabilities and
+the actual one-hot encoded labels. Furthermore, the output layers utilised
+softmax activation functions to align them with the one-hot encoded labels.
+Furthermore,
 %mention that they all used
 
 \subsection{Training Process and Hyperameter Tuning}
