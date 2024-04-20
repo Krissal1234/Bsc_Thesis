@@ -5,11 +5,11 @@
 {\bf Python:} Python's large database of libraries, along with its wide use in Machine Learning, made it the ideal choice for developing this artefact. Furthermore, its large and active community made tackling problems and troubleshooting issues simpler. Prior experience using Python also contributed to this decision.
 
 {\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical computation and Machine Learning applications. It provides a rich toolset that allows for efficient development, training and deployment of Machine Learning models. Notably, Tensorflow comes with the Keras API, further simplifying the creation development by offering wide ranger of tools such as access pre-trained models, pre-defined layers and training and evaluation abstractions.
-%keras provides us with pretrained models and layers 
+%keras provides us with pretrained models and layers
 
-{\bf OpenCv (cv2):} This open source library aided  
+{\bf OpenCv (cv2):} This open source library aided
 
-{\bf Matplotlib:} This research made use of Matplotlib for its plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout. 
+{\bf Matplotlib:} This research made use of Matplotlib for its plotting and data visualisation functions, heavily used during the evaluation stage to properly visualise results or any other insights gained throughout.
 
 \section{Dataset Split and Configuration}
 This study opted for splitting the original dataset into 80\% 10\% and 10\% for
@@ -22,7 +22,7 @@ configurations, involving shorter sequence length and varying frame sizes. To
 validate these findings, this research conducted experiments using a sequence
 length of 20 with 224x224 pixel sized frames. The results confirmed that a
 sequence length of 45 coupled with a larger frame size, is indeed more effective
-at achieving higher accuracies. 
+at achieving higher accuracies.
 
 
 %  The training set was used by the models to
@@ -70,7 +70,7 @@ caused by colour variations. The cv2 function
 \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation
 between these frames, using parameters such as pyramid scale, levels, winsize,
 iterations that can be found in Appendix %add reference to appendix and place
-values. 
+values.
 
 The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors
 returned by the optical flow function into polar coordinates, discarding the
@@ -119,7 +119,7 @@ augmentation parameters.
 				   linenos=true,
 				   xleftmargin=21pt,
 				   tabsize=4]{js}
-	{     
+	{
 		"augment_params_1" = {
 			'width_shift_range': 0.1,
 			'height_shift_range': 0.1,
@@ -128,11 +128,11 @@ augmentation parameters.
 			'zoom_range': 0.2,
 			'brightness_range': (0.7, 1.3),
 			'channel_shift_range': 20.0,
-			'fill_mode': 'nearest'  
+			'fill_mode': 'nearest'
 			}
 	}
 	\end{minted}
-	\caption{Augmentation Parameters} 
+	\caption{Augmentation Parameters}
 	\label{aug-params}
 	\end{figure}
 
@@ -149,7 +149,7 @@ The main algorithm consisted of an iterative process responsible for resizing an
 normalising all frames before input to the pre-trained CNNs for feature
 extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to
 satisfy the VGG and ResNet input image requirements, before performing min-max
-normalisation on each frame by diving the pixel intensities values by 255. 
+normalisation on each frame by diving the pixel intensities values by 255.
 
 Once resized and normalised, the pre-trained CNNs extracted features from each
 frame. With the final classification layers removed, the extracted features of a
@@ -168,13 +168,43 @@ features with every new session.
 
 
 \subsection{PCA Dimensionality Reduction}
-This research, utilised the Principle Component Analysis (PCA) dimensionality
-reduction technique, which was crucial in refining the feature sets produced by
-the pre-trained models. PCA a statistical technique that utilises orthogonal
-transformation to convert observations of variables that may be correlated into
-a set of unrelated variables called principle components. These principle
-components are reorganised in a way that the first few components attempt to
-portray maximum variance from the original data \cite{dimensionality_reduction}.
+This research, leveraged Principle Component Analysis (PCA) dimensionality
+reduction, a technique, crucial in refining the feature sets produced by the
+pre-trained models. PCA a statistical technique that transforms features into a
+lower-dimensional space, where the components, known as principle components are
+orthogonal to each other. These principle components are reorganised in a way
+that the first few components attempt to portray maximum variance from the
+original data \cite{dimensionality_reduction}.
+
+This research, aimed to achieve 90\% to 95\% variance retention when determining
+the optimal number of components for reduction. This involved plotting two
+explained variance plots: one for the output of pretraining with VGG16 and
+another for the output of ResNet50, as illustrated in Figure
+\ref{fig:pca_plots}. These plots display the cumulative explained variance
+against the number of components, allowing approximate selection of the numebr
+of components by examining the 90\% to 95\% percentiles of the plots. Upon
+examining both plots depicted in Figure\ref{fig:pca_plots}, 2514 components were
+chosen for VGG, while 278 were selected for ResNet50. Consequently, this results
+in final feature shapes of (20, 2514) and (20, 278) respectively.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_vgg.png} % replace "image1" with your file name
+			\caption{Caption for image 1.}
+			\label{fig:pca_vgg}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}[b]{0.45\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_vgg.png} % replace "image2" with your file name
+			\caption{Caption for image 2.}
+			\label{fig:pca_resnet}
+	\end{subfigure}
+	\caption{Overall caption for both images.}
+	\label{fig:pca_plots}
+\end{figure}
 %most of the important information
 %explain how we got to the constant 2514 for VGG maybe? the mathematical
 %explain better results from  using pca either on both vgg and resnet or just resnet after testing
@@ -189,7 +219,7 @@ Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
 leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
 selecting parameter combinations such as learning rate, dropout
-rate and neuron count. 
+rate and neuron count.
 
 This iterative approach enables Optuna to navigate the search space and converge
 on optimal hyperparameters for a specific model and dataset. This library was
@@ -215,7 +245,8 @@ All models employed the categorical-crossentropy loss
 function during training. This function measures the discrepancies between the
 predicted probabilities and the actual one-hot encoded labels. Furthermore, the
 output layers utilised softmax activation functions to align them with the
-one-hot encoded labels.
+one-hot encoded labels. Furthermore,
+%mention that they all used
 
 \subsection{Training Process and Hyperameter Tuning}
 
