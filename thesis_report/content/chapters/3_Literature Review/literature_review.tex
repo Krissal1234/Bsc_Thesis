@@ -91,36 +91,36 @@ In the realm of Skateboard trick classifiers, Shapiee et al (2020)
 \cite{skatePaper1} effectively employed data augmentation techniques to expand
 their dataset, demonstrating the application of these methods in improving model
 performance for trick classification.
-\subsubsection{Normalisation}
-After establishing the role of data augmentation in addressing the lack of data
-available, another important step in computer vision is data normalisation. This
-technique is essential for standardising the range and distribution of pixel
-values in an image and has been shown to increase model performance,
-\cite{RobustnessInMLNormalisation,RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Min-max normalisation is
-particularly effective in normalising pixel intensities to a 0-1 scale as
-follows:
+% \subsubsection{Normalisation}
+% After establishing the role of data augmentation in addressing the lack of data
+% available, another important step in computer vision is data normalisation. This
+% technique is essential for standardising the range and distribution of pixel
+% values in an image and has been shown to increase model performance,
+% \cite{RobustnessInMLNormalisation,RealWorldMicroGraphDataQualityNORMALIZATIONCITE}. Min-max normalisation is
+% particularly effective in normalising pixel intensities to a 0-1 scale as
+% follows:
 
-\begin{equation}
-	\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}
-\end{equation}
-While less common in computer vision due to its normality assumption,
-Z-score normalisation is defined as:
-\begin{equation}
-	\centering
-	\text{Z-score} = \frac{x - \mu}{\sigma}
-\end{equation}
-Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel
-values, and $\sigma$ is their standard deviation.
+% \begin{equation}
+% 	\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}
+% \end{equation}
+% While less common in computer vision due to its normality assumption,
+% Z-score normalisation is defined as:
+% \begin{equation}
+% 	\centering
+% 	\text{Z-score} = \frac{x - \mu}{\sigma}
+% \end{equation}
+% Here, $x$ represents the individual pixel value, $\mu$ is the mean of all pixel
+% values, and $\sigma$ is their standard deviation.
 
-The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored
-the impact of normalisation on classification accuracy. They demonstrated that,
-for 8-bit images, min-max normalisation outperformed Z-score, significantly
-enhancing classification accuracy. On the other hand, the study by de Raad et
-al. (2021) \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that
-the impact of normalisation on model performance varies depending on certain
-dataset characteristics. These contrasting conclusions presented by both studies
-suggest that while normalisation is an important preprocessing step, its
-application should be carefully adapted to the characteristics of the dataset.
+% The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored
+% the impact of normalisation on classification accuracy. They demonstrated that,
+% for 8-bit images, min-max normalisation outperformed Z-score, significantly
+% enhancing classification accuracy. On the other hand, the study by de Raad et
+% al. (2021) \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that
+% the impact of normalisation on model performance varies depending on certain
+% dataset characteristics. These contrasting conclusions presented by both studies
+% suggest that while normalisation is an important preprocessing step, its
+% application should be carefully adapted to the characteristics of the dataset.
 \subsubsection{Feature Extraction}
 Having optimised the distribution of pixel values through the normalisation
 process, the next crucial step is feature extraction. Xudong Jiang
@@ -203,7 +203,6 @@ resulting in a lower accuracy of 47.36\%. These findings show the potential of
 the CNN-LSTM approach, particularly for simpler datasets, highlighting the need
 for further investigation and optimisation for more complex datasets like
 HMDB-51.
-\clearpage
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.65 \textwidth]{content/chapters/3_Literature Review/figures/cnn-lstm.png}
@@ -274,34 +273,26 @@ skateboard tricks to train and refine models for accurate trick identification,
 as depicted by the studies Shapiee et al. (2020) \cite{skatePaper1} and  Hanciao
 Chen (2023) \cite{SkateboardAIPaper}.
 
-\subsection{Accelerometer-based approaches}
+\subsection{Accelerometer-based approach }
 
-The study by Abdullah et al. (2021)
-\cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
-of a custom dataset comprising six skateboard tricks most commonly executed
-in competitive events. Amateur skateboarders performed each trick five times on
-a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
-the signals produced. The researchers capture six signals for each trick;
-linear accelerations along the x, y, and z axes (aX, aY, aZ) and
-angular accelerations along the same axes (gX, gY, gZ). They then opt for the
-unique approach of concatenating all six signals onto a single image
-corresponding to one trick, employing two input image transformations: raw data
-(RAW) and Continuous Wavelet Transform (CWT).
+% The study by Abdullah et al. (2021)
+% \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
+% of a custom dataset comprising six skateboard tricks most commonly executed
+% in competitive events. Amateur skateboarders performed each trick five times on
+% a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
+% the signals produced. The researchers capture six signals for each trick;
+% linear accelerations along the x, y, and z axes (aX, aY, aZ) and
+% angular accelerations along the same axes (gX, gY, gZ). They then opt for the
+% unique approach of concatenating all six signals onto a single image
+% corresponding to one trick, employing two input image transformations: raw data
+% (RAW) and Continuous Wavelet Transform (CWT).
 
-With the application of six transfer learning models on this data, Abdullah et
-al. \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} reports
-exceptionally high accuracies, achieving a 100\% test accuracy over multiple
-models. While these results are remarkable, very high levels of accuracy are
-rare in ML applications and are typically associated with models that may be
-overfitting the data. Recognising the rarity of such high accuracies, this study
-will consider these findings and efforts will be made to ensure a
-robust model by employing techniques to avoid overfitting such as early-stopping
-and the use of a diverse dataset \cite{AnOverviewOfOverfittingAndItsSolutions}.
-% the results show that RAW and CWT input
-% images on MobileNet, MobileNetV2 and ResNet101 models achieved favourable
-% accuracy. However, the CWT-MobileNet-Optimised SVM pipeline was deemed the best
-% due to its reduction in computational time.
-
+% With the application of six transfer learning models on this data, Abdullah et
+% al. \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} reports
+% exceptionally high accuracies, achieving a 100\% test accuracy over multiple
+% models. While these results are remarkable, very high levels of accuracy are
+% rare in ML applications and are typically associated with models that may be
+% overfitting the data.
 
 The study by Corrêa et al. (2017)
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}, obtained their sample
@@ -320,6 +311,12 @@ function. Finally, the study achieved high accuracies, with ANNs X, Y and Z
 achieving 94.8\%, 96.7\% and 98.7\%, respectively, while the
 combined ANN XYZ achieved an accuracy of 92.8\%.
 
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65 \textwidth]{content/chapters/3_Literature Review/figures/signals-tricks.png}
+	\caption{add caption}
+	\label{fig:signals}
+  \end{figure}
 
 \subsection{Computer Vision-based Approaches}
 The study by Shapiee et al. (2020) \cite{skatePaper1} leverages a custom data set
@@ -331,26 +328,25 @@ introduced an additional 2,250 images, achieving 3,000 images in their data set.
 On the other hand, Chen (2023) \cite{SkateboardAIPaper} compiled a comprehensive
 data set by collecting videos from multiple platforms, including YouTube,
 Twitter and Instagram. Furthermore, Chen trained the model using 15 fundamental
-tricks commonly observed in competitive settings. The researcher collected 50
+tricks commonly observed in competitive settings, illustrated in Figure \ref{fig:tricks}. The researcher collected 50
 videos per trick, summing up to a total number of 750 videos. Of these, 45
 videos per trick were allocated for training, and the remaining 5 were reserved
 for validation.
 
 
-%Maybe move to preprocessing
-% Data augmentation techniques are popular in studies with relatively limited
-% datasets. Techniques such as flipping, rotating, scaling and colour manipulation
-% not only enhance the size of the original dataset but also lower the likelihood
-% of the model overfitting \cite{DataAugmentationCanImproveRobustness},
-% \cite{AnOverviewOfOverfittingAndItsSolutions}.
-%Mention more here !!!!
-Shapiee et al. \cite{skatePaper1} utilises data augmentation
-techniques with the application of three rotations to the images: horizontal rotation,
-positive 90°rotation and negative 90°rotation. The researchers experimented on
-three Transfer learning models: MobileNet, NASNetMobile and NASNetLarge, each
-evaluated using a k-Nearest Neighbor (k-NN) classifier. As a result, the models
-demonstrated high classification accuracies, with MobileNet achieving
-95\%, NASNetMobile 92\% and NASNetLarge 90\%.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.75 \textwidth]{content/chapters/3_Literature Review/figures/chen-tricks.png}
+	\caption{Tricks selected for Chen's models. Reproduced from Chen (2023) \cite{SkateboardAIPaper}}
+	\label{fig:tricks}
+  \end{figure}
+% Shapiee et al. \cite{skatePaper1} utilises data augmentation
+% techniques with the application of three rotations to the images: horizontal rotation,
+% positive 90°rotation and negative 90°rotation. The researchers experimented on
+% three Transfer learning models: MobileNet, NASNetMobile and NASNetLarge, each
+% evaluated using a k-Nearest Neighbor (k-NN) classifier. As a result, the models
+% demonstrated high classification accuracies, with MobileNet achieving
+% 95\%, NASNetMobile 92\% and NASNetLarge 90\%.
 
 
 %Recurrent Neural Networks (RNNs) and Long Short-Term Memory Networks (LSTMs) are

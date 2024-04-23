@@ -48,7 +48,7 @@ models trained using SGD are less vulnerable to overfitting.
 
 \subsection{The Effect of Data Augmentation}
 This research, also compared the effects of Augmenting data before feeding it
-into the sequence models. Table .. showcases the results
+into the sequence models. Table.. showcases the results
 
 
 
@@ -65,8 +65,8 @@ The slow processing speeds outlined in Table is caused by the computational
 expensive video analysis pipeline. This pipeline involves various steps: frame
 extraction using optical flow, feature extraction with models like ResNet50 or
 VGG16, dimensionality reduction using PCA and finally classifying the video from
-the sequence model.
-While they are relatively slow, they are still applicable in real-time events
+the sequence model. While they are relatively slow, they are still applicable in
+real-time events
 % then look into times between tricks
 
 %discussion
@@ -77,4 +77,19 @@ While they are relatively slow, they are still applicable in real-time events
 \section{Discussion}
 
 \subsection{Challenges}
-Trained models often struggled to differentiate between both the ollie and kickflip, as
+Trained models often encountered difficulty in differentiating between both the
+ollie and kickflip compared to the pop shuvit. This challenge likely arises to
+their shared visual characteristics. Both the ollie and the kickflip involve
+common elements such as the initial pop of the skatebaord and the absence of
+rotation on the y-axis, which distinguishes them to the pop shuvit. The
+confusion matrix shown in Figure \ref{fig:resnet-lstm-confusion} presents the
+ResNet-LSTM model exhibiting slightly better classification accuracy for pop
+shuvits compared to ollies and kickflips.
+
+
+\begin{figure}[h]
+	\centering
+  \includegraphics[width=0.7 \textwidth]{content/chapters/6_evaluation/figures/resnet-lstm-cm.png}
+  \caption{ResNet50-LSTM Confusion Matrix}
+  \label{fig:resnet-lstm-confusion}
+\end{figure}

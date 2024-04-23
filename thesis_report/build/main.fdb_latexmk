@@ -1,18 +1,18 @@
 # Fdb version 3
-["bibtex main"] 1713811797 "main.aux" "main.bbl" "main" 1713812019
-  "main.aux" 1713801089 32 3985256e7290058c681f74d7a3565a19 ""
+["bibtex main"] 1713904182 "main.aux" "main.bbl" "main" 1713904195
+  "main.aux" 1713904174 27635 9998892eac7ad220246bcd32bc57c3a1 ""
   (generated)
   "main.bbl"
   "main.blg"
-["cusdep acn acr build/main"] 1713811936 "build/main.acn" "build/main.acr" "build/main" 1713812019
-  "build/main.acn" 1713812017 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+["cusdep acn acr build/main"] 0 "build/main.acn" "build/main.acr" "build/main" 1713904195
+  "build/main.acn" 1713904192 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "build/main.acr"
-["cusdep glo gls build/main"] 1713811936 "build/main.glo" "build/main.gls" "build/main" 1713812019
-  "build/main.glo" 1713812017 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+["cusdep glo gls build/main"] 0 "build/main.glo" "build/main.gls" "build/main" 1713904195
+  "build/main.glo" 1713904192 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
   (generated)
   "build/main.gls"
-["lualatex"] 1713812015 "main.tex" "build/main.pdf" "main" 1713812019
+["lualatex"] 1713904191 "main.tex" "build/main.pdf" "main" 1713904195
   "/home/krissal1234/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lato-black.luc" 1713801403 1537718 57ae89a1035d4cde76f45bd4ce7b406f ""
   "/home/krissal1234/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lato-blackitalic.luc" 1713801407 1613940 1fe106fd51afa559b6d2ccfea341113e ""
   "/home/krissal1234/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lato-bold.luc" 1713801399 1514696 d39ff2641de7eace266e7566064c21a5 ""
@@ -265,14 +265,14 @@
   "_minted-main/C101125E6B2A237BCBC841B1C104B429EBB8F0E703F74D24504D823C7A1841BD.pygtex" 1713794574 1287 f5aceb8ffbbf358803d25509b0d9e989 ""
   "_minted-main/default.pygstyle" 1713794574 6428 74aba51736a5bc6590f8f7dd413c6f27 ""
   "build/main.acr" 1713811936 0 d41d8cd98f00b204e9800998ecf8427e "cusdep acn acr build/main"
-  "build/main.aux" 1713812018 27480 e000d8a7fe8640487cb49a36bf4bb12c "lualatex"
+  "build/main.aux" 1713904194 27658 f25cf862f542f340b835e9a7cc17229a "lualatex"
   "build/main.gls" 1713811936 0 d41d8cd98f00b204e9800998ecf8427e "cusdep glo gls build/main"
-  "build/main.lof" 1713812018 2874 785fc698635b3d665f324d8cb0dbd5e0 "lualatex"
-  "build/main.lot" 1713812018 309 7c1ec8980a04de2aa60f0d2969f4a7d5 "lualatex"
-  "build/main.out" 1713812018 10306 cc661581536326f9183e99c89dc04d8e "lualatex"
-  "build/main.pyg" 1713812018 258 c101125e6b2a237bcbc841b1c104b429 "lualatex"
-  "build/main.run.xml" 1713812018 2402 1c70c1f2f4a0d7b3449ebcdcd7fc17cb "lualatex"
-  "build/main.toc" 1713812018 5812 e6e19053913b150246de9be68767d0ba "lualatex"
+  "build/main.lof" 1713904194 3294 affb19c4af47986e15a53d75694f97ee "lualatex"
+  "build/main.lot" 1713904194 309 d69a225a6ccd1f19e85ca9b6c99a5727 "lualatex"
+  "build/main.out" 1713904194 10521 6998cfbe7ea55e856ba64ee135aec48f "lualatex"
+  "build/main.pyg" 1713904194 258 c101125e6b2a237bcbc841b1c104b429 "lualatex"
+  "build/main.run.xml" 1713904194 2402 1c70c1f2f4a0d7b3449ebcdcd7fc17cb "lualatex"
+  "build/main.toc" 1713904194 5899 9d4b7b79d4399c48f230227c582af1c2 "lualatex"
   "content/abstract.tex" 1713794574 61 80ce7639f9723bfe0c4df3df3e582924 ""
   "content/acknowledgements.tex" 1713811453 78 abb40c0f782fea90f917efc3c7d0bf36 ""
   "content/acronyms.tex" 1713802673 258 77d7cd5e8ec515e92df6f7675b045aaf ""
@@ -280,15 +280,17 @@
   "content/appendices/appendix_b.tex" 1713794574 20 c6f42b130347c1fd362c3fa1d7b9bf2b ""
   "content/chapters/1_introduction/figures/graph.png" 1713794574 53906 aa7d26bfa5fae0302bf18b6a6d8e6707 ""
   "content/chapters/1_introduction/introduction.tex" 1713794574 6118 c3548ee88300e7d204c9417a52ff6caa ""
-  "content/chapters/2_background/background.tex" 1713794574 16245 2259bc7a1a4a53d9a8b838d3233c71d0 ""
+  "content/chapters/2_background/background.tex" 1713904167 16225 28dee8a202d45c760be2d6f7e6b293b7 ""
   "content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png" 1713794574 129538 db1d061b4b437cc5018adaa1936ecfb6 ""
   "content/chapters/2_background/figures/Tricks/KickflipFrames.PNG" 1713794574 288297 01a3d4313c19bc276e2e93ea3feec34f ""
   "content/chapters/2_background/figures/Tricks/single.png" 1713794574 115419 1d15fb43a9659a5e38f55753f96e29a6 ""
   "content/chapters/2_background/figures/bilstm_structure.png" 1713794574 97730 9eb083edc5e0afa79fbb36b29aa4765e ""
   "content/chapters/2_background/figures/cnn_arch.png" 1713794574 15175 0e2b1b26aae27d0f0e3a966b2e5ab85f ""
   "content/chapters/2_background/figures/lstm_architecture.jpg" 1713794574 35074 c0b7aa94b2811124f3eb6f7cb08d1f84 ""
+  "content/chapters/3_Literature Review/figures/chen-tricks.png" 1713901774 297468 41671ad5e06f364e2da20627f1a63bb2 ""
   "content/chapters/3_Literature Review/figures/cnn-lstm.png" 1713794574 80003 b8f4757322809366e285e31e24e9a02e ""
-  "content/chapters/3_Literature Review/literature_review.tex" 1713794574 22857 a1df0b7141c97ab986e52b29cea80b7e ""
+  "content/chapters/3_Literature Review/figures/signals-tricks.png" 1713902081 538013 d0e41b31533776c3e00726c56c99f108 ""
+  "content/chapters/3_Literature Review/literature_review.tex" 1713902404 22507 9e6e30f0c6a64ed843cc745f762e52ab ""
   "content/chapters/4_Methodology/figures/architecture.png" 1713794574 80436 7c7b31877c35130c9fe51ff2e2452c6c ""
   "content/chapters/4_Methodology/figures/folder-based-label.jpg" 1713794574 28107 c63ccad83668ecd088dbb3ead08d9e34 ""
   "content/chapters/4_Methodology/figures/kickflip_sequence.jpg" 1713794574 94304 3de65702e72b741870f04859c026dd77 ""
@@ -303,14 +305,15 @@
   "content/chapters/5_Implementation/figures/pca_vgg.png" 1713794574 37013 a89ecb1757e14a9e3e2204efcb0fec3d ""
   "content/chapters/5_Implementation/figures/unaugmented_frames.jpg" 1713794574 156795 74550bd927b3e48563a773770027a37a ""
   "content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg" 1713794574 121011 24ff487163312cd47eb5e4d839bfdb09 ""
-  "content/chapters/5_Implementation/implementation.tex" 1713794574 15522 68762127b0e9bc51b6c314ebcd9e4166 ""
-  "content/chapters/6_evaluation/evaluation.tex" 1713812013 3185 9b3486267e1273c6d59e9bc62eea8ec3 ""
+  "content/chapters/5_Implementation/implementation.tex" 1713898168 15999 2b2681e953800290649b0e6848c65945 ""
+  "content/chapters/6_evaluation/evaluation.tex" 1713903512 4021 b0c80c968832c80de7fed0caebcb4d7b ""
+  "content/chapters/6_evaluation/figures/resnet-lstm-cm.png" 1713898415 55176 b9698a1cf2dd644b8a20dae4f9a9cd7c ""
   "content/figures/ict_logo.pdf" 1713794574 14714 99681ca6b6fad145c01b6f1db74e30b8 ""
   "content/glossary.tex" 1713794574 316 003f7c6f329859b58e8f83949d83f553 ""
   "content/title.tex" 1713794574 1277 3e67dc56fa24a407b264f13785a30e96 ""
   "fict.cls" 1713794574 4608 984351c46c9ba842568b189e1b98d14b ""
-  "main.bbl" 1713811797 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
-  "main.tex" 1713794574 2331 eef53f199f2255c023205c0f38a18151 ""
+  "main.bbl" 1713904182 0 d41d8cd98f00b204e9800998ecf8427e "bibtex main"
+  "main.tex" 1713903610 2353 cf8efc75b437ed1afab4d150c7a749ea ""
   (generated)
   "build/main.acn"
   "build/main.aux"

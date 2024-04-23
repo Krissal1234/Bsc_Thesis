@@ -32,7 +32,7 @@
 \contentsline {subsubsection}{Transfer Learning}{12}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Activity Recognition Techniques}{12}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Advancements in Skateboard Trick Classification}{14}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Accelerometer-based approach }{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Accelerometer-based approach }{14}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Computer Vision-based Approaches}{15}{subsection.3.2.2}%
 \contentsline {chapter}{\numberline {4}Methodology}{17}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Class Establishment}{17}{section.4.1}%
@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{20}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{20}{subsection.4.3.5}%
 \contentsline {section}{\numberline {4.4}Adapted Models}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Architecture}{22}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Architecture}{21}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Evaluation Methods}{22}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Implementation}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Development Environment}{25}{section.5.1}%
@@ -69,5 +69,5 @@
 \contentsline {section}{\numberline {6.2}Applicability In Real-Time applications}{32}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Discussion}{33}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Challenges}{33}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Sample A}{34}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Sample B}{35}{chapter.8}%
+\contentsline {chapter}{\numberline {7}Sample A}{39}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Sample B}{40}{chapter.8}%

@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \blx@tocontentsinit {0}\cite {FundamentalsOfArtificialNeuralNetworksAndDeepLearning}\relax }}{6}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015) \blx@tocontentsinit {0}\cite {introductiontoCNNs}\relax }}{7}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces LSTM architecture. Reproduced from ...........\relax }}{8}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces BiLSTM Structure. Reproduced from Du et al. (2020) \blx@tocontentsinit {0}\cite {du2020power}\relax }}{9}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces BiLSTM Structure. Reproduced from Du et al. (2020) \blx@tocontentsinit {0}\cite {du2020power}\relax }}{8}{figure.caption.7}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \blx@tocontentsinit {0}\cite {LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}\relax }}{13}{figure.caption.8}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces add caption\relax }}{15}{figure.caption.9}%

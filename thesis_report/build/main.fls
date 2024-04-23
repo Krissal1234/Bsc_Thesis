@@ -605,6 +605,12 @@ INPUT ./content/chapters/3_Literature Review/literature_review.tex
 INPUT ./content/chapters/3_Literature Review/figures/cnn-lstm.png
 INPUT ./content/chapters/3_Literature Review/figures/cnn-lstm.png
 INPUT ./content/chapters/3_Literature Review/figures/cnn-lstm.png
+INPUT ./content/chapters/3_Literature Review/figures/signals-tricks.png
+INPUT ./content/chapters/3_Literature Review/figures/signals-tricks.png
+INPUT ./content/chapters/3_Literature Review/figures/signals-tricks.png
+INPUT ./content/chapters/3_Literature Review/figures/chen-tricks.png
+INPUT ./content/chapters/3_Literature Review/figures/chen-tricks.png
+INPUT ./content/chapters/3_Literature Review/figures/chen-tricks.png
 INPUT ./content/chapters/4_Methodology/methodology.tex
 INPUT ./content/chapters/4_Methodology/methodology.tex
 INPUT ./content/chapters/4_Methodology/figures/folder-based-label.jpg
@@ -666,6 +672,9 @@ INPUT ./content/chapters/5_Implementation/figures/Adam_optimiser.PNG
 INPUT ./content/chapters/5_Implementation/figures/SGD_optimiser.PNG
 INPUT ./content/chapters/5_Implementation/figures/SGD_optimiser.PNG
 INPUT ./content/chapters/5_Implementation/figures/SGD_optimiser.PNG
+INPUT ./content/chapters/6_evaluation/figures/resnet-lstm-cm.png
+INPUT ./content/chapters/6_evaluation/figures/resnet-lstm-cm.png
+INPUT ./content/chapters/6_evaluation/figures/resnet-lstm-cm.png
 INPUT ./content/appendices/appendix_a.tex
 INPUT ./content/appendices/appendix_a.tex
 INPUT ./content/appendices/appendix_b.tex

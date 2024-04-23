@@ -236,8 +236,7 @@ computational costs during training.
 
 \section{Hyperparameter Optimisation}
 The architectures described in this study represent the best versions of
-themselves after a number of iterations and optimisations. To speed up the time
-consuming task of hyperparameter tuning, this research leveraged the power of
+themselves after a number of iterations and optimisations. To speed up the time-consuming task of hyperparameter tuning, this research leveraged the power of
 Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
 leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
@@ -278,21 +277,23 @@ skateboard tricks, it required longer training times to converge.
 
 \subsection{Training Process and Hyperameter Tuning}
 Throughout the training phase, Optuna took the responsibility of initialising
-the model's hyperparameter configurations. Leveraging its bayesian optimisation
-algorithm, Optuna provided initial configuraitons, which served as starting
+the model's hyperparameter configurations. Leveraging its Bayesian optimisation
+algorithm, Optuna provided initial configurations, which served as starting
 points for the iterative training process.
 
 In this iterative process, each model's hyperparameters underwent continuous
 evaluation and refinement after every iteration at an attempt to improve
 accuracy. Performance metrics such as loss curves, confusion matrices and
 F-scores, were monitored closely to assess the effectiveness of each
-hyperparameter configuration. Common pitfalls observed, included overfitting,
-indicated in model loss graphs when validation loss begins to rise, and
-fluctuations in performance metrics such as accuracy and F-scores. These
-fluctuations often signify an unstable learning process, suggesting the need for
-hyperparameters reconfiguration. Finally, with every iteration, the
-hyperparameters and performance scores were saved for future analysis and
-comparison, aiding in the refinement of upcoming iterations.
+hyperparameter configuration.
+
+Common pitfalls observed, included overfitting, indicated in model loss graphs
+when validation loss begins to rise, and fluctuations in performance metrics
+such as accuracy and F-scores. These fluctuations often signify an unstable
+learning process, suggesting the need for hyperparameters reconfiguration.
+Finally, with every iteration, the hyperparameters and performance scores were
+saved for future analysis and comparison, aiding in the refinement of upcoming
+iterations.
 
 
 \section{Callbacks}
