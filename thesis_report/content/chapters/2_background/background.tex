@@ -4,7 +4,7 @@
 \section{Skateboard Tricks}
 
 % Performing a skateboard trick requres an intricate motion between the body and
-% the board, demanding precise coordination and athleticism. 
+% the board, demanding precise coordination and athleticism.
 
 Skateboard tricks can be described as dynamic manoeuvres that involve complex
 coordination of the skateboard and the skateboarder's body. Skateboard tricks
@@ -14,9 +14,9 @@ successfully performing these tricks is appropriate foot placement, which is
 critical for controlling the skateboard's speed and direction. This control
 allows skateboarders to manipulate the board in ways that replicate specific
 tricks, showcasing not only their technical abilities and creativity.
- 
+
 %  thorugh complex motions of the body and , to initiate various
-%  rotations and revolutions along various axes. 
+%  rotations and revolutions along various axes.
 
 % Skateboard tricks are the heart and soul of skateboarding. These tricks
 % originate from the dynamic orchestration of rotations and revolutions of a
@@ -75,7 +75,7 @@ There exist three main categories for ML models \cite{ML_Algorithms}:
 
 %\section{Object Detection}
 
-%Object detection is a computer vision task that detects instances of objects in images and videos and maps them to a predefined class. For humans, the act of recognising and responding to objects is a trivial task as described by Watson et al. (2016) \cite{NeuralScience}, it is an essential feature that enables our performance and communication. Numerous researchers have shown a deep interest in this technology, focusing on various applications where object detection may play a major role, such as  surveillance systems, face detection and autonomous driving \cite{RecentAdvancesObjectDetection}. 
+%Object detection is a computer vision task that detects instances of objects in images and videos and maps them to a predefined class. For humans, the act of recognising and responding to objects is a trivial task as described by Watson et al. (2016) \cite{NeuralScience}, it is an essential feature that enables our performance and communication. Numerous researchers have shown a deep interest in this technology, focusing on various applications where object detection may play a major role, such as  surveillance systems, face detection and autonomous driving \cite{RecentAdvancesObjectDetection}.
 
 %The output of an object detection model returns the location of the instance, as the object's centre or in the form of a bounding box. The research paper by Agarwal et al. (2018) \cite{RecentAdvancesObjectDetection} defines object
 %detection as the following equation where an image is denoted as \(\mathcal{I}\), and \(O(I)\) represents the collection of object descriptions for objects within the image.
@@ -90,10 +90,10 @@ There exist three main categories for ML models \cite{ML_Algorithms}:
 %\end{equation}
 
 
-%In the above equation, each description encompasses two parts, \(Y^*_i \in\mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}\in \mathcal{Z}\) represents information about its location, size or shapewithin the image. \(\mathcal{Z}\) represents the different ways to describe anobject, this is typically done by specifying the object's centre \((x_c, y_c)\in \mathcal{R}^2\) or as a bounding box \((x_{min}, y_{min},x_{max},y_{max})\in \mathcal{R}^4\). 
+%In the above equation, each description encompasses two parts, \(Y^*_i \in\mathcal{Y}\) characterises the category or type of an object, and \(Z^*_{N^*i}\in \mathcal{Z}\) represents information about its location, size or shapewithin the image. \(\mathcal{Z}\) represents the different ways to describe anobject, this is typically done by specifying the object's centre \((x_c, y_c)\in \mathcal{R}^2\) or as a bounding box \((x_{min}, y_{min},x_{max},y_{max})\in \mathcal{R}^4\).
 %By utilising these notations, according to
 %\cite{RecentAdvancesObjectDetection}, object detection can be defined as the
-%operation of combining an image with a set of detections. 
+%operation of combining an image with a set of detections.
 %In this research
 %paper, images are passed through an object detection model as one of the
 %pre-processing steps before passing through the main AI model. This strategy is
@@ -157,13 +157,13 @@ from their environment and adapting to complex patterns in data
 \cite{FundamentalsOfNeuralNetworks}. Figure \ref{fig:ANN_Diagram} depicts a
 schematic representation of an ANN. The diagram is organised into three
 fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
-\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.  
+\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.
 
 \begin{itemize}
     \item \textbf{Input Layer:} This is the set of neurons that serve as the
     initial entry point for external data. Each input neuron in this
     layer corresponds to a specific feature or variable used in the Neural
-    Network model.  
+    Network model.
     \item \textbf{Hidden Layer(s):} This is the set of neurons that are located
     between the Input and Output Layers where the network captures complete
     non-linear behaviours of data and feature transformations.
@@ -175,9 +175,9 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.75 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png} 
+  \includegraphics[width=0.75 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png}
   \caption{Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
-  \label{fig:ANN_Diagram} 
+  \label{fig:ANN_Diagram}
 \end{figure}
 
 \subsection{Convolutional Neural Networks}
@@ -185,7 +185,7 @@ Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)
 \cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
-incredible performance in the field of image recognition and pattern recognition tasks. 
+incredible performance in the field of image recognition and pattern recognition tasks.
 
 % Unlike ANNs, CNNs have neurons arranged in three dimensions: width, height and
 % depth.
@@ -198,11 +198,11 @@ The results are summed up to generate a single value in the feature map. The
 pooling layer applies an aggregation funciton such as max pooling or average
 pooling to create a downsamplaed representation of the input data are. Finally,
 the fully-connected attempt to transform the outputs from the previous layer
-into an output vector that represents a score corresponding to a class label. 
+into an output vector that represents a score corresponding to a class label.
 
 \begin{figure}[h]
 	\centering
-  \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/cnn_arch.png} 
+  \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/cnn_arch.png}
   \caption{CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015) \cite{introductiontoCNNs}}
   \label{fig:cnn_architecture}
 \end{figure}
@@ -223,7 +223,7 @@ steps.%add reference
 This constraint arises from the challenge of dealing with vanishing or
 exploding gradients in the backpropagation procedure while processing
 extended sequences, as discussed in prior works
-\cite{UnderstandingLSTM,Long-termConvolutionalNeuralNetworksforVisualRecogntion}. 
+\cite{UnderstandingLSTM,Long-termConvolutionalNeuralNetworksforVisualRecogntion}.
 \subsubsection{Long Short-Term Memory Networks}
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
@@ -232,7 +232,7 @@ introduced as an extention to RNNs in 1997
 extend the RNNs memory enabling them to campture dependencies across more than
 1,000 time steps depending on the network's complexity. These models are also
 able to tackle the vanishing problem associated with RNNS and offer more
-biologically credible solution \cite{UnderstandingLSTM}. 
+biologically credible solution \cite{UnderstandingLSTM}.
 
 These types of networks consist of three gates: input, output and forget gates.
 The input gate, determines whether new information will be uploaded to the
@@ -246,7 +246,7 @@ gates that regulate the flow of information through the network.
 % explain how they solve the vanishing gradient problem
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg} 
+  \includegraphics[width=0.9 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg}
   \caption{LSTM architecture. Reproduced from ...........}
   \label{fig:lstm_architecture}
 \end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
@@ -265,8 +265,8 @@ BiLSTMs reported better accuracies compared to regular LSTMs.
 
 \begin{figure}[ht]
 	\centering
-  \includegraphics[width=0.8 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png} 
-  \caption{BiLSTM Structure. Reproduced from Du et al. (2020) \cite{du2020power}} 
+  \includegraphics[width=0.8 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png}
+  \caption{BiLSTM Structure. Reproduced from Du et al. (2020) \cite{du2020power}}
   \label{fig:bilstm_structure}
 \end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
 

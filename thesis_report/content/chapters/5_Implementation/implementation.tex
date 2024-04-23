@@ -25,16 +25,22 @@ visualisation functions, heavily used during the evaluation stage to properly
 visualise results or any other insights gained throughout.
 
 \section{Dataset Split and Configuration}
-This study opted for splitting the original dataset into training, validation
-and testing sets, comprising 80\% 10\% and 10\% respectively, in order to
-prioritise training data due to limited dataset size. In consideration of Chen's
-(2023) \cite{SkateboardAIPaper} research, which advocated for a sequence length
-of 45 frames per video, with each frame sized at 299x299 pixels, these
-parameters were initially evaluated. However, experimentation with such
-parameters revealed significant computational costs and marginal improvement in
-results. Consequently, this research struck a balance between costs and
-performance, by opting for a sequence length of 20 and a frame size of 224x224
-pixels.
+This study opted for a training-validation-testing split on the original dataset
+allocating 80\% for training, 10\% for validation and 10\% for testing. The
+training set allowed the models to learn the patterns and relationships within
+the input data. The validation enabled a portion of the data to be used to
+evaluate the performance after every epoch. Finally, testing set provided a
+final assessment of the model's generalizability, by using data the model's have
+not seen before. The decision for this split stemmed from prioritising training
+data due to limited dataset size.
+
+In consideration of Chen's (2023) \cite{SkateboardAIPaper} research, which
+advocated for a sequence length of 45 frames per video, with each frame sized at
+299x299 pixels, these parameters were initially evaluated. However,
+experimentation with such parameters revealed significant computational costs
+with negligible improvement in results. Consequently, this research struck a
+balance between costs and performance, by opting for a sequence length of 20 and
+a frame size of 224x224 pixels.
 
 
 %qthis study adopted a sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
@@ -45,12 +51,6 @@ pixels.
 % length of 20 with 224x224 pixel sized frames. The results confirmed that a
 % sequence length of 45 coupled with a larger frame size, is indeed more effective
 % at achieving higher accuracies.
-
-
-%  The training set was used by the models to
-% learn the patterns and relationships from the input data. The validation set
-% enabled is a portion of the dataset used to measure the performance after every
-% epoch. Finally, the model was evaluated using the testing set.
 
 
 \section{Frame Extraction using Optical Flow}
@@ -200,10 +200,10 @@ original data \cite{dimensionality_reduction}.
 
 This research, aimed to achieve 90\% to 95\% variance retention when determining
 the optimal number of components for reduction. This involved plotting two
-explained variance plots: one for the output of pretraining with VGG16 and
+explained variance plots: one for the output of pre-training with VGG16 and
 another for the output of ResNet50, as illustrated in Figure
 \ref{fig:pca_plots}. These plots display the cumulative explained variance
-against the number of components, allowing approximate selection of the numebr
+against the number of components, allowing approximate selection of the number
 of components by examining the 90\% to 95\% percentiles of the plots. Upon
 examining both plots depicted in Figure\ref{fig:pca_plots}, 2514 components were
 chosen for VGG, while 278 were selected for ResNet50. Consequently, this results
@@ -227,6 +227,11 @@ in final feature shapes of (20, 2514) and (20, 278) respectively.
 	\caption{Overall caption for both images.}
 	\label{fig:pca_plots}
 \end{figure}
+
+The application of PCA dimensionality reduction significantly improved training
+efficiency. By transforming the high-dimensional feature space extracted by
+pre-trained models into a lower-dimensional one, PCA effectively reduced the
+computational costs during training.
 %most of the important information
 %explain better results from  using pca either on both vgg and resnet or just resnet after testing
 %explain if we needed to use dimensionality reduction only on resnet or on both
@@ -252,13 +257,18 @@ architectures and their corresponding input data.
 \section{Training History}
 %show epoch against loss graphs for all 4 models
 Figure shows the training and validation loss curves for the models that
-achieved the best validation accuracy within each architecture. Additionally, the
+achieved the best test accuracy within each architecture. Additionally, the
 vertical dashed lines indicate the epoch at which the early stopping callback
 restored the models weights, preventing overfitting.
 
-All models employed the categorical-crossentropy loss function during training.
-This function measures the discrepancies between the predicted probabilities and
-the actual one-hot encoded labels.
+
+All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
+the training process due to excessive overfitting observed with Adam in Section
+6.1.1. While SGD performed better than Adam in the context of classifying
+skateboard tricks, it required longer training times to converge.
+% All models employed the categorical-crossentropy loss function during training.
+% This function measures the discrepancies between the predicted probabilities and
+% the actual one-hot encoded labels.
 
 
 %Furthermore, the output layers utilised
@@ -266,31 +276,27 @@ the actual one-hot encoded labels.
 % Furthermore,
 %mention that they all used sgd
 
+%mention SGD did better but did take longer
+%Talk about how Resnet was first tested out without PCA and we came to the conclusion that the features had to be reduced
+
 \subsection{Training Process and Hyperameter Tuning}
 Throughout the training phase, Optuna took the responsibility of initialising
 the model's hyperparameter configurations. Leveraging its bayesian optimisation
 algorithm, Optuna provided initial configuraitons, which served as starting
 points for the iterative training process.
 
-In this iterative process, the model's hyperparameters underwent continuous
-evaluation and refinement after every iteration at an attempt to improve the
-model's performance. Performance metrics such as loss curves, confusion matrices
-and F-scores, were monitored closely to assess the effectiveness of each
+In this iterative process, each model's hyperparameters underwent continuous
+evaluation and refinement after every iteration at an attempt to improve
+accuracy. Performance metrics such as loss curves, confusion matrices and
+F-scores, were monitored closely to assess the effectiveness of each
 hyperparameter configuration. Common pitfalls observed, included overfitting,
-indicated in model loss graphs when validation loss begins to rise.
-Additionally, fluctuations in performance metrics such as accuracy and F-scores,
-often signified an unstable learning process, suggesting the need for
-reconfiguration of hyperparameters.
-
-Additionally, with every iteration, the
+indicated in model loss graphs when validation loss begins to rise, and
+fluctuations in performance metrics such as accuracy and F-scores. These
+fluctuations often signify an unstable learning process, suggesting the need for
+hyperparameters reconfiguration. Finally, with every iteration, the
 hyperparameters and performance scores were saved for future analysis and
 comparison, aiding in the refinement of upcoming iterations.
 
-Common pitfalls that were looked out on
-
-
-%mention SGD did better but did take longer
-%Talk about how Resnet was first tested out without PCA and we came to the conclusion that the features had to be reduced
 
 \section{Callbacks}
 \subsection{Early Stopping}

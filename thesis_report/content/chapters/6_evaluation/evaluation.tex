@@ -21,7 +21,6 @@ achieve small generalisation errors as explained in the study by Hardt et al.
 (2016) \cite{SGD_stability_paper}. The results observed with the VGG-BiLSTM
 aligns with the insights discussed by Hardt et al. suggesting that
 models trained using SGD are less vulnerable to overfitting.
-
 \begin{figure}[ht!]
 	\centering
 	% First image (Adam)
@@ -55,8 +54,8 @@ into the sequence models. Table .. showcases the results
 
 
 \section{Applicability In Real-Time applications}
-For real-time applications like analysing skatebaord events, the speed at which
-data is processed is crucial. To evaluate the models applicability in such
+For real-time applications like analysing skateboard events, the speed at which
+data is processed is crucial. To evaluate the model's applicability in such
 applications, this study measured the time taken to classify a single video for
 each architecture.
 
@@ -68,10 +67,14 @@ extraction using optical flow, feature extraction with models like ResNet50 or
 VGG16, dimensionality reduction using PCA and finally classifying the video from
 the sequence model.
 While they are relatively slow, they are still applicable in real-time events
-% kthen look into times between tricks
+% then look into times between tricks
 
 %discussion
 
 %conslusions from experiments, waht worked, what cost, training time
 %show timings, list computer parts trained on
 %compare models -which models do best
+\section{Discussion}
+
+\subsection{Challenges}
+Trained models often struggled to differentiate between both the ollie and kickflip, as
