@@ -8,19 +8,18 @@
 
 
 \subsection{Choice of Optimiser}
-%This might need to go in evaluation, and only mention it in the implementation
-This study compared the results of Stochastic Gradient Descent (SGD) and Adam \cite{adam_paper} as
-optimisation algorithms during training. The results suggest that SGD may be
-more effective at reducing overfitting compared to Adam.
-This improvement is illustrated in Figure \ref{fig:loss_graphs}, using the VGG-BiLSTM architecture.
-While, Adam initially shows promise with good generalisation, it quickly
-encounters a pitfall, where the validation loss begins to climb, indicating
-overfitting. In contrast, the SGD-trained model exhibits a more stable
-validation loss, likely due to its algorithmic stability and its capability to
-achieve small generalisation errors as explained in the study by Hardt et al.
-(2016) \cite{SGD_stability_paper}. The results observed with the VGG-BiLSTM
-aligns with the insights discussed by Hardt et al. suggesting that
-models trained using SGD are less vulnerable to overfitting.
+This study compared the results of Stochastic Gradient Descent (SGD) and Adam
+\cite{adam_paper} as optimisation algorithms during training. The results
+suggest that SGD may be more effective at reducing overfitting compared to Adam.
+This improvement is illustrated in Figure \ref{fig:loss_graphs}, using the
+VGG-BiLSTM architecture. While, Adam initially shows promise with good
+generalisation, it quickly encounters a pitfall, where the validation loss
+begins to climb, indicating overfitting. In contrast, the SGD-trained model
+exhibits a more stable validation loss, likely due to its algorithmic stability
+and its capability to achieve small generalisation errors as explained in the
+study by Hardt et al. (2016) \cite{SGD_stability_paper}. The results observed
+with the VGG-BiLSTM aligns with the insights discussed by Hardt et al.
+suggesting that models trained using SGD are less vulnerable to overfitting.
 \begin{figure}[ht!]
 	\centering
 	% First image (Adam)
@@ -47,9 +46,33 @@ models trained using SGD are less vulnerable to overfitting.
 % talk about PCA improving accuracy on Resnet50
 
 \subsection{The Effect of Data Augmentation}
+%if I have time add augmentation x4
 This research, also compared the effects of Augmenting data before feeding it
-into the sequence models. Table.. showcases the results
+into the sequence models, illustrated in Table \ref{tab:models_aug}. Experiments
+revealed that each of the four models demonstrated improved accuracy following
+the application of data augmentation on the input data, with enhancements
+ranging from a 2\% increase in Model 1, to a 9\% increase in Model 3. On
+average, the accuracy of the models improved by 4.75\% with augmentation,
+emphasising its effectiveness at enhancing the models' ability to accurately
+classify skateboard tricks.
 
+\begin{table}[htbp]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\RaggedRight}Xcccc}
+        \toprule
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{Unenhanced}} & \multicolumn{2}{c}{\textbf{Augmented}} \\
+        \cmidrule(lr){2-3} \cmidrule(lr){4-5}
+        & {\textbf{Accuracy}} & {\textbf{Training Time}} & {\textbf{Accuracy}} & {\textbf{Training Time}} \\
+        \midrule
+        \textbf{1.  VGG16-LSTM} & 78\% & 00:05:34 & 80\% & 00:08:38 \\
+        \textbf{2.  VGG16-BiLSTM} & 78\% & 00:42:57 & 83\% & 01:08:42  \\
+        \textbf{3.  ResNet50-LSTM} & 72\%& 00:05:09 & 81\% & 00:08:40 \\
+        \textbf{4.  ResNet50-BiLSTM} & 77\% & 6mins& 80\% & resnetbilstm \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Performance comparison of models with and without augmentation}
+    \label{tab:models_aug}
+\end{table}
 
 
 
@@ -59,14 +82,30 @@ data is processed is crucial. To evaluate the model's applicability in such
 applications, this study measured the time taken to classify a single video for
 each architecture.
 
-%include results
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l c}
+			\toprule
+			\textbf{Model} & \textbf{Evaluation Time (ss:ms)} \\
+			\midrule
+			Model 1 (VGG16-LSTM) & - \\
+			Model 2 (VGG16-BiLSTM) & - \\
+			Model 3 (ResNet50-LSTM) & - \\
+			Model 4 (ResNet50-BiLSTM) & - \\
+			\bottomrule
+	\end{tabular}
+	\caption{Evaluation time (mm:ss) for skateboard trick classification models.}
+	\label{tab:evaluation_time}
+\end{table}
 
-The slow processing speeds outlined in Table is caused by the computational
-expensive video analysis pipeline. This pipeline involves various steps: frame
-extraction using optical flow, feature extraction with models like ResNet50 or
-VGG16, dimensionality reduction using PCA and finally classifying the video from
-the sequence model. While they are relatively slow, they are still applicable in
-real-time events
+
+
+The slow processing speeds outlined in Table \ref{tab:evaluation_time} is caused
+by the computational expensive video analysis pipeline. This pipeline involves
+various steps: frame extraction using optical flow, feature extraction with
+models like ResNet50 or VGG16, dimensionality reduction using PCA and finally
+classifying the video from the sequence model. While they are relatively slow,
+they are still applicable in real-time events
 % then look into times between tricks
 
 %discussion
@@ -75,7 +114,7 @@ real-time events
 %show timings, list computer parts trained on
 %compare models -which models do best
 \section{Discussion}
-
+\subsection{Impact of Preprocessing Techniques on Performance}
 \subsection{Challenges}
 Trained models often encountered difficulty in differentiating between both the
 ollie and kickflip compared to the pop shuvit. This challenge likely arises to
@@ -85,7 +124,6 @@ rotation on the y-axis, which distinguishes them to the pop shuvit. The
 confusion matrix shown in Figure \ref{fig:resnet-lstm-confusion} presents the
 ResNet-LSTM model exhibiting slightly better classification accuracy for pop
 shuvits compared to ollies and kickflips.
-
 
 \begin{figure}[h]
 	\centering

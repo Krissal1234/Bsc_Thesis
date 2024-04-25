@@ -44,9 +44,9 @@
 \contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{18}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Normalisation}{19}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{20}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{20}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{21}{subsection.4.3.5}%
 \contentsline {section}{\numberline {4.4}Adapted Models}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Architecture}{21}{section.4.5}%
+\contentsline {section}{\numberline {4.5}Architecture}{22}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Evaluation Methods}{22}{section.4.6}%
 \contentsline {chapter}{\numberline {5}Implementation}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Development Environment}{25}{section.5.1}%
@@ -66,8 +66,9 @@
 \contentsline {section}{\numberline {6.1}Experiments}{32}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Choice of Optimiser}{32}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}The Effect of Data Augmentation}{32}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Applicability In Real-Time applications}{32}{section.6.2}%
+\contentsline {section}{\numberline {6.2}Applicability In Real-Time applications}{33}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Discussion}{33}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Challenges}{33}{subsection.6.3.1}%
-\contentsline {chapter}{\numberline {7}Sample A}{39}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Sample B}{40}{chapter.8}%
+\contentsline {subsection}{\numberline {6.3.1}Impact of Preprocessing Techniques on Performance}{33}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Challenges}{33}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {A}Sample A}{40}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sample B}{41}{appendix.B}%

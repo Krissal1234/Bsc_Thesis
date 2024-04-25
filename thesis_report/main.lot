@@ -2,8 +2,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of Transfer Learning Models VGG16 and ResNet50\relax }}{20}{table.caption.14}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of Transfer Learning Models VGG17 and ResNet50\relax }}{20}{table.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance comparison of models with and without augmentation\relax }}{33}{table.caption.21}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Evaluation time (mm:ss) for skateboard trick classification models.\relax }}{33}{table.caption.22}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
