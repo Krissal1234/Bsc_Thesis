@@ -8,6 +8,7 @@ Furthermore, its large and active community made tackling problems and
 troubleshooting issues simpler. Prior experience using Python also contributed
 to this decision.
 
+\noindent
 {\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical
 computation and Machine Learning applications. It provides a rich toolset that
 allows for efficient development, training and deployment of Machine Learning
@@ -16,10 +17,12 @@ creation development by offering wide ranger of tools such as access pre-trained
 models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers
 
+\noindent
 {\bf OpenCv (cv2):} This open source library played a crucial role in the
 computer vision components of development, offering essential tools related to
 video processing, particularly during the frame extraction phase.
 
+\noindent
 {\bf Matplotlib:} This research made use of Matplotlib for its plotting and data
 visualisation functions, heavily used during the evaluation stage to properly
 visualise results or any other insights gained throughout.
@@ -207,7 +210,7 @@ against the number of components, allowing approximate selection of the number
 of components by examining the 90\% to 95\% percentiles of the plots. Upon
 examining both plots depicted in Figure\ref{fig:pca_plots}, 2514 components were
 chosen for VGG, while 278 were selected for ResNet50. Consequently, this results
-in final feature shapes of (20, 2514) and (20, 278) respectively.
+in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$ respectively.
 
 \begin{figure}[htbp]
 	\centering
@@ -256,6 +259,45 @@ Figure shows the training and validation loss curves for the models that
 achieved the best test accuracy within each architecture. Additionally, the
 vertical dashed lines indicate the epoch at which the early stopping callback
 restored the models weights, preventing overfitting.
+
+\begin{figure}[ht!]
+	\centering
+	% First row of subfigures
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/vgg_lstm_loss.png}
+			\caption{VGG16-LSTM}
+			\label{fig:vgg_lstm_loss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/vgg_bilstm_loss.png}
+			\caption{VGG16-BiLSTM}
+			\label{fig:vgg_bilstm_loss}
+	\end{subfigure}
+
+	% Second row of subfigures
+	\vspace{0.5cm} % Add vertical space between rows
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/resnet_lstm_loss.png}
+			\caption{ResNet50-LSTM}
+			\label{fig:resnet_lstm_loss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/resnet_bilstm_loss.png}
+			\caption{ResNet50-BiLSTM}
+			\label{fig:resnet_bilstm_loss}
+	\end{subfigure}
+
+	% Main caption
+	\caption{Loss graphs for each architecture}
+	\label{fig:model_losses}
+\end{figure}
+
 
 
 All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
@@ -312,7 +354,7 @@ configured to monitor the validation loss and only save the model when it
 showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
-\section{Baseline Model Approach}
-A baseline model approach defined during development of the artefact allowed
-comparisons to be made with each iteration of the models. The first baseline
-model
+% \section{Baseline Model Approach}
+% A baseline model approach defined during development of the artefact allowed
+% comparisons to be made with each iteration of the models. The first baseline
+% model
