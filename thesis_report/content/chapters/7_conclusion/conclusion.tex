@@ -9,24 +9,36 @@
 multi-class classification approach, focusing initially on three fundamental
 skateboard tricks. While this served as an adequate foundation for exploring the
 underlying relationships between these tricks and their application in Deep
-Learning, its scope limited its usefulness.
+Learning, its scope limited its usefulness in real-world scenarios.
 
-To enhance its applicability, particularly in skateboarding events, the inclusion
-of more complex tricks more commonly observed in competitions is crucial.
-Additionally, incorporating external entities, such as rails, ledges and gaps
-would enhance its real-world usefulness.
+To enhance its applicability, particularly in skateboarding events, the
+inclusion of more complex tricks more commonly observed in competitions is
+crucial. Additionally, incorporating tricks that interact with external
+entities, such as rails, ledges and gaps would enhance its real-world
+usefulness.
 
 \noindent
 {\bf Automated Judging Systems:} Currently, skateboarding competitions rely on a panel
-of human judges to evaluate skater performance. While judges possess expertise
-and experience, this system is heavily subjective. Personal interpretations and
-preferences can influence their decisions, raising questions about fairness.
+of judges to evaluate skater performance live. While judges possess expertise
+and experience, this system is heavily subjective. Personal perspectives and
+preferences can influence their decisions, raising fairness issues.
 
 An automated judging system would address these limitations by removing the
-element of human bias, facilitating a more fair and consistent scoring system.
-However, this will require a more complex classification strategy, as the true
+element of human bias, facilitating a more consistent and fair scoring system.
+However, this requires a more complex classification strategy, as the true
 challenge lies in translating all the subjective aspects of style and creativity
 into objective criteria for AI scoring.
+
+\noindent
+{\bf Data limitation:} A major limitation encountered during development was the
+insufficient amount of data available to train with. Future work in this area,
+would greatly benefit from additional data to expand the model's robustness and
+generalisation capabilities. Moreover, if additional data is not accessible, it
+could be worth exploring techniques to generate synthetic data using techniques
+such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs).
+
+
+
 
 %analyse sound with video to see if htere is correlation between tricks
 %use computer vision techniques and accelermoter techniques together to get better results

@@ -21,9 +21,9 @@ and its capability to achieve small generalisation errors as explained in the
 study by Hardt et al. (2016) \cite{SGD_stability_paper}. The results observed
 with the VGG-BiLSTM aligns with the insights discussed by Hardt et al.
 suggesting that models trained using SGD are less vulnerable to overfitting.
+
 \begin{figure}[ht!]
 	\centering
-	% First image (Adam)
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/Adam_optimiser.PNG}
@@ -31,17 +31,34 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 		\label{fig:adam_loss}
 	\end{subfigure}
 	\hfill
-	% Second image (SGD)
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/SGD_optimiser.PNG}
 		\caption{Training and Validation Loss using SGD}
 		\label{fig:sgd_loss}
 	\end{subfigure}
-	% Overall caption
 	\caption{Model loss graphs for (a) Adam and (b) SGD optimisers.}
 	\label{fig:loss_graphs}
 \end{figure}
+
+\subsection{Results}
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+			\toprule
+			\textbf{Model} & \textbf{Accuracy} & \textbf{Training Time} \\
+			\midrule
+			\textbf{1.  VGG16-LSTM} & 86\% & 00:11:38 \\
+			\textbf{2.  VGG16-BiLSTM} & 88\% & 00:18:05 \\
+			\textbf{3.  ResNet50-LSTM} & 80\% & 00:02:19 \\
+			\textbf{4.  ResNet50-BiLSTM} & 86\% & 00:03:01 \\
+			\bottomrule
+	\end{tabularx}
+	\caption{Performance of models after data augmentation}
+	\label{tab:models_results}
+\end{table}
+
 % talk about augmented and unaugmneted
 % feature extractiona and without feature extraction
 % talk about PCA improving accuracy on Resnet50
@@ -49,13 +66,12 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 \subsection{The Effect of Data Augmentation}
 %if I have time add augmentation x4
 This research, also compared the effects of Augmenting data before feeding it
-into the sequence models, illustrated in Table \ref{tab:models_aug}. Experiments
-revealed that each of the four models demonstrated improved accuracy following
-the application of data augmentation on the input data, with enhancements
-ranging from a 2\% increase in Model 1, to a 9\% increase in Model 3. On
-average, the accuracy of the models improved by 4.75\% with augmentation,
-emphasising its effectiveness at enhancing the models' ability to accurately
-classify skateboard tricks.
+into the sequence models, as illustrated in Table \ref{tab:models_aug}.
+Experiments revealed that each of the four models demonstrated improvements in
+accuracies following the application of data augmentation on the input data.
+Enhancements ranged from a 5\% increase in Model 3, to a 9\% increase in Models
+1 and 4. On average, model accuracy increased by 7.75\% highlighting its
+effectiveness in enhancing the model's ability to generalise on unseen data.
 
 \begin{table}[htbp]
     \centering
@@ -66,7 +82,7 @@ classify skateboard tricks.
         & {\textbf{Accuracy}} & {\textbf{Training Time}} & {\textbf{Accuracy}} & {\textbf{Training Time}} \\
         \midrule
         \textbf{1.  VGG16-LSTM} & 77\% & 00:07:47 & 86\% & 00:11:38 \\
-        \textbf{2.  VGG16-BiLSTM} & -\% & 00:42:57 & -\% & 01:11:42  \\
+        \textbf{2.  VGG16-BiLSTM} & 80\% & 00:07:45 & 88\% & 00:18:05  \\
         \textbf{3.  ResNet50-LSTM} & 75\%& 00:01:19 & 80\% & 00:02:19 \\
         \textbf{4.  ResNet50-BiLSTM} & 77\% & 00:01:41& 86\% & 00:03:01 \\
         \bottomrule
@@ -74,6 +90,16 @@ classify skateboard tricks.
     \caption{Performance comparison of models with and without augmentation}
     \label{tab:models_aug}
 \end{table}
+
+%mention shorter training times due to less data
+
+\section{The Effect of Feature Extraction}
+This section, compares the effects of feature extraction on the performance of
+the selected sequence models. The tests utilised the best performing models from
+both VGG16 and ResNet50 pre-trained models, tested with the application of PCA
+as it has shown high accuracies, on the final models.
+
+%Table
 
 \section{Applicability In Real-Time applications}
 For real-time applications like analysing skateboarding events, the speed at
@@ -97,24 +123,24 @@ classify a single 2-second video at $\sim$30fps for each architecture.
 	\label{tab:evaluation_time}
 \end{table}
 
+
 The slow processing speeds outlined in Table \ref{tab:evaluation_time} is caused
 by the computational expensive video analysis pipeline required. This pipeline
 involves various steps: frame extraction using optical flow, feature extraction
 with models like ResNet50 or VGG16, dimensionality reduction using PCA and
-finally classifying the video from the sequence model. While they are relatively
-slow, they are still applicable in real-time events
+finally classifying the video from the sequence model. While this pipeline
+negatively affected evaluation times, it was responsible for achieving high
+accuracies and for significantly accelerating training time.
 
-
+% While they are relatively slow, they are still applicable in real-time
+% events
 %if i evaluate feature extraction and no FE, then maybe I should just choose the best models from vgg and resnt
 %so only evaluating 2 models
 
 \section{Discussion}
-
-
 %conslusions from experiments, what worked, what cost, training time
 %show timings, list computer parts trained on
 %compare models -which models do best
-\subsection{Impact of Preprocessing Techniques on Performance}
 \subsection{Challenges}
 %The reason it does not do so well with kickflips, is becuase some kickflip videos are filmed with the skater facing sideways, and it classifies them as shuvit, probaly because most shuvits are sideways
 Trained models often encountered difficulty in differentiating between both the
@@ -132,3 +158,9 @@ shuvits compared to ollies and kickflips.
   \caption{ResNet50-LSTM Confusion Matrix}
 \label{fig:resnet-lstm-confusion}
 \end{figure}
+
+\section{Limitations}
+This study encountered a major limitation, due to the insufficient amount of
+data available for training the models. The scarcity of this data constrained
+the ability to train more robust and accurate models, potentially not allowing
+them to capture the full variability of real-world scenarios.

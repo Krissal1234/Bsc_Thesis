@@ -39,11 +39,11 @@ data due to limited dataset size.
 
 In consideration of Chen's (2023) \cite{SkateboardAIPaper} research, which
 advocated for a sequence length of 45 frames per video, with each frame sized at
-299x299 pixels, these parameters were initially evaluated. However,
+299\times299 pixels, these parameters were initially evaluated. However,
 experimentation with such parameters revealed significant computational costs
 with negligible improvement in results. Consequently, this research struck a
 balance between costs and performance, by opting for a sequence length of 20 and
-a frame size of 224x224 pixels.
+a frame size of 224\times224 pixels.
 
 
 %qthis study adopted a sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
@@ -235,16 +235,16 @@ The application of PCA dimensionality reduction significantly improved training
 efficiency. By transforming the high-dimensional feature space extracted by
 pre-trained models into a lower-dimensional one, PCA effectively reduced the
 computational costs during training.
-%Check with experiment if dimensionality reduction does better or not
 
 \section{Hyperparameter Optimisation}
 The architectures described in this study represent the best versions of
-themselves after a number of iterations and optimisations. To speed up the time-consuming task of hyperparameter tuning, this research leveraged the power of
-Optuna, a hyperparameter optimisation framework \cite{optunaFramework}. Optuna
-leverages a Bayesian optimisation algorithm that runs through a number of
+themselves after a number of iterations and optimisations. To speed up the
+time-consuming task of hyperparameter tuning, this research leveraged the power
+of Optuna, a hyperparameter optimisation framework \cite{optunaFramework}.
+Optuna leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
-selecting parameter combinations such as learning rate, dropout
-rate and neuron count.
+selecting parameter combinations such as learning rate, dropout rate and neuron
+count.
 
 This iterative approach enables Optuna to navigate the search space and converge
 on optimal hyperparameters for a specific model and dataset. This library was
@@ -252,17 +252,59 @@ integrated within a custom-built development environment specifically designed
 to identify the optimal hyperparameter configurations for multiple model
 architectures and their corresponding input data.
 
+\section{Callbacks}
+Callbacks served as essential tools, used to monitor and influence the training
+process dynamically. They provided ways to automate certain tasks at different
+phases of training, such as saving checkpoints of the model or stopping the
+model early.
+
+\subsection{Early Stopping}
+An early stopping callback reduced overfitting and saved
+computational resources. This method monitored the validation loss at every
+epoch and halted training if improvement stopped after a predetermined patience
+value. All experiments investigated a patience of 10 epochs, based on the
+observation that the models were unlikely to improve after 10 epochs, with no
+validation loss advancements.
+
+\subsection{Model Checkpoint}
+This study incorporated model check pointing in the training process
+to save intermediate models after every epoch. This implementation was
+configured to monitor the validation loss and only save the model when it
+showed an improvement, allowing a seamless resumption of training in case of
+interruption.
 
 \section{Training History}
-%show epoch against loss graphs for all 4 models
-Figure shows the training and validation loss curves for the models that
-achieved the best test accuracy within each architecture. Additionally, the
-vertical dashed lines indicate the epoch at which the early stopping callback
-restored the models weights, preventing overfitting.
+Figure \ref{fig:model_losses} displays the training and validation loss curves for
+the models that achieved the best test accuracy within each architecture.
+The vertical dashed lines indicate the epoch at which the early
+stopping callback restored the model's weights, preventing overfitting.
+
+The loss curves across the four architectures all exhibit distinct patterns,
+highlighting the differences in learning dynamics specific to each architecture.
+Notably, smaller learning rates were applied to the VGG16-LSTM and
+ResNet50-BiLSTM models, with the intention to enhance the stability of training,
+thereby improving performance. Additionally, the validation loss for the BiLSTM
+configurations generally exhibited more volatility, likely due to the complexity
+of their bidirectional layers.
+
+%something about all models rised up a lot towardsthe end but early stopping did its job
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{l c}
+			\toprule
+			\textbf{Model} & \textbf{Training Time} \\
+			\midrule
+			VGG 16 & - \\
+			ResNet50 & 01:37:08 \\
+			\bottomrule
+	\end{tabular}
+	\caption{Evaluation time (hh:mm:ss) for skateboard trick classification models.}
+	\label{tab:pre-trained_time}
+\end{table}
 
 \begin{figure}[ht!]
 	\centering
-	% First row of subfigures
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/vgg_lstm_loss.png}
@@ -276,8 +318,6 @@ restored the models weights, preventing overfitting.
 			\caption{VGG16-BiLSTM}
 			\label{fig:vgg_bilstm_loss}
 	\end{subfigure}
-
-	% Second row of subfigures
 	\vspace{0.5cm} % Add vertical space between rows
 	\begin{subfigure}{0.45\textwidth}
 			\centering
@@ -293,21 +333,23 @@ restored the models weights, preventing overfitting.
 			\label{fig:resnet_bilstm_loss}
 	\end{subfigure}
 
-	% Main caption
 	\caption{Loss graphs for each architecture}
 	\label{fig:model_losses}
 \end{figure}
 
-
-
 All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
 the training process due to excessive overfitting observed with Adam in Section
 6.1.1. While SGD performed better than Adam in the context of classifying
-skateboard tricks, it required longer training times to converge.
-% All models employed the categorical-crossentropy loss function during training.
-% This function measures the discrepancies between the predicted probabilities and
-% the actual one-hot encoded labels.
+skateboard tricks, it required longer training times to converge. %maybe talk about categorical crossentropy and the one hot encoded labels
 
+
+Table \ref{tab:pre-trained_time} provides an overview of the training times of
+applying the pre-trained models VGG16 and ResNet50 on the dataset to extract
+their features.
+
+%talk about feature extraciton legnth
+% table on training times and also feature extraction times
+%also talk aboout the reason for the quick training times, due to pca and smaller learning rates
 
 %Furthermore, the output layers utilised
 % softmax activation functions to align them with the one-hot encoded labels.
@@ -338,21 +380,6 @@ saved for future analysis and comparison, aiding in the refinement of upcoming
 iterations.
 
 
-\section{Callbacks}
-\subsection{Early Stopping}
-An early stopping callback reduced overfitting and saved
-computational resources. This method monitored the validation loss at every
-epoch and halted training if improvement stopped after a predetermined patience
-value. All experiments investigated a patience of 10 epochs, based on the
-observation that the models were unlikely to improve after 10 epochs, with no
-validation loss advancements.
-
-\subsection{Model Checkpoint}
-This study incorporated model check pointing in the training process
-to save intermediate models after every epoch. This implementation was
-configured to monitor the validation loss and only save the model when it
-showed an improvement, allowing a seamless resumption of training in case of
-interruption.
 
 % \section{Baseline Model Approach}
 % A baseline model approach defined during development of the artefact allowed
