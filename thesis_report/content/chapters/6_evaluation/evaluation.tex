@@ -12,8 +12,8 @@ experiments conducted.
 This study compared the results of Stochastic Gradient Descent (SGD) and Adam
 \cite{adam_paper} as optimisation algorithms during training. The results
 suggest that SGD may be more effective at reducing overfitting compared to Adam.
-This improvement is illustrated in Figure \ref{fig:loss_graphs}, using the
-VGG-BiLSTM architecture. While, Adam initially shows promise with good
+This improvement is illustrated in Figure \ref{fig:loss_graphs}, using
+an iteration of the VGG-BiLSTM architecture. While, Adam initially shows promise with good
 generalisation, it quickly encounters a pitfall, where the validation loss
 begins to climb, indicating overfitting. In contrast, the SGD-trained model
 exhibits a more stable validation loss, likely due to its algorithmic stability
@@ -72,6 +72,7 @@ accuracies following the application of data augmentation on the input data.
 Enhancements ranged from a 5\% increase in Model 3, to a 9\% increase in Models
 1 and 4. On average, model accuracy increased by 7.75\% highlighting its
 effectiveness in enhancing the model's ability to generalise on unseen data.
+These results
 
 \begin{table}[htbp]
     \centering
@@ -93,17 +94,54 @@ effectiveness in enhancing the model's ability to generalise on unseen data.
 
 %mention shorter training times due to less data
 
-\section{The Effect of Feature Extraction}
-This section, compares the effects of feature extraction on the performance of
-the selected sequence models. The tests utilised the best performing models from
-both VGG16 and ResNet50 pre-trained models, tested with the application of PCA
-as it has shown high accuracies, on the final models.
+\section{The Effect of PCA}
+This section evaluates the impact of PCA on the performance of the selected
+sequence models. The analysis compares VGG16-BiLSTM and ResNet50-BiLSTM as they
+are the top-performing models from each category of pre-trained models, This
+comparison focuses on their accuracies before and after the application of PCA,
+as well as differences in training times. To ensure fair results, both models
+were trained with using the same augmented data, with features reduced to their
+respective pre-calculated number of components discussed in Section
+\ref{5_dimensionality_reduction}. Table \ref{tab:pca_effect} presents a
+side-by-side comparison of these models with their training times along with the
+best version of themselves.
 
-%Table
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcccc}
+			\toprule
+			\textbf{Model} & \multicolumn{2}{c}{\textbf{Pre-PCA}} & \multicolumn{2}{c}{\textbf{Post-PCA}} \\
+			\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+			& {\textbf{Accuracy}} & {\textbf{Training Time}} & {\textbf{Accuracy}} & {\textbf{Training Time}} \\
+			\midrule
+			\textbf{VGG16-BiLSTM} & 58\% & 04:29:00 & 88\% & 00:18:05  \\
+			\textbf{ResNet50-BiLSTM} & 33\% & 03:29:00 & 86\% & 00:03:01 \\
+			\bottomrule
+	\end{tabularx}
+	\caption{Comparison of VGG16-BiLSTM and ResNet50-BiLSTM model performances before and after PCA implementation}
+	\label{tab:pca_effect}
+\end{table}
+
+The application of PCA shows significant results, not only improving accuracies
+but also reducing training times drastically. These results highlight the
+benefits of applying dimensionality reduction to combat the 'curse of
+dimensionality', often encountered with high-dimensional data spaces as noted in
+Section \ref{4_dimensionality_reduction}. The observed improvements are a result
+of the removal of redundant features in the dataset, further enhancing the
+model's learning capabilities by allowing them to focus on the most informative
+features.
+
+%not going to test feature extraction because i think its out of scope, plus too many features so ill have to introduce pca which just makes it weirfd
+%as ill have to stay calculating the number of components again ---ask
+% \section{The Effect of Feature Extraction}
+% The same sequence models, VGG-BiLSTM and ResNet50-BiLSTM, were further tested
+% by comparing the effect the application of feature extraction and withou
+% %Table
+
 
 \section{Applicability In Real-Time applications}
 For real-time applications like analysing skateboarding events, the speed at
-which data is processed and evaluated is crucial. To evaluate the model's
+which video data is processed and evaluated is crucial. To evaluate the model's
 applicability in such applications, this study measured the time taken to
 classify a single 2-second video at $\sim$30fps for each architecture.
 
@@ -114,7 +152,7 @@ classify a single 2-second video at $\sim$30fps for each architecture.
 			\textbf{Model} & \textbf{Evaluation Time (ss:ms)} \\
 			\midrule
 			Model 1 (VGG16-LSTM) &  09:10\\
-			Model 2 (VGG16-BiLSTM) &  -\\
+			Model 2 (VGG16-BiLSTM) &  09:90\\
 			Model 3 (ResNet50-LSTM) &  08:20\\
 			Model 4 (ResNet50-BiLSTM) & 9:00\\
 			\bottomrule
@@ -122,26 +160,23 @@ classify a single 2-second video at $\sim$30fps for each architecture.
 	\caption{Evaluation time (ss:mm) for skateboard trick classification models.}
 	\label{tab:evaluation_time}
 \end{table}
-
-
 The slow processing speeds outlined in Table \ref{tab:evaluation_time} is caused
 by the computational expensive video analysis pipeline required. This pipeline
 involves various steps: frame extraction using optical flow, feature extraction
 with models like ResNet50 or VGG16, dimensionality reduction using PCA and
 finally classifying the video from the sequence model. While this pipeline
 negatively affected evaluation times, it was responsible for achieving high
-accuracies and for significantly accelerating training time.
+accuracies and significantly accelerating training time.
 
 % While they are relatively slow, they are still applicable in real-time
 % events
 %if i evaluate feature extraction and no FE, then maybe I should just choose the best models from vgg and resnt
 %so only evaluating 2 models
-
 \section{Discussion}
 %conslusions from experiments, what worked, what cost, training time
 %show timings, list computer parts trained on
 %compare models -which models do best
-\subsection{Challenges}
+\subsection{Classification observations}
 %The reason it does not do so well with kickflips, is becuase some kickflip videos are filmed with the skater facing sideways, and it classifies them as shuvit, probaly because most shuvits are sideways
 Trained models often encountered difficulty in differentiating between both the
 ollie and kickflip compared to the pop shuvit. This challenge likely arises to

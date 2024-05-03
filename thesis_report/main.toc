@@ -67,11 +67,11 @@
 \contentsline {subsection}{\numberline {6.2.1}Choice of Optimiser}{33}{subsection.6.2.1}%
 \contentsline {subsection}{\numberline {6.2.2}Results}{34}{subsection.6.2.2}%
 \contentsline {subsection}{\numberline {6.2.3}The Effect of Data Augmentation}{34}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}The Effect of Feature Extraction}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Applicability In Real-Time applications}{34}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Discussion}{35}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Challenges}{35}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Limitations}{35}{section.6.6}%
+\contentsline {section}{\numberline {6.3}The Effect of PCA}{34}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Applicability In Real-Time applications}{35}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Discussion}{36}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Classification observations}{36}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Limitations}{36}{section.6.6}%
 \contentsline {chapter}{\numberline {7}Conclusions and Future Work}{37}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Future Work}{37}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Conclusion}{37}{section.7.2}%

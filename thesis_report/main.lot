@@ -8,7 +8,8 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Performance of models after data augmentation\relax }}{34}{table.caption.23}%
 \contentsline {table}{\numberline {6.2}{\ignorespaces Performance comparison of models with and without augmentation\relax }}{34}{table.caption.24}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Evaluation time (ss:mm) for skateboard trick classification models.\relax }}{35}{table.caption.25}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Comparison of VGG16-BiLSTM and ResNet50-BiLSTM model performances before and after PCA implementation\relax }}{35}{table.caption.25}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Evaluation time (ss:mm) for skateboard trick classification models.\relax }}{35}{table.caption.26}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
