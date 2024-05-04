@@ -41,29 +41,12 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 	\label{fig:loss_graphs}
 \end{figure}
 
-\subsection{Results}
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
-			\toprule
-			\textbf{Model} & \textbf{Accuracy} & \textbf{Training Time} \\
-			\midrule
-			\textbf{1.  VGG16-LSTM} & 86\% & 00:11:38 \\
-			\textbf{2.  VGG16-BiLSTM} & 88\% & 00:18:05 \\
-			\textbf{3.  ResNet50-LSTM} & 80\% & 00:02:19 \\
-			\textbf{4.  ResNet50-BiLSTM} & 86\% & 00:03:01 \\
-			\bottomrule
-	\end{tabularx}
-	\caption{Performance of models after data augmentation}
-	\label{tab:models_results}
-\end{table}
 
 % talk about augmented and unaugmneted
 % feature extractiona and without feature extraction
 % talk about PCA improving accuracy on Resnet50
 
-\subsection{The Effect of Data Augmentation}
+\subsection{The Effect of Data Augmentation} \label{data_augmentation_6}
 %if I have time add augmentation x4
 This research, also compared the effects of Augmenting data before feeding it
 into the sequence models, as illustrated in Table \ref{tab:models_aug}.
@@ -94,17 +77,16 @@ These results
 
 %mention shorter training times due to less data
 
-\section{The Effect of PCA}
-This section evaluates the impact of PCA on the performance of the selected
-sequence models. The analysis compares VGG16-BiLSTM and ResNet50-BiLSTM as they
-are the top-performing models from each category of pre-trained models, This
-comparison focuses on their accuracies before and after the application of PCA,
+\subsection{The Effect of PCA}
+Another experiment conducted, involved evaluating the impact of PCA on model
+performance. The analysis compared VGG16-BiLSTM and ResNet50-BiLSTM as they were
+the top-performing models from each category of pre-trained models, This
+comparison focused on their accuracies before and after the application of PCA,
 as well as differences in training times. To ensure fair results, both models
 were trained with using the same augmented data, with features reduced to their
 respective pre-calculated number of components discussed in Section
 \ref{5_dimensionality_reduction}. Table \ref{tab:pca_effect} presents a
-side-by-side comparison of these models with their training times along with the
-best version of themselves.
+side-by-side comparison of these models with their training times along.
 
 \begin{table}[htbp]
 	\centering
@@ -139,7 +121,7 @@ features.
 % %Table
 
 
-\section{Applicability In Real-Time applications}
+\subsection{Applicability In Real-Time applications}
 For real-time applications like analysing skateboarding events, the speed at
 which video data is processed and evaluated is crucial. To evaluate the model's
 applicability in such applications, this study measured the time taken to
@@ -168,14 +150,48 @@ finally classifying the video from the sequence model. While this pipeline
 negatively affected evaluation times, it was responsible for achieving high
 accuracies and significantly accelerating training time.
 
-% While they are relatively slow, they are still applicable in real-time
-% events
-%if i evaluate feature extraction and no FE, then maybe I should just choose the best models from vgg and resnt
-%so only evaluating 2 models
 \section{Discussion}
 %conslusions from experiments, what worked, what cost, training time
-%show timings, list computer parts trained on
-%compare models -which models do best
+\subsection{Final Results}
+%first write about table models_results, describe the best model, indicate that the model architectures can be found in appendix
+%then i want to discuss the experiments results, compare with literature too, mention augmentation increased in this paper, pca in this paper etc..
+% %then also
+As shown in Table \ref{tab:model-summary}, the VGG-BiLSTM model emerged as the
+top performer with a final accuracy of 88\%. This performance was significantly
+enhanced through the various pre-processing techniques employed in the data
+pipeline, which not only helped in improving accuracies but also in reducing
+training times.
+
+The integration of data augmentation was particularly beneficial as outlined in
+Section \ref{data_augmentation_6}. By addressing the limitation of limited data
+and artificially expanding the diversity of the training dataset through
+transformation such as adjustments in brightness, slight rotations and zoom
+factors, each model demonstrated a significant increase in performance.
+% Table \ref{tab:models_results} presents the final model performance figures from
+% the selected architecture groups. The best performing model architecture was the
+% VGG16-BiLSTM, with an accuracy of 88\%. These models underwent many iterations
+% of tuning to
+%mention that we got these accuraccies with the application of data augmentation
+%and also pca helping us with trainin time significantly but also with accuracies as mentioned in section **
+%then after lightly brushing past the experiments conducted, begin comparing with Chens models,
+
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+			\toprule
+			\textbf{Model} & \textbf{Accuracy} & \textbf{Training Time} \\
+			\midrule
+			\textbf{1.  VGG16-LSTM} & 86\% & 00:11:38 \\
+			\textbf{2.  VGG16-BiLSTM} & 88\% & 00:18:05 \\
+			\textbf{3.  ResNet50-LSTM} & 80\% & 00:02:19 \\
+			\textbf{4.  ResNet50-BiLSTM} & 86\% & 00:03:01 \\
+			\bottomrule
+	\end{tabularx}
+	\caption{Performance of models after data augmentation}
+	\label{tab:models_results}
+\end{table}
+
 \subsection{Classification observations}
 %The reason it does not do so well with kickflips, is becuase some kickflip videos are filmed with the skater facing sideways, and it classifies them as shuvit, probaly because most shuvits are sideways
 Trained models often encountered difficulty in differentiating between both the
@@ -195,7 +211,8 @@ shuvits compared to ollies and kickflips.
 \end{figure}
 
 \section{Limitations}
-This study encountered a major limitation, due to the insufficient amount of
-data available for training the models. The scarcity of this data constrained
+This study encountered a significant limitation, due to the insufficient amount
+of data available for training the models. The scarcity of this data constrained
 the ability to train more robust and accurate models, potentially not allowing
-them to capture the full variability of real-world scenarios.
+them to capture the full variability of real-world scenarios. This limitation
+presented several challenges
