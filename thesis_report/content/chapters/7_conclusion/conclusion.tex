@@ -4,7 +4,6 @@
 
 
 \section{Future Work}
-
 {\bf Classification Extension:} As outlined in Section 4.1, this study adopted a
 multi-class classification approach, focusing initially on three fundamental
 skateboard tricks. While this served as an adequate foundation for exploring the
@@ -42,11 +41,35 @@ as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs).
 {\bf Improvements in evaluation time:} Future work would benefit from
 simplifying the expensive video analysis pipeline utilised in this study.
 Improvements in processing time will greatly increase its potential in
-real-world scenarios, targeting broadcasted skateboard competitions.
+real-world scenarios, targeting broadcasted skateboard competitions. Possible
+approaches include, frame extraction algorithm optimisations, model
+simplifications such as using lighter pre-trained feature extractors and
+utilising hardware acceleration.
+% To address this limitation, future research should focus on optimizing the existing preprocessing steps to reduce their computational demands. Possible approaches might include:
 
-
+%     Algorithm Optimization: Refining the algorithms used for feature extraction and frame processing to enhance their efficiency.
+%     Model Simplification: Exploring lighter, more efficient model architectures that maintain high accuracy while reducing computational load.
+%     Hardware Acceleration: Leveraging hardware accelerations, such as GPUs or specialized AI processing units, which can significantly speed up the processing time.
+%     Parallel Processing Techniques: Implementing parallel processing techniques to expedite the preprocessing stages, allowing for faster throughput and reduced latency.
 
 %analyse sound with video to see if htere is correlation between tricks
 %use computer vision techniques and accelermoter techniques together to get better results
 \section{Conclusion}
-This study aimed to
+This study aimed to classify skateboard tricks from video and compare the
+performance of various deep learning architectures in accomplishing this task.
+This research aimed at enhancing live broadcasts and social media content, in
+order to contribute to the possibilities for innovation in the skateboarding
+industry.
+
+Four architectures were implemented: VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and
+ResNet50-BiLSTM to compare performances of two pre-trained feature extractors
+and sequence models. Evaluations revealed that the selected models were capable
+of matching or exceeding the performance of relevant literature.
+
+Additionally, this research explored the impact of Principle
+Component Analysis (PCA) and data augmentation on model performance. These
+techniques were employed to assess their potential in improving accuracies and
+efficiencies of the selected model architectures. As detailed in Chapter
+\ref{6_evaluation}, these techniques not only enhanced models' accuracy but also
+reduced training times. presents these experiments with relevant performance
+metrics to demonstrate the benefits of these approaches.

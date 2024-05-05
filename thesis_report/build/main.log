@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  23 APR 2024 22:29
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  5 MAY 2024 23:05
  system commands enabled.
 **main.tex
 (./main.tex
@@ -1892,34 +1892,41 @@ Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 \RaggedRightParindent=\skip150
 \JustifyingParindent=\skip151
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip152
+\multirow@cntb=\count510
+\multirow@dima=\skip153
+\bigstrutjot=\dimen294
+)
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen294
-\lightrulewidth=\dimen295
-\cmidrulewidth=\dimen296
-\belowrulesep=\dimen297
-\belowbottomsep=\dimen298
-\aboverulesep=\dimen299
-\abovetopsep=\dimen300
-\cmidrulesep=\dimen301
-\cmidrulekern=\dimen302
-\defaultaddspace=\dimen303
-\@cmidla=\count510
-\@cmidlb=\count511
-\@aboverulesep=\dimen304
-\@belowrulesep=\dimen305
-\@thisruleclass=\count512
-\@lastruleclass=\count513
-\@thisrulewidth=\dimen306
+\heavyrulewidth=\dimen295
+\lightrulewidth=\dimen296
+\cmidrulewidth=\dimen297
+\belowrulesep=\dimen298
+\belowbottomsep=\dimen299
+\aboverulesep=\dimen300
+\abovetopsep=\dimen301
+\cmidrulesep=\dimen302
+\cmidrulekern=\dimen303
+\defaultaddspace=\dimen304
+\@cmidla=\count511
+\@cmidlb=\count512
+\@aboverulesep=\dimen305
+\@belowrulesep=\dimen306
+\@thisruleclass=\count513
+\@lastruleclass=\count514
+\@thisrulewidth=\dimen307
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen307
-\TX@old@table=\dimen308
-\TX@old@col=\dimen309
-\TX@target=\dimen310
-\TX@delta=\dimen311
-\TX@cols=\count514
+\TX@col@width=\dimen308
+\TX@old@table=\dimen309
+\TX@old@col=\dimen310
+\TX@target=\dimen311
+\TX@delta=\dimen312
+\TX@cols=\count515
 \TX@ftn=\toks42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
@@ -1930,11 +1937,11 @@ Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2021/12/21 4.1b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count515
+\FV@CodeLineNo=\count516
 \FV@InFile=\read3
 \FV@TabBox=\box99
-\c@FancyVerbLine=\count516
-\FV@StepNumber=\count517
+\c@FancyVerbLine=\count517
+\FV@StepNumber=\count518
 \FV@OutFile=\write7
 )
 (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
@@ -1946,57 +1953,57 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count518
+\linenopenalty=\count519
 \output=\toks43
-\linenoprevgraf=\count519
-\linenumbersep=\dimen312
-\linenumberwidth=\dimen313
-\c@linenumber=\count520
-\c@pagewiselinenumber=\count521
-\c@LN@truepage=\count522
-\c@internallinenumber=\count523
-\c@internallinenumbers=\count524
-\quotelinenumbersep=\dimen314
-\bframerule=\dimen315
-\bframesep=\dimen316
+\linenoprevgraf=\count520
+\linenumbersep=\dimen313
+\linenumberwidth=\dimen314
+\c@linenumber=\count521
+\c@pagewiselinenumber=\count522
+\c@LN@truepage=\count523
+\c@internallinenumber=\count524
+\c@internallinenumbers=\count525
+\quotelinenumbersep=\dimen315
+\bframerule=\dimen316
+\bframesep=\dimen317
 \bframebox=\box100
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count525
-\c@FV@TrueTabCounter=\count526
+\c@FV@TrueTabGroupLevel=\count526
+\c@FV@TrueTabCounter=\count527
 \FV@TabBox@Group=\box101
-\FV@TmpLength=\skip152
-\c@FV@HighlightLinesStart=\count527
-\c@FV@HighlightLinesStop=\count528
-\FV@LoopCount=\count529
+\FV@TmpLength=\skip154
+\c@FV@HighlightLinesStart=\count528
+\c@FV@HighlightLinesStop=\count529
+\FV@LoopCount=\count530
 \FV@NCharsBox=\box102
-\FV@BreakIndent=\dimen317
-\FV@BreakIndentNChars=\count530
-\FV@BreakSymbolSepLeft=\dimen318
-\FV@BreakSymbolSepLeftNChars=\count531
-\FV@BreakSymbolSepRight=\dimen319
-\FV@BreakSymbolSepRightNChars=\count532
-\FV@BreakSymbolIndentLeft=\dimen320
-\FV@BreakSymbolIndentLeftNChars=\count533
-\FV@BreakSymbolIndentRight=\dimen321
-\FV@BreakSymbolIndentRightNChars=\count534
-\c@FancyVerbLineBreakLast=\count535
+\FV@BreakIndent=\dimen318
+\FV@BreakIndentNChars=\count531
+\FV@BreakSymbolSepLeft=\dimen319
+\FV@BreakSymbolSepLeftNChars=\count532
+\FV@BreakSymbolSepRight=\dimen320
+\FV@BreakSymbolSepRightNChars=\count533
+\FV@BreakSymbolIndentLeft=\dimen321
+\FV@BreakSymbolIndentLeftNChars=\count534
+\FV@BreakSymbolIndentRight=\dimen322
+\FV@BreakSymbolIndentRightNChars=\count535
+\c@FancyVerbLineBreakLast=\count536
 \FV@LineBox=\box103
 \FV@LineIndentBox=\box104
-\FV@LineWidth=\dimen322
+\FV@LineWidth=\dimen323
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count536
-\calc@Bcount=\count537
-\calc@Adimen=\dimen323
-\calc@Bdimen=\dimen324
-\calc@Askip=\skip153
-\calc@Bskip=\skip154
+\calc@Acount=\count537
+\calc@Bcount=\count538
+\calc@Adimen=\dimen324
+\calc@Bdimen=\dimen325
+\calc@Askip=\skip155
+\calc@Bskip=\skip156
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count538
-\calc@Cskip=\skip155
+\calc@Ccount=\count539
+\calc@Cskip=\skip157
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
@@ -2013,26 +2020,26 @@ runsystem(uname -s > "main.w18")...executed
 runsystem(rm -- "main.w18")...executed
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count539
-\decimalpart=\count540
+\integerpart=\count540
+\decimalpart=\count541
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip156
-\fb@frw=\dimen325
-\fb@frh=\dimen326
-\FrameRule=\dimen327
-\FrameSep=\dimen328
+\OuterFrameSep=\skip158
+\fb@frw=\dimen326
+\fb@frh=\dimen327
+\FrameRule=\dimen328
+\FrameSep=\dimen329
 )
 \minted@appexistsfile=\read4
 \minted@bgbox=\box105
 \minted@code=\write8
-\c@minted@FancyVerbLineTemp=\count541
-\c@minted@pygmentizecounter=\count542
+\c@minted@FancyVerbLineTemp=\count542
+\c@minted@pygmentizecounter=\count543
 \@float@every@listing=\toks44
-\c@listing=\count543
+\c@listing=\count544
 )
 runsystem(mkdir -p _minted-main)...executed
 
@@ -2040,98 +2047,98 @@ runsystem(mkdir -p _minted-main)...executed
 
 Package biblatex Warning: Load 'inputenc' before biblatex.
 
-\@quotelevel=\count544
-\@quotereset=\count545
+\@quotelevel=\count545
+\@quotereset=\count546
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 45.
+h' as default language. on input line 46.
 runsystem(which pygmentize && touch main.aex)...executed
 runsystem(rm main.aex)...executed
 (./build/main.aux)
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-5.
+6.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 45.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 45.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 45.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 45.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 45.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 45.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 45.
-LaTeX Font Info:    Redeclaring math accent \check on input line 45.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 45.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 45.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 45.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 45.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 46.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 46.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 46.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 46.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 46.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 46.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 46.
+LaTeX Font Info:    Redeclaring math accent \check on input line 46.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 46.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 46.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 46.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 46.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 45.
+(Font)              `operators' in the math version `normal' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/Lato(0)/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> TU/Lato(0)/m/n on input line 46.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 45.
+(Font)              `operators' in the math version `bold' on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/Lato(0)/m/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> TU/Lato(0)/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/Lato(0)/m/n --> TU/Lato(0)/m/n on input line 45.
+(Font)                  TU/Lato(0)/m/n --> TU/Lato(0)/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/Lato(0)/m/it on input line 45.
+(Font)                  OT1/cmr/m/it --> TU/Lato(0)/m/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/Lato(0)/b/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> TU/Lato(0)/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 45.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 45.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 46.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/Lato(0)/m/n --> TU/Lato(0)/b/n on input line 45.
+(Font)                  TU/Lato(0)/m/n --> TU/Lato(0)/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/Lato(0)/b/it on input line 45.
+(Font)                  OT1/cmr/bx/it --> TU/Lato(0)/b/it on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 45.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 46.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 45.
-\c@mv@tabular=\count546
-\c@mv@boldtabular=\count547
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 46.
+\c@mv@tabular=\count547
+\c@mv@boldtabular=\count548
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -2169,16 +2176,16 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count548
-\scratchdimen=\dimen329
+\scratchcounter=\count549
+\scratchdimen=\dimen330
 \scratchbox=\box106
-\nofMPsegments=\count549
-\nofMParguments=\count550
+\nofMPsegments=\count550
+\nofMParguments=\count551
 \everyMPshowfont=\toks45
-\MPscratchCnt=\count551
-\MPscratchDim=\dimen330
-\MPnumerator=\count552
-\makeMPintoPDFobject=\count553
+\MPscratchCnt=\count552
+\MPscratchDim=\dimen331
+\MPnumerator=\count553
+\makeMPintoPDFobject=\count554
 \everyMPtoPDFconversion=\toks46
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2189,7 +2196,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2200,11 +2207,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count554
+\c@section@level=\count555
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
 
 (./build/main.out) (./build/main.out)
 \@outlinefile=\write9
@@ -2225,8 +2232,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
+Package biblatex Info: Reference section=0 on input line 46.
+Package biblatex Info: Reference segment=0 on input line 46.
 (/usr/share/texlive/texmf-dist/tex/latex/ninecolors/ninecolors.sty
 Package: ninecolors 2021/05/24 v2021C Select colors with proper color contrast
 )
@@ -2236,7 +2243,7 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 45.
+or `english'. on input line 46.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
@@ -2247,7 +2254,7 @@ Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count555
+\c@lstlisting=\count556
 
 (./content/title.tex
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
@@ -2276,7 +2283,7 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 14.4pt on input line 33.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
 (Font)              scaled to size 14.4pt on input line 34.
-<content/figures/ict_logo.pdf, id=272, 851.18pt x 185.69376pt>
+<content/figures/ict_logo.pdf, id=296, 851.18pt x 185.69376pt>
 File: content/figures/ict_logo.pdf Graphic file (type pdf)
 <use content/figures/ict_logo.pdf>
 Package luatex.def Info: content/figures/ict_logo.pdf  used on input line 41.
@@ -2336,7 +2343,13 @@ al flow repre-sen-ta-tion (b)
 \openout11 = main.lof
  [6
 
-] (./build/main.lot)
+] (./build/main.lot
+Underfull \hbox (badness 10000) in paragraph at lines 10--10
+ [][] \TU/Lato(0)/m/n/12 Table [][]Compar-ison of VGG16-BiLSTM and ResNet50-BiLS
+TM model 
+ []
+
+)
 \tf@lot=\write12
 
 \openout12 = main.lot
@@ -2380,7 +2393,7 @@ Underfull \hbox (badness 1297) in paragraph at lines 15--22
 -cles that can be found
  []
 
-<content/chapters/1_introduction/figures/graph.png, id=433, 1003.75pt x 745.786
+<content/chapters/1_introduction/figures/graph.png, id=478, 1003.75pt x 745.786
 25pt>
 File: content/chapters/1_introduction/figures/graph.png Graphic file (type png)
 
@@ -2533,8 +2546,8 @@ LaTeX Warning: Citation 'FundamentalsOfArtificialNeuralNetworksAndDeepLearning'
  on page 5 undefined on input line 160.
 
 [5]
-<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=45
-9, 569.12625pt x 435.6275pt>
+<content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png, id=50
+5, 569.12625pt x 435.6275pt>
 File: content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png G
 raphic file (type png)
 <use content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>
@@ -2567,7 +2580,7 @@ ion mech-a-nisms of living
  []
 
 [6<./content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png>]
-<content/chapters/2_background/figures/cnn_arch.png, id=466, 413.545pt x 218.81
+<content/chapters/2_background/figures/cnn_arch.png, id=511, 413.545pt x 218.81
 75pt>
 File: content/chapters/2_background/figures/cnn_arch.png Graphic file (type png
 )
@@ -2620,7 +2633,7 @@ Underfull \hbox (badness 1715) in paragraph at lines 237--245
 \TU/Lato(0)/m/n/12 [[]]. Figure []2.3[] illus-trates the
  []
 
-<content/chapters/2_background/figures/lstm_architecture.jpg, id=475, 722.7pt x
+<content/chapters/2_background/figures/lstm_architecture.jpg, id=520, 722.7pt x
  366.36874pt>
 File: content/chapters/2_background/figures/lstm_architecture.jpg Graphic file 
 (type jpg)
@@ -2632,7 +2645,7 @@ e.jpg  used on input line 249.
 LaTeX Warning: Citation 'theperformanceoflstmandbilstminforcastingtimeseries' o
 n page 8 undefined on input line 262.
 
-<content/chapters/2_background/figures/bilstm_structure.png, id=476, 428.60126p
+<content/chapters/2_background/figures/bilstm_structure.png, id=521, 428.60126p
 t x 222.8325pt>
 File: content/chapters/2_background/figures/bilstm_structure.png Graphic file (
 type png)
@@ -2874,7 +2887,7 @@ page 13 undefined on input line 194.
 
 LaTeX Warning: Citation 'VGG' on page 13 undefined on input line 198.
 
-<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=502, 438.63875pt
+<content/chapters/3_Literature Review/figures/cnn-lstm.png, id=547, 438.63875pt
  x 385.44pt>
 File: content/chapters/3_Literature Review/figures/cnn-lstm.png Graphic file (t
 ype png)
@@ -2987,7 +3000,7 @@ Underfull \hbox (badness 1082) in paragraph at lines 297--313
 signals were then
  []
 
-<content/chapters/3_Literature Review/figures/signals-tricks.png, id=513, 1319.
+<content/chapters/3_Literature Review/figures/signals-tricks.png, id=558, 1319.
 93124pt x 1011.78pt>
 File: content/chapters/3_Literature Review/figures/signals-tricks.png Graphic f
 ile (type png)
@@ -3003,7 +3016,7 @@ LaTeX Warning: Citation 'SkateboardAIPaper' on page 15 undefined on input line
 328.
 
 [15<./content/chapters/3_Literature Review/figures/signals-tricks.png>]
-<content/chapters/3_Literature Review/figures/chen-tricks.png, id=520, 536.0025
+<content/chapters/3_Literature Review/figures/chen-tricks.png, id=565, 536.0025
 pt x 355.3275pt>
 File: content/chapters/3_Literature Review/figures/chen-tricks.png Graphic file
  (type png)
@@ -3052,7 +3065,7 @@ Underfull \hbox (badness 1320) in paragraph at lines 34--44
 ]. The folder-based method
  []
 
-<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=529, 620.317
+<content/chapters/4_Methodology/figures/folder-based-label.jpg, id=574, 620.317
 5pt x 242.9075pt>
 File: content/chapters/4_Methodology/figures/folder-based-label.jpg Graphic fil
 e (type jpg)
@@ -3060,7 +3073,7 @@ e (type jpg)
 Package luatex.def Info: content/chapters/4_Methodology/figures/folder-based-la
 bel.jpg  used on input line 48.
 (luatex.def)             Requested size: 250.38564pt x 98.0471pt.
-<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=530, 241.9
+<content/chapters/4_Methodology/figures/text-based-labelling.jpg, id=575, 241.9
 0375pt x 272.01625pt>
 File: content/chapters/4_Methodology/figures/text-based-labelling.jpg Graphic f
 ile (type jpg)
@@ -3081,7 +3094,7 @@ Overfull \hbox (22.88794pt too wide) in paragraph at lines 65--77
 \TU/Lato(0)/m/n/12 opposed to relying on single frames or images [[]].
  []
 
-<content/chapters/2_background/figures/Tricks/single.png, id=539, 149.05687pt x
+<content/chapters/2_background/figures/Tricks/single.png, id=584, 149.05687pt x
  216.81pt>
 File: content/chapters/2_background/figures/Tricks/single.png Graphic file (typ
 e png)
@@ -3091,7 +3104,7 @@ g  used on input line 81.
 (luatex.def)             Requested size: 129.74623pt x 188.73235pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/m/n' will be
 (Font)              scaled to size 10.95pt on input line 82.
-<content/chapters/2_background/figures/Tricks/KickflipFrames.PNG, id=540, 289.8
+<content/chapters/2_background/figures/Tricks/KickflipFrames.PNG, id=585, 289.8
 3281pt x 238.64156pt>
 File: content/chapters/2_background/figures/Tricks/KickflipFrames.PNG Graphic f
 ile (type png)
@@ -3113,14 +3126,14 @@ Underfull \hbox (badness 2158) in paragraph at lines 102--111
  []
 
 <content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg, id=5
-42, 1349.04pt x 224.84pt>
+87, 1349.04pt x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg 
 Graphic file (type jpg)
 <use content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg>
 Package luatex.def Info: content/chapters/4_Methodology/figures/kickflip_sequen
 ce_opticalFlow.jpg  used on input line 116.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
-<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=543, 1349.04p
+<content/chapters/4_Methodology/figures/kickflip_sequence.jpg, id=588, 1349.04p
 t x 224.84pt>
 File: content/chapters/4_Methodology/figures/kickflip_sequence.jpg Graphic file
  (type jpg)
@@ -3132,128 +3145,120 @@ ce.jpg  used on input line 121.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18<./content/chapters/4_Methodology/figures/folder-based-label.jpg><./content/c
-hapters/4_Methodology/figures/text-based-labelling.jpg>]
+hapters/4_Methodology/figures/text-based-labelling.jpg>] [19<./content/chapters/
+2_background/figures/Tricks/single.png><./content/chapters/2_background/figures/
+Tricks/KickflipFrames.PNG><./content/chapters/4_Methodology/figures/kickflip_seq
+uence_opticalFlow.jpg><./content/chapters/4_Methodology/figures/kickflip_sequenc
+e.jpg>]
 
-LaTeX Warning: Citation 'imageNetDataset' on page 19 undefined on input line 15
-8.
-
-
-Package caption Warning: \label without proper reference on input line 191.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tab:TL-models' on page 19 undefined on input line 160
-.
+LaTeX Warning: Citation 'imageNetDataset' on page 20 undefined on input line 16
+3.
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 156--161
+Underfull \hbox (badness 1087) in paragraph at lines 161--166
 \TU/Lato(0)/m/n/12 Both models were pre-trained on the large ImageNet dataset [[]],
  []
 
-[19<./content/chapters/2_background/figures/Tricks/single.png><./content/chapter
-s/2_background/figures/Tricks/KickflipFrames.PNG><./content/chapters/4_Methodolo
-gy/figures/kickflip_sequence_opticalFlow.jpg><./content/chapters/4_Methodology/f
-igures/kickflip_sequence.jpg>]
 
-LaTeX Warning: Citation 'VGG' on page 20 undefined on input line 162.
+LaTeX Warning: Citation 'VGG' on page 20 undefined on input line 167.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 20 undefined on input line 
-168.
+173.
 
 
-LaTeX Warning: Citation 'Resnet50' on page 20 undefined on input line 170.
+LaTeX Warning: Citation 'Resnet50' on page 20 undefined on input line 175.
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 170--177
+Underfull \hbox (badness 3417) in paragraph at lines 175--182
 []\TU/Lato(0)/b/n/12 Resnet50: \TU/Lato(0)/m/n/12 Resnet50, intro-duced in 2016 by He et al. [[]], is
  []
 
 
 LaTeX Warning: Citation 'curseofdimensionality' on page 20 undefined on input l
-ine 211.
+ine 216.
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 206--215
+Underfull \hbox (badness 1803) in paragraph at lines 211--220
 \TU/Lato(0)/m/n/12 vectors. While these features capture valu-able infor-ma-tion
 , a large number of
  []
 
 [20]
-Underfull \hbox (badness 1412) in paragraph at lines 224--227
+Underfull \hbox (badness 1412) in paragraph at lines 229--232
 []\TU/Lato(0)/b/n/12 VGG16-LSTM: \TU/Lato(0)/m/n/12 This archi-tec-ture lever-ag
 es the pre-trained VGG16 model to
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 227--231
+Underfull \hbox (badness 1325) in paragraph at lines 232--236
 \TU/Lato(0)/m/n/12 for feature extrac-tion, followed by an LSTM for sequence mod
 elling. The
  []
 
 
-Underfull \hbox (badness 3965) in paragraph at lines 231--235
+Underfull \hbox (badness 3965) in paragraph at lines 236--240
 []\TU/Lato(0)/b/n/12 VGG16-BiLSTM: \TU/Lato(0)/m/n/12 This archi-tec-ture employ
 s the VGG16 model for feature
  []
 
 
 LaTeX Warning: Citation 'HARRecognitionInVideosUsingARobustCNNLSTMApproach' on 
-page 21 undefined on input line 244.
+page 21 undefined on input line 249.
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 21 undefined on input line 
-245.
+250.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--250
+Underfull \hbox (badness 10000) in paragraph at lines 246--255
 []\TU/Lato(0)/m/n/12 The effec-tive-ness of these models in prior research for 
 video-based
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 241--250
+Underfull \hbox (badness 1502) in paragraph at lines 246--255
 \TU/Lato(0)/m/n/12 Action Recog-ni-tion tasks moti-vated their selec-tion for th
 is study. For instance,
  []
 
 
-Underfull \hbox (badness 1910) in paragraph at lines 241--250
+Underfull \hbox (badness 1910) in paragraph at lines 246--255
 \TU/Lato(0)/m/n/12 [[]]. Addi-tion-ally, Chen’s
  []
 
-<content/chapters/4_Methodology/figures/architecture.png, id=562, 703.62875pt x
+<content/chapters/4_Methodology/figures/architecture.png, id=611, 703.62875pt x
  844.15375pt>
 File: content/chapters/4_Methodology/figures/architecture.png Graphic file (typ
 e png)
 <use content/chapters/4_Methodology/figures/architecture.png>
 Package luatex.def Info: content/chapters/4_Methodology/figures/architecture.pn
-g  used on input line 253.
+g  used on input line 258.
 (luatex.def)             Requested size: 455.24411pt x 546.15593pt.
+[21]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
 
 LaTeX Warning: Citation 'classificationAssessmentMethodstharwat2020' on page 22
- undefined on input line 293.
-
-
-LaTeX Warning: Citation 'Evaluation:fromprecisionrecallandF-measuretoROCinforme
-dnessmarkednessandcorrelation' on page 22 undefined on input line 301.
-
-
-Overfull \hbox (91.12993pt too wide) in paragraph at lines 299--304
-\TU/Lato(0)/m/n/12 posi-tives [[]].
- []
+ undefined on input line 298.
 
 [22]
 
 LaTeX Warning: Citation 'Evaluation:fromprecisionrecallandF-measuretoROCinforme
-dnessmarkednessandcorrelation' on page 23 undefined on input line 310.
+dnessmarkednessandcorrelation' on page 23 undefined on input line 306.
 
 
-Overfull \hbox (52.49393pt too wide) in paragraph at lines 308--313
+Overfull \hbox (91.12993pt too wide) in paragraph at lines 304--309
+\TU/Lato(0)/m/n/12 posi-tives [[]].
+ []
+
+
+LaTeX Warning: Citation 'Evaluation:fromprecisionrecallandF-measuretoROCinforme
+dnessmarkednessandcorrelation' on page 23 undefined on input line 315.
+
+
+Overfull \hbox (52.49393pt too wide) in paragraph at lines 313--318
 \TU/Lato(0)/m/n/12 [[]].In
  []
 
@@ -3261,270 +3266,134 @@ Overfull \hbox (52.49393pt too wide) in paragraph at lines 308--313
 pters/4_Methodology/figures/architecture.png>]
 Chapter 5.
 
-Underfull \hbox (badness 2818) in paragraph at lines 11--18
-[]\TU/Lato(0)/b/n/12 Tensor-flow: \TU/Lato(0)/m/n/12 Tensor-flow is an open-sour
-ce library, powerful in numer-ical
+Underfull \hbox (badness 2913) in paragraph at lines 11--19
+\TU/Lato(0)/m/n/12 and Machine Learning appli-ca-tions. It provides a rich tools
+et that allows for
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 20--24
+\TU/Lato(0)/m/n/12 compo-nents of devel-op-ment, offering essen-tial tools relat
+ed to video processing,
  []
 
 
 LaTeX Warning: Citation 'SkateboardAIPaper' on page 25 undefined on input line 
-37.
+40.
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 37--44
+Underfull \hbox (badness 7504) in paragraph at lines 40--47
 []\TU/Lato(0)/m/n/12 In consid-er-a-tion of Chen’s (2023) [[]] research, which
 
  []
 
 
-Underfull \hbox (badness 5726) in paragraph at lines 37--44
+Underfull \hbox (badness 5726) in paragraph at lines 40--47
 \TU/Lato(0)/m/n/12 advo-cated for a sequence length of 45 frames per video, with
  each frame
  []
 
 
-Underfull \hbox (badness 3108) in paragraph at lines 37--44
-\TU/Lato(0)/m/n/12 sized at 299x299 pixels, these param-e-ters were initially ev
-al-u-ated. However,
+Underfull \hbox (badness 2564) in paragraph at lines 40--47
+\TU/Lato(0)/m/n/12 sized at 299\OMS/cmsy/m/n/12 \TU/Lato(0)/m/n/12 299 pixels, these param-e-ters were initially eval-u-ated. However,
  []
 
 [25
 
 
 ]
-<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=598, 1349.0
+<content/chapters/5_Implementation/figures/optical_sequence.jpg, id=645, 1349.0
 4pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/optical_sequence.jpg Graphic fi
 le (type jpg)
 <use content/chapters/5_Implementation/figures/optical_sequence.jpg>
 Package luatex.def Info: content/chapters/5_Implementation/figures/optical_sequ
-ence.jpg  used on input line 73.
+ence.jpg  used on input line 76.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
-<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=59
-9, 1349.04pt x 224.84pt>
+<content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg, id=64
+6, 1349.04pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg G
 raphic file (type jpg)
 <use content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>
 Package luatex.def Info: content/chapters/5_Implementation/figures/uniform_samp
-ling_sequence.jpg  used on input line 78.
+ling_sequence.jpg  used on input line 81.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
 
 
-LaTeX Warning: Citation 'farneback2003two' on page 26 undefined on input line 8
-7.
+LaTeX Warning: Citation 'farneback2003two' on page 26 undefined on input line 9
+0.
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 87--96
+Underfull \hbox (badness 2213) in paragraph at lines 90--99
 []\TU/Lato(0)/m/n/12 This study employed Farneback’s algo-rithm [[]] using the
 
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 87--96
+Underfull \hbox (badness 1028) in paragraph at lines 90--99
 \TU/Lato(0)/m/n/12 vari-a-tions. The cv2 func-tion \TU/lmtt/m/n/12 cv2.calcOptic
 alFlowFarneback() \TU/Lato(0)/m/n/12 performed dense
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 97--103
+Underfull \hbox (badness 4266) in paragraph at lines 100--106
 \TU/Lato(0)/m/n/12 by the optical flow func-tion into polar coor-di-nates, disca
 rding the direc-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--114
+Underfull \hbox (badness 10000) in paragraph at lines 110--117
 \TU/Lato(0)/m/n/12 This research explored a number of augmen-ta-tion tech-niques
  using the
  []
 
 [26<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./content/
 chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>]
-<content/chapters/5_Implementation/figures/augmented_frames.jpg, id=608, 1349.0
+<content/chapters/5_Implementation/figures/augmented_frames.jpg, id=654, 1349.0
 4pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/augmented_frames.jpg Graphic fi
 le (type jpg)
 <use content/chapters/5_Implementation/figures/augmented_frames.jpg>
 Package luatex.def Info: content/chapters/5_Implementation/figures/augmented_fr
-ames.jpg  used on input line 126.
+ames.jpg  used on input line 129.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
-<content/chapters/5_Implementation/figures/unaugmented_frames.jpg, id=609, 1349
+<content/chapters/5_Implementation/figures/unaugmented_frames.jpg, id=655, 1349
 .04pt x 224.84pt>
 File: content/chapters/5_Implementation/figures/unaugmented_frames.jpg Graphic 
 file (type jpg)
 <use content/chapters/5_Implementation/figures/unaugmented_frames.jpg>
 Package luatex.def Info: content/chapters/5_Implementation/figures/unaugmented_
-frames.jpg  used on input line 131.
+frames.jpg  used on input line 134.
 (luatex.def)             Requested size: 455.24411pt x 75.87164pt.
 
 \openout7 = main.pyg
 
 (./_minted-main/default.pygstyle)
-(./_minted-main/C101125E6B2A237BCBC841B1C104B429EBB8F0E703F74D24504D823C7A1841B
-D.pygtex) [27<./content/chapters/5_Implementation/figures/augmented_frames.jpg><
-./content/chapters/5_Implementation/figures/unaugmented_frames.jpg>]
-
-LaTeX Warning: Citation 'dimensionality_reduction' on page 28 undefined on inpu
-t line 199.
-
-[28]
-<content/chapters/5_Implementation/figures/pca_vgg.png, id=622, 569.12625pt x 4
-56.70625pt>
-File: content/chapters/5_Implementation/figures/pca_vgg.png Graphic file (type 
-png)
-<use content/chapters/5_Implementation/figures/pca_vgg.png>
-Package luatex.def Info: content/chapters/5_Implementation/figures/pca_vgg.png 
- used on input line 216.
-(luatex.def)             Requested size: 204.85846pt x 164.3932pt.
-<content/chapters/5_Implementation/figures/pca_resnet.png, id=623, 569.12625pt 
-x 456.70625pt>
-File: content/chapters/5_Implementation/figures/pca_resnet.png Graphic file (ty
-pe png)
-<use content/chapters/5_Implementation/figures/pca_resnet.png>
-Package luatex.def Info: content/chapters/5_Implementation/figures/pca_resnet.p
-ng  used on input line 223.
-(luatex.def)             Requested size: 204.85846pt x 164.3932pt.
-
-
-LaTeX Warning: Citation 'optunaFramework' on page 29 undefined on input line 24
-0.
-
-
-Underfull \hbox (badness 1571) in paragraph at lines 246--251
-[]\TU/Lato(0)/m/n/12 This iter-a-tive approach enables Optuna to navi-gate the 
-search space and
- []
-
-[29<./content/chapters/5_Implementation/figures/pca_vgg.png><./content/chapters/
-5_Implementation/figures/pca_resnet.png>]
-Underfull \hbox (badness 7081) in paragraph at lines 261--268
-[]\TU/Lato(0)/m/n/12 All models employed the Stochastic Gradient Descent (SGD) 
-opti-miser
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 284--289
-\TU/Lato(0)/m/n/12 Perfor-mance metrics such as loss curves, confu-sion matrices
- and F-scores, were
- []
-
-
-Underfull \hbox (badness 1132) in paragraph at lines 290--297
-\TU/Lato(0)/m/n/12 the hyper-pa-ram-e-ters and perfor-mance scores were saved fo
-r future anal-ysis and
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 309--314
-\TU/Lato(0)/m/n/12 This study incor-po-rated model check pointing in the trainin
-g process to save
- []
-
-[30]) (./content/chapters/6_evaluation/evaluation.tex
-Underfull \hbox (badness 1867) in paragraph at lines 316--1
-\TU/Lato(0)/m/n/12 A base-line model approach defined during devel-op-ment of th
-e arte-fact allowed
- []
-
-[31]
-Chapter 6.
-
-LaTeX Warning: Citation 'adam_paper' on page 32 undefined on input line 12.
-
-
-LaTeX Warning: Citation 'SGD_stability_paper' on page 32 undefined on input lin
-e 21.
-
-<content/chapters/5_Implementation/figures/Adam_optimiser.PNG, id=640, 362.1028
-1pt x 187.45032pt>
-File: content/chapters/5_Implementation/figures/Adam_optimiser.PNG Graphic file
- (type png)
-<use content/chapters/5_Implementation/figures/Adam_optimiser.PNG>
-Package luatex.def Info: content/chapters/5_Implementation/figures/Adam_optimis
-er.PNG  used on input line 29.
-(luatex.def)             Requested size: 204.85846pt x 106.04976pt.
-<content/chapters/5_Implementation/figures/SGD_optimiser.PNG, id=641, 362.85562
-pt x 188.95593pt>
-File: content/chapters/5_Implementation/figures/SGD_optimiser.PNG Graphic file 
-(type png)
-<use content/chapters/5_Implementation/figures/SGD_optimiser.PNG>
-Package luatex.def Info: content/chapters/5_Implementation/figures/SGD_optimise
-r.PNG  used on input line 37.
-(luatex.def)             Requested size: 204.85846pt x 106.68243pt.
-
-Underfull \hbox (badness 2635) in paragraph at lines 64--71
-\TU/Lato(0)/m/n/12 expen-sive video anal-ysis pipeline. This pipeline involves 
-various steps: frame
- []
-
-[32
-
-
-<./content/chapters/5_Implementation/figures/Adam_optimiser.PNG><./content/chapt
-ers/5_Implementation/figures/SGD_optimiser.PNG>]
-<content/chapters/6_evaluation/figures/resnet-lstm-cm.png, id=650, 1198.4775pt 
-x 956.57375pt>
-File: content/chapters/6_evaluation/figures/resnet-lstm-cm.png Graphic file (ty
-pe png)
-<use content/chapters/6_evaluation/figures/resnet-lstm-cm.png>
-Package luatex.def Info: content/chapters/6_evaluation/figures/resnet-lstm-cm.p
-ng  used on input line 92.
-(luatex.def)             Requested size: 318.66948pt x 254.3374pt.
+(./_minted-main/7C959F0A28E08D284FC485BB942677CD90AB567E6021320A50090831D0EB3E3
+7.pygtex
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 3.
 )
 
-LaTeX Warning: Empty bibliography on input line 86.
+! Package caption Error: Should not be used with subtype `subfigure'.
 
-(./content/appendices/appendix_a.tex [33<./content/chapters/6_evaluation/figures
-/resnet-lstm-cm.png>]
-Chapter 7.
-) (./content/appendices/appendix_b.tex [34
-
-]
-Chapter 8.
-)
-runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed
-runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed
- [35
-
-] (./build/main.aux)
-
-LaTeX Warning: There were undefined references.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6998CFBE7EA55E856BA64EE135AEC48F;10521.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
-runsystem(rm main.pyg)...failed 
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
+See the caption package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 			\captionof{subfigure}
+                            {Augmentation Parameters 1}
 
 Here is how much of LuaTeX's memory you used:
- 39358 strings out of 477805
+ 39398 strings out of 477805
  100000,1977958 words of node,token memory allocated
- 971 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 21 attribute, 129 glue_spe
-c, 21 attribute_list, 1 write, 7 pdf_action nodes
-   avail lists: 1:4,2:1099,3:399,4:231,5:930,6:143,7:6983,8:86,9:624,10:19,11:36
-5,12:8
- 58295 multiletter control sequences out of 65536+600000
- 82 fonts using 19916359 bytes
+ 15803 words of node memory still in use:
+   101 hlist, 10 vlist, 63 rule, 43 disc, 14 local_par, 4 dir, 3 math, 306 glue,
+ 197 kern, 61 penalty, 1101 glyph, 335 attribute, 151 glue_spec, 335 attribute_l
+ist, 5 temp, 4 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_dest, 9 pdf_action
+, 85 pdf_colorstack, 2 pdf_setmatrix, 2 pdf_save, 2 pdf_restore nodes
+   avail lists: 1:4,2:459,3:325,5:702,6:121,7:5569,8:79,9:457,10:17,11:318,12:5
+ 58390 multiletter control sequences out of 65536+600000
+ 85 fonts using 20294623 bytes
  106i,12n,128p,1184b,1498s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texl
-ive/texmf-dist/fonts/truetype/typoland/lato/Lato-Italic.ttf></usr/share/texlive/
-texmf-dist/fonts/truetype/typoland/lato/Lato-Regular.ttf></usr/share/texlive/tex
-mf-dist/fonts/truetype/typoland/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb>
-Output written on main.pdf (43 pages, 2825565 bytes).
-
-PDF statistics: 715 PDF objects out of 1000 (max. 8388607)
- 606 compressed objects within 7 object streams
- 133 named destinations out of 1000 (max. 131072)
- 545 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+!  ==> Fatal error occurred, no output PDF file produced!

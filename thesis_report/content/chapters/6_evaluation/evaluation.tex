@@ -1,5 +1,5 @@
 \clearpage
-\chapter{Evaluation}
+\chapter{Evaluation} \label{6_evaluation}
 \section{Model Training Specifications}
 Due to the absence of a dedicated graphics card, training exclusively relied on
 the CPU, featuring a Ryzen 5 3600 6-core processor, operating at a base clock
@@ -12,10 +12,10 @@ experiments conducted.
 This study compared the results of Stochastic Gradient Descent (SGD) and Adam
 \cite{adam_paper} as optimisation algorithms during training. The results
 suggest that SGD may be more effective at reducing overfitting compared to Adam.
-This improvement is illustrated in Figure \ref{fig:loss_graphs}, using
-an iteration of the VGG-BiLSTM architecture. While, Adam initially shows promise with good
-generalisation, it quickly encounters a pitfall, where the validation loss
-begins to climb, indicating overfitting. In contrast, the SGD-trained model
+This improvement is illustrated in Figure \ref{fig:loss_graphs}, using an
+iteration of the VGG-BiLSTM architecture. While, Adam initially shows promise
+with good generalisation, it quickly encounters a pitfall, where the validation
+loss begins to climb, indicating overfitting. In contrast, the SGD-trained model
 exhibits a more stable validation loss, likely due to its algorithmic stability
 and its capability to achieve small generalisation errors as explained in the
 study by Hardt et al. (2016) \cite{SGD_stability_paper}. The results observed
@@ -54,8 +54,8 @@ Experiments revealed that each of the four models demonstrated improvements in
 accuracies following the application of data augmentation on the input data.
 Enhancements ranged from a 5\% increase in Model 3, to a 9\% increase in Models
 1 and 4. On average, model accuracy increased by 7.75\% highlighting its
-effectiveness in enhancing the model's ability to generalise on unseen data.
-These results
+effectiveness in enhancing the model's ability to generalise on unseen data by
+adding more variability to the training data.
 
 \begin{table}[htbp]
     \centering
@@ -83,10 +83,10 @@ performance. The analysis compared VGG16-BiLSTM and ResNet50-BiLSTM as they were
 the top-performing models from each category of pre-trained models, This
 comparison focused on their accuracies before and after the application of PCA,
 as well as differences in training times. To ensure fair results, both models
-were trained with using the same augmented data, with features reduced to their
+were trained using the same augmented data, with features reduced to their
 respective pre-calculated number of components discussed in Section
 \ref{5_dimensionality_reduction}. Table \ref{tab:pca_effect} presents a
-side-by-side comparison of these models with their training times along.
+side-by-side comparison of these models with their training times.
 
 \begin{table}[htbp]
 	\centering
@@ -107,7 +107,7 @@ side-by-side comparison of these models with their training times along.
 The application of PCA shows significant results, not only improving accuracies
 but also reducing training times drastically. These results highlight the
 benefits of applying dimensionality reduction to combat the 'curse of
-dimensionality', often encountered with high-dimensional data spaces as noted in
+dimensionality', often encountered with high-dimensional data, noted in
 Section \ref{4_dimensionality_reduction}. The observed improvements are a result
 of the removal of redundant features in the dataset, further enhancing the
 model's learning capabilities by allowing them to focus on the most informative
@@ -143,38 +143,65 @@ classify a single 2-second video at $\sim$30fps for each architecture.
 	\label{tab:evaluation_time}
 \end{table}
 The slow processing speeds outlined in Table \ref{tab:evaluation_time} is caused
-by the computational expensive video analysis pipeline required. This pipeline
-involves various steps: frame extraction using optical flow, feature extraction
-with models like ResNet50 or VGG16, dimensionality reduction using PCA and
-finally classifying the video from the sequence model. While this pipeline
-negatively affected evaluation times, it was responsible for achieving high
-accuracies and significantly accelerating training time.
+by the computational expensive video analysis pipeline required before
+evaluation. While this pipeline negatively affected evaluation times, it was
+responsible for achieving high accuracies and significantly accelerating
+training time.
+% evaluation. This pipeline involves various steps: frame extraction using
+% optical flow, feature extraction with models like ResNet50 or VGG16,
+% dimensionality reduction using PCA and finally classifying the video from the
+% sequence model.
 
 \section{Discussion}
 %conslusions from experiments, what worked, what cost, training time
-\subsection{Final Results}
+\subsection{Final Findings}
 %first write about table models_results, describe the best model, indicate that the model architectures can be found in appendix
 %then i want to discuss the experiments results, compare with literature too, mention augmentation increased in this paper, pca in this paper etc..
 % %then also
-As shown in Table \ref{tab:model-summary}, the VGG-BiLSTM model emerged as the
-top performer with a final accuracy of 88\%. This performance was significantly
-enhanced through the various pre-processing techniques employed in the data
-pipeline, which not only helped in improving accuracies but also in reducing
-training times.
 
-The integration of data augmentation was particularly beneficial as outlined in
-Section \ref{data_augmentation_6}. By addressing the limitation of limited data
-and artificially expanding the diversity of the training dataset through
-transformation such as adjustments in brightness, slight rotations and zoom
-factors, each model demonstrated a significant increase in performance.
-% Table \ref{tab:models_results} presents the final model performance figures from
-% the selected architecture groups. The best performing model architecture was the
-% VGG16-BiLSTM, with an accuracy of 88\%. These models underwent many iterations
-% of tuning to
-%mention that we got these accuraccies with the application of data augmentation
-%and also pca helping us with trainin time significantly but also with accuracies as mentioned in section **
-%then after lightly brushing past the experiments conducted, begin comparing with Chens models,
+% \noindent
+% \textbf{Optimisation methods} The use of SGD as an optimiser was crucial in
+% reducing overfitting during training, aligning with research that suggests its
+% effectiveness at maintaining stable generalisation.
 
+% \noindent
+% \textbf{Data Augmentation's Impact}
+% The integration of data augmentation significantly enhanced accuracies by an
+% average of 7.75\% across all models. By artificially expanding the
+% diversity of the training dataset through modifications such as changes in
+% brightness, height and width shfits and zoom factors, the training dataset
+% diversity was increased. This approach exposed the models to a wider variety of
+% data than the original set making them more capable to generalise on unseen data.
+% \noindent
+% \textbf{PCA's Role}
+
+
+This study's extensive testing on various Deep Learning architectures and the
+application of various preprocessing techniques, have demonstrated advancements
+in accuracies and training times in trick classification. These results
+highlight the effectiveness of applying tailored preprocessing methods in
+optimising model performance.
+
+As a result of the extensive preprocessing techniques employed, the VGG-BiLSTM
+model emerged as the top performer with a final accuracy of 88\%. The full table
+of final model accuracies is presented in Table \ref{tab:models_results}.
+
+% Results show that regardless of the feature extractor, each BiLSTM model
+% performed better than the LSTM version.
+Across all configurations, BiLSTM variants outperformed their equivalent LSTM
+counterparts. While the LSTM models still demonstrated favourable accuracies, the
+BiLSTM models improved by an average of 4\%, likely due to their ability
+to process input data from both forward and backward directions. This
+dual-direction processing enhances the ability of these models to recognise
+specific temporal patterns in the data that might be missed by LSTM's.
+
+Despite the common preference for ResNet50 for feature extraction due to its
+deeper and more complex structure, in this specific scenario ResNet50 models
+slightly underperformed compared to VGG16 models. This could suggest that in the
+context of skateboard trick classification, ResNet50 does not necessarily
+translate to better performance. It is possible that the simpler and lighter
+capabilities of VGG16 are more effective for specific characteristics found in
+skateboard tricks.
 
 \begin{table}[htbp]
 	\centering
@@ -192,27 +219,130 @@ factors, each model demonstrated a significant increase in performance.
 	\label{tab:models_results}
 \end{table}
 
+
+\subsubsection{Comparative Analysis}
+When comparing this study's results to that of Chen (2023)
+\cite{SkateboardAIPaper}, Chen employed a wide range of architectures, including
+the ones evaluated in this study. Despite this, this study achieved a higher
+accuracy of 88\% with the VGG16-BiLSTM model, in contrast to Chen's highest
+outlined accuracy of 84\% using the ResNet50 + Attention + BiLSTM model. In
+addition, compared to Chen, this study exhibits remarkable improvements in
+training time with an average reduction of 41:04 minutes, compared to their
+models. Interestingly, Chen also demonstrated higher accuracies with models
+based on the ResNet50 feature extractor as apposed to VGG, which contrasts the
+findings of this study where VGG16 based models outperformed ResNet50 variants.
+
+%go on about why they are different,
+The differences in model performance could be due to several factors. Firstly,
+the two studies employed different hyperparameter configurations such
+as learning rate, epochs, and dropout rates during training. Secondly, compared
+to Chen, this research included more training data per class. Thirdly, the use
+of optical flow and PCA in this research, could have provided a more
+concentrated feature set for training the models, leading to higher accuracies.
+
+% chen avg time = 50 mins
+% 8.6
+% Chen,
+% did not use optical flow frame extraction or Dimensionality Reduction
+% techniques.
+
 \subsection{Classification observations}
-%The reason it does not do so well with kickflips, is becuase some kickflip videos are filmed with the skater facing sideways, and it classifies them as shuvit, probaly because most shuvits are sideways
-Trained models often encountered difficulty in differentiating between both the
-ollie and kickflip compared to the pop shuvit. This challenge likely arises to
+Trained models often encountered difficulty in differentiating between the ollie
+and kickflip compared to the pop shuvit. This challenge likely arises due to
 their shared visual characteristics. Both the ollie and the kickflip involve
 common elements such as the initial pop of the skateboard and the absence of
 rotation on the y-axis, which distinguishes them to the pop shuvit. The
-confusion matrix shown in Figure \ref{fig:resnet-lstm-confusion} presents the
-ResNet-LSTM model exhibiting slightly better classification accuracy for pop
-shuvits compared to ollies and kickflips.
+confusion matrices illustrated in Figure \ref{fig:resnet-lstm-confusion}
+demonstrate a favourable classification rate on pop-shuvits across all models
+compared to ollies and kickflips. Interestingly, in the classification of pop
+shuvits, BiLSTM models demonstrated 100\% classification accuracy, while LSTM
+models, while still performing well, slightly lagged behind with classifying 11
+out of 12 instances.
 
-\begin{figure}[h]
+
+
+% \begin{figure}[h]
+% 	\centering
+%   \includegraphics[width=0.7 \textwidth]{content/chapters/6_evaluation/figures/resnet-lstm-cm.png}
+%   \caption{ResNet50-LSTM Confusion Matrix}
+% \label{fig:resnet-lstm-confusion}
+% \end{figure}
+
+\begin{figure}[ht!]
 	\centering
-  \includegraphics[width=0.7 \textwidth]{content/chapters/6_evaluation/figures/resnet-lstm-cm.png}
-  \caption{ResNet50-LSTM Confusion Matrix}
-\label{fig:resnet-lstm-confusion}
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/vgg-lstm-cm.png}
+			\caption{VGG16-LSTM}
+			\label{fig:vgg_lstm_loss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/vgg-bilstm-cm.png}
+			\caption{VGG16-BiLSTM}
+			\label{fig:vgg_bilstm_loss}
+	\end{subfigure}
+	\vspace{0.5cm} % Add vertical space between rows
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/resnet-lstm-cm.png}
+			\caption{ResNet50-LSTM}
+			\label{fig:resnet_lstm_loss}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.45\textwidth}
+			\centering
+			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/resnet-bilstm-cm.png}
+			\caption{ResNet50-BiLSTM}
+			\label{fig:resnet_bilstm_loss}
+	\end{subfigure}
+
+	\caption{Confusion matrices for each architecture.}
+	\label{fig:model_cm}
 \end{figure}
 
 \section{Limitations}
-This study encountered a significant limitation, due to the insufficient amount
-of data available for training the models. The scarcity of this data constrained
-the ability to train more robust and accurate models, potentially not allowing
-them to capture the full variability of real-world scenarios. This limitation
-presented several challenges
+\noindent
+\textbf{Limited Data:} The insufficient amount of data available for training
+the models constrained the ability to train more robust and accurate models.
+This limitation potentially prohibited the models from capturing the full
+variability of skateboard tricks filmed by video. Thus, likely not accounting
+for various lighting conditions, camera angles, video quality and environmental
+conditions. The result of not considering these aspects, is the unsuitability of
+the application in real-world scenarios.
+
+\noindent
+\textbf{Processing efficiency:} The current implementation of video analysis pipeline,
+while effective in improving accuracies and reducing training times, suffers
+from processing delays. This limitation stems from the computationally expensive
+analysis steps required before trick evaluation. These steps, including
+optical-flow frame extraction, feature extraction and PCA dimensionality
+reduction, delay the processing time, making it less suitable for real-time
+applications.
+
+
+
+% This divergence in model performance could be attributed to several factors.
+% Firstly, the two studies may have utilized different configurations of
+% hyperparameters such as learning rates, dropout rates, and epoch numbers, which
+% significantly impact model training and final performance. Secondly, the
+% incorporation of attention mechanisms in Chen’s study, while adding model
+% complexity and potential for better feature extraction, might not have been
+% optimized in the same way as the simpler architectures in this study, leading to
+% varying results.
+
+% Additionally, the training datasets, though similar in content, might have
+% differed in terms of data quality, quantity, and preprocessing methods. This
+% study’s use of optical flow and PCA could have provided a more refined feature
+% set for training the models, leading to better generalization and higher
+% accuracies. In contrast, the specific preprocessing and augmentation techniques
+% employed by Chen might have favored the ResNet50 architecture, which is
+% generally more capable of deeper feature extraction compared to VGG16.
+
+% These findings underscore the importance of comprehensive hyperparameter tuning
+% and the need to adapt preprocessing strategies to the specific characteristics
+% of the model architectures used. This study's results suggest that with careful
+% optimization, VGG architectures can perform competitively and even outperform
+% more complex models like ResNet50, especially when combined with effective
+% preprocessing techniques.Vkkkkkk

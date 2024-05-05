@@ -110,17 +110,17 @@ the video.
 This research explored a number of augmentation techniques using the
 \texttt{ImageDataGenerator} library provided by Tensorflow. This process
 involved defining a number of parameters that influenced the augmentation
-patterns applied to each frame, as illustrated in \ref{aug-params}. In order to
-expand the number of training samples, this study created multiple copies of the
+patterns applied to each frame, . In order to
+expand the number of training samples, this study created two copies of the
 original dataset, each augmented with its own set of unique parameters
 controlling image shifts, brightness, scaling and other transformations.
 
 Figure \ref{fig:originalFrames-againstAugmented} showcases an augmented trick
 sequence against its original, split into six frames for illustrative purposes.
-Experiments revealed that certain augmentation techniques such as image flipping
-and large rotational shifts disrupted the visualisation of the trick, negatively
-impacting model performance, thus these were removed or adjusted from the
-augmentation parameters.
+Certain augmentation techniques such as image flipping and large rotational
+shifts disrupted the visualisation of the trick, negatively impacting model
+performance, thus these were removed or adjusted from the augmentation
+parameters.
 
 \begin{figure}[h!]
 	\centering
@@ -138,29 +138,53 @@ augmentation parameters.
 	\label{fig:originalFrames-againstAugmented}
 \end{figure}
 
-\begin{figure}
-	\begin{minted}[frame=single,
-				   framesep=3mm,
-				   linenos=true,
-				   xleftmargin=21pt,
-				   tabsize=4]{js}
-	{
-		"augment_params_1" = {
-			'width_shift_range': 0.1,
-			'height_shift_range': 0.1,
-			'shear_range': 0.1,
-			'rotation_range': 10,
-			'zoom_range': 0.2,
-			'brightness_range': (0.7, 1.3),
-			'channel_shift_range': 20.0,
-			'fill_mode': 'nearest'
-			}
-	}
-	\end{minted}
-	\caption{Augmentation Parameters}
-	\label{aug-params}
-	\end{figure}
-
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+			\begin{minted}[frame=single,
+										 framesep=2mm,
+										 linenos=true,
+										 fontsize=\footnotesize,
+										 tabsize=4,
+										 bgcolor=white]{json}
+{
+	"width_shift_range": 0.1,
+	"height_shift_range": 0.1,
+	"shear_range": 0.1,
+	"rotation_range": 10,
+	"zoom_range": 0.2,
+	"brightness_range": [0.7, 1.3],
+	"channel_shift_range": 20.0,
+	"fill_mode": "nearest"
+}
+			\end{minted}
+			\caption{Augmentation Parameters 1}
+			\label{fig:augment_params_1}
+	\end{subfigure}\hfill
+	\begin{subfigure}[b]{0.48\textwidth}
+			\begin{minted}[frame=single,
+										 framesep=2mm,
+										 linenos=true,
+										 fontsize=\footnotesize,
+										 tabsize=4,
+										 bgcolor=white]{json}
+{
+	"width_shift_range": 0.2,
+	"height_shift_range": 0.1,
+	"shear_range": 0.8,
+	"rotation_range": 15,
+	"zoom_range": 0.2,
+	"brightness_range": [0.2, 0.1],
+	"channel_shift_range": 10.0,
+	"fill_mode": "nearest"
+}
+			\end{minted}
+			\caption{Augmentation Parameters 2}
+			\label{fig:augment_params_2}
+	\end{subfigure}
+	\caption{Comparison of Augmentation Parameters}
+	\label{fig:augmentation_parameters}
+\end{figure}
 
 \section{Feature Extraction and Preprocessing for Training}
 %After determining the most significant frames from each video through a series
@@ -231,10 +255,14 @@ in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$ respecti
 	\label{fig:pca_plots}
 \end{figure}
 
-The application of PCA dimensionality reduction significantly improved training
-efficiency. By transforming the high-dimensional feature space extracted by
-pre-trained models into a lower-dimensional one, PCA effectively reduced the
-computational costs during training.
+The application of PCA dimensionality reduction significantly reduced training
+times. This efficiency significantly sped up the process of hyperparameters
+tuning by reducing waiting times associated with training each iteration.
+
+
+% By transforming the high-dimensional feature space extracted by
+% pre-trained models into a lower-dimensional one, PCA effectively reduced the
+% computational costs during training.
 
 \section{Hyperparameter Optimisation}
 The architectures described in this study represent the best versions of
@@ -287,22 +315,11 @@ thereby improving performance. Additionally, the validation loss for the BiLSTM
 configurations generally exhibited more volatility, likely due to the complexity
 of their bidirectional layers.
 
+All models made use of Early Stopping to cut training short when the models
+began to overfit. This is evident in Figure \ref{fig:model_losses}, where the
+validation loss of each model began to rise significantly, indicating a decline
+in performance on unseen data.
 %something about all models rised up a lot towardsthe end but early stopping did its job
-
-\begin{table}[htbp]
-	\centering
-	\begin{tabular}{l c}
-			\toprule
-			\textbf{Model} & \textbf{Training Time} \\
-			\midrule
-			VGG 16 & 01:46:00 \\
-			ResNet50 & 01:37:08 \\
-			\bottomrule
-	\end{tabular}
-	\caption{Evaluation time (hh:mm:ss) for skateboard trick classification models.}
-	\label{tab:pre-trained_time}
-\end{table}
-
 \begin{figure}[ht!]
 	\centering
 	\begin{subfigure}{0.45\textwidth}
@@ -343,9 +360,9 @@ the training process due to excessive overfitting observed with Adam in Section
 skateboard tricks, it required longer training times to converge. %maybe talk about categorical crossentropy and the one hot encoded labels
 
 
-Table \ref{tab:pre-trained_time} provides an overview of the training times of
-applying the pre-trained models VGG16 and ResNet50 on the dataset to extract
-their features.
+% Table \ref{tab:pre-trained_time} provides an overview of the training times of
+% applying the pre-trained models VGG16 and ResNet50 on the dataset to extract
+% their features.
 
 %talk about feature extraciton legnth
 % table on training times and also feature extraction times
