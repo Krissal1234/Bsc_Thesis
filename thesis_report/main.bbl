@@ -819,6 +819,83 @@
       \field{pages}{032115}
       \range{pages}{1}
     \endentry
+    \entry{dimensionality_reduction_a_review}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bb9bc664980f85edea54c6555b43f7d7}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Weikuan},
+           giveni={W\bibinitperiod}}}%
+        {{hash=9d92cf18d9ff3e7e7a2541a828221828}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Meili},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5e36e5100c5d09b881bcda61a2bf7bcc}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f2222944a84b176fce425c65e5b2986e}{%
+           family={Hou},
+           familyi={H\bibinitperiod},
+           given={Sujuan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a746b20d2d22561a34148f62e6dfb196}
+      \strng{fullhash}{19be092d2539fa1158a7aa372d5a20a2}
+      \strng{bibnamehash}{19be092d2539fa1158a7aa372d5a20a2}
+      \strng{authorbibnamehash}{19be092d2539fa1158a7aa372d5a20a2}
+      \strng{authornamehash}{a746b20d2d22561a34148f62e6dfb196}
+      \strng{authorfullhash}{19be092d2539fa1158a7aa372d5a20a2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Complex \& Intelligent Systems}
+      \field{number}{3}
+      \field{title}{Feature dimensionality reduction: a review}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{pages}{2663\bibrangedash 2693}
+      \range{pages}{31}
+    \endentry
+    \entry{dimensionality_reduction}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4d364bcd997afac4c26edfb781a5b912}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Ji},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9a6163e53aa10744a26ddd8271cf8322}{%
+           family={Yuan},
+           familyi={Y\bibinitperiod},
+           given={Yuyu},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6e37bf40cf3147665e302b83db94e3fc}
+      \strng{fullhash}{6e37bf40cf3147665e302b83db94e3fc}
+      \strng{bibnamehash}{6e37bf40cf3147665e302b83db94e3fc}
+      \strng{authorbibnamehash}{6e37bf40cf3147665e302b83db94e3fc}
+      \strng{authornamehash}{6e37bf40cf3147665e302b83db94e3fc}
+      \strng{authorfullhash}{6e37bf40cf3147665e302b83db94e3fc}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Visual Communication and Image Representation}
+      \field{title}{Dimension reduction of image deep feature using PCA}
+      \field{volume}{63}
+      \field{year}{2019}
+      \field{pages}{102578}
+      \range{pages}{1}
+    \endentry
     \entry{3DhumanActionDetectionForHealthCareSystems}{article}{}
       \name{author}{8}{}{%
         {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
@@ -946,8 +1023,8 @@
       \strng{authorbibnamehash}{789b3094c831f2b21c9ca59cb343d11c}
       \strng{authornamehash}{789b3094c831f2b21c9ca59cb343d11c}
       \strng{authorfullhash}{789b3094c831f2b21c9ca59cb343d11c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Heliyon}
@@ -1006,8 +1083,8 @@
       \strng{authorbibnamehash}{c5fb0e2f1565d8b8833c84c745189c72}
       \strng{authornamehash}{c5fb0e2f1565d8b8833c84c745189c72}
       \strng{authorfullhash}{2c52211b40e52a42a2615f46247f2e1c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Transactions on Multimedia}
@@ -1357,8 +1434,8 @@
       \strng{authorbibnamehash}{55b327c2f506b1668524c2a222cd447c}
       \strng{authornamehash}{55b327c2f506b1668524c2a222cd447c}
       \strng{authorfullhash}{55b327c2f506b1668524c2a222cd447c}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Scientific Research and Engineering Development}
@@ -1401,8 +1478,8 @@
       \strng{authorbibnamehash}{4874dd9cb3c54c8296ebdf2ee60e8b64}
       \strng{authornamehash}{4e4ac45a05fb200f2ec4e77fb4da3417}
       \strng{authorfullhash}{4874dd9cb3c54c8296ebdf2ee60e8b64}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 International joint conference on neural networks (IJCNN)}
@@ -1700,8 +1777,8 @@
       \strng{authorbibnamehash}{5bf021cd9cce075659f52521eb82a691}
       \strng{authornamehash}{4f2cc659accef1a804b6b8d38bf5a9e7}
       \strng{authorfullhash}{5bf021cd9cce075659f52521eb82a691}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Scientific African}
@@ -2046,39 +2123,6 @@
       \field{year}{2003}
       \field{pages}{363\bibrangedash 370}
       \range{pages}{8}
-    \endentry
-    \entry{dimensionality_reduction}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4d364bcd997afac4c26edfb781a5b912}{%
-           family={Ma},
-           familyi={M\bibinitperiod},
-           given={Ji},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9a6163e53aa10744a26ddd8271cf8322}{%
-           family={Yuan},
-           familyi={Y\bibinitperiod},
-           given={Yuyu},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{6e37bf40cf3147665e302b83db94e3fc}
-      \strng{fullhash}{6e37bf40cf3147665e302b83db94e3fc}
-      \strng{bibnamehash}{6e37bf40cf3147665e302b83db94e3fc}
-      \strng{authorbibnamehash}{6e37bf40cf3147665e302b83db94e3fc}
-      \strng{authornamehash}{6e37bf40cf3147665e302b83db94e3fc}
-      \strng{authorfullhash}{6e37bf40cf3147665e302b83db94e3fc}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of Visual Communication and Image Representation}
-      \field{title}{Dimension reduction of image deep feature using PCA}
-      \field{volume}{63}
-      \field{year}{2019}
-      \field{pages}{102578}
-      \range{pages}{1}
     \endentry
     \entry{optunaFramework}{inproceedings}{}
       \name{author}{5}{}{%

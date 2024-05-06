@@ -7,14 +7,34 @@
 % the board, demanding precise coordination and athleticism.
 
 Skateboard tricks can be described as dynamic manoeuvres that involve complex
-coordination of the skateboard and the skateboarder's body. Skateboard tricks
-can be categorised into several types, including rotations, grinds, performed on
-ledges or rails and manuals, where the skater balances on two wheels. The key to
-successfully performing these tricks is appropriate foot placement, which is
-critical for controlling the skateboard's speed and direction. This control
-allows skateboarders to manipulate the board in ways that replicate specific
-tricks, showcasing not only their technical abilities and creativity.
+coordination of the skateboard and the skateboarder's body. The key to successfully performing these tricks is appropriate foot placement,
+which is critical for controlling the skateboard's speed and direction. This
+control allows skateboarders to manipulate the board in ways that replicate
+specific tricks, showcasing their technical abilities and creativity. Some of
+the most common and simple flat ground tricks are listed as the following:
 
+% Skateboard tricks
+% can be categorised into several types, including:
+
+% \noindent
+% \textbf{Flat Ground } These tricks are executed on flat ground without any
+% ramps, rails or other obstacles. Common examples include the ollie and shuvit.
+
+% \noindent
+% \textbf{Flips and Rotations:} These tricks involve rotating or flipping the
+% board in mid-air, where the board flips along various axes. This category
+% includes tricks like the kickflip or heelflip.
+
+% \noindent
+% \textbf{Grinds and Slides:} These tricks involve specialised obstacles like
+% ledges or rails, allowing skaters to slide the board's trucks or deck along
+% them. Examples include the 50-50 grind, where both trucks slide along the
+% rail/ledge, and the boardslide, where the bottom of the skateboard deck slides
+% along the rail.
+
+% \noindent
+% \textbf{Manuals:} These tricks are balance-focused, involving skaters balancing
+% on just their front wheels (nose manual) or their back two wheels (manual).
 %  thorugh complex motions of the body and , to initiate various
 %  rotations and revolutions along various axes.
 
@@ -24,7 +44,6 @@ tricks, showcasing not only their technical abilities and creativity.
 % of a skateboarder's feet to initiate these rotations. These tricks serve as
 % excellent examples of how the skateboarder's body and skateboard work in perfect
 % harmony. Some common skateboard tricks include:
-
 \begin{itemize}
     \item \textbf{Ollie:} One of the first tricks beginners learn. Where the
     skateboarder pops the tail of the board while simultaneously sliding their foot across the nose of the
@@ -39,7 +58,6 @@ tricks, showcasing not only their technical abilities and creativity.
 
 Skateboarders continually innovate and come up with new trick combinations,
 contributing to the dynamic nature of the sport.
-
 
 
 \section{Machine Learning}
@@ -279,3 +297,70 @@ units are connected through weights $Wf_1$ and $Wf_2$, while the backward LSTM
 units are connected through weights $Wb_1$ and $Wb_2$. By learning from
 sequences in both directions, BiLSTMs are particularly effective in scenarios
 where past and future contexts are crucial.
+
+\section{Optical Flow}
+%image of optical flow found in activity recognition paper
+Optical flow is an approximation technique used to determine the motion between
+ a series of images. This method approximates the movements of pixels across images movement of objects given a sequence of images,
+ corresponding to the movement of pixels
+
+
+
+\section{Dimensionality Reduction}
+Datasets with many features are characterised as high dimensional. Such datasets
+often include redundant data, including closely related or identical variables.
+The goal of dimensionality reduction is these unnecessary components and create
+a simplified lower-dimensional feature space. This helps mitigate the impact of
+redundant data by mapping the valuable data from the original feature to a
+smaller set of features \cite{dimensionality_reduction_a_review}.
+
+PCA is a widely used statistical technique that transforms features into a
+lower-dimensional space, by transforming the original features into a new set of
+variables known as principal components. These principal components are
+orthogonal to each other, meaning that they are uncorrelated to one another and
+are reorganised in a way that the first few components represents the maximum
+variance from the original data \cite{dimensionality_reduction}.
+
+% condider talking about another technique
+
+% Background Section: Understanding Optical Flow
+
+% In the background section, introduce optical flow as a concept and discuss its
+% general applications and importance in computer vision. This section should lay
+% the theoretical groundwork for readers who may be unfamiliar with the term,
+% explaining what optical flow is and how it is typically used across different
+% fields.
+
+% Example Background Text:
+
+% Optical flow is a key technique in computer vision used to estimate motion
+% between two consecutive frames in a sequence of images or videos. The method
+% relies on the assumption that the brightness of any object point in an image
+% remains constant despite the motion of the point between frames. This principle
+% allows for the calculation of motion vectors, which indicate the direction and
+% speed of movement. Optical flow is widely used in various applications such as
+% video tracking, activity recognition, and autonomous driving, where it's crucial
+% to understand the dynamic elements of a scene. This technique proves
+% particularly valuable in scenarios where analyzing the nuances of movement
+% provides more insights than static frame analysis alone.
+
+% Methodology Section: Applying Optical Flow to Your Research
+
+% In the methodology section, delve into the specifics of how optical flow was
+% utilized in your study. Here, you should provide details about the
+% implementation, including any specific algorithms used (like Lucas-Kanade or
+% Horn-Schunck), parameters set, and how the data extracted using optical flow
+% influenced the outcome of your research.
+
+% Example Methodology Text:
+
+% In this study, optical flow was used to enhance frame extraction from video
+% sequences, focusing particularly on sequences where motion is critical, such as
+% in capturing skateboarding tricks. Unlike uniform sampling, which divides a
+% video into evenly spaced frames, the optical flow method assigns weights to
+% frames based on the amount of pixel motion detected between them. This ensures
+% that frames capturing significant motion are prioritized, highlighting the most
+% crucial moments of action. For example, in analyzing a kickflip skateboarding
+% trick, frames were selected for extraction based on their motion content,
+% effectively capturing peak activity and providing a detailed visualization of
+% motion dynamics over time.k
