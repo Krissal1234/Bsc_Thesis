@@ -1,3 +1,8 @@
+
+
+
+
+
 \clearpage
 \chapter{Literature Review}
 
@@ -58,7 +63,7 @@ These dynamic devices introduce a significant level of complexity as a result of
 their tricky dynamic backgrounds present in the video footage. Zhang et al. also
 point out specific difficulties posed by long-distance and low-quality videos,
 often encountered in environments like crowded public spaces and sports events.
-The camera distance, results in smaller subjects, making detailed analysis of
+The camera distance, results in smaller subjects, making a detailed analysis of
 human movements more challenging while lower-quality videos further complicate
 the task for Human Activity Recognition (HAR) systems % by ... continue this, by distorting the images.
 
@@ -89,8 +94,7 @@ likelihood of overfitting as highlighted in prior works,
 \cite{DataAugmentationCanImproveRobustness,AnOverviewOfOverfittingAndItsSolutions}.
 In the realm of Skateboard trick classifiers, Shapiee et al (2020)
 \cite{skatePaper1} effectively employed data augmentation techniques to expand
-their dataset, demonstrating the application of these methods in improving model
-performance for trick classification.
+their dataset, demonstrating the application of these methods in improving model performance for trick classification.
 % \subsubsection{Normalisation}
 % After establishing the role of data augmentation in addressing the lack of data
 % available, another important step in computer vision is data normalisation. This
@@ -113,7 +117,7 @@ performance for trick classification.
 % values, and $\sigma$ is their standard deviation.
 
 % The research by Pei et al. (2023) \cite{RobustnessInMLNormalisation}, explored
-% the impact of normalisation on classification accuracy. They demonstrated that,
+% the impact of normalisation on classification accuracy. They demonstrated that
 % for 8-bit images, min-max normalisation outperformed Z-score, significantly
 % enhancing classification accuracy. On the other hand, the study by de Raad et
 % al. (2021) \cite{EffectOnPreProcessingOnCNNForMedicalImageSegmentation} suggests that
@@ -139,7 +143,7 @@ models for more complex tasks such as AR. In the context of
 skateboard trick classification, CNNs can efficiently extract detailed spatial
 features like board rotations, foot positioning and limb movements. Such
 features can then be passed through a sequence analysis model like an LSTM,
-which have been shown to be efficient at capturing temporal information.
+which is efficient at capturing temporal information.
 
 % This
 % requires CNNs operating on individual frames to extract spatial features, which
@@ -165,14 +169,14 @@ transfer learning, evident in their impressive accuracies of 98.15\% and
 of skateboard trick classification. Two other studies \cite{skatePaper1},
 \cite{SkateboardAIPaper} have utilised this approach and achieved high
 accuracies. However, a more in-depth analysis of these papers can be found in
-the section 3.2. These studies strongly suggest exploring the use of various
+section 3.2. These studies strongly suggest exploring the use of various
 pre-trained models for feature extraction in the development of a skateboard
 trick classifier.
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
 %look into optical flow due to the dynamic notion of skateboard tricks - paper HARInSports
-%look into Histogram of Oriented Gradient (HOG) 3D features,
+%look into the Histogram of Oriented Gradient (HOG) 3D features,
 
 \subsection{Activity Recognition Techniques}
 The accurate classification of skateboard tricks poses a unique challenge for
@@ -193,7 +197,7 @@ of video content.
 The study by Orozco et al. (2020)
 \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach} adopted this approach
 to test its effectiveness against three AR datasets: KTH,
-UCF-11, HMDB-51, particularly focusing on how the number of LSTM units impacted
+UCF-11, and HMDB-51, particularly focusing on how the number of LSTM units impacted
 performance. The authors employed transfer learning, utilising the VGG16 model
 \cite{VGG} for feature extraction from videos, followed by an LSTM network for
 classification. Their findings show that 360 LSTM units achieved an accuracy of
@@ -270,7 +274,7 @@ model for classification, as outlined by Abdullah et al. (2021)
 et al. (2017) \cite{skateboardTrickClassifierUsingAccelerometryAndML}. The
 second approach employs computer vision techniques, leveraging video footage of
 skateboard tricks to train and refine models for accurate trick identification,
-as depicted by the studies Shapiee et al. (2020) \cite{skatePaper1} and  Hanciao
+as depicted by the studies of Shapiee et al. (2020) \cite{skatePaper1} and  Hanciao
 Chen (2023) \cite{SkateboardAIPaper}.
 
 \subsection{Accelerometer-based approach }
@@ -319,19 +323,27 @@ combined ANN XYZ achieved an accuracy of 92.8\%.
   \end{figure}
 
 \subsection{Computer Vision-based Approaches}
-The study by Shapiee et al. (2020) \cite{skatePaper1} leverages a custom data set
-comprising videos capturing the execution of five distinct skateboard tricks,
-each attempted five times. Each video spans two to three seconds, yielding a
-total of 750 images by extracting 30 frames per video. This study made use of
-data augmentation techniques to expand their dataset further. Consequently, they
-introduced an additional 2,250 images, achieving 3,000 images in their data set.
-On the other hand, Chen (2023) \cite{SkateboardAIPaper} compiled a comprehensive
-data set by collecting videos from multiple platforms, including YouTube,
-Twitter and Instagram. Furthermore, Chen trained the model using 15 fundamental
-tricks commonly observed in competitive settings, illustrated in Figure \ref{fig:tricks}. The researcher collected 50
-videos per trick, summing up to a total number of 750 videos. Of these, 45
-videos per trick were allocated for training, and the remaining 5 were reserved
-for validation.
+The study by Shapiee et al. (2020) \cite{skatePaper1} leverages a custom data
+set comprising videos capturing the execution of five distinct skateboard
+tricks, each attempted five times. Each video spans two to three seconds,
+yielding a total of 750 images by extracting 30 frames per video. This study
+made use of data augmentation techniques to expand their dataset further.
+Consequently, they introduced an additional 2,250 images, achieving 3,000 images
+in their data set. Shapiee et al. utilised Transfer Learning (TL) combined with
+$k$-Nearest Neighbour ($k$-NN) fusion pipelines. They opted for a pre-trained
+models like MobileNet, NasNetMobile and NasNetLarge for feature extraction
+followed by a $k$-NN classification algorithm to identify the tricks. The
+researchers. As a result, this technique demonstrated high classification
+accuracies, with MobileNet achieving 95\%, NASNetMobile 92\% and NASNetLarge
+90\%.
+
+On the other hand, Chen (2023) \cite{SkateboardAIPaper}
+compiled a comprehensive data set by collecting videos from multiple platforms,
+including YouTube, Twitter and Instagram. Furthermore, Chen trained the model
+using 15 fundamental tricks commonly observed in competitive settings,
+illustrated in Figure \ref{fig:tricks}. The researcher collected 50 videos per
+trick, summing up to a total number of 750 videos. Of these, 45 videos per trick
+were allocated for training, and the remaining 5 were reserved for validation.
 
 
 \begin{figure}[htbp]

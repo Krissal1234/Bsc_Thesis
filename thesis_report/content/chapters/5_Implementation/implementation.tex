@@ -63,9 +63,10 @@ frames. The optical flow method was hypothesised to capture frames with the most
 significant motion, unlike uniform sampling which often missed crucial parts of
 the skateboard trick, capturing more frames before or after the trick execution.
 An example of this behaviour at a smaller scale can be observed in Figure
-\ref{fig:comparison-sequence-opticalflow-uniformSampling}. Furthermore,
-experiments showed an increase in accuracy when using the optical flow method
-over uniform sampling, further supporting this hypothesis.
+\ref{fig:comparison-sequence-opticalflow-uniformSampling}.
+% Furthermore,
+% experiments showed an increase in accuracy when using the optical flow method
+% over uniform sampling, further supporting this hypothesis.
 % either prove that it led to higher accuracy or show with image comparisons
 % that optical flow method has more frames encapsulating the trick
 
@@ -108,16 +109,17 @@ the video.
 
 \subsection{Data Augmentation}
 This research explored a number of augmentation techniques using the
-\texttt{ImageDataGenerator} library provided by Tensorflow. This process
-involved defining a number of parameters that influenced the augmentation
-patterns applied to each frame, . In order to
-expand the number of training samples, this study created two copies of the
-original dataset, each augmented with its own set of unique parameters
-controlling image shifts, brightness, scaling and other transformations.
+\texttt{ImageDataGenerator} library provided by Tensorflow. This tool allowed
+for the definition of specific parameters that influenced how each frame was
+augmented. To expand the number of training samples, this study created two copies
+of the original dataset, each augmented with its own set of unique parameters
+controlling image shifts, brightness, scaling and other transformations. The two
+unique augmentation parameters utilised in this study are illustrated in Figure
+\ref{fig:augmentation_parameters}.
 
 Figure \ref{fig:originalFrames-againstAugmented} showcases an augmented trick
 sequence against its original, split into six frames for illustrative purposes.
-Certain augmentation techniques such as image flipping and large rotational
+Certain augmentation parameters such as image flipping and large rotational
 shifts disrupted the visualisation of the trick, negatively impacting model
 performance, thus these were removed or adjusted from the augmentation
 parameters.
@@ -217,13 +219,14 @@ features with every new session.
 
 
 \subsection{PCA Dimensionality Reduction} \label{5_dimensionality_reduction}
-This research, leveraged Principle Component Analysis (PCA) dimensionality
+This research, leveraged Principal Component Analysis (PCA) dimensionality
 reduction, a technique, crucial in refining the feature sets produced by the
-pre-trained models. PCA a statistical technique that transforms features into a
-lower-dimensional space, where the components, known as principle components are
-orthogonal to each other. These principle components are reorganised in a way
-that the first few components attempt to portray maximum variance from the
-original data \cite{dimensionality_reduction}.
+pre-trained models. PCA is a statistical technique that transforms features into
+a lower-dimensional space, by transforming the original features into a new set
+of variables known as principal components. These principal components are
+orthogonal to each other, meaning that they are uncorrelated to one another and
+are reorganised in a way that the first few components represents the maximum
+variance from the original data \cite{dimensionality_reduction}.
 
 This research, aimed to achieve 90\% to 95\% variance retention when determining
 the optimal number of components for reduction. This involved plotting two
@@ -234,7 +237,12 @@ against the number of components, allowing approximate selection of the number
 of components by examining the 90\% to 95\% percentiles of the plots. Upon
 examining both plots depicted in Figure\ref{fig:pca_plots}, 2514 components were
 chosen for VGG, while 278 were selected for ResNet50. Consequently, this results
-in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$ respectively.
+in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$
+respectively.
+
+The application of PCA dimensionality reduction significantly reduced training
+times. This efficiency significantly sped up the process of hyperparameters
+tuning by reducing waiting times associated with training each iteration.
 
 \begin{figure}[htbp]
 	\centering
@@ -254,10 +262,6 @@ in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$ respecti
 	\caption{Overall caption for both images.}
 	\label{fig:pca_plots}
 \end{figure}
-
-The application of PCA dimensionality reduction significantly reduced training
-times. This efficiency significantly sped up the process of hyperparameters
-tuning by reducing waiting times associated with training each iteration.
 
 
 % By transforming the high-dimensional feature space extracted by
