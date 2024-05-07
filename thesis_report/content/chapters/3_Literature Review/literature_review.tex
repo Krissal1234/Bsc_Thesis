@@ -286,36 +286,36 @@ for activity recognition tasks.
 In the emergent field of skateboard trick classification, leveraging activity
 recognition techniques from a video have led to two primary methodologies among
 researchers. The first technique involves utilising signals obtained from
-skateboard-mounted accelerometers or signals artificially generated based on the % maybe change the wording
-findings of prior studies. These signals are then fed into a study-dependent
-model for classification, as outlined by Abdullah et al. (2021)
+skateboard-mounted accelerometers or artificially generated signals. These
+signals are then fed into a study-dependent model for classification, as
+outlined by Abdullah et al. (2021)
 \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} and Corrêa
 et al. (2017) \cite{skateboardTrickClassifierUsingAccelerometryAndML}. The
 second approach employs computer vision techniques, leveraging video footage of
 skateboard tricks to train and refine models for accurate trick identification,
-as depicted by the studies of Shapiee et al. (2020) \cite{skatePaper1} and  Hanciao
-Chen (2023) \cite{SkateboardAIPaper}.
+as depicted by the studies of Shapiee et al. (2020) \cite{skatePaper1} and
+Hanciao Chen (2023) \cite{SkateboardAIPaper}.
 
 \subsection{Accelerometer-based approach }
 
-% The study by Abdullah et al. (2021)
-% \cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
-% of a custom dataset comprising six skateboard tricks most commonly executed
-% in competitive events. Amateur skateboarders performed each trick five times on
-% a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
-% the signals produced. The researchers capture six signals for each trick;
-% linear accelerations along the x, y, and z axes (aX, aY, aZ) and
-% angular accelerations along the same axes (gX, gY, gZ). They then opt for the
-% unique approach of concatenating all six signals onto a single image
-% corresponding to one trick, employing two input image transformations: raw data
-% (RAW) and Continuous Wavelet Transform (CWT).
+The study by Abdullah et al. (2021)
+\cite{skateboardClassificationTransferLearningPipelinesAccelermetry}, makes use
+of a custom dataset comprising six skateboard tricks most commonly executed
+in competitive events. Amateur skateboarders performed each trick five times on
+a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
+the signals produced. The researchers capture six signals for each trick;
+linear accelerations along the x, y, and z axes (aX, aY, aZ) and
+angular accelerations along the same axes (gX, gY, gZ). They then opt for the
+unique approach of concatenating all six signals onto a single image
+corresponding to one trick, employing two input image transformations: raw data
+(RAW) and Continuous Wavelet Transform (CWT).
 
-% With the application of six transfer learning models on this data, Abdullah et
-% al. \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} reports
-% exceptionally high accuracies, achieving a 100\% test accuracy over multiple
-% models. While these results are remarkable, very high levels of accuracy are
-% rare in ML applications and are typically associated with models that may be
-% overfitting the data.
+With the application of six transfer learning models on this data, Abdullah et
+al. \cite{skateboardClassificationTransferLearningPipelinesAccelermetry} reports
+exceptionally high accuracies, achieving a 100\% test accuracy over multiple
+models. While these results are remarkable, very high levels of accuracy are
+rare in ML applications and are typically associated with models that may be
+overfitting the data.
 
 The study by Corrêa et al. (2017)
 \cite{skateboardTrickClassifierUsingAccelerometryAndML}, obtained their sample
