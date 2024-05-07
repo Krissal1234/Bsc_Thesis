@@ -23,8 +23,8 @@
       \list{publisher}{1}{%
         {Encyclopaedia Britannica, inc.}%
       }
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Encyclopaedia Britannica}
       \field{title}{Encyclopaedia Britannica}
@@ -264,8 +264,8 @@
       \strng{authorbibnamehash}{ca6e0dde7f02382c2f3b5db625678d57}
       \strng{authornamehash}{ca6e0dde7f02382c2f3b5db625678d57}
       \strng{authorfullhash}{ca6e0dde7f02382c2f3b5db625678d57}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.NE}
@@ -861,8 +861,8 @@
       \strng{authorbibnamehash}{97825728f73e1e56b58b0ba7c195b562}
       \strng{authornamehash}{97825728f73e1e56b58b0ba7c195b562}
       \strng{authorfullhash}{97825728f73e1e56b58b0ba7c195b562}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{International Journal of Computer Vision}
@@ -894,8 +894,8 @@
       \strng{authorbibnamehash}{c35c2a7160bcc44bc4339d0f67e38526}
       \strng{authornamehash}{c35c2a7160bcc44bc4339d0f67e38526}
       \strng{authorfullhash}{c35c2a7160bcc44bc4339d0f67e38526}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{ACM computing surveys (CSUR)}
@@ -1266,8 +1266,8 @@
       \strng{authorbibnamehash}{b312d2df74f12d948a0085b33884ae1b}
       \strng{authornamehash}{5b65d27e7c94888766eafb78a56d19f2}
       \strng{authorfullhash}{b312d2df74f12d948a0085b33884ae1b}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of healthcare engineering}
@@ -1630,8 +1630,8 @@
       \strng{authorbibnamehash}{1a23c09aa65b3c2ade45ed18d8127375}
       \strng{authornamehash}{dd291871bfa8ee64447232f1cca429aa}
       \strng{authorfullhash}{1a23c09aa65b3c2ade45ed18d8127375}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Advances in neural information processing systems}
@@ -1958,8 +1958,8 @@
       \strng{authorbibnamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authornamehash}{dcfea101c0d6090da2b273ec7531169f}
       \strng{authorfullhash}{5611b08270c4c6217ccac6cf0a32343b}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{PeerJ Computer Science}

@@ -203,19 +203,36 @@ translate to better performance. It is possible that the simpler and lighter
 capabilities of VGG16 are more effective for specific characteristics found in
 skateboard tricks.
 
+% \begin{table}[htbp]
+% 	\centering
+% 	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+% 			\toprule
+% 			\textbf{Model} & \textbf{Accuracy} & \textbf{Training Time} \\
+% 			\midrule
+% 			\textbf{1.  VGG16-LSTM} & 86\% & 00:11:38 \\
+% 			\textbf{2.  VGG16-BiLSTM} & 88\% & 00:18:05 \\
+% 			\textbf{3.  ResNet50-LSTM} & 80\% & 00:02:19 \\
+% 			\textbf{4.  ResNet50-BiLSTM} & 86\% & 00:03:01 \\
+% 			\bottomrule
+% 	\end{tabularx}
+% 	\caption{Performance of models after data augmentation}
+% 	\label{tab:models_results}
+% \end{table}
 \begin{table}[htbp]
 	\centering
-	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+	\begin{tabularx}{\textwidth}{>{\RaggedRight}Xcccc}
 			\toprule
-			\textbf{Model} & \textbf{Accuracy} & \textbf{Training Time} \\
+			\textbf{Model} & \multicolumn{2}{c}{\textbf{Study by Chen}} & \multicolumn{2}{c}{\textbf{This Study}} \\
+			\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+			& {\textbf{Accuracy}} & {\textbf{Training Time}} & {\textbf{Accuracy}} & {\textbf{Training Time}} \\
 			\midrule
-			\textbf{1.  VGG16-LSTM} & 86\% & 00:11:38 \\
-			\textbf{2.  VGG16-BiLSTM} & 88\% & 00:18:05 \\
-			\textbf{3.  ResNet50-LSTM} & 80\% & 00:02:19 \\
-			\textbf{4.  ResNet50-BiLSTM} & 86\% & 00:03:01 \\
+			\textbf{1.  VGG16-LSTM} & 70\% & 00:40:08 & 86\% & 00:11:38 \\
+			\textbf{2.  VGG16-BiLSTM} & 69\% & 00:39:11 & 88\% & 00:18:05 \\
+			\textbf{3.  ResNet50-LSTM} & 80\% & 00:59:60 & 80\% & 00:02:19 \\
+			\textbf{4.  ResNet50-BiLSTM} & 81\% & 00:59:80 & 86\% & 00:03:01 \\
 			\bottomrule
 	\end{tabularx}
-	\caption{Performance of models after data augmentation}
+	\caption{Performance comparison of models from Hanciao Chen's study \cite{SkateboardAIPaper} and this study}
 	\label{tab:models_results}
 \end{table}
 
@@ -251,8 +268,8 @@ Trained models often encountered difficulty in differentiating between the ollie
 and kickflip compared to the pop shuvit. This challenge likely arises due to
 their shared visual characteristics. Both the ollie and the kickflip involve
 common elements such as the initial pop of the skateboard and the absence of
-rotation on the y-axis, which distinguishes them to the pop shuvit. The
-confusion matrices illustrated in Figure \ref{fig:resnet-lstm-confusion}
+rotation around the y-axis, which distinguishes them to the pop shuvit. The
+confusion matrices illustrated in Figure \ref{fig:model_cm}
 demonstrate a favourable classification rate on pop-shuvits across all models
 compared to ollies and kickflips. Interestingly, in the classification of pop
 shuvits, BiLSTM models demonstrated 100\% classification accuracy, while LSTM

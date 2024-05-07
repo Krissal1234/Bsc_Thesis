@@ -8,20 +8,23 @@ Furthermore, its large and active community made tackling problems and
 troubleshooting issues simpler. Prior experience using Python also contributed
 to this decision.
 
+\vspace{3mm}
 \noindent
 {\bf Tensorflow:} Tensorflow is an open-source library, powerful in numerical
 computation and Machine Learning applications. It provides a rich toolset that
 allows for efficient development, training and deployment of Machine Learning
 models. Notably, Tensorflow comes with the Keras API, further simplifying the
-creation development by offering wide ranger of tools such as access pre-trained
+creation development by offering wide range of tools such as access pre-trained
 models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers
 
+\vspace{3mm}
 \noindent
 {\bf OpenCv (cv2):} This open source library played a crucial role in the
 computer vision components of development, offering essential tools related to
 video processing, particularly during the frame extraction phase.
 
+\vspace{3mm}
 \noindent
 {\bf Matplotlib:} This research made use of Matplotlib for its plotting and data
 visualisation functions, heavily used during the evaluation stage to properly
@@ -39,7 +42,7 @@ data due to limited dataset size.
 
 In consideration of Chen's (2023) \cite{SkateboardAIPaper} research, which
 advocated for a sequence length of 45 frames per video, with each frame sized at
-299\times299 pixels, these parameters were initially evaluated. However,
+299\times299 pixels, these parameters were initially assessed. However,
 experimentation with such parameters revealed significant computational costs
 with negligible improvement in results. Consequently, this research struck a
 balance between costs and performance, by opting for a sequence length of 20 and
@@ -90,7 +93,7 @@ An example of this behaviour at a smaller scale can be observed in Figure
 
 This study employed Farneback's algorithm \cite{farneback2003two} using the
 OpenCV (cv2) library, to estimate the optical flow magnitudes on each frame. The
-selection process involved reading pairs of consecutive frames from a video,
+selection process involved reading pairs of successive frames from a video,
 resized for faster processing and converted to greyscale to minimise noise
 caused by colour variations. The cv2 function
 \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation
@@ -119,10 +122,9 @@ unique augmentation parameters utilised in this study are illustrated in Figure
 
 Figure \ref{fig:originalFrames-againstAugmented} showcases an augmented trick
 sequence against its original, split into six frames for illustrative purposes.
-Certain augmentation parameters such as image flipping and large rotational
-shifts disrupted the visualisation of the trick, negatively impacting model
-performance, thus these were removed or adjusted from the augmentation
-parameters.
+Experimentation revealed that certain augmentation parameters such as image
+flipping and large rotational shifts disrupted the visualisation of the trick,
+these were removed or adjusted to a smaller scale from the augmentation parameters.
 
 \begin{figure}[h!]
 	\centering
@@ -229,17 +231,16 @@ pre-trained models.
 % are reorganised in a way that the first few components represents the maximum
 % variance from the original data \cite{dimensionality_reduction}.
 
-This research, aimed to achieve 90\% to 95\% variance retention when determining
-the optimal number of components for reduction. This involved plotting two
-explained variance plots: one for the output of pre-training with VGG16 and
-another for the output of ResNet50, as illustrated in Figure
-\ref{fig:pca_plots}. These plots display the cumulative explained variance
-against the number of components, allowing approximate selection of the number
-of components by examining the 90\% to 95\% percentiles of the plots. Upon
-examining both plots depicted in Figure\ref{fig:pca_plots}, 2514 components were
-chosen for VGG, while 278 were selected for ResNet50. Consequently, this results
-in final feature shapes of ${(20 \times 2514)}$ and ${(20 \times 278)}$
-respectively.
+It was aimed to achieve around 95\% variance retention when determining the
+optimal number of components for reduction. This involved plotting two explained
+variance plots: one for the output of pre-training with VGG16 and another for
+the output of ResNet50, as illustrated in Figure \ref{fig:pca_plots}. These
+plots display the cumulative explained variance against the number of
+components, allowing approximate selection of the number of components by
+examining the 95\% percentile from both plots. Upon examining both plots, 2514
+components were chosen for VGG, while 278 were selected for ResNet50.
+Consequently, this results in final feature shapes of ${(20 \times 2514)}$ and
+${(20 \times 278)}$ respectively.
 
 The application of PCA dimensionality reduction significantly reduced training
 times. This efficiency significantly sped up the process of hyperparameters
@@ -250,17 +251,17 @@ tuning by reducing waiting times associated with training each iteration.
 	\begin{subfigure}[b]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_vgg.png} % replace "image1" with your file name
-			\caption{Caption for image 1.}
+			\caption{Cumulative Variance plot of the output of VGG16.}
 			\label{fig:pca_vgg}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_resnet.png}
-			\caption{Caption for image 2.}
+			\caption{Cumulative Variance plot of the output of ResNet50.}
 			\label{fig:pca_resnet}
 	\end{subfigure}
-	\caption{Overall caption for both images.}
+	\caption{Cumulative Variance plots for the outputs of VGG16 and ResNet50}
 	\label{fig:pca_plots}
 \end{figure}
 
@@ -280,10 +281,30 @@ selecting parameter combinations such as learning rate, dropout rate and neuron
 count.
 
 This iterative approach enables Optuna to navigate the search space and converge
-on optimal hyperparameters for a specific model and dataset. This library was
+on optimal hyperparameters for a specific mode. This library was
 integrated within a custom-built development environment specifically designed
 to identify the optimal hyperparameter configurations for multiple model
 architectures and their corresponding input data.
+
+\subsection{Training Process and Hyperameter Tuning}
+Throughout the training phase, Optuna took the responsibility of initialising
+the model's hyperparameter configurations. Leveraging its Bayesian optimisation
+algorithm, Optuna provided initial configurations, which served as starting
+points for the iterative training process.
+
+In this iterative process, each model's hyperparameters underwent continuous
+evaluation and refinement after every iteration at an attempt to improve
+accuracy. Performance metrics such as loss curves, confusion matrices and
+F-scores, were monitored closely to assess the effectiveness of each
+hyperparameter configuration.
+
+Common pitfalls observed, included overfitting, indicated in model loss graphs
+when validation loss begins to rise, and fluctuations in performance metrics
+such as accuracy and F-scores. These fluctuations often signify an unstable
+learning process, suggesting the need for hyperparameters reconfiguration.
+Finally, with every iteration, the hyperparameters and performance scores were
+saved for future analysis and comparison, aiding in the refinement of upcoming
+iterations.
 
 \section{Callbacks}
 Callbacks served as essential tools, used to monitor and influence the training
@@ -307,7 +328,7 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Training History}
-Figure \ref{fig:model_losses} displays the training and validation loss curves for
+Figure \ref{fig:model_losses} presets the training and validation loss curves for
 the models that achieved the best test accuracy within each architecture.
 The vertical dashed lines indicate the epoch at which the early
 stopping callback restored the model's weights, preventing overfitting.
@@ -320,10 +341,14 @@ thereby improving performance. Additionally, the validation loss for the BiLSTM
 configurations generally exhibited more volatility, likely due to the complexity
 of their bidirectional layers.
 
-All models made use of Early Stopping to cut training short when the models
-began to overfit. This is evident in Figure \ref{fig:model_losses}, where the
-validation loss of each model began to rise significantly, indicating a decline
-in performance on unseen data.
+All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
+the training process due to excessive overfitting observed with Adam in Section
+6.1.1. While SGD performed better than Adam in the context of classifying
+skateboard tricks, it required longer training times to converge. %maybe talk about categorical crossentropy and the one hot encoded labels
+% All models made use of Early Stopping to cut training short when the models
+% began to overfit. This is evident in Figure \ref{fig:model_losses}, where the
+% validation loss of each model began to rise significantly, indicating a decline
+% in performance on unseen data.
 %something about all models rised up a lot towardsthe end but early stopping did its job
 \begin{figure}[ht!]
 	\centering
@@ -359,10 +384,6 @@ in performance on unseen data.
 	\label{fig:model_losses}
 \end{figure}
 
-All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
-the training process due to excessive overfitting observed with Adam in Section
-6.1.1. While SGD performed better than Adam in the context of classifying
-skateboard tricks, it required longer training times to converge. %maybe talk about categorical crossentropy and the one hot encoded labels
 
 
 % Table \ref{tab:pre-trained_time} provides an overview of the training times of
@@ -381,25 +402,6 @@ skateboard tricks, it required longer training times to converge. %maybe talk ab
 %mention SGD did better but did take longer
 %Talk about how Resnet was first tested out without PCA and we came to the conclusion that the features had to be reduced
 
-\subsection{Training Process and Hyperameter Tuning}
-Throughout the training phase, Optuna took the responsibility of initialising
-the model's hyperparameter configurations. Leveraging its Bayesian optimisation
-algorithm, Optuna provided initial configurations, which served as starting
-points for the iterative training process.
-
-In this iterative process, each model's hyperparameters underwent continuous
-evaluation and refinement after every iteration at an attempt to improve
-accuracy. Performance metrics such as loss curves, confusion matrices and
-F-scores, were monitored closely to assess the effectiveness of each
-hyperparameter configuration.
-
-Common pitfalls observed, included overfitting, indicated in model loss graphs
-when validation loss begins to rise, and fluctuations in performance metrics
-such as accuracy and F-scores. These fluctuations often signify an unstable
-learning process, suggesting the need for hyperparameters reconfiguration.
-Finally, with every iteration, the hyperparameters and performance scores were
-saved for future analysis and comparison, aiding in the refinement of upcoming
-iterations.
 
 
 

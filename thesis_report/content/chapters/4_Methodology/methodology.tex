@@ -25,10 +25,10 @@ clips corresponding to two common tricks: the ollie and the kickflip. To expand
 the dataset's diversity, additional data was obtained through direct
 communication with Hanxiao Chen, the author of the SkateboardAI paper
 \cite{SkateboardAIPaper}. This communication yielded a dataset containing 750
-videos covering 15 distinct tricks. Given the wide range of tricks included in
-this dataset, many were beyond the scope of this study, therefore this study
-only encorporated a subset of the this data in its final dataset. The final
-dataset included 128 videos per class, totalling 384 videos.
+videos covering 15 tricks. However, since the majority of tricks were beyond
+the scope of this study, only a subset of this data was included into the final
+dataset. Ultimately, the final dataset comprised of 128 videos per class,
+totalling 384 videos.
 
 \subsection{Labelling techniques}
 This study explores two primary labelling techniques: the folder-based and the
@@ -62,10 +62,10 @@ of the text-based method unnecessary for this project.
 
 \subsection{Frame Extraction}
 % Debating this section with the other section below it
-Recognising complex human actions demands the examination of sequential data as
+Recognising complex human actions requires the examination of sequential data as
 opposed to relying on single frames or images
 \cite{ActionRecognitionDeepBi-DirectionalLSTM}. To illustrate this point,
-consider the example of a skateboarder executing a challenging trick like the
+consider the example of a skateboarder executing a skateboard trick like the
 "Kickflip", as depicted in Figure \ref{fig:SingleVsMultiFrameKickflip}. By
 feeding an AI model a single image of this trick as shown in Figure
 \ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as another
@@ -73,7 +73,7 @@ trick due to its subjective nature. Whereas, by providing the model with a
 sequence of frames, as illustrated in Figure \ref{fig:MultiFrameKickflip}, the
 entire trick sequence is captured including the wind-up, the trick and the
 landing, capturing actions such as foot placement and board rotation, which
-together characterise the skateboard trick.
+together characterise the full skateboard trick.
 
 \begin{figure}[h]
   \begin{subfigure}{0.5\textwidth}
@@ -103,12 +103,18 @@ together characterise the skateboard trick.
 This study explored two primary frame extraction techniques: uniform sampling
 and optical flow method. The former technique evenly splits a video into its
 corresponding frames by using a pre-calculated step size determined by the
-number of frames of a video. Whereas, the second technique leverages optical flow, a
-method that assigns weights to frames determined by the motion of pixels between
-them. With this approach, frames with the greatest weightings are chosen for
-extraction, resulting in capturing frames with the most movement. Figure
+number of frames of a video. Whereas, the second technique leverages optical
+flow to select the frames with the most significant movement. This method
+calculates the motion of pixels between successive frames and assigns weights to
+each frame determined by the magnitude of this motion. Figure
 \ref{fig:kickflip-sequence-opticalflow} illustrates a visualisation of this
-technique being applied to a skate trick.
+technique being applied to "kickflip" trick.
+
+% a method that assigns weights to frames determined by the motion of
+% pixels between them. With this approach, frames with the greatest weightings are
+% chosen for extraction, resulting in capturing frames with the most movement.
+% Figure \ref{fig:kickflip-sequence-opticalflow} illustrates a visualisation of
+% this technique being applied to a skate trick.
 
 \begin{figure}[h!]
     \centering
@@ -131,10 +137,10 @@ technique being applied to a skate trick.
 
 \subsection{Data Augmentation}
 The limited number of data available for this research necessitated the
-implementaiton of data augmentation techniques to enlarge the dataset's size
+implementation of data augmentation techniques to enlarge the dataset's size
 before model training. Techniques such as rotating, flipping and adding noise to
 images also served to add more diversity to the dataset mitigating the risk of
-overfitting. This risk arises from the over-parametrised nature of the
+overfitting. This risk arises from the over-parameterised nature of the
 chosen models, whose trainable parameter count surpasses the
 size of the dataset, causing them to be vulnerable to overfitting.
 
@@ -143,7 +149,7 @@ During the preprocessing stage, normalisation played a crucial role in preparing
 the video frame data before further processing. In particular this study
 utilised min-max normalisation to scale the pixel intensities between 0 and 1.
 Normalising data in this manner ensured that the model's input values data was
-within a standardised range, as calculated by Equation \ref{eq:normalisation}.
+within a standardised range, calculated by Equation \ref{eq:normalisation}.
 
 \begin{equation}
 	\label{eq:normalisation}
@@ -165,14 +171,16 @@ ResNet50. Both models were pre-trained on the large ImageNet dataset
 were then fine-tuned to the domain of skateboard trick recognition. Table
 \ref{tab:TL-models} summarises the key characteristics of VGG16 and ResNet50.
 
+\vspace{3mm}
 {\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman \cite{VGG}, is
 a CNN architecture known for its success in image classification and feature
 extraction for Action Recognition tasks. This model is relatively simple made up
 of 16 convolutional and fully connected (FC) layers with repeated use of 3x3
 convolutional filters to preserve spatial information.
 Furthermore, VGG16 has proved to be effective for feature extraction in previous
-literature\cite{SkateboardAIPaper}, supporting its suitability in this study.
+literature \cite{SkateboardAIPaper}, supporting its suitability in this study.
 
+\vspace{3mm}
 {\bf Resnet50:} Resnet50, introduced in 2016 by He et al. \cite{Resnet50}, is
 another powerful CNN architecture that is well known for its advancements in
 image classification and frame extraction capabilities. Unlike VGG16, this model
@@ -250,9 +258,10 @@ et al. (2020) achieved 91.93\% accuracy using a VGG-LSTM
 architecture \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach}.
 Additionally, Chen's work \cite{SkateboardAIPaper} explored all four of these
 models in the context of skateboard trick classification and demonstrated the
-potential for competitive results. While this study also explored attention
-mechanisms within these models, the main aim is to build upon existing knowledge
-and potentially achieve better performance.
+potential for competitive results.
+% While this study also explored attention
+% mechanisms within these models, the main aim is to build upon existing knowledge
+% and potentially achieve better performance.
 
 \begin{figure}[h]
 	\centering
@@ -263,12 +272,12 @@ and potentially achieve better performance.
 
 \section{Architecture}
 The Deep Learning Architecture, as illustrated in Figure \ref{fig:architecture}
-demonstrates the data flow pipeline for the skatebaord trick classifier. The
+demonstrates the data flow pipeline for the skateboard trick classifier. The
 process begins with preprocessing the labeled video data including frame
 extraction, augmenting the training set for variability and reducing
-deminsionality for efficiency. Pre-trained CNNs such as VGG16 and ResNet50, then
-extract features from the preprocessed frames, before feeding them to their
-respective sequence models, namely BiLSTM and LSTM.
+dimensionality for efficiency. Pre-trained CNNs such as VGG16 and ResNet50, then
+extract features from the preprocessed frames, before feeding them into their
+respective sequence models.
 
 The accuracy of these models are then evaluated on a held-out test set, to
 ensure the models performance on unseen data. Finally, the evaluation utilises

@@ -182,13 +182,13 @@ Their approach showcases the resource-efficient and time-saving nature of
 transfer learning, evident in their impressive accuracies of 98.15\% and
 91.47\%.
 
-Moreover, research on transfer learning is not unique within the field
-of skateboard trick classification. Two other studies \cite{skatePaper1},
-\cite{SkateboardAIPaper} have utilised this approach and achieved high
-accuracies. However, a more in-depth analysis of these papers can be found in
-section \ref{advancements_in_trickclassification}. These studies strongly
-suggest exploring the use of various pre-trained models for feature extraction
-in the development of a skateboard trick classifier.
+Moreover, research on transfer learning is not unique within the field of
+skateboard trick classification. Two other studies by Shapiee et al. (2020)
+\cite{skatePaper1} and Hanciao Chen (2023)\cite{SkateboardAIPaper} have employe
+this approach and achieved high accuracies. However, a more in-depth analysis of
+these papers is detailed in section \ref{advancements_in_trickclassification}.
+These studies strongly suggest exploring the use of various pre-trained models
+for feature extraction in the development of a skateboard trick classifier.
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
@@ -304,8 +304,8 @@ of a custom dataset comprising six skateboard tricks most commonly executed
 in competitive events. Amateur skateboarders performed each trick five times on
 a modified skateboard equipped with an Inertial Measurement Unit (IMU) to record
 the signals produced. The researchers capture six signals for each trick;
-linear accelerations along the x, y, and z axes (aX, aY, aZ) and
-angular accelerations along the same axes (gX, gY, gZ). They then opt for the
+linear accelerations along the $x$, $y$, and $z$ axes (a$_X$, a$_Y$, a$_Z$) and
+angular accelerations along the same axes (g$_X$, g$_Y$, g$_Z$). They then opt for the
 unique approach of concatenating all six signals onto a single image
 corresponding to one trick, employing two input image transformations: raw data
 (RAW) and Continuous Wavelet Transform (CWT).

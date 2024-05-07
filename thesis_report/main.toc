@@ -43,7 +43,7 @@
 \contentsline {subsection}{\numberline {4.2.2}Labelling techniques}{17}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Preprocessing}{18}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Frame Extraction}{18}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{18}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{19}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Normalisation}{19}{subsection.4.3.3}%
 \contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{20}{subsection.4.3.4}%
 \contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{21}{subsection.4.3.5}%
@@ -58,11 +58,11 @@
 \contentsline {section}{\numberline {5.4}Feature Extraction and Preprocessing for Training}{28}{section.5.4}%
 \contentsline {subsection}{\numberline {5.4.1}PCA Dimensionality Reduction}{28}{subsection.5.4.1}%
 \contentsline {section}{\numberline {5.5}Hyperparameter Optimisation}{29}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Callbacks}{29}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Early Stopping}{29}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.5.1}Training Process and Hyperameter Tuning}{29}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}Callbacks}{30}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Early Stopping}{30}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}Model Checkpoint}{30}{subsection.5.6.2}%
 \contentsline {section}{\numberline {5.7}Training History}{30}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Training Process and Hyperameter Tuning}{30}{subsection.5.7.1}%
 \contentsline {chapter}{\numberline {6}Evaluation}{32}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Model Training Specifications}{32}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Experiments}{32}{section.6.2}%
@@ -75,8 +75,8 @@
 \contentsline {subsubsection}{Comparative Analysis}{35}{table.caption.26}%
 \contentsline {subsection}{\numberline {6.3.2}Classification observations}{35}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Limitations}{36}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{37}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future Work}{37}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusion}{37}{section.7.2}%
-\contentsline {chapter}{\numberline {A}Sample A}{44}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Sample B}{45}{appendix.B}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{38}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Future Work}{38}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusion}{39}{section.7.2}%
+\contentsline {chapter}{\numberline {A}Sample A}{45}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sample B}{46}{appendix.B}%

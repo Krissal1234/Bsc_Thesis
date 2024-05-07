@@ -13,14 +13,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Folder-based labelling.\relax }}{18}{figure.caption.12}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Text-based labelling\relax }}{18}{figure.caption.12}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of a Single Frame and Multiple Sequential Frames.\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of a Single Frame and Multiple Sequential Frames.\relax }}{18}{figure.caption.13}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Visualisation of optical flow: (a) Optical flow representation (b) Individual frames extracted.\relax }}{19}{figure.caption.14}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Artefact Architecture.\relax }}{24}{figure.caption.16}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of frame extraction between optical flow method and uniform sampling\relax }}{26}{figure.caption.17}%
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of Augmented sequence against original\relax }}{27}{figure.caption.18}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Augmentation Parameters for all augmentation\relax }}{27}{figure.caption.19}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Overall caption for both images.\relax }}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Cumulative Variance plots for the outputs of VGG16 and ResNet50\relax }}{29}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Loss graphs for each architecture\relax }}{31}{figure.caption.21}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Model loss graphs for (a) Adam and (b) SGD optimisers.\relax }}{32}{figure.caption.22}%
