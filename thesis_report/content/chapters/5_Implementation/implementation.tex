@@ -42,11 +42,11 @@ data due to limited dataset size.
 
 In consideration of Chen's (2023) \cite{SkateboardAIPaper} research, which
 advocated for a sequence length of 45 frames per video, with each frame sized at
-299\times299 pixels, these parameters were initially assessed. However,
+\texttt{299\times299} pixels, these parameters were initially assessed. However,
 experimentation with such parameters revealed significant computational costs
 with negligible improvement in results. Consequently, this research struck a
 balance between costs and performance, by opting for a sequence length of 20 and
-a frame size of 224\times224 pixels.
+a frame size of \texttt{224\times224} pixels.
 
 
 %qthis study adopted a sequence length of 45, with each frame sized at 299x299 pixels, mirroring the
@@ -66,7 +66,11 @@ frames. The optical flow method was hypothesised to capture frames with the most
 significant motion, unlike uniform sampling which often missed crucial parts of
 the skateboard trick, capturing more frames before or after the trick execution.
 An example of this behaviour at a smaller scale can be observed in Figure
-\ref{fig:comparison-sequence-opticalflow-uniformSampling}.
+\ref{fig:comparison-sequence-opticalflow-uniformSampling}, where the sequence
+extracted using optical flow provides a more descriptive frame, indicated by the
+green box located in the third frame. This observation is more noticeable with
+larger sequence lengths.
+
 % Furthermore,
 % experiments showed an increase in accuracy when using the optical flow method
 % over uniform sampling, further supporting this hypothesis.
@@ -85,7 +89,7 @@ An example of this behaviour at a smaller scale can be observed in Figure
 		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg}
 		\caption{Extracted frames using uniform sampling.}
 	\end{subfigure}
-	\caption{Comparison of frame extraction between optical flow method and uniform sampling}
+	\caption{Comparison of frame extraction between optical flow method and uniform sampling.}
 	\label{fig:comparison-sequence-opticalflow-uniformSampling}
 \end{figure}
 
@@ -98,8 +102,7 @@ resized for faster processing and converted to greyscale to minimise noise
 caused by colour variations. The cv2 function
 \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation
 between these frames, using parameters such as pyramid scale, levels, winsize,
-iterations that can be found in Appendix %add reference to appendix and place
-values.
+iterations that can be found in Appendix \ref{tab:farneback_parameters}.
 
 The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors
 returned by the optical flow function into polar coordinates, discarding the
@@ -110,7 +113,7 @@ the video.
 
 
 
-\subsection{Data Augmentation}
+\section{Data Augmentation}
 This research explored a number of augmentation techniques using the
 \texttt{ImageDataGenerator} library provided by Tensorflow. This tool allowed
 for the definition of specific parameters that influenced how each frame was
@@ -162,7 +165,7 @@ these were removed or adjusted to a smaller scale from the augmentation paramete
 	"fill_mode": "nearest"
 }
 			\end{minted}
-			\caption{Augmentation Parameters 1}
+			\caption{Augmentation Parameters 1.}
 			\label{fig:augment_params_1}
 	\end{subfigure}\hfill
 	\begin{subfigure}[b]{0.48\textwidth}
@@ -184,7 +187,7 @@ these were removed or adjusted to a smaller scale from the augmentation paramete
 }
 			\end{minted}
 			\caption{Augmentation Parameters 2}
-			\label{fig:augment_params_2}
+			\label{fig:augment_params_2.}
 	\end{subfigure}
 	\caption{Augmentation Parameters for all augmentation}
 	\label{fig:augmentation_parameters}
@@ -200,7 +203,7 @@ After successfully extracting the most significant frames from each video using
 optical flow, the next step involved preparing the data for further processing.
 The main algorithm consisted of an iterative process responsible for resizing and
 normalising all frames before input to the pre-trained CNNs for feature
-extraction. The \texttt{cv2.resize()} function resized all frames to 224x224 to
+extraction. The \texttt{cv2.resize()} function resized all frames to \texttt{224x224} to
 satisfy the VGG and ResNet input image requirements, before performing min-max
 normalisation on each frame by diving the pixel intensities values by 255.
 
@@ -220,7 +223,7 @@ for easy retrieval of the pre-processed data, eliminating the need to re-extract
 features with every new session.
 
 
-\subsection{PCA Dimensionality Reduction} \label{5_dimensionality_reduction}
+\section{PCA Dimensionality Reduction} \label{5_dimensionality_reduction}
 This research, leveraged Principal Component Analysis (PCA) dimensionality
 reduction, a technique, crucial in refining the feature sets produced by the
 pre-trained models.
@@ -261,7 +264,7 @@ tuning by reducing waiting times associated with training each iteration.
 			\caption{Cumulative Variance plot of the output of ResNet50.}
 			\label{fig:pca_resnet}
 	\end{subfigure}
-	\caption{Cumulative Variance plots for the outputs of VGG16 and ResNet50}
+	\caption{Cumulative Variance plots for the outputs of VGG16 and ResNet50.}
 	\label{fig:pca_plots}
 \end{figure}
 

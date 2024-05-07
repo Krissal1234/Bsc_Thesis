@@ -14,11 +14,12 @@ crucial. Additionally, incorporating tricks that interact with external
 entities, such as rails, ledges and gaps would enhance its real-world
 usefulness.
 
+\vspace{3mm}
 \noindent
 {\bf Automated Judging Systems:} Currently, skateboarding competitions rely on a
 panel of judges to evaluate skater performance live. While judges possess
-expertise and understanding, this system is heavily subjective. Personal
-perspectives and preferences can influence their decisions, raising fairness
+expertise and understanding, this system is heavily subjective, due to personal
+perspectives and preferences influencing their decisions, raising fairness
 issues.
 
 An automated judging system would address these limitations by removing the
@@ -27,13 +28,15 @@ However, this requires a more complex classification strategy, as the true
 challenge lies in translating all the subjective aspects of style and creativity
 into an objective score.
 
+\vspace{3mm}
 \noindent
 {\bf Data limitation:} A major limitation encountered during development was the
 insufficient amount of data available to train with. Future work in this area,
 would greatly benefit from additional data to expand the model's robustness and
-generalisation capabilities. Moreover, if additional data is not accessible, it
-could be worth exploring techniques to generate synthetic data using models such
-as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs).
+generalisation capabilities. Moreover, if additional data is not accessible, a
+possible alternative could involve employing techniques to generate synthetic
+data using models such as Generative Adversarial Networks (GANs) or Variational
+Autoencoders (VAEs).
 
 \vspace{3mm}
 \noindent
@@ -54,21 +57,55 @@ utilising hardware acceleration.
 %analyse sound with video to see if htere is correlation between tricks
 %use computer vision techniques and accelermoter techniques together to get better results
 \section{Conclusion}
-This study aimed to classify skateboard tricks from video and compare the
-performance of various deep learning architectures in accomplishing this task.
-This research aimed at enhancing live broadcasts and social media content, in
-order to contribute to the possibilities for innovation in the skateboarding
-industry.
+This study set out to explore the effectiveness of deep learning techniques in
+the domain of skateboard trick classification, with a particular focus on
+evaluating various preprocessing strategies. The hypothesis stated that the
+combination of advanced deep learning models and strategic preprocessing could
+enhance the robustness and accuracy of skateboarding trick classification.
 
-Four architectures were implemented: VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and
-ResNet50-BiLSTM to compare performances of two pre-trained feature extractors
-and sequence models. Evaluations revealed that the selected models were capable
-of matching or exceeding the performance of relevant literature.
+Throughout the course of this research, four architectures were implemented:
+VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and ResNet50-BiLSTM. These models along
+with several preprocessing techniques such as optical flow, PCA and data
+augmentation significantly improved classification accuracies and training
+efficiencies. This study presents its findings in chapter \ref{6_evaluation},
+using relevant performance metrics, thus reaching the objectives listed in
+Section \ref{1_objectives}. Notably, the VGG16-BiLSTM model achieved the top accuracy
+of 88\%, validating the hypothesis and illustrating the potential of these
+techniques in real-world applications such as live broadcasted skateboard
+competitions and on-screen trick identification in skateboarding content.
 
-Additionally, this research explored the impact of Principle
-Component Analysis (PCA) and data augmentation on model performance. These
-techniques were employed to assess their potential in improving accuracies and
-efficiencies of the selected model architectures. As detailed in Chapter
-\ref{6_evaluation}, these techniques not only enhanced models' accuracy but also
-reduced training times. presents these experiments with relevant performance
-metrics to demonstrate the benefits of these approaches.
+The implications of these findings suggest that the integration of AI solutions
+could not only alter the way skateboarding is viewed and analysed but also how
+performances across all sports are approached. By automating classification of
+sports actions, this technology has the potential to enhance the audience's
+understanding and appreciation of the complex maneuvers common to many action
+sports.
+
+However, this study faced several limitations, notably its lack of training data
+and its applicability in real-time applications, deeming it unsuitable for
+real-world scenarios. Despite these challenges, the findings from this study
+provide insights into the several techniques and areas for further exploration
+that future research could build upon.
+
+
+
+
+
+
+% to classify skateboard tricks from video and compare the
+% performance of various deep learning architectures in accomplishing this task.
+% This research aimed at enhancing live broadcasts and social media content, in
+% order to contribute to the possibilities for innovation in the skateboarding
+% industry.
+
+% o compare performances of two pre-trained feature extractors
+% and sequence models. Evaluations revealed that the selected models were capable
+% of matching or exceeding the performance of relevant literature.
+
+% Additionally, this research explored the impact of Principle
+% Component Analysis (PCA) and data augmentation on model performance. These
+% techniques were employed to assess their potential in improving accuracies and
+% efficiencies of the selected model architectures. As detailed in Chapter
+% \ref{6_evaluation}, these techniques not only enhanced models' accuracy but also
+% reduced training times. presents these experiments with relevant performance
+% metrics to demonstrate the benefits of these approaches.

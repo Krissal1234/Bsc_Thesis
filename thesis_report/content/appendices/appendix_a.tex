@@ -1,22 +1,19 @@
 \chapter{Sample A}
-
-\begin{table}[]
-\centering
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{Layer (type)} & \textbf{Output Shape} & \textbf{Param \#} \\ \hline
-\multirow{2}{*}{bidirectional\_22 (Bidirectional)} & (None, 20, 512) & 5675008 \\ \cline{2-3}
- & & \\ \hline
-dropout\_105 (Dropout) & (None, 128) & 0 \\ \hline
-dense\_90 (Dense) & (None, 64) & 8256 \\ \hline
-dropout\_106 (Dropout) & (None, 64) & 0 \\ \hline
-dense\_91 (Dense) & (None, 64) & 4160 \\ \hline
-dropout\_107 (Dropout) & (None, 64) & 0 \\ \hline
-dense\_92 (Dense) & (None, 3) & 195 \\ \hline
-\multicolumn{3}{|c|}{Total params: 5983043 (22.82 MB)} \\ \hline
-\multicolumn{3}{|c|}{Trainable params: 5983043 (22.82 MB)} \\ \hline
-\multicolumn{3}{|c|}{Non-trainable params: 0 (0.00 Byte)} \\ \hline
-\end{tabular}
-\caption{Model summary for VGG-BiLSTM}
-\label{tab:model-summary}
+\begin{table}[htbp]
+  \centering
+  \begin{tabularx}{\textwidth}{>{\RaggedRight}Xcc}
+      \toprule
+      \textbf{Parameter} & \textbf{Description} & \textbf{Value} \\
+      \midrule
+      \texttt{pyr\_scale} & Scale factor for image pyramid & 0.5 \\
+      \texttt{levels} & Number of pyramid layers & 1 \\
+      \texttt{winsize} & Window size of the averaging window & 15 \\
+      \texttt{iterations} & Number of iterations at each pyramid level & 2 \\
+      \texttt{poly\_n} & Size of the pixel neighborhood & 5 \\
+      \texttt{poly\_sigma} & Standard deviation of the Gaussian & 1.2 \\
+      \texttt{flags} & Operation flags & 0 \\
+      \bottomrule
+  \end{tabularx}
+  \caption{Parameters for Farneback Optical Flow Method}
+  \label{tab:farneback_parameters}
 \end{table}
