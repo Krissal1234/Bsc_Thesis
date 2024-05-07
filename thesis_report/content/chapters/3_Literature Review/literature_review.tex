@@ -8,16 +8,16 @@
 
 
 \section{Activity Recognition}
-Building on the foundational understanding of activity recognition (AR) defined in
-the background, it's important to acknowledge the impact it has on various
-sectors. The recent advancements in recognising human actions in videos
-have not only revolutionalised sectors such as healthcare and security as
-demonstrated in the studies \cite{3DhumanActionDetectionForHealthCareSystems},
+Building on the foundational understanding of activity recognition (AR) defined
+in the background, it's important to acknowledge the impact it has on various
+sectors. The recent advancements in human action recognition have not only
+revolutionalised sectors such as healthcare and security as demonstrated in the
+studies \cite{3DhumanActionDetectionForHealthCareSystems},
 \cite{HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
 potential in the realm of sports.
 
-The research conducted by K. Host and M. Ivašić-Kos in
-\cite{HARinSportsComputerVision} along with Wu et al. in
+The research conducted by K. Host and M. Ivašić-Kos (2022) in
+\cite{HARinSportsComputerVision} along with Wu et al. (2022) in
 \cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
 further elaborate on this potential, such as its numerous applications in
 categorising complex sports actions, injury prevention methods and refinement of
@@ -82,10 +82,11 @@ classifier that performs well in real-world conditions.
 \subsection{Preprocessing techniques}
 Preprocessing is a crucial step in the development of ML models, especially in
 the field of AR. It involves the application of various
-techniques to enhance raw data before applying the Machine Learning algorithms.
+techniques to enhance raw data before applying Machine Learning algorithms.
+
 \subsubsection{Data Augmentation}
-As a result of the limited research on the emergence of a skateboard trick
-classifier, there is a significant lack of open-source datasets featuring
+As a result of the limited research in the domain of skateboard trick
+classification, there is a significant lack of open-source datasets featuring
 skateboard tricks. This lack of data presents an opportunity to employ data
 augmentation techniques, especially valuable in studies with limited data.
 Methods such as flipping, rotating, scaling and colour manipulation not only
@@ -94,7 +95,8 @@ likelihood of overfitting as highlighted in prior works,
 \cite{DataAugmentationCanImproveRobustness,AnOverviewOfOverfittingAndItsSolutions}.
 In the realm of Skateboard trick classifiers, Shapiee et al (2020)
 \cite{skatePaper1} effectively employed data augmentation techniques to expand
-their dataset, demonstrating the application of these methods in improving model performance for trick classification.
+their dataset, demonstrating the application of these methods in improving model
+performance for trick classification.
 % \subsubsection{Normalisation}
 % After establishing the role of data augmentation in addressing the lack of data
 % available, another important step in computer vision is data normalisation. This
@@ -126,24 +128,34 @@ their dataset, demonstrating the application of these methods in improving model
 % suggest that while normalisation is an important preprocessing step, its
 % application should be carefully adapted to the characteristics of the dataset.
 \subsubsection{Feature Extraction}
-Having optimised the distribution of pixel values through the normalisation
-process, the next crucial step is feature extraction. Xudong Jiang
-\cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes this
-technique as the process of capturing the core attributes of an object through
+Xudong Jiang (2009)
+\cite{FeatureExtractionForImageRecognitionAndComputerVision}, describes feature
+extraction as the process of capturing the core attributes of an object through
 the elimination of redundancies, resulting in a set of numerical features ideal
-for classification. CNNs excel at this due to their capabilities in detecting
-complex patterns and enhancing features. While they are primarily used in image
-recognition, as an initial step before deploying classification algorithms,
-their effectiveness in feature extraction is demonstrated by studies like
-Manjunath Jogin et al. (2018) \cite{FeatureExtractionUsingCNNandDeepLearning}
-where they achieved 86\% accuracy using CNNs for feature extraction alongside
-several classifiers. Beyond this primary function, CNN's ability to extract
-complex features from images makes them very effective when coupled with other
-models for more complex tasks such as AR. In the context of
-skateboard trick classification, CNNs can efficiently extract detailed spatial
-features like board rotations, foot positioning and limb movements. Such
-features can then be passed through a sequence analysis model like an LSTM,
-which is efficient at capturing temporal information.
+for classification. The study by Manjunath Jogin et al. (2018)
+\cite{FeatureExtractionUsingCNNandDeepLearning} highlights the effectiveness of
+CNNs at extracting features due to their capabilities in detecting complex
+patterns and enhancing features. In this study, a CNN not only performs feature
+extraction but also performs classification, achieving an accuracy of 86\% on
+the CIFAR-10 \cite{CIFAR-10} dataset.
+
+% These models are primarily used in image
+% recognition, as an initial step before deploying classification algorithms,
+% their effectiveness in feature extraction is demonstrated by sktudies like
+% where they achieved 86\% accuracy using CNNs for feature extraction alongside
+% several classifiers.
+%  Beyond this primary function, CNN's ability to extract
+% complex features from images makes them very effective when coupled with other
+% models for more complex tasks such as AR. Ullah et al. (2017)
+% \cite{actionrecognitionusingdeepbidirectionallstmwithcnnfeatures}, demonstrates
+% this by coupling the extracted features from the CNN with a BiLSTM, a sequence
+% analysis model. In this study, CNNs efficiently extracted spatial features
+
+% In the context of skateboard trick
+% classification, CNNs can efficiently extract detailed spatial features like
+% board rotations, foot positioning and limb movements. Such features can then be
+% passed through a sequence analysis model like an LSTM, which is efficient at
+% capturing temporal information.
 
 % This
 % requires CNNs operating on individual frames to extract spatial features, which
@@ -152,26 +164,31 @@ which is efficient at capturing temporal information.
 
 \subsubsection{Transfer Learning}
 Following the discussion on CNNs for feature extraction, it is important to
-highlight the role of transfer learning in enhancing ML models, especially in
-fields with limited data like skateboard trick recognition. The concept of
+highlight the role of transfer learning in enhancing ML models. The concept of
 transfer learning as detailed by the studies by Weiss et al. (2016)
 \cite{ASurveyOfTransferLearning} and Soni et al. (2018)
 \cite{ApplicationAndAnalysisOfTransferLearningSurvey} involves using a
 pre-trained ML model to leverage its experience for a new, but related task.
-Furthermore, the study by Sargano et al. (2017)
+This technique is frequently used for feature extraction using pre-trained CNNs,
+especially in scenarios where there is limited data for training or when
+training a CNN from scratch is not feasible. %find reference
+
+The study by Sargano et al. (2017)
 \cite{HARUsingTransferLearningWithDeepRepresentations}, employed transfer
-learning with pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and
+learning using pre-trained deep CNNs like AlexNet \cite{AlexNetCite} and
 GoogleNet \cite{GoogleNetCite}, for HAR. Notably, they utilised these models for
 feature extraction, followed by an SVM classifier for final classification.
 Their approach showcases the resource-efficient and time-saving nature of
 transfer learning, evident in their impressive accuracies of 98.15\% and
-91.47\%. Moreover, research on transfer learning is not unique within the field
+91.47\%.
+
+Moreover, research on transfer learning is not unique within the field
 of skateboard trick classification. Two other studies \cite{skatePaper1},
 \cite{SkateboardAIPaper} have utilised this approach and achieved high
 accuracies. However, a more in-depth analysis of these papers can be found in
-section 3.2. These studies strongly suggest exploring the use of various
-pre-trained models for feature extraction in the development of a skateboard
-trick classifier.
+section \ref{advancements_in_trickclassification}. These studies strongly
+suggest exploring the use of various pre-trained models for feature extraction
+in the development of a skateboard trick classifier.
 
 
 % Feature extraction techniques - using transfer learning, optical flow, object detection
@@ -181,7 +198,7 @@ trick classifier.
 \subsection{Activity Recognition Techniques}
 The accurate classification of skateboard tricks poses a unique challenge for
 computer vision due to the sport's dynamic and complex nature, characterised by
-rapid movements, potential occlusions and camera angles. This section explores
+rapid movements, potential background noise and camera angles. This section explores
 various computer vision techniques and architectures employed in previous
 literature, exploring their potential impact on this specific task.
 
@@ -229,11 +246,13 @@ enhances this model by incorporating three key advancements:
 	required to train one from scratch. The I3D model was selected for its
 	proven efficiency and its ability to be fine-tuned for activity recognition
 	tasks.
-	\item[2. Bi-directional Long-Short-Term Memory (BiLSTM) network:] The
-	authors chose to use a variant of LSTM called Bi-directional Long Short-Term
-	Memory (BiLSTM). Whereas LSTMs only process data in one direction, BiLSTMs
-	can analyse data in both directions, allowing them to understand
-	relationships between preceding and subsequent actions.
+	\item[2. Bi-directional Long-Short-Term Memory (BiLSTM) network:] The authors
+	chose to use a variant of the LSTM called the Bi-directional LSTM (BiLSTM), to
+	take advantage of its dual-directional approach, enabling it to capture
+	information from both past and future states.
+	%  Whereas LSTMs only process data in one direction, BiLSTMs
+	% can analyse data in both directions, allowing them to understand
+	% relationships between preceding and subsequent actions.
 	\item[3. Attention Mechanisms:]  Saoudi et al. incorporated attention
 	mechanisms after their BiLSTM, enabling the model to prioritise particular
 	parts of the input data. This technique allowed the model to learn which
@@ -262,7 +281,7 @@ for activity recognition tasks.
 % paper by K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}. This paper
 %While Contact based is good, this study will focusing on computer vision
 
-\section{Advancements in Skateboard Trick Classification}
+\section{Advancements in Skateboard Trick Classification} \label{advancements_in_trickclassification}
 
 In the emergent field of skateboard trick classification, leveraging activity
 recognition techniques from a video have led to two primary methodologies among

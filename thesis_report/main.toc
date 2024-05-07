@@ -72,11 +72,11 @@
 \contentsline {subsection}{\numberline {6.2.4}Applicability In Real-Time applications}{34}{subsection.6.2.4}%
 \contentsline {section}{\numberline {6.3}Discussion}{34}{section.6.3}%
 \contentsline {subsection}{\numberline {6.3.1}Final Findings}{34}{subsection.6.3.1}%
-\contentsline {subsubsection}{Comparative Analysis}{35}{table.caption.25}%
+\contentsline {subsubsection}{Comparative Analysis}{35}{table.caption.26}%
 \contentsline {subsection}{\numberline {6.3.2}Classification observations}{35}{subsection.6.3.2}%
 \contentsline {section}{\numberline {6.4}Limitations}{36}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{38}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Future Work}{38}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Conclusion}{38}{section.7.2}%
-\contentsline {chapter}{\numberline {A}Sample A}{45}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Sample B}{46}{appendix.B}%
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{37}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Future Work}{37}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Conclusion}{37}{section.7.2}%
+\contentsline {chapter}{\numberline {A}Sample A}{44}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Sample B}{45}{appendix.B}%
