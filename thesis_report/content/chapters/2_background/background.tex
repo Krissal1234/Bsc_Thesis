@@ -13,7 +13,7 @@ coordination of the skateboard and the skateboarder's body. The key to successfu
 which is critical for controlling the skateboard's speed and direction. This
 control allows skateboarders to manipulate the board in ways that replicate
 specific tricks, showcasing their technical abilities and creativity. Some of
-the most common and simple flat ground tricks are listed as the following:
+the most common and simple flat-ground tricks are listed as the following:
 
 % Skateboard tricks
 % can be categorised into several types, including:
@@ -52,12 +52,13 @@ the most common and simple flat ground tricks are listed as the following:
     board, causing the board to level out in the air, used to jump over
     obstacles.
     \item \textbf{Kickflip:} A trick where the skateboarder flips the board
-    under their feet while jumping, making it spin 360\textdegree around the
+    under their feet while jumping, making it spin 360\textdegree~around the
     x-axis.
     \item \textbf{Pop-Shuvit:} A trick where the skateboarder scoops the board
-    with their back foot causing a 180\textdegree rotation around the y-axis.
+    with their back foot causing a 180\textdegree~rotation around the y-axis.
 \end{itemize}
 
+\noindent
 Skateboarders continually innovate and come up with new trick combinations,
 contributing to the dynamic nature of the sport.
 
@@ -69,24 +70,26 @@ algorithms and statistical models employed by computer systems to execute tasks
 without the need to be explicitly programmed. It is particularly applicable in
 situations where the information we seek from a dataset is not interpretable,
 and as the volume of available datasets continues to surge so does the demand
-for machine learning \cite{ML_Algorithms}.
+for machine learning~\cite{ML_Algorithms}.
 
-Morris (2019) \cite{UnderstandingLSTM} characterises ML as the advancement of
+Morris (2019)~\cite{UnderstandingLSTM} characterises ML as the advancement of
 algorithms that progressively enhance their performance through practice,
 suggesting that the more training the learning algorithm undergoes, the better
 it becomes at executing tasks. Numerous critical factors shape a model's
-performance within this phase, as exemplified by Budach et al. (2022)
-\cite{TheEffectsofDataQualityonMachineLearningPerformance}. Such factors include
-dataset quality and diversity, data preprocessing, the selection of a suitable
-model architecture, training time and the fine-tuning of hyper-parameters. The
-three main categories for ML models are defined as the following
-\cite{ML_Algorithms}:
+performance within this phase, as exemplified by Budach et al.
+(2022)~\cite{TheEffectsofDataQualityonMachineLearningPerformance}. Such factors
+include dataset quality and diversity, data preprocessing, the selection of a
+suitable model architecture, training time and the fine-tuning of
+hyperparameters. The three main categories for ML models are defined as the
+following~\cite{ML_Algorithms}:
 \begin{itemize}
-    \item \textbf{Supervised:} This is a ML concept that involves training a model to make classifications based on input data that has been labelled with the correct label.
-    \item \textbf{Unsupervised:} This ML concept concentrates on discovering
-    relationships within data when there are no predefined "correct" answers or
+    \item \textbf{Supervised:} This learning approach involves training a
+    model to make classifications based on input data that has been labelled
+    with the correct label.
+    \item \textbf{Unsupervised:} This learning approach focuses on discovering
+    relationships within data when there are no predefined `correct' answers or
     labelled examples to guide the learning process. These models are left
-    to autonomously explore and divulge structures in the data.
+    to autonomously explore and uncover structures in the data.
     \item \textbf{Reinforcement:} This type of learning consists of an agent
     that interacts with the environment and learns from the continuous feedback
     it receives in the form of rewards or punishment.
@@ -131,7 +134,7 @@ three main categories for ML models are defined as the following
  external objects such as football matches. The human ability to perceive these
  behaviours is a trivial task; yet, it is a challenging problem for computers
  due to the sequential nature and the resemblance of visual content in such
- activities \cite{ActionRecognitionDeepBi-DirectionalLSTM,
+ activities~\cite{ActionRecognitionDeepBi-DirectionalLSTM,
  AReviewOfHumanActivityRecognitionMethods}.
 
 % This should probably go to the implementation section
@@ -173,11 +176,11 @@ three main categories for ML models are defined as the following
 Artificial Neural Networks (ANNs) are a class of Machine Learning models that
 are inspired by the interconnected systems of neurons found in the nervous
 system of living organisms. They consist of connected nodes capable of learning
-from their environment and adapting to complex patterns in data
-\cite{FundamentalsOfNeuralNetworks}. Figure \ref{fig:ANN_Diagram} presents a
-schematic representation of an ANN. The diagram is organised into three
-fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
-\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.
+from their environment and adapting to complex patterns in
+data~\cite{FundamentalsOfNeuralNetworks}. Figure~\ref{fig:ANN_Diagram} presents
+a schematic representation of an ANN\@. The diagram is organised into three
+fundamental layers: the Input Layer, the Hidden Layer(s) and the Output
+Layer~\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.
 
 \begin{itemize}
     \item \textbf{Input Layer:} This is the set of neurons that serve as the
@@ -196,14 +199,13 @@ fundamental layers: the Input Layer, the Hidden Layer(s) and the Output Layer
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=0.75 \textwidth]{content/chapters/2_background/figures/Machine Learning/ANN_Diagram2.png}
-  \caption{Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022) \cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}
-  \label{fig:ANN_Diagram}
+  \caption{Schematic Representation of an Artificial Neural Network. Reproduced
+  from López et al. (2022)~\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}}\label{fig:ANN_Diagram}
 \end{figure}
 
 \vspace{-1cm}
 \subsection{Convolutional Neural Networks}
-Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)
-\cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
+Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)~\cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
 incredible performance in the field of image recognition and pattern recognition tasks.
@@ -219,22 +221,21 @@ This process effectively extracts features from images, critical in
 understanding complex patterns in images. The results are summed up to generate
 a single value in the feature map. The pooling layer applies an aggregation
 function such as max pooling or average pooling to create a downsampled
-representation of the input data are. Finally, the fully-connected attempt to
+representation of the input data. Finally, the fully connected layer attempts to
 transform the outputs from the previous layer into an output vector that
 represents a score corresponding to a class
-label \cite{introductiontoCNNs,CNN_understandingwithmathematicalmodel}.
+label~\cite{introductiontoCNNs,CNN_understandingwithmathematicalmodel}.
 
 \begin{figure}[h]
 	\centering
   \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/cnn_arch.png}
-  \caption{CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015) \cite{introductiontoCNNs}}
-  \label{fig:cnn_architecture}
+  \caption{CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015)~\cite{introductiontoCNNs}}\label{fig:cnn_architecture}
 \end{figure}
 
-Figure \ref{fig:cnn_architecture} showcases a simplified CNN
-architecture consisting of 5 layers, Nonetheless, the complexity of CNNs can be
-scaled by stacking multiple layers, thereby increasing the network's depth to
-cater for more complex tasks.
+Figure~\ref{fig:cnn_architecture} showcases a simplified CNN architecture
+consisting of five layers, designed to classify handwritten numbers.
+Nonetheless, the complexity of CNNs can be scaled by stacking additional layers,
+thereby increasing the network's depth to cater for more complex tasks.
 
 \subsection{Recurrent Neural Networks}
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
@@ -242,39 +243,34 @@ designed for sequential data processing. RNNs are capable of modelling dynamic
 relationships in sequential data by feeding signals from past time steps
 back into the network. However, they are limited due to their
 inability to access long-term data, limited to approximately ten sequential time
-steps \cite{UnderstandingLSTM}.
-This constraint arises from the challenge of dealing with vanishing or exploding
+steps~\cite{UnderstandingLSTM}. This constraint arises from the challenge of dealing with vanishing or exploding
 gradients in the backpropagation procedure while processing extended sequences,
-as discussed in prior works
-\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}.
+as discussed in prior works~\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}.
 
 \subsubsection{Long Short-Term Memory Networks}
 To address the limitation that RNNs encounter in capturing long-term
 dependencies, Long Short-Term Memory Recurrent Neural Networks (LSTM-RNNs) were
-introduced as an extension to RNNs in 1997
-\cite{learningPriceseTimingWithLSTM,originalLSTMPaper}. LSTM networks
-automatically the memory of RNNs, allowing them to capture dependencies across
-more than 1,000 time steps depending on the network's complexity. These models
-are also able to tackle the vanishing problem associated with RNNS by
-introducing gates that regulate data flow. These gates maintain a constant error
-flow through structures called constant error carousels (CECs) to ensure that
-gradients do not vanish during backpropagation \cite{UnderstandingLSTM}.
+introduced as an extension to RNNs in 1997~\cite{learningPriceseTimingWithLSTM,originalLSTMPaper}. LSTM networks inherently
+extend the RNNs memory, enabling them to capture dependencies across more than 1,000
+time steps depending on the network's complexity. These models are also able to
+tackle the vanishing problem associated with RNNs by introducing gates that
+regulate data flow. These gates maintain a constant error flow through
+structures called constant error carousels (CECs) to ensure that gradients do
+not vanish during backpropagation~\cite{UnderstandingLSTM}.
 
 LSTMs consist of three gates: input, output and forget gates.
-The input gate, determines whether new information will be uploaded to the
+The input gate determines whether new information will be uploaded to the
 network, the output gate manages whether current cell values contribute to the
-output, and the forget gate determines whether existing information will be
-preserved or removed \cite{theperformanceoflstmandbilstminforcastingtimeseries}.
-Figure \ref{fig:lstm_architecture} illustrates the architecture of an LSTM
+output and the forget gate determines whether existing information will be
+preserved or removed~\cite{theperformanceoflstmandbilstminforcastingtimeseries}.
+Figure~\ref{fig:lstm_architecture} illustrates the architecture of an LSTM
 network, displaying the interaction between the cell state and the various other
 gates that regulate the flow of information through the network.
 
-% explain how they solve the vanishing gradient problem
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=0.7 \textwidth]{content/chapters/2_background/figures/lstm_architecture.jpg}
-  \caption{LSTM architecture. Reproduced from ...........}
-  \label{fig:lstm_architecture}
+  \caption{LSTM architecture. Reproduced from Zhang et al. (2021)~\cite{lstm_image}}\label{fig:lstm_architecture}
 \end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
 
 \vspace{-1cm}
@@ -284,39 +280,41 @@ ability to capture patterns in sequential data and improve learning long-term
 dependencies. Unlike LSTMs that only process data in a single direction, BiLSTMs
 utilise a different approach by applying two LSTM models to the input data. In
 the first round, the LSTM is applied to the input data, and in the second round,
-it is applied to the reversed input sequence. Furthermore, Tavakoli et al.
-(2019) \cite{theperformanceoflstmandbilstminforcastingtimeseries}, concluded
-that BiLSTMs reported better accuracies compared to regular LSTMs.
+it is applied to the reversed input sequence.
+% Furthermore, Tavakoli et al.
+% (2019) \cite{theperformanceoflstmandbilstminforcastingtimeseries}, concluded
+% that BiLSTMs reported better accuracies compared to regular LSTMs.
 
 
 \begin{figure}[ht]
 	\centering
   \includegraphics[width=0.6 \textwidth]{content/chapters/2_background/figures/bilstm_structure.png}
-  \caption{BiLSTM Structure. Reproduced from Du et al. (2020) \cite{du2020power}}
-  \label{fig:bilstm_structure}
-\end{figure} %https://d2l.ai/chapter_recurrent-modern/lstm.html reproduced from
+  \caption{BiLSTM Structure. Reproduced from Du et al. (2020)~\cite{du2020power}}\label{fig:bilstm_structure}
+\end{figure}
 
-Figure \ref{fig:bilstm_structure} demonstrates the structure of a BiLSTM
+Figure~\ref{fig:bilstm_structure} demonstrates the structure of a BiLSTM
 network, showcasing the flow of data between the two parallel LSTM layers. The
 first LSTM processes the input data in the forward direction, from $x_1$ to
-$x_6$, while the other LSTM in the backwards direction from $x_6$ to
-$x_1$, allowing the network to learn from past and future contexts. The forward LSTM
+$x_6$, while the other LSTM in the backward direction from $x_6$ to $x_1$,
+allowing the network to learn from past and future contexts. The forward LSTM
 units are connected through weights $Wf_1$ and $Wf_2$, while the backward LSTM
-units are connected through weights $Wb_1$ and $Wb_2$. By learning from
-sequences in both directions, BiLSTMs are particularly effective in scenarios
-where past and future contexts are crucial.
+units are connected through weights $Wb_1$ and $Wb_2$. At each time step, the
+outputs from the forward and backward LSTMs are combined to produce the output
+$y_t$.
+% By learning from sequences in both directions, BiLSTMs are particularly
+% effective in scenarios where past and future contexts are crucial.
 
 \section{Optical Flow}
 Optical flow is an approximation technique used to estimate how objects move
-across a series of images. It works by analysing the changes in brightness of
-pixels, which often occur due to the movement of objects. The application of
-Optical flow generates a two-dimensional vector field where each vector is a
+across a series of images. It works by analysing the changes in the brightness
+of pixels, which often occur due to the movement of objects. The application of
+optical flow generates a two-dimensional vector field where each vector is a
 displacement vector, representing the movement of a point in the image, showing
-both the direction and distance of that movement from one frame to the next.
-\cite{optical_Flow_background,computation_of_opticalflow}. Figure
-\ref{fig:opticalflow} demonstrates an optical flow visualisation between two
-frames, the lines appearing on the image indicate the direction and magnitude of
-their movement between the frames.
+both the direction and distance of that movement from one frame to the
+next~\cite{optical_Flow_background,computation_of_opticalflow}.
+Figure~\ref{fig:opticalflow} demonstrates an optical flow visualisation between
+two frames, the lines appearing on the image indicate the direction and
+magnitude of their movement between the frames.
 
 
 \begin{figure}[h!]
@@ -324,24 +322,23 @@ their movement between the frames.
   \includegraphics[width=0.95\textwidth]{content/chapters/2_background/figures/optical_flow.png}
 
   \caption{Demonstration of Optical Flow between Two Consecutive Frames.
-  Reproduced from K. Host and M. Ivašić-Kos \cite{HARinSportsComputerVision}}
-  \label{fig:opticalflow}
+  Reproduced from K. Host and M. Ivašić-Kos~\cite{HARinSportsComputerVision}}\label{fig:opticalflow}
 \end{figure}
 \vspace{-1cm}
 \section{Dimensionality Reduction}
-Datasets with many features are characterised as high dimensional. Such datasets
+Datasets with many features are characterised as high-dimensional. Such datasets
 often include redundant data, including closely related or identical variables.
 The goal of dimensionality reduction is to remove these unnecessary components
 and create a simplified lower-dimensional feature space. This helps reduce the
 impact of redundant data by mapping the valuable data from the original features
-to a smaller set of features \cite{dimensionality_reduction_a_review}.
+to a smaller set of features~\cite{dimensionality_reduction_a_review}.
 
 PCA is a widely used statistical technique that transforms features into a
 lower-dimensional space by transforming the original features into a new set of
 variables known as principal components. These principal components are
 orthogonal to each other, meaning that they are uncorrelated to one another and
-are reorganised in a way that the first few components represents the maximum
-variance from the original data \cite{dimensionality_reduction}.
+are reorganised in a way that the first few components represent the maximum
+variance from the original data~\cite{dimensionality_reduction}.
 
 % condider talking about another technique
 

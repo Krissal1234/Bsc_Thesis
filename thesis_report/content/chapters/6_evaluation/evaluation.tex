@@ -1,24 +1,29 @@
 \clearpage
-\chapter{Evaluation} \label{6_evaluation}
+\chapter{Evaluation}\label{6_evaluation}
+
+Given that the previous chapter outlined the implementation details, this
+chapter focuses on the evaluation of the final models. It presents the study's
+final findings, including a comparative analysis with other research from the
+literature.
+
 \section{Model Training Specifications}
 Due to the absence of a dedicated graphics card, training exclusively relied on
-the CPU, featuring a Ryzen 5 3600 6-core processor, operating at a base clock
-speed of 3.59 GHz. Despite lacking GPU acceleration, the Ryzen 5 3600 processor
-reliably handled the training of several deep learning architectures and
-experiments conducted.
+a Ryzen 5 3600 6-core processor, operating at a base clock speed of 3.59 GHz.
+Despite lacking GPU acceleration, the Ryzen 5 3600 processor reliably handled
+the training of several deep learning architectures and experiments conducted.
 
-\section{Experiments} \label{6_experiments}
+\section{Experiments}\label{6_experiments}
 \subsection{Choice of Optimiser}
-This study compared the results of Stochastic Gradient Descent (SGD) and Adam
-\cite{adam_paper} as optimisation algorithms during training. The results
-suggest that SGD may be more effective at reducing overfitting compared to Adam.
-This improvement is illustrated in Figure \ref{fig:loss_graphs}, using an
+This study compared the results of Stochastic Gradient Descent (SGD) and
+Adam~\cite{adam_paper} as optimisation algorithms during training. The results
+suggest that SGD is more effective at reducing overfitting compared to Adam.
+This improvement is illustrated in Figure~\ref{fig:loss_graphs}, using an
 iteration of the VGG-BiLSTM architecture. While, Adam initially shows promise
 with good generalisation, it quickly encounters a pitfall, where the validation
 loss begins to climb, indicating overfitting. In contrast, the SGD-trained model
 exhibits a more stable validation loss, likely due to its algorithmic stability
 and its capability to achieve small generalisation errors as explained in the
-study by Hardt et al. (2016) \cite{SGD_stability_paper}. The results observed
+study by Hardt et al. (2016)~\cite{SGD_stability_paper}. The results observed
 with the VGG-BiLSTM aligns with the insights discussed by Hardt et al.
 suggesting that models trained using SGD are less vulnerable to overfitting.
 
@@ -27,18 +32,15 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/Adam_optimiser.PNG}
-		\caption{Training and Validation Loss using Adam}
-		\label{fig:adam_loss}
+		\caption{Training and Validation Loss using Adam}\label{fig:adam_loss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
 		\centering
 		\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/SGD_optimiser.PNG}
-		\caption{Training and Validation Loss using SGD}
-		\label{fig:sgd_loss}
+		\caption{Training and Validation Loss using SGD}\label{fig:sgd_loss}
 	\end{subfigure}
-	\caption{Model loss graphs for (a) Adam and (b) SGD optimisers.}
-	\label{fig:loss_graphs}
+	\caption{Model loss graphs for (a) Adam and (b) SGD optimisers.}\label{fig:loss_graphs}
 \end{figure}
 
 
@@ -46,10 +48,10 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 % feature extractiona and without feature extraction
 % talk about PCA improving accuracy on Resnet50
 
-\subsection{The Effect of Data Augmentation} \label{data_augmentation_6}
+\subsection{The Effect of Data Augmentation}\label{data_augmentation_6}
 %if I have time add augmentation x4
 This research, also compared the effects of Augmenting data before feeding it
-into the sequence models, as illustrated in Table \ref{tab:models_aug}.
+into the sequence models, as illustrated in Table~\ref{tab:models_aug}.
 Experiments revealed that each of the four models demonstrated improvements in
 accuracies following the application of data augmentation on the input data.
 Enhancements ranged from a 5\% increase in Model 3, to a 9\% increase in Models
@@ -78,15 +80,17 @@ adding more variability to the training data.
 %mention shorter training times due to less data
 
 \subsection{The Effect of PCA}
-Another experiment conducted, involved evaluating the impact of PCA on model
+Another experiment conducted involved evaluating the impact of PCA on model
 performance. The analysis compared VGG16-BiLSTM and ResNet50-BiLSTM as they were
 the top-performing models from each category of pre-trained models, This
 comparison focused on their accuracies before and after the application of PCA,
 as well as differences in training times. To ensure fair results, both models
 were trained using the same augmented data, with features reduced to their
-respective pre-calculated number of components discussed in Section
-\ref{5_dimensionality_reduction}. Table \ref{tab:pca_effect} presents a
-side-by-side comparison of these models with their training times.
+respective pre-calculated number of components discussed in
+Section~\ref{5_dimensionality_reduction}. It's important to note that the
+sequence models have not been altered; thus, they are tuned for the application
+of PCA, which may contribute to the observed results. Table~\ref{tab:pca_effect}
+presents a side-by-side comparison of these models with their training times.
 
 \begin{table}[htbp]
 	\centering
@@ -100,15 +104,14 @@ side-by-side comparison of these models with their training times.
 			\textbf{ResNet50-BiLSTM} & 33\% & 03:29:00 & 86\% & 00:03:01 \\
 			\bottomrule
 	\end{tabularx}
-	\caption{Comparison of VGG16-BiLSTM and ResNet50-BiLSTM model performances before and after PCA implementation}
-	\label{tab:pca_effect}
+	\caption{Comparison of VGG16-BiLSTM and ResNet50-BiLSTM model performances before and after PCA implementation}\label{tab:pca_effect}
 \end{table}
 
-The application of PCA shows significant results, not only improving accuracies
-but also reducing training times drastically. These results highlight the
-benefits of applying dimensionality reduction to combat the 'curse of
+The application of PCA shows significant improvements, not only improving
+accuracies but also reducing training times drastically. These results highlight
+the benefits of applying dimensionality reduction to combat the `curse of
 dimensionality', often encountered with high-dimensional data, noted in
-Section \ref{4_dimensionality_reduction}. The observed improvements are a result
+Section~\ref{4_dimensionality_reduction}. The observed improvements are a result
 of the removal of redundant features in the dataset, further enhancing the
 model's learning capabilities by allowing them to focus on the most informative
 features.
@@ -139,14 +142,13 @@ classify a single 2-second video at $\sim$30fps for each architecture.
 			Model 4 (ResNet50-BiLSTM) & 9:00\\
 			\bottomrule
 	\end{tabular}
-	\caption{Evaluation time (ss:mm) for skateboard trick classification models.}
-	\label{tab:evaluation_time}
+	\caption{Evaluation time (ss:mm) for skateboard trick classification models.}\label{tab:evaluation_time}
 \end{table}
-The slow processing speeds outlined in Table \ref{tab:evaluation_time} is caused
-by the computational expensive video analysis pipeline required to process a
-single video. While this pipeline negatively affected processing speeds, it was
-responsible for achieving high accuracies and significantly accelerating
-training time.
+The slow processing speeds outlined in Table~\ref{tab:evaluation_time} are
+caused by the computational expensive video analysis pipeline required to
+process a single video. While this pipeline negatively affected processing
+speeds, it was responsible for achieving high accuracies and significantly
+accelerating training time.
 % evaluation. This pipeline involves various steps: frame extraction using
 % optical flow, feature extraction with models like ResNet50 or VGG16,
 % dimensionality reduction using PCA and finally classifying the video from the
@@ -161,9 +163,9 @@ application of various preprocessing techniques, have revealed significant
 improvement in accuracies and training efficiencies in skateboard trick
 classification. Particularly, the VGG-BiLSTM model emerged as the top performer
 with a final accuracy of 88\%. The full table of final accuracies is
-presented in Table \ref{tab:models_results}.
+presented in Table~\ref{tab:models_results}.
 
-The findings from experiments conducted in section \ref{6_experiments} are as follows:
+The findings from experiments conducted in Section~\ref{6_experiments} are as follows:
 
 \begin{itemize}
     \item \textbf{Optimisers}: SGD was found to reduce overfitting more
@@ -178,7 +180,7 @@ The findings from experiments conducted in section \ref{6_experiments} are as fo
 
 Observations revealed that across all configurations, the BiLSTM variants
 outperformed their LSTM counterparts. While the LSTM variants still demonstrated
-favourable accuracies, the BiLSTM models demonstrated enhanced accuracies by an
+good accuracies, the BiLSTM models demonstrated enhanced accuracies by an
 average of 4\%. This improvement is likely due to their ability to process input
 data both forwards and backward, enhancing their ability to recognise temporal
 patterns that LSTMs may have missed.
@@ -220,52 +222,52 @@ skateboard tricks.
 			\textbf{4.  ResNet50-BiLSTM} & 81\% & 00:59:80 & 86\% & 00:03:01 \\
 			\bottomrule
 	\end{tabularx}
-	\caption{Performance comparison of models from Hanciao Chen's study \cite{SkateboardAIPaper} and this study}
-	\label{tab:models_results}
+	\caption{Performance comparison of models from Hanxiao Chen's
+	study~\cite{SkateboardAIPaper} and this study}\label{tab:models_results}
 \end{table}
 
 \vspace{-1cm}
 \subsection{Comparative Analysis}
 This section provides a comparative analysis between the outcomes of this study
-and the findings reported by Orozco et al. Shapiee et al. and Hanciao Chen
-\cite{skatePaper1,HARRecognitionInVideosUsingARobustCNNLSTMApproach,SkateboardAIPaper}.
+and the findings reported by Orozco et al. Shapiee et al. \ and
+Chen~\cite{skatePaper1,HARRecognitionInVideosUsingARobustCNNLSTMApproach,SkateboardAIPaper}.
 Each study presents unique approaches with the aim of classifying complex
 actions.
 
-Orozco et al. (2020) \cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach}
+Orozco et al. (2020)~\cite{HARRecognitionInVideosUsingARobustCNNLSTMApproach}
 achieved a high accuracy, up to 93\% with the VGG-LSTM architecture evaluated on
 the KTH dataset. This accuracy attained by Orozco stands out when compared to
 the best model's accuracy of 88\% in this study. However, the KTH dataset
 comprises human actions such as walking, jogging and running, which are
 objectively simpler than skateboard tricks due to the lack of external entities.
 
-The skateboard trick classifier implemented by Shapiee et al. (2020)
-\cite{skatePaper1} achieved high accuracies of 95\%, 92\% and 90\% using three
-MobileNet, NASNetMobile and NASNetLarge as pre-trained models for feature before
-$k$-NN classification. These accuracies also stand out compared to those
+The skateboard trick classifier implemented by Shapiee et al.
+(2020)~\cite{skatePaper1} achieved high accuracies of 95\%, 92\% and 90\% using
+three MobileNet, NASNetMobile and NASNetLarge as pre-trained models for feature
+before $k$-NN classification. These accuracies also stand out compared to those
 obtained in this study. However, it's important to consider certain limitations
 in Shapiee et al.'s methodology; specifically the lack of variability in the
 skater performing the tricks and the environment where tricks were performed
 behind a white backdrop. These factors may have contributed to such high
-accuracy rates. Nonetheless, the study by Shapiee et al. may suggest that the
-pre-trained models used are more effective at extracting features relevant to
-skateboarding.
+accuracy rates. Nonetheless, the study by Shapiee et al. (2020) may suggest that
+the pre-trained models used are more effective at extracting features relevant
+to skateboarding.
 
-Finally, when comparing this study's outcomes with those reported by Chen (2023)
-\cite{SkateboardAIPaper}, some notable differences in performance are revealed.
-Despite employing the same architectures, this study not only achieved higher
-accuracy but also significant improvements in training efficiency. The
-comparison accuracies are detailed in Table \ref{tab:models_results}. Chen's top
+Finally, when comparing this study's outcomes with those reported by Chen
+(2023)~\cite{SkateboardAIPaper}, some notable differences in performance are
+revealed. Despite employing the same architectures, this study not only achieved
+higher accuracy but also significant improvements in training efficiency. The
+comparison accuracies are detailed in Table~\ref{tab:models_results}. Chen's top
 performing model, the ResNet50 + Attention + BiLSTM model, achieved an accuracy
 of 84\%. In contrast, this study achieved a higher top accuracy with an average
 training time reduction of 41:04 minutes across all models.
 
 Interestingly, Chen also demonstrated higher accuracies with models based on
-ResNet50 as apposed to VGG, which contrasts the findings of this study where
+ResNet50 as opposed to VGG, which contrasts the findings of this study where
 VGG16 based models outperformed ResNet50 variants. This could be due to several
 factors. Firstly, the two studies employed different hyperparameter
-configurations, which can have a great affect on model performance, potentially
-favoring the deep ResNet50 Architecture. Thirdly, the use of optical flow and
+configurations, which can affect the model performance, potentially
+favouring the deep ResNet50 Architecture. Thirdly, the use of optical flow and
 PCA in this research likely
 
 % favoured VGG16 by refining the input data to a more
@@ -305,16 +307,16 @@ PCA in this research likely
 
 \subsection{Classification observations}
 Trained models often encountered difficulty in differentiating between the ollie
-and kickflip compared to the pop shuvit. This challenge likely arises due to
+and kickflip compared to the pop-shuvit. This challenge likely arises due to
 their shared visual characteristics. Both the ollie and the kickflip involve
 common elements such as the initial pop of the skateboard and the absence of
-rotation around the y-axis, which distinguishes them to the pop shuvit. The
-confusion matrices illustrated in Figure \ref{fig:model_cm}
-demonstrate a favourable classification rate on pop-shuvits across all models
-compared to ollies and kickflips. Interestingly, in the classification of pop
-shuvits, BiLSTM models demonstrated 100\% classification accuracy, while LSTM
-models, while still performing well, slightly lagged behind with classifying 11
-out of 12 instances.
+rotation around the y-axis, which distinguishes them to the pop-shuvit. The
+confusion matrices illustrated in Figure~\ref{fig:model_cm} demonstrate a
+favourable classification rate on pop-shuvit's across all models compared to
+ollies and kickflips. Interestingly, in the classification of pop-shuvit's,
+BiLSTM models demonstrated 100\% classification accuracy, while LSTM models,
+while still performing well, slightly lagged behind with classifying 11 out of
+12 instances.
 
 
 
@@ -330,33 +332,28 @@ out of 12 instances.
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/vgg-lstm-cm.png}
-			\caption{VGG16-LSTM}
-			\label{fig:vgg_lstm_loss}
+			\caption{VGG16-LSTM}\label{fig:vgg_lstm_loss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/vgg-bilstm-cm.png}
-			\caption{VGG16-BiLSTM}
-			\label{fig:vgg_bilstm_loss}
+			\caption{VGG16-BiLSTM}\label{fig:vgg_bilstm_loss}
 	\end{subfigure}
 	\vspace{0.5cm} % Add vertical space between rows
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/resnet-lstm-cm.png}
-			\caption{ResNet50-LSTM}
-			\label{fig:resnet_lstm_loss}
+			\caption{ResNet50-LSTM}\label{fig:resnet_lstm_loss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/6_evaluation/figures/resnet-bilstm-cm.png}
-			\caption{ResNet50-BiLSTM}
-			\label{fig:resnet_bilstm_loss}
+			\caption{ResNet50-BiLSTM}\label{fig:resnet_bilstm_loss}
 	\end{subfigure}
 
-	\caption{Confusion matrices for each architecture.}
-	\label{fig:model_cm}
+	\caption{Confusion matrices for each architecture.}\label{fig:model_cm}
 \end{figure}
 
 % \vspace{-1cm}

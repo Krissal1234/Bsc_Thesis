@@ -1,5 +1,16 @@
 \clearpage
 \chapter{Implementation}
+This chapter describes the practical application of the numerous strategies that
+were described in the previous chapter to test the hypothesis of this study.
+Together with additional sections outlining the development environment and the
+training process, this chapter detail on how the previously established
+techniques were implemented.
+
+
+% It details how the previously defined techniques were implemented and
+% includes additional sections describing the training process.
+% This section details on many of the previously defined methods with additional
+% sections describing the training process.
 
 \section{Development Environment}
 {\bf Python:} Python's large database of libraries, along with its wide use in
@@ -20,14 +31,14 @@ models, pre-defined layers and training and evaluation abstractions.
 
 \vspace{3mm}
 \noindent
-{\bf OpenCv (cv2):} This open source library played a crucial role in the
+{\bf OpenCV (cv2):} This open source library played a crucial role in the
 computer vision components of development, offering essential tools related to
 video processing, particularly during the frame extraction phase.
 
 \vspace{3mm}
 \noindent
 {\bf Matplotlib:} This research made use of Matplotlib for its plotting and data
-visualisation functions, heavily used during the evaluation stage to properly
+visualisation functions, particularly during the evaluation stage to
 visualise results or any other insights gained throughout.
 
 \section{Dataset Split and Configuration}
@@ -40,7 +51,7 @@ final assessment of the model's generalizability, by using data the model's have
 not seen before. The decision for this split stemmed from prioritising training
 data due to limited dataset size.
 
-In consideration of Chen's (2023) \cite{SkateboardAIPaper} research, which
+In consideration of Chen's (2023)~\cite{SkateboardAIPaper} research, which
 advocated for a sequence length of 45 frames per video, with each frame sized at
 \texttt{299\times299} pixels, these parameters were initially assessed. However,
 experimentation with such parameters revealed significant computational costs
@@ -65,11 +76,11 @@ effective way to capture the crucial motions in a video through a series of
 frames. The optical flow method was hypothesised to capture frames with the most
 significant motion, unlike uniform sampling which often missed crucial parts of
 the skateboard trick, capturing more frames before or after the trick execution.
-An example of this behaviour at a smaller scale can be observed in Figure
-\ref{fig:comparison-sequence-opticalflow-uniformSampling}, where the sequence
-extracted using optical flow provides a more descriptive frame, indicated by the
-green box located in the third frame. This observation is more noticeable with
-larger sequence lengths.
+An example of this behaviour at a smaller scale can be observed in
+Figure~\ref{fig:comparison-sequence-opticalflow-uniformSampling}, where the
+sequence extracted using optical flow provides a more descriptive frame,
+indicated by the green box located in the third frame. This observation is more
+noticeable with larger sequence lengths.
 
 % Furthermore,
 % experiments showed an increase in accuracy when using the optical flow method
@@ -89,20 +100,19 @@ larger sequence lengths.
 		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg}
 		\caption{Extracted frames using uniform sampling.}
 	\end{subfigure}
-	\caption{Comparison of frame extraction between optical flow method and uniform sampling.}
-	\label{fig:comparison-sequence-opticalflow-uniformSampling}
+	\caption{Comparison of frame extraction between optical flow method and uniform sampling.}\label{fig:comparison-sequence-opticalflow-uniformSampling}
 \end{figure}
 
 %have to mention the sequence length
 
-This study employed Farneback's algorithm \cite{farneback2003two} using the
+This study employed Farneback's algorithm~\cite{farneback2003two} using the
 OpenCV (cv2) library, to estimate the optical flow magnitudes on each frame. The
 selection process involved reading pairs of successive frames from a video,
 resized for faster processing and converted to greyscale to minimise noise
 caused by colour variations. The cv2 function
 \texttt{cv2.calcOpticalFlowFarneback()} performed dense optical flow estimation
 between these frames, using parameters such as pyramid scale, levels, winsize,
-iterations that can be found in Appendix \ref{tab:farneback_parameters}.
+iterations that can be found in Appendix~\ref{tab:farneback_parameters}.
 
 The function \texttt{cv2.cartToPolar()} converted the Cartesian flow vectors
 returned by the optical flow function into polar coordinates, discarding the
@@ -120,10 +130,9 @@ for the definition of specific parameters that influenced how each frame was
 augmented. To expand the number of training samples, this study created two copies
 of the original dataset, each augmented with its own set of unique parameters
 controlling image shifts, brightness, scaling and other transformations. The two
-unique augmentation parameters utilised in this study are illustrated in Figure
-\ref{fig:augmentation_parameters}.
+unique augmentation parameters utilised in this study are illustrated in Figure~\ref{fig:augmentation_parameters}.
 
-Figure \ref{fig:originalFrames-againstAugmented} showcases an augmented trick
+Figure~\ref{fig:originalFrames-againstAugmented} showcases an augmented trick
 sequence against its original, split into six frames for illustrative purposes.
 Experimentation revealed that certain augmentation parameters such as image
 flipping and large rotational shifts disrupted the visualisation of the trick,
@@ -141,8 +150,7 @@ these were removed or adjusted to a smaller scale from the augmentation paramete
 		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/unaugmented_frames.jpg}
 		\caption{Original frames.}
 	\end{subfigure}
-	\caption{Comparison of Augmented sequence against original}
-	\label{fig:originalFrames-againstAugmented}
+	\caption{Comparison of Augmented sequence against original}\label{fig:originalFrames-againstAugmented}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -165,8 +173,7 @@ these were removed or adjusted to a smaller scale from the augmentation paramete
 	"fill_mode": "nearest"
 }
 			\end{minted}
-			\caption{Augmentation Parameters 1.}
-			\label{fig:augment_params_1}
+			\caption{Augmentation Parameters 1.}\label{fig:augment_params_1}
 	\end{subfigure}\hfill
 	\begin{subfigure}[b]{0.48\textwidth}
 			\begin{minted}[frame=single,
@@ -186,11 +193,9 @@ these were removed or adjusted to a smaller scale from the augmentation paramete
 	"fill_mode": "nearest"
 }
 			\end{minted}
-			\caption{Augmentation Parameters 2}
-			\label{fig:augment_params_2.}
+			\caption{Augmentation Parameters 2}\label{fig:augment_params_2.}
 	\end{subfigure}
-	\caption{Augmentation Parameters for all augmentation}
-	\label{fig:augmentation_parameters}
+	\caption{Augmentation Parameters for all augmentation}\label{fig:augmentation_parameters}
 \end{figure}
 
 \section{Feature Extraction and Preprocessing for Training}
@@ -223,9 +228,9 @@ for easy retrieval of the pre-processed data, eliminating the need to re-extract
 features with every new session.
 
 
-\section{PCA Dimensionality Reduction} \label{5_dimensionality_reduction}
+\section{PCA Dimensionality Reduction}\label{5_dimensionality_reduction}
 This research, leveraged Principal Component Analysis (PCA) dimensionality
-reduction, a technique, crucial in refining the feature sets produced by the
+reduction, a technique, used in refining the feature sets produced by the
 pre-trained models.
 %  PCA is a statistical technique that transforms features into
 % a lower-dimensional space, by transforming the original features into a new set
@@ -237,7 +242,7 @@ pre-trained models.
 It was aimed to achieve around 95\% variance retention when determining the
 optimal number of components for reduction. This involved plotting two explained
 variance plots: one for the output of pre-training with VGG16 and another for
-the output of ResNet50, as illustrated in Figure \ref{fig:pca_plots}. These
+the output of ResNet50, as illustrated in Figure\ref{fig:pca_plots}. These
 plots display the cumulative explained variance against the number of
 components, allowing approximate selection of the number of components by
 examining the 95\% percentile from both plots. Upon examining both plots, 2514
@@ -254,18 +259,15 @@ tuning by reducing waiting times associated with training each iteration.
 	\begin{subfigure}[b]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_vgg.png} % replace "image1" with your file name
-			\caption{Cumulative Variance plot of the output of VGG16.}
-			\label{fig:pca_vgg}
+			\caption{Cumulative Variance plot of the output of VGG16.}\label{fig:pca_vgg}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}[b]{0.45\textwidth}
 			\centering
 			\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/pca_resnet.png}
-			\caption{Cumulative Variance plot of the output of ResNet50.}
-			\label{fig:pca_resnet}
+			\caption{Cumulative Variance plot of the output of ResNet50.}\label{fig:pca_resnet}
 	\end{subfigure}
-	\caption{Cumulative Variance plots for the outputs of VGG16 and ResNet50.}
-	\label{fig:pca_plots}
+	\caption{Cumulative Variance plots for the outputs of VGG16 and ResNet50.}\label{fig:pca_plots}
 \end{figure}
 
 
@@ -277,7 +279,7 @@ tuning by reducing waiting times associated with training each iteration.
 The architectures described in this study represent the best versions of
 themselves after a number of iterations and optimisations. To speed up the
 time-consuming task of hyperparameter tuning, this research leveraged the power
-of Optuna, a hyperparameter optimisation framework \cite{optunaFramework}.
+of Optuna, a hyperparameter optimisation framework\cite{optunaFramework}.
 Optuna leverages a Bayesian optimisation algorithm that runs through a number of
 iterations, observing the performance of past configurations and strategically
 selecting parameter combinations such as learning rate, dropout rate and neuron
@@ -289,11 +291,11 @@ integrated within a custom-built development environment specifically designed
 to identify the optimal hyperparameter configurations for multiple model
 architectures and their corresponding input data.
 
-\subsection{Training Process and Hyperameter Tuning}
-Throughout the training phase, Optuna took the responsibility of initialising
-the model's hyperparameter configurations. Leveraging its Bayesian optimisation
-algorithm, Optuna provided initial configurations, which served as starting
-points for the iterative training process.
+\subsection{Training Process and Hyperpameter Tuning}
+Throughout the training phase, Optuna was used to initialise the model's
+hyperparameter configurations. Leveraging its Bayesian optimisation algorithm,
+Optuna provided initial configurations, which served as starting points for the
+iterative training process.
 
 In this iterative process, each model's hyperparameters underwent continuous
 evaluation and refinement after every iteration at an attempt to improve
@@ -331,7 +333,7 @@ showed an improvement, allowing a seamless resumption of training in case of
 interruption.
 
 \section{Training History}
-Figure \ref{fig:model_losses} presets the training and validation loss curves for
+Figure~\ref{fig:model_losses} shows the training and validation loss curves for
 the models that achieved the best test accuracy within each architecture.
 The vertical dashed lines indicate the epoch at which the early
 stopping callback restored the model's weights, preventing overfitting.
@@ -345,9 +347,10 @@ configurations generally exhibited more volatility, likely due to the complexity
 of their bidirectional layers.
 
 All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
-the training process due to excessive overfitting observed with Adam in Section
-6.1.1. While SGD performed better than Adam in the context of classifying
-skateboard tricks, it required longer training times to converge. %maybe talk about categorical crossentropy and the one hot encoded labels
+the training process due to excessive overfitting observed with the Adam
+optimisor in Section 6.1.1. While SGD performed better than Adam in the context
+of classifying skateboard tricks, it required longer training times to converge.
+%maybe talk about categorical crossentropy and the one hot encoded labels
 % All models made use of Early Stopping to cut training short when the models
 % began to overfit. This is evident in Figure \ref{fig:model_losses}, where the
 % validation loss of each model began to rise significantly, indicating a decline
@@ -358,33 +361,27 @@ skateboard tricks, it required longer training times to converge. %maybe talk ab
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/vgg_lstm_loss.png}
-			\caption{VGG16-LSTM}
-			\label{fig:vgg_lstm_loss}
+			\caption{VGG16-LSTM}%\label{fig:vgg_lstm_loss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/vgg_bilstm_loss.png}
-			\caption{VGG16-BiLSTM}
-			\label{fig:vgg_bilstm_loss}
+			\caption{VGG16-BiLSTM}%\label{fig:vgg_bilstm_loss}
 	\end{subfigure}
 	\vspace{0.5cm} % Add vertical space between rows
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/resnet_lstm_loss.png}
-			\caption{ResNet50-LSTM}
-			\label{fig:resnet_lstm_loss}
+			\caption{ResNet50-LSTM}%\label{fig:resnet_lstm_loss}
 	\end{subfigure}
 	\hfill
 	\begin{subfigure}{0.45\textwidth}
 			\centering
 			\includegraphics[width=\linewidth]{content/chapters/5_Implementation/figures/resnet_bilstm_loss.png}
-			\caption{ResNet50-BiLSTM}
-			\label{fig:resnet_bilstm_loss}
+			\caption{ResNet50-BiLSTM}%\label{fig:resnet_bilstm_loss}
 	\end{subfigure}
-
-	\caption{Loss graphs for each architecture}
-	\label{fig:model_losses}
+	\caption{Loss graphs for each architecture}\label{fig:model_losses}
 \end{figure}
 
 
