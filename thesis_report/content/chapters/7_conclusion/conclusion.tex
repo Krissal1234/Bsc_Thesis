@@ -13,11 +13,11 @@ skateboard tricks. While this served as an adequate foundation for exploring the
 underlying relationships between these tricks and their application in Deep
 Learning, its scope limited its usefulness in real-world scenarios.
 
-To enhance its applicability, particularly in skateboarding events, the
-inclusion of more complex tricks more commonly observed in competitions is
-crucial. Additionally, incorporating tricks that interact with external
-entities, such as rails, ledges and gaps would enhance its real-world
-usefulness.
+To enhance its applicability, particularly in skateboarding events and on-screen
+overlays, the inclusion of more complex tricks more commonly observed in
+competitions and social media is crucial. Additionally, incorporating tricks
+that interact with external objects, such as rails, ledges and gaps would
+enhance its real-world usefulness.
 
 \vspace{3mm}
 \noindent
@@ -62,6 +62,7 @@ utilising hardware acceleration.
 %analyse sound with video to see if htere is correlation between tricks
 %use computer vision techniques and accelermoter techniques together to get better results
 \section{Conclusion}
+
 This study set out to explore the effectiveness of deep learning techniques in
 the domain of skateboard trick classification, with a particular focus on
 evaluating various preprocessing strategies. The hypothesis stated that the
@@ -72,12 +73,17 @@ Throughout the course of this research, four architectures were implemented:
 VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and ResNet50-BiLSTM. These models along
 with several preprocessing techniques such as optical flow, PCA and data
 augmentation significantly improved classification accuracies and training
-efficiencies. This study presents its findings in Chapter~\ref{6_evaluation},
-using relevant performance metrics, thus reaching the objectives listed in
-Section~\ref{1_objectives}. Notably, the VGG16-BiLSTM model achieved the top accuracy
-of 88\%, validating the hypothesis and illustrating the potential of these
-techniques in real-world applications such as live broadcasted skateboard
-competitions and on-screen trick identification in skateboarding content.
+efficiencies. This study presents its findings in Chapter 6, using relevant
+performance metrics, thus reaching the objectives listed in Section 1.4.2.
+Notably, the VGG16-BiLSTM model achieved the top accuracy of 88\%, validating
+the hypothesis.
+
+In addressing the research questions, this research has demonstrated the
+effectiveness of Deep Learning in the domain of skateboard trick classification,
+with the VGG16-BiLSTM model achieving the highest performance. Moreover, this
+study has also highlighted the effectiveness of various preprocessing techniques
+though a number of experiments detailed in Chapter~\ref{6_evaluation},
+confirming their role in enhancing performance.
 
 The implications of these findings suggest that the integration of AI solutions
 could not only alter the way skateboarding is viewed and analysed but also how
@@ -91,14 +97,64 @@ and its applicability in real-time applications, deeming it unsuitable for
 real-world scenarios. Despite these challenges, the findings from this study
 provide insights into the several techniques and areas for further exploration
 that future research could build upon.
+% This study set out to explore the effectiveness of Deep Learning techniques in
+% the domain of skateboard trick classification, with a particular focus on
+% evaluating various preprocessing strategies. The hypothesis stated that the
+% combination of advanced Deep Learning models and strategic preprocessing could
+% enhance the robustness and accuracy of skateboarding trick classification.
 
+% Throughout the course of this research, four architectures were implemented:
+% VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and ResNet50-BiLSTM\@. These models
+% along with several preprocessing techniques such as Optical Flow, PCA and Data
+% Augmentation significantly improved classification accuracies and training
+% efficiencies. These findings have demonstrated the effectiveness of Deep
+% Learning in skateboard trick classification, addressing the first research
+% question. Additionally, the implementation and evaluation of these preprocessing
+% techniques have
+% %  This study presents its findings in Chapter~\ref{6_evaluation},
+% % using relevant performance metrics, thus reaching the objectives listed in
+% % Section~\ref{1_objectives}. Notably, the VGG16-BiLSTM model achieved the top
+% % accuracy of 88\%, validating the hypothesis.
 
+% Moreover, this research has demonstrated the effectiveness of Deep Learning
+% for trick classification, addressing the first research question. Additionally,
+% the implementation and evaluation of preprocessing techniques such as Data
+% Augmentation, Feature Extraction and PCA, have shown to have a positive impact
+% on classification accuracy, fulfilling the second research question.
+
+% This research addressed its aims by successfully classifying skateboard tricks
+% using frames extracted from videos and comparing the performance of several Deep
+% Learning architectures. The implementation of such Deep Learning architectures
+% and their evaluation using suitable metrics provided a comprehensive
+% understanding of their effectiveness in skateboard trick classification.
+% Moreover, the exploration of preprocessing techniques
+
+% The implications of these findings suggest
+% that the integration of AI solutions could not only alter the way skateboarding
+% is viewed and analysed but also how performances across all sports are
+% approached. By automating classification of sports actions, this technology has
+% the potential to enhance the audience's understanding and appreciation of the
+% complex manoeuvres common to many action sports.
+
+% However, this study faced several limitations, notably its lack of training data
+% and its slow evaluation speeds, deeming it unsuitable for real-world scenarios.
+% Despite these challenges, the findings from this study provide insights into the
+% several techniques and areas for further exploration that future research could
+% build upon.
+
+% In conclusion, this study met its objectives, demonstrating that
+
+%  and illustrating the potential of these
+% techniques in real-world applications
+
+% such as live broadcasted skateboard
+% competitions and on-screen trick identification in skateboarding content.
 
 
 
 
 % to classify skateboard tricks from video and compare the
-% performance of various deep learning architectures in accomplishing this task.
+% performance of various Deep Learning architectures in accomplishing this task.
 % This research aimed at enhancing live broadcasts and social media content, in
 % order to contribute to the possibilities for innovation in the skateboarding
 % industry.

@@ -11,9 +11,9 @@ studies~\cite{3DhumanActionDetectionForHealthCareSystems,
 HumanActivityRecognitionSecurityAndMonitoring}, but also hold extensive
 potential in the realm of sports.
 
-The research conducted by K. Host and M. Ivašić-Kos (2022)
-in~\cite{HARinSportsComputerVision} along with Wu et al. (2022)
-in~\cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
+The research conducted by K. Host and M. Ivašić-Kos
+(2022)~\cite{HARinSportsComputerVision} along with Wu et al.
+(2022)~\cite{Asurveyonvideoactionrecognitioninsports:Datasetsmethodsandapplications}
 further elaborate on this potential, such as its numerous applications in
 categorising complex sports actions, injury prevention methods and refinement of
 game strategies through video analysis. These studies also propose various
@@ -175,7 +175,7 @@ accuracies of 98.15\% and 91.47\%.
 
 Moreover, research on transfer learning is not unique within the field of
 skateboard trick classification. Two other studies by Shapiee et al.
-(2020)~\cite{skatePaper1} and Hanxiao Chen (2023)~cite{SkateboardAIPaper} have
+(2020)~\cite{skatePaper1} and Hanxiao Chen (2023)~\cite{SkateboardAIPaper} have
 employed this approach and achieved high accuracies. However, a more in-depth
 analysis of these papers is detailed in
 Section~\ref{advancements_in_trickclassification}. These studies strongly
@@ -218,10 +218,10 @@ HMDB-51.
 	\centering
 	\includegraphics[width=0.65 \textwidth]{content/chapters/3_Literature Review/figures/cnn-lstm.png}
 	\caption{CNN-LSTM Architecture. Reproduced from Donahue et al. (2015)
-	\cite{LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}}\label{fig:CNN-LSTM-architecture}
+	\cite{LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}.}\label{fig:CNN-LSTM-architecture}
   \end{figure}
 
-
+\noindent
 Building upon the foundational CNN-LSTM architecture, a recent study by Saoudi
 et al.
 (2023)~\cite{Advancinghumanactionrecognition:ahybridapproachusingattention-basedLSTMand3DCNN}
@@ -237,22 +237,22 @@ enhances this model by incorporating three key advancements:
 	proven efficiency and its ability to be fine-tuned for activity recognition
 	tasks.
 	\item[2. Bidirectional Long-Short-Term Memory (BiLSTM) network:] The authors
-	chose to use a variant of the LSTM called the Bi-directional LSTM (BiLSTM), to
+	chose to use a variant of the LSTM called the Bidirectional LSTM (BiLSTM), to
 	take advantage of its dual-directional approach, enabling it to capture
 	information from both past and future states.
 	%  Whereas LSTMs only process data in one direction, BiLSTMs
 	% can analyse data in both directions, allowing them to understand
 	% relationships between preceding and subsequent actions.
-	\item[3. Attention Mechanisms:]  Saoudi et al. incorporated attention
+	\item[3. Attention Mechanisms:]  Saoudi et al.\ incorporated attention
 	mechanisms after their BiLSTM, enabling the model to prioritise particular
 	parts of the input data. This technique allowed the model to learn which
 	temporal features were most applicable to the task, providing a more detailed
 	representation of the input and ultimately, improved performance.
 \end{description}
-
-With the integration of these advancements, Saoudi et al. achieved model
+\noindent
+With the integration of these advancements, Saoudi et al.\ achieved model
 accuracies of 97.98\% and 96.83\% on the HMDB51 and UFC101 datasets
-respectively, demonstrating the potential of 3D CNNs, BiLSTMSs and attention mechanisms
+respectively, demonstrating the potential of 3D CNNs, BiLSTMs and attention mechanisms
 for activity recognition tasks.
 
 %Notably the CNN-LSTM architecture is an effective model in accurately recognising human activities, this is outlined in the study by Ronald Mutegeki \cite{CNN-LSTMApproachToHAR}. The author reports this architecture achieving 99\% and 92\% on the iSPL and UCI HAR datasets respectively, showcasing the strength of CNN's for extracting spatial features from data, especially in the field of activity recognition.
@@ -275,7 +275,7 @@ for activity recognition tasks.
 
 In the emergent field of skateboard trick classification, researchers have
 leveraged activity recognition techniques, leading to two primary methodologies.
-The first technique involves utilising signals obtained from skateboard-mounted
+The first methodology involves utilising signals obtained from skateboard-mounted
 accelerometers or artificially generated signals. These signals are then fed
 into a study-dependent model for classification, as outlined by Abdullah et
 al. (2021)~\cite{skateboardClassificationTransferLearningPipelinesAccelermetry}
@@ -371,10 +371,11 @@ reserved for validation.
 %relationships in sequential data \cite{UnderstandingLSTM}.
 Hanxiao Chen~\cite{SkateboardAIPaper} applies extensive experimentation on
 several models, exploring various combinations of CNN-LSTM and CNN-BiLSTM
-architectures. The study also incorporated attention mechanisms and explored
-transfer-based methods for activity recognition.
+architectures. The study also incorporated attention mechanisms and examined
+pre-trained models such as ResNet50, ResNet152, DenseNet121 and VGG16, combined
+with BiLSTM and LSTM sequence models.
 %Add more information on
-This study further documents and analyses important metrics such as training time, training
+This study further analyses important metrics such as training time, training
 accuracy and validation accuracy for each model experimented on. Among these,
 the top three models that stood out in terms of validation accuracy were the
 ResNet50 with Attention and BiLSTM (84\%), ResNet50 with BiLSTM (81\%) and

@@ -175,8 +175,8 @@
       \strng{authorbibnamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authornamehash}{d110f0c3eb92fc39d8cd6702557381e3}
       \strng{authorfullhash}{57ed158db0d808e5a2227f7045b1ee6a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{MEKATRONIKA}
@@ -823,8 +823,8 @@
       \strng{authornamehash}{7174309e70e2a2bac293d53405348f6b}
       \strng{authorfullhash}{6bbccfc10d5cec4da080438a1099af8b}
       \field{extraname}{1}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:2106.11342}
@@ -1565,8 +1565,8 @@
       \strng{authorbibnamehash}{750d898cf4a10efe455b96e436e6ca33}
       \strng{authornamehash}{61b8eb3c78a529fbd4b7f22d76b524df}
       \strng{authorfullhash}{750d898cf4a10efe455b96e436e6ca33}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Big data}
@@ -1897,8 +1897,8 @@
       \strng{authornamehash}{bd390470a0554331449ea38c9028908d}
       \strng{authorfullhash}{76613017710b0a0cb261ae43083e14e7}
       \field{extraname}{2}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -2089,6 +2089,31 @@
       \verb https://doi.org/10.5281/zenodo.3986905
       \endverb
     \endentry
+    \entry{Titus}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f71185951db8a1c8c166c45b001afd9a}{%
+           family={Titus},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f71185951db8a1c8c166c45b001afd9a}
+      \strng{fullhash}{f71185951db8a1c8c166c45b001afd9a}
+      \strng{bibnamehash}{f71185951db8a1c8c166c45b001afd9a}
+      \strng{authorbibnamehash}{f71185951db8a1c8c166c45b001afd9a}
+      \strng{authornamehash}{f71185951db8a1c8c166c45b001afd9a}
+      \strng{authorfullhash}{f71185951db8a1c8c166c45b001afd9a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Titus}
+      \field{title}{Kickflip}
+      \verb{urlraw}
+      \verb https://www.titus.de/a/blog/wiki/skateboard-guide/anfaenger/kickflip/
+      \endverb
+      \verb{url}
+      \verb https://www.titus.de/a/blog/wiki/skateboard-guide/anfaenger/kickflip/
+      \endverb
+    \endentry
     \entry{imageNetDataset}{inproceedings}{}
       \name{author}{6}{}{%
         {{hash=0ae7fdc13773f928525f673b05f37149}{%
@@ -2131,8 +2156,8 @@
       \strng{authorbibnamehash}{a16fdd05c52c264b99fe98f4a5e24c60}
       \strng{authornamehash}{990420f755e01028377fcad1464c9706}
       \strng{authorfullhash}{a16fdd05c52c264b99fe98f4a5e24c60}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2009 IEEE conference on computer vision and pattern recognition}
@@ -2271,8 +2296,8 @@
       \strng{authorbibnamehash}{7bda08f257f451eba0f1d8902689c8fb}
       \strng{authornamehash}{7bda08f257f451eba0f1d8902689c8fb}
       \strng{authorfullhash}{7bda08f257f451eba0f1d8902689c8fb}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Image Analysis: 13th Scandinavian Conference, SCIA 2003 Halmstad, Sweden, June 29--July 2, 2003 Proceedings 13}

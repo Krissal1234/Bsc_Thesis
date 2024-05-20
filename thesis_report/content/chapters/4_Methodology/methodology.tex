@@ -70,7 +70,7 @@ Recognising complex human actions requires the examination of sequential data as
 opposed to relying on single frames or
 images~\cite{ActionRecognitionDeepBi-DirectionalLSTM}. To illustrate this point,
 consider the example of a skateboarder executing a skateboard trick like the
-`Kickflip', as depicted in Figure~\ref{fig:SingleVsMultiFrameKickflip}. By
+`Kickflip', as showcased in Figure~\ref{fig:SingleVsMultiFrameKickflip}. By
 feeding an AI model a single image of this trick as shown in
 Figure~\ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as
 another trick due to its subjective nature. Whereas, by providing the model with
@@ -83,14 +83,14 @@ together characterise the full skateboard trick.
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.57\linewidth]{content/chapters/2_background/figures/Tricks/single.png}
-    \caption{A Single Frame of a `Kickflip'.}\label{fig:singleFrameKickflip}
+    \caption{A single frame of a `Kickflip'.}\label{fig:singleFrameKickflip}
   \end{subfigure}
   \begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{content/chapters/2_background/figures/Tricks/KickflipFrames.PNG}
-    \caption{Multiple Frames of a `Kickflip'.}\label{fig:MultiFrameKickflip}
+    \caption{Multiple frames of a `Kickflip'.}\label{fig:MultiFrameKickflip}
   \end{subfigure}
-  \caption{Comparison of a Single Frame and Multiple Sequential Frames.}\label{fig:SingleVsMultiFrameKickflip}
+  \caption{Comparison of a single frame and multiple sequential frames. Reproduced from~\cite{Titus}.}\label{fig:SingleVsMultiFrameKickflip}
 \end{figure}
 
 % Given that the nature of this research is an activity recognition task, this
@@ -100,11 +100,11 @@ together characterise the full skateboard trick.
 % context of skateboard trick recognition, the frames should capture the entire
 % sequence, including the wind-up, the trick and the landing.
 
-%TODO: change description of optical flow to match with its application in this study i.e. skatbeoarding
-This study explored two primary frame extraction techniques: uniform sampling
-and optical flow method. The former technique evenly splits a video into its
+%TODO: change description of Optical Flow to match with its application in this study i.e. skatbeoarding
+This study explored two primary frame extraction techniques: Uniform Sampling
+and Optical Flow method. The former technique evenly splits a video into its
 corresponding frames by using a pre-calculated step size determined by the
-number of frames of a video. The second technique leverages optical flow to
+number of frames of a video. The second technique leverages Optical Flow to
 select the frames with the most significant movement. This method calculates the
 motion of pixels between successive frames and assigns weights to each frame
 determined by the magnitude of this motion.
@@ -122,15 +122,15 @@ this technique being applied to `kickflip' trick.
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence_opticalFlow.jpg}
-        \caption{Optical flow visualisation of a kickflip sequence, highlighting regions with significant motion.}
+        \caption{Optical Flow visualisation of a kickflip sequence, highlighting regions with significant motion.}
     \end{subfigure}
     \begin{subfigure}{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/kickflip_sequence.jpg}
-        \caption{Extracted frames from the sequence based on the greatest weightings from the optical flow representation.}
+        \caption{Extracted frames from the sequence based on the greatest weightings from the Optical Flow representation.}
     \end{subfigure}
 
-    \caption{Visualisation of optical flow: (a) Optical flow representation (b)
+    \caption{Visualisation of Optical Flow: (a) Optical Flow representation (b)
     Individual frames extracted.}\label{fig:kickflip-sequence-opticalflow}
 \end{figure}
 
@@ -147,10 +147,10 @@ size of the dataset, causing them to be vulnerable to overfitting.
 
 \subsection{Normalisation}
 During the preprocessing stage, normalisation played a crucial role in preparing
-the video frame data before further processing. In particular this study
-utilised min-max normalisation to scale the pixel intensities between 0 and 1.
-Normalising data in this manner ensured that the model's input values data was
-within a standardised range, calculated by Equation~\ref{eq:normalisation}.
+the video frame data before further processing. In particular, this study
+utilised min-max normalisation to scale the pixel intensities between 0 and 1
+using Equation~\ref{eq:normalisation}. Normalising data in this manner ensured
+that the model's input values data was within a standardised range.
 
 \begin{equation}
 	\label{eq:normalisation}
@@ -177,16 +177,16 @@ ResNet50.
 {\bf VGG16:} VGG16, introduced in 2014 by Simonyan and Zisserman~\cite{VGG}, is
 a CNN architecture known for its success in image classification and feature
 extraction for Action Recognition tasks. This model is relatively simple made up
-of 16 convolutional and fully connected (FC) layers with repeated use of 3$\times$3
-convolutional filters to preserve spatial information.
-Furthermore, VGG16 has proved to be effective for feature extraction in previous
-literature~\cite{SkateboardAIPaper}, supporting its suitability in this study.
+of 16 convolutional and fully connected (FC) layers with repeated use of
+3$\times$3 convolutional filters to preserve spatial information. Furthermore,
+VGG16 has proved to be effective for feature extraction in previous literature,
+supporting its suitability in this study.
 
 \vspace{3mm}
 {\bf Resnet50:} Resnet50, introduced in 2016 by He et al.~\cite{Resnet50}, is
 another powerful CNN architecture that is well known for its advancements in
 image classification and frame extraction capabilities. Unlike VGG16, this model
-has a deeper architecture employing 50 convolutional layers allowing it to learn
+has a deeper architecture employing 50 convolutional layers, allowing it to learn
 more intricate feature representations of the data. Furthermore, it incorporates
 residual connections to counteract the vanishing gradient problem that is often
 caused by many layers.
@@ -204,7 +204,7 @@ caused by many layers.
 		\textbf{Input Image Size} & 224$\times$224  & 224$\times$224  \\
 		\bottomrule
 	\end{tabularx}
-	\captionof{table}{Characteristics of Transfer Learning Models VGG17 and ResNet50}\label{tab:TL-models}
+	\captionof{table}{Characteristics of Transfer Learning Models VGG17 and ResNet50.}\label{tab:TL-models}
 \end{table}
 
 
