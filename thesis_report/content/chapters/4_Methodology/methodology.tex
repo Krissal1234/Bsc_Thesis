@@ -138,7 +138,7 @@ this technique being applied to `kickflip' trick.
 
 \subsection{Data Augmentation}
 The limited number of data available for this research necessitated the
-implementation of data augmentation techniques to enlarge the dataset's size
+implementation of Data Augmentation techniques to enlarge the dataset's size
 before model training. Techniques such as rotating, flipping and adding noise to
 images also served to add more diversity to the dataset mitigating the risk of
 overfitting. This risk arises from the over-parameterised nature of the
@@ -162,7 +162,7 @@ that the model's input values data was within a standardised range.
 %Feature extraction plays a crucial role in the classification of complex data,
 %particularly in the domain of action recognition tasks~\cite{SkateboardAIPaper,
 %HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study
-%incorporates transfer learning by utilising pre-trained CNNs to extract
+%incorporates Transfer Learning by utilising pre-trained CNNs to extract
 %relevant features from video frames before passing them through the main
 %sequence modelm.
 
@@ -204,7 +204,7 @@ caused by many layers.
 		\textbf{Input Image Size} & 224$\times$224  & 224$\times$224  \\
 		\bottomrule
 	\end{tabularx}
-	\captionof{table}{Characteristics of Transfer Learning Models VGG17 and ResNet50.}\label{tab:TL-models}
+	\captionof{table}{Characteristics of Transfer Learning models VGG16 and ResNet50.}\label{tab:TL-models}
 \end{table}
 
 
@@ -288,11 +288,11 @@ performance, model epoch loss and accuracy graphs to track training history.
 \section{Evaluation Methods}
 To thoroughly evaluate the performance of the proposed models, this study
 employed various evaluation metrics, including accuracy, precision, recall and
-F1-score. These metrics provided valuable insights into the
-model's ability to correctly classify different tricks.
+F1-score. These metrics provided insightful information into the
+model's ability to correctly categorise various tricks.
 
 The metrics are defined as follows, described in
-the context of the `kickflip' class and tabulated in a confusion matrix.
+the context of the `kickflip's class and tabulated in a confusion matrix.
 
 \begin{itemize}
 	\item \textbf{True Positive (TP)}: The number of instances that the model correctly identified a video as containing a kickflip.

@@ -91,8 +91,8 @@ following~\cite{ML_Algorithms}:
     labelled examples to guide the learning process. These models are left
     to autonomously explore and uncover structures in the data.
     \item \textbf{Reinforcement:} This type of learning consists of an agent
-    that interacts with the environment and learns from the continuous feedback
-    it receives in the form of rewards or punishment.
+    that interacts with the environment and learns from constant feedback
+    it receives in the form of rewards or penalities.
 \end{itemize}
 
 %\section{Object Detection}
@@ -174,7 +174,7 @@ following~\cite{ML_Algorithms}:
 \subsection{Artificial Neural Networks}
 
 Artificial Neural Networks (ANNs) are a class of Machine Learning models that
-are inspired by the interconnected systems of neurons found in the nervous
+are influenced by the interconnected systems of neurons found in the nervous
 system of living organisms. They consist of connected nodes capable of learning
 from their environment and adapting to complex patterns in
 data~\cite{FundamentalsOfNeuralNetworks}. Figure~\ref{fig:ANN_Diagram} presents
@@ -208,14 +208,14 @@ Layer~\cite{FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.
 Convolutional Neural Networks (CNNs), as described by Gu et al. (2018)~\cite{RecentAadvancesInConvolutionalNeuralNetworks} are a category of Deep
 learning architectures with roots in the biological visual perception mechanisms
 of living organisms. These networks have gained widespread attention for their
-incredible performance in the field of image recognition and pattern recognition tasks.
+incredible performance in the area of image recognition and pattern recognition tasks.
 
 % Unlike ANNs, CNNs have neurons arranged in three dimensions: width, height and
 % depth.
 
 CNNs are comprised of three types of layers: convolutional layers, pooling
 layers and fully-connected layers. The convolutional layer applies a set of
-filters (or kernels) that slide across the input data performing a localised dot
+filters that slide across the input data performing a localised dot
 product between their weights and the corresponding values of the input data.
 This process effectively extracts features from images, critical in
 understanding complex patterns in images. The results are summed up to generate
@@ -240,12 +240,13 @@ thereby increasing the network's depth to cater for more complex tasks.
 \subsection{Recurrent Neural Networks}
 Recurrent Neural Networks (RNNs) are a subset of Neural networks that are
 designed for sequential data processing. RNNs are capable of modelling dynamic
-relationships in sequential data by feeding signals from past time steps
-back into the network. However, they are limited due to their
-inability to access long-term data, limited to approximately ten sequential time
-steps~\cite{UnderstandingLSTM}. This constraint arises from the challenge of dealing with vanishing or exploding
-gradients in the backpropagation procedure while processing extended sequences,
-as discussed in prior works~\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}.
+relationships in sequential data by feeding signals from past time steps back
+into the network. However, they are limited due to their inability to access
+long-term data, limited to approximately ten sequential time
+steps~\cite{UnderstandingLSTM}. This constraint arises from the difficulty in
+handling vanishing or exploding gradients during the backpropagation procedure
+when dealing with extended sequences, as discussed in prior
+works~\cite{Long-termConvolutionalNeuralNetworksforVisualRecogntion}.
 
 \subsubsection{Long Short-Term Memory Networks}
 To address the limitation that RNNs encounter in capturing long-term
@@ -259,7 +260,7 @@ structures called constant error carousels (CECs) to ensure that gradients do
 not vanish during backpropagation~\cite{UnderstandingLSTM}.
 
 LSTMs consist of three gates: input, output and forget gates.
-The input gate determines whether new information will be uploaded to the
+The input gate controls whether new data will be uploaded to the
 network, the output gate manages whether current cell values contribute to the
 output and the forget gate determines whether existing information will be
 preserved or removed~\cite{theperformanceoflstmandbilstminforcastingtimeseries}.
@@ -293,7 +294,7 @@ it is applied to the reversed input sequence.
 \end{figure}
 
 Figure~\ref{fig:bilstm_structure} demonstrates the structure of a BiLSTM
-network, showcasing the flow of data between the two parallel LSTM layers. The
+network, showcasing the flow of data between both LSTM layers. The
 first LSTM processes the input data in the forward direction, from $x_1$ to
 $x_6$, while the other LSTM in the backward direction from $x_6$ to $x_1$,
 allowing the network to learn from past and future contexts. The forward LSTM
@@ -305,14 +306,14 @@ $y_t$.
 % effective in scenarios where past and future contexts are crucial.
 
 \section{Optical Flow}
-Optical flow is an approximation technique used to estimate how objects move
+Optical Flow is an approximation technique used to estimate how objects move
 across a series of images. It works by analysing the changes in pixel
 brightness, which often occur due to the movement of objects. The application of
-optical flow generates a two-dimensional vector field where each vector is a
-displacement vector, representing the movement of a point in the image, showing
-both the direction and distance of that movement from one frame to the
+Optical Flow generates a two-dimensional vector field where every vector
+represents the displacement of a point in an image, illustrating its direction
+and distance of movement from one frame to the
 next~\cite{optical_Flow_background,computation_of_opticalflow}.
-Figure~\ref{fig:opticalflow} demonstrates an optical flow visualisation between
+Figure~\ref{fig:opticalflow} demonstrates an Optical Flow visualisation between
 two frames, the lines appearing on the image indicate the direction and
 magnitude of their movement between the frames.
 
@@ -328,12 +329,12 @@ magnitude of their movement between the frames.
 \section{Dimensionality Reduction}
 Datasets with many features are characterised as high-dimensional. Such datasets
 often include redundant data, including closely related or identical variables.
-The goal of dimensionality reduction is to remove these unnecessary components
+The aim of dimensionality reduction is to remove these unnecessary components
 and create a simplified lower-dimensional feature space. This helps reduce the
 impact of redundant data by mapping the valuable data from the original features
 to a smaller set of features~\cite{dimensionality_reduction_a_review}.
 
-PCA is a widely used statistical technique that transforms features into a
+PCA is a widely used technique that transforms features into a
 lower-dimensional space by transforming the original features into a new set of
 variables known as principal components. These principal components are
 orthogonal to each other, meaning that they are uncorrelated to one another and
@@ -344,20 +345,20 @@ variance from the original data~\cite{dimensionality_reduction}.
 
 % Background Section: Understanding Optical Flow
 
-% In the background section, introduce optical flow as a concept and discuss its
+% In the background section, introduce Optical Flow as a concept and discuss its
 % general applications and importance in computer vision. This section should lay
 % the theoretical groundwork for readers who may be unfamiliar with the term,
-% explaining what optical flow is and how it is typically used across different
+% explaining what Optical Flow is and how it is typically used across different
 % fields.
 
 % Example Background Text:
 
-% Optical flow is a key technique in computer vision used to estimate motion
+% Optical Flow is a key technique in computer vision used to estimate motion
 % between two consecutive frames in a sequence of images or videos. The method
 % relies on the assumption that the brightness of any object point in an image
 % remains constant despite the motion of the point between frames. This principle
 % allows for the calculation of motion vectors, which indicate the direction and
-% speed of movement. Optical flow is widely used in various applications such as
+% speed of movement. Optical Flow is widely used in various applications such as
 % video tracking, activity recognition, and autonomous driving, where it's crucial
 % to understand the dynamic elements of a scene. This technique proves
 % particularly valuable in scenarios where analyzing the nuances of movement
@@ -365,18 +366,18 @@ variance from the original data~\cite{dimensionality_reduction}.
 
 % Methodology Section: Applying Optical Flow to Your Research
 
-% In the methodology section, delve into the specifics of how optical flow was
+% In the methodology section, delve into the specifics of how Optical Flow was
 % utilized in your study. Here, you should provide details about the
 % implementation, including any specific algorithms used (like Lucas-Kanade or
-% Horn-Schunck), parameters set, and how the data extracted using optical flow
+% Horn-Schunck), parameters set, and how the data extracted using Optical Flow
 % influenced the outcome of your research.
 
 % Example Methodology Text:
 
-% In this study, optical flow was used to enhance frame extraction from video
+% In this study, Optical Flow was used to enhance frame extraction from video
 % sequences, focusing particularly on sequences where motion is critical, such as
 % in capturing skateboarding tricks. Unlike uniform sampling, which divides a
-% video into evenly spaced frames, the optical flow method assigns weights to
+% video into evenly spaced frames, the Optical Flow method assigns weights to
 % frames based on the amount of pixel motion detected between them. This ensures
 % that frames capturing significant motion are prioritized, highlighting the most
 % crucial moments of action. For example, in analyzing a kickflip skateboarding

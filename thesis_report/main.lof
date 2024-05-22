@@ -1,0 +1,30 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Number of skateboarders in the US from 2010 to 2021, measured in millions. Reproduced from\nobreakspace {}\blx@tocontentsinit {0}\cite {skatestatistics}, data sourced from Outdoor Foundation\nobreakspace {}\blx@tocontentsinit {0}\cite {outdoorfounation}.\relax }}{1}{figure.caption.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schematic Representation of an Artificial Neural Network. Reproduced from López et al. (2022)\nobreakspace {}\blx@tocontentsinit {0}\cite {FundamentalsOfArtificialNeuralNetworksAndDeepLearning}.\relax }}{6}{figure.caption.4}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces CNN architecture comprising 5 layers. Reproduced from O'Shea and Nash (2015)\nobreakspace {}\blx@tocontentsinit {0}\cite {introductiontoCNNs}.\relax }}{7}{figure.caption.5}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces LSTM architecture. Reproduced from Zhang et al. (2021)\nobreakspace {}\blx@tocontentsinit {0}\cite {lstm_image}.\relax }}{8}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces BiLSTM Structure. Reproduced from Du et al. (2020)\nobreakspace {}\blx@tocontentsinit {0}\cite {du2020power}.\relax }}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Demonstration of Optical Flow between Two Consecutive Frames. Reproduced from K. Host and M. Ivašić-Kos\nobreakspace {}\blx@tocontentsinit {0}\cite {HARinSportsComputerVision}.\relax }}{9}{figure.caption.8}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces CNN-LSTM Architecture. Reproduced from Donahue et al. (2015) \blx@tocontentsinit {0}\cite {LongTermRecurrentConvolutionalNetworksForVisualRecognitionAndDescription}.\relax }}{13}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Generated signals for each skateboard trick as categorised in the study by Corrêa et al. (2017). Reproduced from Corrêa et al. (2017)\nobreakspace {}\blx@tocontentsinit {0}\cite {skateboardTrickClassifierUsingAccelerometryAndML}\relax }}{15}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Tricks selected for Chen's models. Reproduced from Chen (2023)\nobreakspace {}\blx@tocontentsinit {0}\cite {SkateboardAIPaper}\relax }}{16}{figure.caption.11}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Folder-based labelling.\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Text-based labelling\relax }}{18}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Comparison of a single frame and multiple sequential frames. Reproduced from\nobreakspace {}\blx@tocontentsinit {0}\cite {Titus}.\relax }}{19}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualisation of Optical Flow: (a) Optical Flow representation (b) Individual frames extracted.\relax }}{19}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Artefact Architecture.\relax }}{24}{figure.caption.16}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Comparison of frame extraction between Optical Flow method and uniform sampling.\relax }}{26}{figure.caption.17}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Comparison of Augmented sequence against original\relax }}{27}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Augmentation Parameters for all augmentation\relax }}{28}{figure.caption.19}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Cumulative variance plots for the outputs of VGG16 and ResNet50.\relax }}{29}{figure.caption.20}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Loss graphs for each architecture\relax }}{31}{figure.caption.21}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Model loss graphs for (a) Adam and (b) SGD optimisers.\relax }}{32}{figure.caption.22}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Confusion matrices for each architecture.\relax }}{37}{figure.caption.27}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

@@ -1,17 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[44] biber:340> INFO - === Mon May 20, 2024, 16:40:39
-[51] Biber.pm:418> INFO - Reading 'main.bcf'
-[102] Biber.pm:972> INFO - Found 61 citekeys in bib section 0
-[108] Biber.pm:4383> INFO - Processing section 0
-[113] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
-[114] bibtex.pm:1713> INFO - LaTeX decoding ...
-[144] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
-[360] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[360] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[360] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[360] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[377] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[397] bbl.pm:757> INFO - Output to main.bbl
-[397] Biber.pm:130> WARN - legacy month field 'Aug' in entry 'lightningdrop2020skateboardml' is not an integer - this will probably not sort properly.
-[397] Biber.pm:132> INFO - WARNINGS: 1
+[47] biber:340> INFO - === Thu May 23, 2024, 00:30:20
+[54] Biber.pm:418> INFO - Reading 'main.bcf'
+[96] Biber.pm:972> INFO - Found 61 citekeys in bib section 0
+[102] Biber.pm:4383> INFO - Processing section 0
+[107] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
+[108] bibtex.pm:1713> INFO - LaTeX decoding ...
+[139] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
+[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[354] Biber.pm:4203> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[355] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[371] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[392] bbl.pm:757> INFO - Output to main.bbl
+[392] Biber.pm:130> WARN - legacy month field 'Aug' in entry 'lightningdrop2020skateboardml' is not an integer - this will probably not sort properly.
+[392] Biber.pm:132> INFO - WARNINGS: 1

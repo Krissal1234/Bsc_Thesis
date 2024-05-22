@@ -1,0 +1,15 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Characteristics of Transfer Learning models VGG16 and ResNet50.\relax }}{20}{table.caption.15}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Performance comparison of models with and without augmentation.\relax }}{33}{table.caption.23}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of VGG16-BiLSTM and ResNet50-BiLSTM model performances before and after PCA reduction.\relax }}{33}{table.caption.24}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Evaluation time (ss:mm) for skateboard trick classification models.\relax }}{34}{table.caption.25}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Performance comparison of models from Hanxiao Chen's study\nobreakspace {}\blx@tocontentsinit {0}\cite {SkateboardAIPaper} and this study.\relax }}{35}{table.caption.26}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Parameters for Farneback Optical Flow method.\relax }}{45}{table.caption.29}%
+\addvspace {10\p@ }
