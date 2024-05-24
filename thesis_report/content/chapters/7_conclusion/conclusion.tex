@@ -36,7 +36,7 @@ into an objective score.
 \vspace{3mm}
 \noindent
 {\bf Data limitation:} A major limitation encountered during development was the
-insufficient amount of data available to train with. Future work in this area,
+insufficient amount of data available to train with. Future work in this area
 would greatly benefit from additional data to expand the model's robustness and
 generalisation capabilities. Moreover, if additional data is not accessible, a
 possible alternative could involve employing techniques to generate synthetic
@@ -49,7 +49,7 @@ Autoencoders (VAEs).
 simplifying the expensive video analysis pipeline utilised in this study.
 Improvements in processing time will greatly increase its potential in
 real-world scenarios, targeting broadcasted skateboard competitions. Possible
-approaches include, frame extraction algorithm optimisations, model
+approaches include frame extraction algorithm optimisations, model
 simplifications such as using lighter pre-trained feature extractors and
 utilising hardware acceleration.
 % To address this limitation, future research should focus on optimizing the existing preprocessing steps to reduce their computational demands. Possible approaches might include:
@@ -63,27 +63,44 @@ utilising hardware acceleration.
 %use computer vision techniques and accelermoter techniques together to get better results
 \section{Conclusion}
 
-This study set out to explore the effectiveness of deep learning techniques in
-the domain of skateboard trick classification, with a particular focus on
-evaluating various preprocessing strategies. The hypothesis stated that the
-combination of advanced deep learning models and strategic preprocessing could
-enhance the robustness and accuracy of skateboarding trick classification.
+This study set out to explore the potential of Deep Learning techniques in the
+classifying skateboard trick from video data, addressing a gap in the field. The
+hypothesis asserted that the combination of advanced Deep Learning models and
+strategic preprocessing could enhance the robustness and accuracy of
+skateboarding trick classification.
 
-Throughout the course of this research, four architectures were implemented:
-VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and ResNet50-BiLSTM. These models along
-with several preprocessing techniques such as optical flow, PCA and data
-augmentation significantly improved classification accuracies and training
-efficiencies. This study presents its findings in Chapter 6, using relevant
-performance metrics, thus reaching the objectives listed in Section 1.4.2.
-Notably, the VGG16-BiLSTM model achieved the top accuracy of 88\%, validating
-the hypothesis.
+Throughout this research, four architectures were implemented:
+VGG16-LSTM, VGG16-BiLSTM, ResNet50-LSTM and ResNet50-BiLSTM. These models were
+compared against each other, and the effectiveness of several preprocessing
+techniques such as Optical Flow, PCA and data augmentation was evaluated to
+understand their impact on training efficiencies and training accuracies
 
-In addressing the research questions, this research has demonstrated the
-effectiveness of Deep Learning in the domain of skateboard trick classification,
-with the VGG16-BiLSTM model achieving the highest performance. Moreover, this
-study has also highlighted the effectiveness of various preprocessing techniques
-though a number of experiments detailed in Chapter~\ref{6_evaluation},
-confirming their role in enhancing performance.
+% This study presents its findings in Chapter 6, using relevant
+% performance metrics, thus reaching the objectives listed in Section 1.4.2.
+% Notably, the VGG16-BiLSTM model achieved the top accuracy of 88\%, validating
+% the hypothesis.
+
+In addressing the research questions, this research has successfully
+demonstrated the effectiveness of Deep Learning in the domain of skateboard
+trick classification, with the VGG16-BiLSTM model achieving the highest
+performance at 88\% accuracy. Moreover, this study has also highlighted the effectiveness of
+various preprocessing techniques through a number of experiments detailed in
+Chapter~\ref{6_evaluation}, confirming their role in enhancing performance.
+
+\noindent
+The aims and objectives of this research were achieved as follows:
+\begin{itemize}
+  \item \textbf{Classifying skateboard tricks using video frames:} The adapted
+  models successfully classified skateboard tricks into their respective classes
+  at favourable accuracies, ranging from 80\% to 88\%.
+  \item \textbf{Evaluating and comparing Deep Learning architectures:} The
+  performance of the adapted models was assessed, with the VGG16-BiLSTM emerging
+  as the top performer, while the ResNet50-LSTM performed slightly worse than
+  the other architectures.
+  \item \textbf{Examining preprocessing techniques:} Various preprocessing
+  methods were implemented and evaluated, demonstrating their ability to improve
+  model performance and training effectiveness.
+\end{itemize}
 
 The implications of these findings suggest that the integration of AI solutions
 could not only alter the way skateboarding is viewed and analysed but also how
@@ -97,6 +114,12 @@ and its applicability in real-time applications, deeming it unsuitable for
 real-world scenarios. Despite these challenges, the findings from this study
 provide insights into the several techniques and areas for further exploration
 that future research could build upon.
+
+In conclusion, the hypothesis claiming that a combination of advanced Deep
+Learning models and preprocessing techniques could enhance classification
+performance was validated. Thus, this research has successfully demonstrated the
+potential for Deep Learning in the domain of skateboard trick classification,
+achieving its aims and objectives and contributing knowledge to the field.
 % This study set out to explore the effectiveness of Deep Learning techniques in
 % the domain of skateboard trick classification, with a particular focus on
 % evaluating various preprocessing strategies. The hypothesis stated that the

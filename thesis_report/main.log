@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  24 MAY 2024 23:30
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  25 MAY 2024 01:22
  system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/uni/Thesis_Writeup/thesis_report/main
@@ -1901,17 +1901,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--9
 ] (./main.acr) (./main.gls) (./content/chapters/1_introduction/introduction.tex
 Chapter 1.
 
-Underfull \hbox (badness 1297) in paragraph at lines 12--19
+Underfull \hbox (badness 1297) in paragraph at lines 14--21
 \TU/Lato(0)/m/n/12 takes place in urban envi-ron-ments, util-ising various obsta-cles that can be found
  []
 
 <content/chapters/1_introduction/figures/graph.png, id=531, 1003.75pt x 745.78625pt>
 File: content/chapters/1_introduction/figures/graph.png Graphic file (type png)
 <use content/chapters/1_introduction/figures/graph.png>
-Package luatex.def Info: content/chapters/1_introduction/figures/graph.png  used on input line 22.
+Package luatex.def Info: content/chapters/1_introduction/figures/graph.png  used on input line 24.
 (luatex.def)             Requested size: 409.71692pt x 304.42015pt.
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 28.
+(Font)              scaled to size 17.28pt on input line 30.
 [1
 
 
@@ -1919,14 +1919,14 @@ LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
 
 
 <./content/chapters/1_introduction/figures/graph.png>]
-Underfull \hbox (badness 4429) in paragraph at lines 45--51
+Underfull \hbox (badness 4429) in paragraph at lines 47--53
 []\TU/Lato(0)/m/n/12 Despite the popu-larity of computer vision, partic-u-larly in video activity
  []
 
 LaTeX Font Info:    Font shape `TU/Lato(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 69.
+(Font)              scaled to size 14.4pt on input line 71.
 
-Underfull \hbox (badness 1769) in paragraph at lines 71--72
+Underfull \hbox (badness 1769) in paragraph at lines 73--74
 []\TU/Lato(0)/m/n/12 To clas-sify skate-board tricks using frames extracted from videos into their
  []
 
@@ -2037,11 +2037,6 @@ Underfull \hbox (badness 1087) in paragraph at lines 240--247
 \TU/Lato(0)/m/n/12 use a variant of the LSTM called the Bidi-rec-tional LSTM (BiLSTM), to take
  []
 
-
-Underfull \hbox (badness 1112) in paragraph at lines 247--252
-\TU/Lato(0)/m/n/12 BiLSTM, enabling the model to priori-tise partic-ular parts of the input data.
- []
-
 [13<./content/chapters/3_Literature Review/figures/cnn-lstm.png>]
 Underfull \hbox (badness 6047) in paragraph at lines 277--289
 \TU/Lato(0)/m/n/12 activity recog-ni-tion tech-niques, leading to two primary method-olo-gies. The
@@ -2077,8 +2072,8 @@ Underfull \hbox (badness 1460) in paragraph at lines 28--38
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 40--50
-\TU/Lato(0)/m/n/12 based approach as illus-trated in Figures []4.1[] and []4.2[]. The folder-based method
+Underfull \hbox (badness 1365) in paragraph at lines 40--50
+\TU/Lato(0)/m/n/12 videos into folders named after their corre-sponding class label offering a simple
  []
 
 [17
@@ -2204,7 +2199,7 @@ Underfull \hbox (badness 3189) in paragraph at lines 117--123
 
 [26<./content/chapters/5_Implementation/figures/optical_sequence.jpg><./content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 127--135
-\TU/Lato(0)/m/n/12 This research explored a number of augmen-ta-tion tech-niques using the
+\TU/Lato(0)/m/n/12 This research explored several of augmen-ta-tion tech-niques using the
  []
 
 <content/chapters/5_Implementation/figures/augmented_frames.jpg, id=869, 1349.04pt x 224.84pt>
@@ -2236,6 +2231,16 @@ File: content/chapters/5_Implementation/figures/pca_resnet.png Graphic file (typ
 Package luatex.def Info: content/chapters/5_Implementation/figures/pca_resnet.png  used on input line 269.
 (luatex.def)             Requested size: 204.85846pt x 164.3932pt.
 
+Underfull \hbox (badness 1708) in paragraph at lines 281--296
+\TU/Lato(0)/m/n/12 after many iter-a-tions and opti-mi-sa-tions. To speed up the time-consuming task
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 281--296
+\TU/Lato(0)/m/n/12 of hyper-pa-ram-eter tuning, this research lever-aged a hyper-pa-ram-eter opti-mi-sa-tion
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 297--301
 \TU/Lato(0)/m/n/12 Throughout the training phase, Optuna was used to initialise the model’s
  []
@@ -2261,8 +2266,8 @@ Underfull \hbox (badness 1867) in paragraph at lines 308--315
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 337--342
-\TU/Lato(0)/m/n/12 This study incor-po-rated model check pointing in the training process to save
+Underfull \hbox (badness 4467) in paragraph at lines 337--342
+\TU/Lato(0)/m/n/12 This study incor-po-rated model check-pointing in the training process to save
  []
 
 [30]
@@ -2316,8 +2321,13 @@ Underfull \hbox (badness 1303) in paragraph at lines 82--93
  []
 
 [33]
-Underfull \hbox (badness 3525) in paragraph at lines 172--179
-\TU/Lato(0)/m/n/12 This study’s exten-sive testing on various Deep Learning archi-tec-tures and the
+Underfull \hbox (badness 6927) in paragraph at lines 158--167
+[]\TU/Lato(0)/m/n/12 The slow processing speeds outlined in Table []6.3[] are caused by the
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 158--167
+\TU/Lato(0)/m/n/12 While this pipeline nega-tively affected processing speeds, it was respon-sible for
  []
 
 [34] [35]
@@ -2357,104 +2367,15 @@ Underfull \hbox (badness 1009) in paragraph at lines 10--15
 
 
 ]
-Underfull \hbox (badness 1308) in paragraph at lines 72--80
-\TU/Lato(0)/m/n/12 along with several prepro-cessing tech-niques such as optical flow, PCA and data
+Underfull \hbox (badness 2512) in paragraph at lines 72--77
+[]\TU/Lato(0)/m/n/12 Throughout this research, four archi-tec-tures were imple-mented: VGG16-
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 81--87
-[]\TU/Lato(0)/m/n/12 In addressing the research ques-tions, this research has demon-strated the
- []
-
-) [39]
-LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 89.
- [40
-
-]
-Underfull \hbox (badness 3601) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 J. Gu \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Recent advances in convo-lu-tional neural networks,'' \TU/Lato(0)/m/it/12 Pattern
+Underfull \hbox (badness 7631) in paragraph at lines 93--96
+[]\TU/Lato(0)/b/n/12 Clas-si-fying skate-board tricks using video frames: \TU/Lato(0)/m/n/12 The adapted models
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 90--90
-\TU/Lato(0)/m/n/12 model,'' \TU/Lato(0)/m/it/12 Journal of Visual Commu-ni-ca-tion and Image Repre-sen-ta-tion\TU/Lato(0)/m/n/12 , vol. 41,
- []
-
-
-Underfull \hbox (badness 2865) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
- []
-
-[41]
-Underfull \hbox (badness 7379) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 J. Yin, Q. Yang, and J. J. Pan, ``Sensor-based abnormal human-activity
- []
-
-
-Underfull \hbox (badness 5939) in paragraph at lines 90--90
-\TU/Lato(0)/m/it/12 Journal of Scien-tific Research and Engi-neering Devel-op-ment\TU/Lato(0)/m/n/12 , vol. 1, no. 2,
- []
-
-[42]
-Underfull \hbox (badness 2865) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
- []
-
-[43]
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 A. Tharwat, ``Clas-si-fi-ca-tion assess-ment methods,'' \TU/Lato(0)/m/it/12 Applied computing and
- []
-
-
-Underfull \hbox (badness 4279) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 D. M. Powers, ``Eval-u-a-tion: From preci-sion, recall and f-measure to roc,
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 90--90
-\TU/Lato(0)/m/n/12 informed-ness, marked-ness and corre-la-tion,'' \TU/Lato(0)/m/it/12 arXiv preprint arXiv:2010.16061\TU/Lato(0)/m/n/12 ,
- []
-
-
-Underfull \hbox (badness 2376) in paragraph at lines 90--90
-[]\TU/Lato(0)/m/n/12 T. Akiba, S. Sano, T. Yanase, T. Ohta, and M. Koyama, ``Optuna: A next-
- []
-
-(./content/appendices/appendix_a.tex [44]
-Appendix A.
-) (./content/appendices/appendix_b.tex [45
-
-]
-Appendix B.
-)
-runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed
-runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed
- [46
-
-] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1DFF922BAFF2A60FA5BC208B5DF5D715;12339.
-runsystem(rm main.pyg)...executed
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
-
-Here is how much of LuaTeX's memory you used:
- 39904 strings out of 477805
- 125013,1977958 words of node,token memory allocated
- 1129 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 37 attribute, 131 glue_spec, 37 attribute_list, 1 write, 21 pdf_action nodes
-   avail lists: 1:6,2:1359,3:447,4:341,5:922,6:181,7:6862,8:116,9:625,10:21,11:302,12:9
- 58666 multiletter control sequences out of 65536+600000
- 86 fonts using 20780551 bytes
- 106i,12n,128p,1241b,1684s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Italic.ttf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (54 pages, 3536235 bytes).
-
-PDF statistics: 1122 PDF objects out of 1200 (max. 8388607)
- 964 compressed objects within 10 object streams
- 225 named destinations out of 1000 (max. 131072)
- 633 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+Underfull \hbox (badness 2608) in paragraph at lines 100--103
+[]\TU/Lato(0)/b/n/12 Exam-ining prepro-cessing tech-niques: \TU/Lato(0)/m/n/12 Various prepro-cessing methods were

@@ -10,7 +10,7 @@ literature.
 Due to the absence of a dedicated graphics card, training exclusively relied on
 a Ryzen 5 3600 6-core processor, operating at a base clock speed of 3.59 GHz.
 Despite lacking GPU acceleration, the Ryzen 5 3600 processor reliably handled
-the training of several deep learning architectures and experiments conducted.
+the training of several Deep Learning architectures and experiments conducted.
 
 \section{Experiments}\label{6_experiments}
 \subsection{Choice of Optimiser}
@@ -18,13 +18,13 @@ This study compared the results of Stochastic Gradient Descent (SGD) and
 Adam~\cite{adam_paper} as optimisation algorithms during training. The results
 suggest that SGD is more effective at reducing overfitting compared to Adam.
 This improvement is illustrated in Figure~\ref{fig:loss_graphs}, using an
-iteration of the VGG-BiLSTM architecture. While, Adam initially shows promise
+iteration of the VGG-BiLSTM architecture. While Adam initially shows promise
 with good generalisation, it quickly encounters a pitfall, where the validation
 loss begins to climb, indicating overfitting. In contrast, the SGD-trained model
 exhibits a more stable validation loss, likely due to its algorithmic stability
 and its capability to achieve small generalisation errors as explained in the
 study by Hardt et al. (2016)~\cite{SGD_stability_paper}. The results observed
-with the VGG-BiLSTM aligns with the insights discussed by Hardt et al.
+with the VGG-BiLSTM align with the insights discussed by Hardt et al.
 suggesting that models trained using SGD are less vulnerable to overfitting.
 
 \begin{figure}[ht!]
@@ -49,7 +49,7 @@ suggesting that models trained using SGD are less vulnerable to overfitting.
 % talk about PCA improving accuracy on Resnet50
 
 \subsection{The Effect of Data Augmentation}\label{data_augmentation_6}
-This research, also examined the effects of augmenting the input data before
+This research also examined the effects of augmenting the input data before
 feeding it into the respective sequence models. Experiments revealed that each
 of the four models demonstrated improvements in accuracies following the
 application of data augmentation on the input data. Enhancements ranged from a
@@ -134,7 +134,7 @@ the most informative features.
 % %Table
 
 
-\subsection{Applicability In Real-Time applications}
+\subsection{Applicability In Real-Time Applications}
 For real-time applications like analysing skateboarding events, the speed at
 which video data is processed and evaluated is crucial. To evaluate the model's
 applicability in such applications, this study measured the time taken to
@@ -156,7 +156,7 @@ in Table~\ref{tab:evaluation_time}.
 	\caption{Evaluation time (ss:mm) for skateboard trick classification models.}\label{tab:evaluation_time}
 \end{table}
 The slow processing speeds outlined in Table~\ref{tab:evaluation_time} are
-caused by the computational expensive video analysis pipeline required to
+caused by the computationally expensive video analysis pipeline required to
 process a single video. While this pipeline negatively affected processing
 speeds, it was responsible for achieving high accuracies and significantly
 accelerating training time.
@@ -170,9 +170,9 @@ accelerating training time.
 \subsection{Overview of Findings}
 
 This study's extensive testing on various Deep Learning architectures and the
-application of various preprocessing techniques, have revealed significant
+application of various preprocessing techniques have revealed significant
 improvement in accuracies and training efficiencies in skateboard trick
-classification. Particularly, the VGG-BiLSTM model emerged as the top performer
+classification. Particularly, the VGG-BiLSTM model emerged as the top-performer
 with a final accuracy of 88\%. The full table of final accuracies is presented
 in Table~\ref{tab:models_results}. The findings from experiments conducted in
 Section~\ref{6_experiments} are as follows:
@@ -197,7 +197,7 @@ data both forwards and backward, enhancing their ability to recognise temporal
 patterns that LSTMs may have missed.
 
 Interestingly, despite the common preference for ResNet50 for feature extraction
-due to its deeper and more complex structure, in this specific scenario ResNet50
+due to its deeper and more complex structure, in this specific scenario, ResNet50
 models slightly underperformed compared to VGG16 models. This could suggest that
 in the context of skateboard trick classification, ResNet50 does not necessarily
 translate to better performance. These results may suggest that the simpler
@@ -239,7 +239,7 @@ skateboard tricks.
 
 \vspace{-1cm}
 \subsection{Comparative Analysis}
-This section provides a comparative analysis between the outcomes of this study
+This section provides a comparative analysis of the outcomes of this study
 and the findings reported by Orozco et al. Shapiee et al.\ and
 Chen~\cite{skatePaper1,HARRecognitionInVideosUsingARobustCNNLSTMApproach,SkateboardAIPaper}.
 Each study presents unique approaches with the aim of classifying complex
@@ -268,10 +268,10 @@ Finally, when comparing this study's outcomes with those reported by Chen
 (2023)~\cite{SkateboardAIPaper}, some notable differences in performance are
 revealed. Despite employing the same architectures, this study not only achieved
 higher accuracy but also significant improvements in training efficiency. The
-comparison accuracies are detailed in Table~\ref{tab:models_results}. Chen's top
-performing model, the ResNet50 + Attention + BiLSTM model, achieved an accuracy
-of 84\%. In contrast, this study achieved a higher accuracy with an average
-training time reduction of 41:04 minutes across all models.
+comparison accuracies are detailed in Table~\ref{tab:models_results}. Chen's
+top-performing model, the ResNet50 + Attention + BiLSTM model, achieved an
+accuracy of 84\%. In contrast, this study achieved a higher accuracy with an
+average training time reduction of 41:04 minutes across all models.
 
 Interestingly, Chen also demonstrated higher accuracies with models based on
 ResNet50 as opposed to VGG, which contrasts the findings of this study where
@@ -280,7 +280,7 @@ factors. Firstly, the two studies employed different hyperparameter
 configurations, which can affect the model performance, potentially favouring
 the deep ResNet50 Architecture. Secondly, compared to Chen, this research
 included more training data per class. Thirdly, the use of Optical Flow and PCA
-in this research, could have provided a more concentrated feature set for
+in this research could have provided a more concentrated feature set for
 training the models, leading to higher accuracies and more efficient training
 times.
 
@@ -324,9 +324,9 @@ Notably, the trained models often encountered difficulty in differentiating
 between the ollie and kickflip compared to the pop-shuvit. This challenge likely
 arises due to their shared visual characteristics. Both the ollie and the
 kickflip involve common elements such as the initial pop of the skateboard and
-the absence of rotation around the y-axis, which distinguishes them to the
+the absence of rotation around the y-axis, which distinguishes them from the
 pop-shuvit. The confusion matrices illustrated in Figure~\ref{fig:model_cm}
-demonstrate a favourable classification rate on pop-shuvit's across all models
+demonstrates a favourable classification rate on pop-shuvit's across all models
 compared to ollies and kickflips. Interestingly, in the classification of
 pop-shuvit's, BiLSTM models demonstrated 100\% classification accuracy, while
 LSTM models also performed well, they lagged slightly behind, correctly

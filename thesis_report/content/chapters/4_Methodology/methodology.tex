@@ -32,12 +32,12 @@ the dataset's diversity, additional data was obtained through direct
 communication with Hanxiao Chen, the author of the SkateboardAI
 paper~\cite{SkateboardAIPaper}. This communication yielded a dataset containing
 750 videos covering 15 tricks. However, since the majority of tricks were beyond
-the scope of this study, only a subset of this data was included into the final
-dataset. Ultimately, the final dataset comprised of 128 videos per class,
+the scope of this study, only a subset of this data was included in the final
+dataset. Ultimately, the final dataset consisted of 128 videos per class,
 totalling 384 videos.
 
 \subsection{Labelling techniques}
-This study explores two primary labelling techniques: the folder-based and the
+This study explores two primary labelling techniques: folder-based and
 text-based approach as illustrated in Figures~\ref{fig:folder-based-label}
 and~\ref{fig:text-based-label}. The folder-based method categorises videos into
 folders named after their corresponding class label offering a simple
@@ -73,11 +73,11 @@ consider the example of a skateboarder executing a skateboard trick like the
 `Kickflip', as showcased in Figure~\ref{fig:SingleVsMultiFrameKickflip}. By
 feeding an AI model a single image of this trick as shown in
 Figure~\ref{fig:singleFrameKickflip}, it may misinterpret the manoeuvre as
-another trick due to its subjective nature. Whereas, by providing the model with
+another trick due to its subjective nature. Whereas, providing the model with
 a sequence of frames, as illustrated in Figure~\ref{fig:MultiFrameKickflip}, the
 entire trick sequence is captured including the wind-up, the trick and the
 landing, capturing actions such as foot placement and board rotation, which
-together characterise the full skateboard trick.
+together characterises the full skateboard trick.
 
 \begin{figure}[h]
   \begin{subfigure}{0.5\textwidth}
@@ -109,7 +109,7 @@ select the frames with the most significant movement. This method calculates the
 motion of pixels between successive frames and assigns weights to each frame
 determined by the magnitude of this motion.
 Figure~\ref{fig:kickflip-sequence-opticalflow} illustrates a visualisation of
-this technique being applied to `kickflip' trick.
+this technique being applied to the `kickflip' trick.
 
 % a method that assigns weights to frames determined by the motion of
 % pixels between them. With this approach, frames with the greatest weightings are
@@ -168,7 +168,7 @@ that the model's input values data was within a standardised range.
 This research leveraged two well-established CNNs for this task: VGG16  and
 ResNet50. Both models were pre-trained on the large ImageNet
 dataset~\cite{imageNetDataset}, leveraging extensive image recognition knowledge
-that were then fine-tuned to the domain of skateboard trick recognition.
+that was then fine-tuned to the domain of skateboard trick recognition.
 Table~\ref{tab:TL-models} summarises the key characteristics of VGG16 and
 ResNet50.
 
@@ -270,10 +270,10 @@ demonstrates the data flow pipeline for the skateboard trick classifier. The
 process begins with preprocessing the labelled video data including frame
 extraction, augmenting the training set for variability and reducing
 dimensionality for efficiency. Pre-trained CNNs such as VGG16 and ResNet50, then
-extract features from the preprocessed frames, before feeding them into their
+extracts features from the preprocessed frames, before feeding them into their
 respective sequence models.
 
-The accuracy of these models are then evaluated on a held-out test set, to
+The accuracy of these models is then evaluated on a held-out test set, to
 determine the models' performance on unseen data. Finally, the evaluation utilises
 performance plots such as confusion matrices to visualise classification
 performance, model epoch loss and accuracy graphs to track training history.
@@ -297,7 +297,7 @@ the context of the `kickflip's class and tabulated in a confusion matrix.
 
 \noindent \textbf{Accuracy:} Measures the proportion of correctly classified
 instances, over the total number of predictions made by the model. This metric
-provides a generic indicator of the model's reliability, however this specific
+provides a generic indicator of the model's reliability, however, this specific
 metric can be sensitive in scenarios with class imbalance~\cite{classificationAssessmentMethodstharwat2020}.
 
 \begin{equation}

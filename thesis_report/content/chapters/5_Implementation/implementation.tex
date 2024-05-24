@@ -25,13 +25,13 @@ to this decision.
 computation and Machine Learning applications. It provides a rich toolset that
 allows for efficient development, training and deployment of Machine Learning
 models. Notably, Tensorflow comes with the Keras API, further simplifying the
-creation development by offering wide range of tools such as access to pre-trained
-models, pre-defined layers and training and evaluation abstractions.
+creation development by offering a wide range of tools such as access to
+pre-trained models, pre-defined layers and training and evaluation abstractions.
 %keras provides us with pretrained models and layers
 
 \vspace{3mm}
 \noindent
-{\bf OpenCV (cv2):} This open source library played a crucial role in the
+{\bf OpenCV (cv2):} This open-source library played a crucial role in the
 computer vision components of development, offering essential tools related to
 video processing, particularly during the frame extraction phase.
 
@@ -46,9 +46,9 @@ This study opted for a training-validation-testing split on the original dataset
 allocating 80\% for training, 10\% for validation and 10\% for testing. The
 training set allowed the models to learn the patterns and relationships within
 the input data. The validation enabled a portion of the data to be used to
-evaluate the performance after every epoch. Finally, testing set provided a
+evaluate the performance after every epoch. Finally, the testing set provided a
 final assessment of the model's generalizability, by using unseen data. The
-decision for this split stemmed from prioritising training data due to limited
+decision for this split stemmed from prioritising training data due to the limited
 dataset size.
 
 In consideration of Chen's (2023)~\cite{SkateboardAIPaper} research, which
@@ -93,14 +93,14 @@ noticeable with larger sequence lengths.
 	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/optical_sequence.jpg}
-		\caption{Extracted frames using Optical Flow method.}
+		\caption{Extracted frames using the Optical Flow method.}
 	\end{subfigure}
 	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{content/chapters/5_Implementation/figures/uniform_sampling_sequence.jpg}
 		\caption{Extracted frames using uniform sampling.}
 	\end{subfigure}
-	\caption{Comparison of frame extraction between Optical Flow method and uniform sampling.}\label{fig:comparison-sequence-opticalflow-uniformSampling}
+	\caption{Comparison of frame extraction between the Optical Flow method and uniform sampling.}\label{fig:comparison-sequence-opticalflow-uniformSampling}
 \end{figure}
 
 %have to mention the sequence length
@@ -124,7 +124,7 @@ extracted from the video.
 
 
 \section{Data Augmentation}
-This research explored a number of augmentation techniques using the
+This research explored several of augmentation techniques using the
 \texttt{ImageDataGenerator} library provided by Tensorflow. This tool allowed
 for the definition of specific parameters that influenced how each frame was
 augmented. To expand the number of training samples, this study created two
@@ -253,7 +253,7 @@ Consequently, this results in final feature shapes of ${(20 \times 2514)}$ and
 ${(20 \times 278)}$ respectively.
 
 The application of PCA dimensionality reduction significantly reduced training
-times. This efficiency significantly sped up the process of hyperparameters
+times. This efficiency significantly sped up the process of hyperparameter
 tuning by reducing waiting times associated with training each iteration.
 
 \begin{figure}[htbp]
@@ -279,7 +279,7 @@ tuning by reducing waiting times associated with training each iteration.
 
 \section{Hyperparameter Optimisation}
 The architectures described in this study represent the best versions of
-themselves after a number of iterations and optimisations. To speed up the
+themselves after many iterations and optimisations. To speed up the
 time-consuming task of hyperparameter tuning, this research leveraged a
 hyperparameter optimisation framework called Optuna~\cite{optunaFramework}. This
 framework leverages a Bayesian optimisation algorithm that runs through a number
@@ -300,7 +300,7 @@ Optuna provided the initial configurations, which served as a starting point for
 the iterative training process.
 
 In this iterative process, each model's hyperparameters underwent continuous
-evaluation and refinement after every iteration at an attempt to improve
+evaluation and refinement after every iteration in an attempt to improve
 accuracy. Performance metrics such as loss curves, confusion matrices and
 F-scores, were monitored closely to assess the effectiveness of each
 hyperparameter configuration.
@@ -334,7 +334,7 @@ observation that the models were unlikely to improve after 10 epochs, with no
 validation loss advancements.
 
 \subsection{Model Checkpoint}
-This study incorporated model check pointing in the training process
+This study incorporated model check-pointing in the training process
 to save intermediate models after every epoch. This implementation was
 configured to monitor the validation loss and only save the model when it
 showed an improvement, allowing a resumption of training in case of
@@ -349,10 +349,10 @@ stopping callback restored the model's weights, preventing overfitting.
 The loss curves across the four architectures all exhibit distinct patterns,
 highlighting the differences in learning dynamics specific to each architecture.
 Notably, smaller learning rates were applied to the VGG16-LSTM and
-ResNet50-BiLSTM models, with the intention to enhance the stability of training,
-thereby improving performance. Additionally, the validation loss for the BiLSTM
-configurations generally exhibited more volatility, likely due to the complexity
-of their bidirectional layers.
+ResNet50-BiLSTM models, with the intention of enhancing the stability of
+training, thereby improving performance. Additionally, the validation loss for
+the BiLSTM configurations generally exhibited more volatility, likely due to the
+complexity of their bidirectional layers.
 
 All models employed the Stochastic Gradient Descent (SGD) optimiser throughout
 the training process due to excessive overfitting observed with the Adam
