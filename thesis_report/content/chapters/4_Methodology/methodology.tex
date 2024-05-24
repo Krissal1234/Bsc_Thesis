@@ -157,8 +157,7 @@ that the model's input values data was within a standardised range.
 	\text{Normalized Value} = \frac{\text{Pixel Value} - \text{Min Value}}{\text{Max Value} - \text{Min Value}}
 \end{equation}
 
-
-\subsection{Feature Extraction with Transfer Learning}
+\section{Feature Extraction with Transfer Learning}
 %Feature extraction plays a crucial role in the classification of complex data,
 %particularly in the domain of action recognition tasks~\cite{SkateboardAIPaper,
 %HARUsingTransferLearningWithDeepRepresentations,skatePaper1}. This study
@@ -217,7 +216,7 @@ the visual information present in each frame but also more abstract ideas such
 as low-level information (like edges/shapes) to higher-level features like
 objects and even actions themselves.
 
-\subsection{Dimensionality Reduction}\label{4_dimensionality_reduction}
+\section{Dimensionality Reduction}\label{4_dimensionality_reduction}
 
 The use of pre-trained models used in this study generate high-dimensional
 feature vectors. While these features capture valuable information, a large
@@ -264,12 +263,6 @@ potential for competitive results.
 % While this study also explored attention
 % mechanisms within these models, the main aim is to build upon existing knowledge
 % and potentially achieve better performance.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/architecture.png}
-	\caption{Artefact Architecture.}\label{fig:architecture}
-\end{figure}
 
 \section{Architecture}
 The Deep Learning Architecture, as illustrated in Figure~\ref{fig:architecture}
@@ -337,5 +330,9 @@ values closer to one, indicating better performance.
 \end{equation}
 
 
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{content/chapters/4_Methodology/figures/architecture.png}
+	\caption{Artefact Architecture.}\label{fig:architecture}
+\end{figure}
 

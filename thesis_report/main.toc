@@ -44,11 +44,11 @@
 \contentsline {subsection}{\numberline {4.3.1}Frame Extraction}{18}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Data Augmentation}{19}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}Normalisation}{20}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Feature Extraction with Transfer Learning}{20}{subsection.4.3.4}%
-\contentsline {subsection}{\numberline {4.3.5}Dimensionality Reduction}{21}{subsection.4.3.5}%
-\contentsline {section}{\numberline {4.4}Adapted Models}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Architecture}{22}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Evaluation Methods}{22}{section.4.6}%
+\contentsline {section}{\numberline {4.4}Feature Extraction with Transfer Learning}{20}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Dimensionality Reduction}{21}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Adapted Models}{21}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Architecture}{22}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Evaluation Methods}{22}{section.4.8}%
 \contentsline {chapter}{\numberline {5}Implementation}{25}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Development Environment}{25}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Dataset Split and Configuration}{25}{section.5.2}%
