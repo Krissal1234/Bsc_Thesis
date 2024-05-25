@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  25 MAY 2024 01:22
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.4.22)  25 MAY 2024 23:39
  system commands enabled.
  file:line:error style messages enabled.
 **/home/krissal1234/Documents/uni/Thesis_Writeup/thesis_report/main
@@ -2379,3 +2379,112 @@ Underfull \hbox (badness 7631) in paragraph at lines 93--96
 
 Underfull \hbox (badness 2608) in paragraph at lines 100--103
 []\TU/Lato(0)/b/n/12 Exam-ining prepro-cessing tech-niques: \TU/Lato(0)/m/n/12 Various prepro-cessing methods were
+ []
+
+
+Underfull \hbox (badness 3209) in paragraph at lines 100--103
+\TU/Lato(0)/m/n/12 imple-mented and eval-u-ated, demon-strating their ability to improve model
+ []
+
+
+Underfull \hbox (badness 4995) in paragraph at lines 118--128
+[]\TU/Lato(0)/m/n/12 In conclu-sion, the hypoth-esis claiming that a combi-na-tion of advanced
+ []
+
+
+Underfull \hbox (badness 1365) in paragraph at lines 118--128
+\TU/Lato(0)/m/n/12 Deep Learning models and prepro-cessing tech-niques could enhance clas-si-fi-ca-tion
+ []
+
+[39]) [40]
+LaTeX Font Info:    Font shape `TU/Lato(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 89.
+ [41
+
+]
+Underfull \hbox (badness 3601) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 J. Gu \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Recent advances in convo-lu-tional neural networks,'' \TU/Lato(0)/m/it/12 Pattern
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 90--90
+\TU/Lato(0)/m/n/12 model,'' \TU/Lato(0)/m/it/12 Journal of Visual Commu-ni-ca-tion and Image Repre-sen-ta-tion\TU/Lato(0)/m/n/12 , vol. 41,
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
+ []
+
+[42]
+Underfull \hbox (badness 7379) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 J. Yin, Q. Yang, and J. J. Pan, ``Sensor-based abnormal human-activity
+ []
+
+
+Underfull \hbox (badness 5939) in paragraph at lines 90--90
+\TU/Lato(0)/m/it/12 Journal of Scien-tific Research and Engi-neering Devel-op-ment\TU/Lato(0)/m/n/12 , vol. 1, no. 2,
+ []
+
+[43]
+Underfull \hbox (badness 2865) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 J. Donahue \TU/Lato(0)/m/it/12 et al.\TU/Lato(0)/m/n/12 , ``Long-term recur-rent convo-lu-tional networks for visual
+ []
+
+[44]
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 A. Tharwat, ``Clas-si-fi-ca-tion assess-ment methods,'' \TU/Lato(0)/m/it/12 Applied computing and
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 D. M. Powers, ``Eval-u-a-tion: From preci-sion, recall and f-measure to roc,
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 90--90
+\TU/Lato(0)/m/n/12 informed-ness, marked-ness and corre-la-tion,'' \TU/Lato(0)/m/it/12 arXiv preprint arXiv:2010.16061\TU/Lato(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 90--90
+[]\TU/Lato(0)/m/n/12 T. Akiba, S. Sano, T. Yanase, T. Ohta, and M. Koyama, ``Optuna: A next-
+ []
+
+(./content/appendices/appendix_a.tex [45]
+Appendix A.
+) (./content/appendices/appendix_b.tex [46
+
+]
+Appendix B.
+)
+runsystem(makeindex -s main.ist -t main.glg -o main.gls main.glo)...executed
+runsystem(makeindex -s main.ist -t main.alg -o main.acr main.acn)...executed
+ [47
+
+] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: FD18C39622F976C4630F9ACBC1169FF9;12339.
+runsystem(rm main.pyg)...executed
+Package logreq Info: Writing requests to 'main.run.xml'.
+
+\openout1 = main.run.xml
+)
+
+Here is how much of LuaTeX's memory you used:
+ 39905 strings out of 477805
+ 125013,1977958 words of node,token memory allocated
+ 1129 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 37 attribute, 131 glue_spec, 37 attribute_list, 1 write, 21 pdf_action nodes
+   avail lists: 1:6,2:1360,3:447,4:341,5:923,6:181,7:6862,8:116,9:625,10:21,11:294,12:9
+ 58666 multiletter control sequences out of 65536+600000
+ 86 fonts using 20780551 bytes
+ 106i,12n,128p,1241b,1682s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono12-regular.otf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Italic.ttf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Regular.ttf></usr/share/texlive/texmf-dist/fonts/truetype/typoland/lato/Lato-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on main.pdf (55 pages, 3537594 bytes).
+
+PDF statistics: 1126 PDF objects out of 1200 (max. 8388607)
+ 967 compressed objects within 10 object streams
+ 226 named destinations out of 1000 (max. 131072)
+ 633 words of extra memory for PDF output out of 10000 (max. 100000000)
+
