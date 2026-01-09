@@ -1,7 +1,8 @@
 # Skateboard Trick Recognition through an AI-based Approach
 
-> **[📄 Click here to read the full thesis: thesis_kris.pdf](thesis_kris.pdf)**
+> **[Click here to read the full thesis](thesis_kris.pdf)**
 
+> **[Click here to go to the project files](https://github.com/Krissal1234/Bsc_Thesis_Project)**
 ---
 
 ## Project Overview
